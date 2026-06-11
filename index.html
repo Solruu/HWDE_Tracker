@@ -201,8 +201,8 @@ const overlay=document.getElementById('overlay'),modal=document.getElementById('
 document.getElementById('modalX').onclick=closeModal;
 overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
-function openModal(mn,coord,t){  // DEBUG: test brut overlay  var ov=document.getElementById('overlay');  if(!ov){document.body.style.background='orange';return;}  ov.style.cssText='position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(10,20,40,.95);z-index:9999;display:flex;align-items:center;justify-content:center;';  ov.innerHTML='<div style="background:#1a2a3a;padding:20px;border-radius:8px;color:#fff;max-width:90vw"><b style="color:#f5c842">'+mn+' / '+coord+'</b><br><small>openModal fonctionne !</small><br><br><button onclick="this.closest(\'#overlay\' ) ? document.getElementById(\'overlay\').style.display=\'none\' : null" style="padding:8px 16px;background:#d4a020;border:none;border-radius:4px;cursor:pointer">Fermer</button></div>';}
-function closeModal(){overlay.classList.remove('open');}
+function openModal(mn,coord,t){window._dm=mn;window._dc=coord;var mc=document.getElementById('modalContent');if(mc)mc.innerHTML=buildDetail(mn,coord,t);overlay.style.cssText='position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(5,8,20,.92);display:flex;align-items:center;justify-content:center;z-index:9999;opacity:1;pointer-events:auto;';modal.scrollTop=0;}
+function closeModal(){overlay.style.cssText='position:fixed;top:0;right:0;bottom:0;left:0;display:flex;align-items:center;justify-content:center;z-index:9999;opacity:0;pointer-events:none;transition:opacity .2s;';overlay.classList.remove('open');window._dm=null;window._dc=null;}
 
 /* ═══ ICONS ═══ */
 const ICO={
