@@ -201,7 +201,7 @@ const overlay=document.getElementById('overlay'),modal=document.getElementById('
 document.getElementById('modalX').onclick=closeModal;
 overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
-function openModal(mn,coord,t){window._dm=mn;window._dc=coord;document.getElementById('modalContent').innerHTML=buildDetail(mn,coord,t);overlay.classList.add('open');modal.scrollTop=0;}
+function openModal(mn,coord,t){try{window._dm=mn;window._dc=coord;document.getElementById('modalContent').innerHTML=buildDetail(mn,coord,t);overlay.classList.add('open');modal.scrollTop=0;}catch(_e){alert('openModal ERR: '+_e.message+'\ncoord='+coord);}
 function closeModal(){overlay.classList.remove('open');}
 
 /* ═══ ICONS ═══ */
