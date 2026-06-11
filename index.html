@@ -463,7 +463,7 @@ function renderGrid(){
       cell.className='cell'+(t?'':' empty');
       cell.id='cell-'+mn_(activeMap)+'-'+coord;
       if(t){cell.style.background=DCSS[t.d||0];buildCell(cell,t,activeMap,coord);
-        cell.onclick=()=>{document.querySelectorAll('.cell.selected').forEach(c=>c.classList.remove('selected'));cell.classList.add('selected');openModal(activeMap,coord,t);};
+        const _h=()=>{try{document.querySelectorAll('.cell.selected').forEach(c=>c.classList.remove('selected'));cell.classList.add('selected');openModal(activeMap,coord,t);}catch(e){alert('ERR:'+e.message);}};cell.onclick=_h;cell.addEventListener('touchend',e=>{e.preventDefault();_h();},{passive:false});
       }else cell.innerHTML=`<div class="c-coord">${coord}</div>`;
       grid.appendChild(cell);
     });
