@@ -424,27 +424,24 @@ MAP_ORDER.forEach(n=>{
   t.className='tab'+(n===activeMap?' active':'');
   t.textContent=MAP_FR[n]||n;t.dataset.map=n;
   t.onclick=()=>{activeMap=n;renderAll();
-dbg('JS OK - renderAll done - activeMap='+activeMap);
-// Event delegation sur la grid
-var gridEl=document.getElementById('grid');
-function handleCellTap(e){
-  var cell=e.target.closest('.cell');
-  if(!cell||cell.classList.contains('empty'))return;
-  var mn=activeMap, coord=cell.dataset.coord;
-  if(!coord){dbg('pas de coord sur la cellule');return;}
-  var tiles=MAPS_RAW[mn]||{};
-  var t=tiles[coord];
-  if(!t){dbg('t introuvable: '+mn+'/'+coord);return;}
-  dbg('tap: '+mn+'/'+coord);
-  document.querySelectorAll('.cell.selected').forEach(function(c){c.classList.remove('selected');});
-  cell.classList.add('selected');
-  try{openModal(mn,coord,t);}catch(err){dbg('openModal ERR: '+err.message);}
-}
-if(gridEl){
-  gridEl.addEventListener('click',handleCellTap);
-  gridEl.addEventListener('touchend',function(e){e.preventDefault();handleCellTap(e);},{passive:false});
-  dbg('delegation attachée sur #grid');
-}else{dbg('ERREUR: #grid introuvable');}
+// Event delegation — gère click ET touchend sur toute la grille
+(function(){
+  var gridEl=document.getElementById('grid');
+  if(!gridEl)return;
+  function handleTap(e){
+    var cell=e.target.closest('.cell');
+    if(!cell||cell.classList.contains('empty'))return;
+    var mn=activeMap, coord=cell.dataset.coord;
+    if(!coord||!MAPS_RAW[mn])return;
+    var t=MAPS_RAW[mn][coord];
+    if(!t)return;
+    document.querySelectorAll('.cell.selected').forEach(function(c){c.classList.remove('selected');});
+    cell.classList.add('selected');
+    openModal(mn,coord,t);
+  }
+  gridEl.addEventListener('click',handleTap);
+  gridEl.addEventListener('touchend',function(e){e.preventDefault();handleTap(e);},{passive:false});
+})();
 };
   tabsEl.appendChild(t);
 });
@@ -653,9 +650,5 @@ function buildDetail(mn2,coord,t){
 
 renderAll();
 </script>
-<div id="dbg" style="position:fixed;bottom:0;left:0;right:0;background:rgba(0,0,0,.85);color:#0f0;font-size:11px;font-family:monospace;padding:6px;max-height:120px;overflow-y:auto;z-index:9999;display:none"></div>
-<script>
-window.onerror=function(msg,src,line){document.getElementById('dbg').style.display='block';document.getElementById('dbg').innerHTML+='<div>ERR:'+msg+' L'+line+'</div>';};
-function dbg(msg){var d=document.getElementById('dbg');d.style.display='block';d.innerHTML+='<div>'+msg+'</div>';d.scrollTop=d.scrollHeight;}
-</script>
+
 </body></html>
