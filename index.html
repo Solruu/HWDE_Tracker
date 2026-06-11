@@ -50,10 +50,10 @@ main{flex:1;overflow:hidden}
 .ico{width:6px;height:6px;flex-shrink:0;border:1px solid rgba(0,0,0,.35)}
 .ico-c{border-radius:50%}.ico-s{border-radius:2px}
 /* Modal */
-.overlay{position:fixed;inset:0;background:rgba(5,8,20,.78);backdrop-filter:blur(2px);
+.overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(5,8,20,.88);
   display:flex;align-items:center;justify-content:center;z-index:100;
   opacity:0;pointer-events:none;transition:opacity .18s}
-.overlay.open{opacity:1;pointer-events:all}
+.overlay.open{opacity:1;pointer-events:auto}
 .modal{background:var(--panel);border:1px solid var(--border);border-radius:8px;
   width:420px;max-width:calc(100vw - 32px);max-height:calc(100vh - 40px);
   overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:11px;
@@ -201,7 +201,7 @@ const overlay=document.getElementById('overlay'),modal=document.getElementById('
 document.getElementById('modalX').onclick=closeModal;
 overlay.addEventListener('click',e=>{if(e.target===overlay)closeModal();});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
-function openModal(mn,coord,t){window._dm=mn;window._dc=coord;document.getElementById('modalContent').innerHTML=buildDetail(mn,coord,t);overlay.classList.add('open');modal.scrollTop=0;}
+function openModal(mn,coord,t){window._dm=mn;window._dc=coord;document.getElementById('modalContent').innerHTML=buildDetail(mn,coord,t);overlay.classList.add('open');overlay.style.opacity='1';overlay.style.pointerEvents='auto';overlay.style.display='flex';modal.scrollTop=0;}
 function closeModal(){overlay.classList.remove('open');}
 
 /* ═══ ICONS ═══ */
