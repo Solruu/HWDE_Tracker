@@ -533,7 +533,7 @@ function buildDetail(mn2,coord,t){
   /* ── Recherche dans la case ── */
   if(guideData) {
     const searchItems = guideData.search || [];
-    const imgKey=coord[0]+'-'+coord.slice(1);const _folder=MAP_FOLDERS[currentMap]||'adventure';const img=CELL_IMAGES[imgKey]||('./images/'+_folder+'/'+imgKey+'.png');
+    const imgKey=coord[0]+'-'+coord.slice(1);const _folder=MAP_FOLDERS[mn2]||'adventure';const img=CELL_IMAGES[imgKey]||('./images/'+_folder+'/'+imgKey+'.png');
     h+=`<div class="search-sec">
       <div class="search-t">🔍 Recherche dans la case</div>`;
     if(img) h+=`<img src="${img}" class="search-img" alt="Carte de recherche ${coord}">`;
