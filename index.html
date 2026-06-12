@@ -81,7 +81,7 @@ main{flex:1;overflow:hidden}
 .search-sec{background:var(--search);border:1px solid #243848;border-radius:5px;padding:9px;display:flex;flex-direction:column;gap:7px}
 .search-t{font-size:10px;color:#5090b0;text-transform:uppercase;letter-spacing:.5px}
 .search-img{width:100%;border-radius:3px;border:1px solid var(--border);image-rendering:pixelated;image-rendering:crisp-edges}
-.search-item{display:flex;align-items:flex-start;gap:7px;font-size:12px;line-height:1.4}
+.search-item{display:flex;align-items:center;gap:7px;font-size:12px;line-height:1.4}.search-item.done .search-desc{opacity:.4;text-decoration:line-through}
 .card-badge{font-size:10px;background:#1a3040;color:#6ab0cc;border:1px solid #2a4a60;border-radius:3px;padding:1px 6px;white-space:nowrap;flex-shrink:0;margin-top:1px}
 .search-none{font-size:11px;color:var(--dim);font-style:italic}
 .bosskey-row{font-size:11px;color:#c49020;display:flex;align-items:center;gap:5px}
@@ -188,7 +188,7 @@ const MAP_FOLDERS={"Adventure": "adventure", "Great Sea": "great-sea", "Master Q
 /* ═══ STATE ═══ */
 const LS='hwde_kb_v2';
 let S=(()=>{try{return JSON.parse(localStorage.getItem(LS))||{};}catch(e){return{};}})();
-if(!S.foods)S.foods={};if(!S.fairies)S.fairies={};if(!S.rewards)S.rewards={};
+if(!S.foods)S.foods={};if(!S.fairies)S.fairies={};if(!S.rewards)S.rewards={};if(!S.searches)S.searches={};
 function save(){
   try{localStorage.setItem(LS,JSON.stringify(S));
     const i=document.getElementById('saveInd');i.classList.add('show');
@@ -198,6 +198,9 @@ function fv(fn,f){return S.foods[fn]?.[f]!==undefined?S.foods[fn][f]:(KB.kb_food
 function yv(k,f){return S.fairies[k]?.[f]!==undefined?S.fairies[k][f]:(KB.kb_fairies[k]?.[f]??null);}
 function togFood(fn,f){if(!S.foods[fn])S.foods[fn]={};S.foods[fn][f]=!fv(fn,f);save();rerender();}
 function togFairy(k,f){if(!S.fairies[k])S.fairies[k]={};S.fairies[k][f]=!yv(k,f);save();rerender();}
+function sv(mn,coord,card){return S.searches[mn+'|'+coord+'|'+card]===true;}
+function togSearch(mn,coord,card){const k=mn+'|'+coord+'|'+card;if(!S.searches)S.searches={};S.searches[k]=!S.searches[k];save();rerender();}
+function searchDone(mn,coord){const gk=coord[0]+'-'+coord.slice(1);const gd=GUIDE[mn]?GUIDE[mn][gk]:null;if(!gd||!gd.search||gd.search.length===0)return true;return gd.search.every(item=>sv(mn,coord,item.card));}
 function rv(mn,coord,field){return S.rewards[mn+'|'+coord+'|'+field]===true;}
 function togRew(mn,coord,field){const k=mn+'|'+coord+'|'+field;S.rewards[k]=!S.rewards[k];save();rerender();}
 function rerender(){
@@ -222,6 +225,7 @@ const ICO={
   card:{bg:'var(--card)',cls:'ico-s',dot:'rew-dot rew-sq',title:'Carte-Objet'},
   wpn:{bg:'var(--wpn)',cls:'ico-c',dot:'rew-dot',title:'Arme / Grande Fée'},
   cos:{bg:'var(--cos)',cls:'ico-s',dot:'rew-dot rew-sq',title:'Tenue fée'},
+  srch:{bg:'#2a6a4a',cls:'ico-s',dot:'rew-dot rew-sq',title:'Recherche à compléter'},
 };
 function lootIco(text){
   if(!text)return null;
@@ -244,7 +248,10 @@ function tileRewards(t){
 function activeIcons(t,mn,coord){
   const byType={};
   tileRewards(t).filter(r=>r.ico).forEach(item=>(byType[item.ico]||(byType[item.ico]=[])).push(item));
-  return Object.entries(byType).filter(([ic,items])=>!items.every(it=>rv(mn,coord,it.field))).map(([ic])=>ic);
+  const _icos=Object.entries(byType).filter(([ic,items])=>!items.every(it=>rv(mn,coord,it.field))).map(([ic])=>ic);
+  const gk2=coord[0]+'-'+coord.slice(1);const gd2=GUIDE[mn]?GUIDE[mn][gk2]:null;
+  if(gd2&&gd2.search&&gd2.search.length>0&&!searchDone(mn,coord))_icos.push('srch');
+  return _icos;
 }
 function skullRemaining(t,mn,coord){
   if(!t.s)return 0;
@@ -475,7 +482,7 @@ const LOOT_T=[
   ['Dragon Spear','Lance du Dragon'],['Magic Rod','Baguette Magique'],
   ['Dominion Rod','Baguette Dominante'],['Summoning Gate',"Portail d'Invocation"],
   ['Zora Scale','Écaille Zora'],['Ring','Anneau'],['Spear','Lance'],
-  ['Baton','Bâton'],['Mask','Masque']];
+  ['Baton','Bâton'],['Mask','Masque'],['Agitha','Machaon']];
 function tMis(s){if(!s)return s;for(const[p,r]of MIS_PRE)s=s.replace(p,r);for(const[en,fr]of MIS_PH)s=s.split(en).join(fr);return s;}
 function tLoot(s){if(!s)return s;for(const[en,fr]of LOOT_T)s=s.split(en).join(fr);return tKeep(s);}
 function tSearch(s){if(!s)return s;let r=s;for(const[en,fr]of SEARCH_PH)r=r.replace(en,fr);return r;}
@@ -640,9 +647,13 @@ function buildDetail(mn2,coord,t){
     if(searchItems.length===0){
       h+=`<div class="search-none">Pas de recherche requise pour cette case.</div>`;
     } else {
-      searchItems.forEach(item=>{
+      searchItems.forEach((item,si)=>{
         const desc=tSearch(item.desc);
-        const _ico=CARD_ICONS[item.card]?`<img src="${CARD_ICONS[item.card]}" style="width:20px;height:20px;image-rendering:pixelated;flex-shrink:0;border-radius:2px" />`:'';h+=`<div class="search-item">${_ico}<span class="card-badge">${item.card_fr||item.card}</span><span>${desc}</span></div>`;
+        const done=sv(mn2,coord,item.card);
+        const safeMn=mn2.replace(/'/g,"\\'");
+        const safeCard=(item.card||'').replace(/'/g,"\\'");
+        const _ico=CARD_ICONS[item.card]?`<img src="${CARD_ICONS[item.card]}" style="width:20px;height:20px;image-rendering:pixelated;flex-shrink:0;border-radius:2px" />`:'';        const tgFn=`togSearch('${safeMn}','${coord}','${safeCard}')`;
+        h+=`<div class="search-item${done?' done':''}">${_ico}<span class="card-badge">${item.card_fr||item.card}</span><span class="search-desc" style="flex:1">${desc}</span>${togBtn(done,'Fait','À faire',tgFn)}</div>`;
       });
     }
     if(guideData.boss_key){
