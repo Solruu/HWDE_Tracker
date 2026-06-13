@@ -716,7 +716,7 @@ function cellWalls(mapName,coord){
   const dims=MAP_DIMS[mapName];if(!dims)return null;
   const letters=dims.rows,col=coord[0],row=parseInt(coord.slice(1));
   const ci=letters.indexOf(col);if(ci<0)return null;
-  const sh=[],W='rgba(0,0,0,0.82)';
+  const sh=[],W='#ff6600';
   if(ci<letters.length-1&&ws.has(col+row+'>'+letters[ci+1]+row))sh.push('inset -4px 0 0 0 '+W);
   if(ci>0&&ws.has(letters[ci-1]+row+'>'+col+row))sh.push('inset 4px 0 0 0 '+W);
   if(ws.has(col+row+'>'+col+(row+1)))sh.push('inset 0 -4px 0 0 '+W);
