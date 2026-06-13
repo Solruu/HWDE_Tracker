@@ -833,6 +833,8 @@ function cellWalls(mapName,coord){
   const letters=dims.rows,col=coord[0],row=parseInt(coord.slice(1));
   const ci=letters.indexOf(col);if(ci<0)return null;
   const sh=[];
+  // Alias : Master maps partagent les murs de leur map de base
+  const aliasMap=(typeof MAP_ALIASES!=='undefined'&&MAP_ALIASES[mapName])||mapName;
   function sides(set,C){
     if(!set||!set.size)return;
     if(ci<letters.length-1&&set.has(col+row+'>'+letters[ci+1]+row))sh.push('inset -4px 0 0 0 '+C);
@@ -840,8 +842,9 @@ function cellWalls(mapName,coord){
     if(set.has(col+row+'>'+col+(row+1)))sh.push('inset 0 -4px 0 0 '+C);
     if(row>1&&set.has(col+(row-1)+'>'+col+row))sh.push('inset 0 4px 0 0 '+C);
   }
-  sides(MAP_WALLS[mapName],'#ff6600');
-  sides(typeof MAP_WINDS!=='undefined'?MAP_WINDS[mapName]:null,'#44ccff');
+  sides(MAP_WALLS[aliasMap],'#ff6600');                                          // murs confirmés (orange)
+  sides(typeof MAP_WINDS!=='undefined'?MAP_WINDS[mapName]:null,'#44ccff');       // nuages confirmés (bleu)
+  sides(typeof MAP_UNCONFIRMED!=='undefined'?MAP_UNCONFIRMED[mapName]:null,'#ffee44'); // incertains (jaune)
   return sh.length?sh.join(','):null;
 }
 
@@ -849,6 +852,32 @@ function cellWalls(mapName,coord){
  * Affichées en bleu, effaçables avec la Baguette des Vents in-game.
  * Exemples confirmés par le joueur : A1>A2, F1>G1, M3>M4.
  * ═══════════════════════════════════════════════════════════════════════ */
+/* ═══ ALIASES DE MAPS (Master = version difficile du même terrain) ═════════
+ * MAP_WALLS est partagé ; MAP_WINDS et MAP_UNCONFIRMED restent distincts.  */
+const MAP_ALIASES={
+  "Master Wind Waker":"Great Sea",
+  "Master Quest":"Adventure"   // à valider in-game (même overworld NES LoZ)
+};
+
+/* ═══ FRONTIÈRES INCERTAINES — à confirmer in-game (jaune #ffee44) ════════
+ * Soit position ambiguë (±1 rang), soit type wall/nuage à vérifier.       */
+const MAP_UNCONFIRMED={
+  "Master Wind Waker":new Set([
+    // Ligne nuage A-B (GS avait A4>A5/B4>B5, MWW semble décalé vers A3>A4)
+    "A4>A5","B4>B5",           // si A3>A4 confirmé, ceux-ci disparaissent
+    "A6>A7",                   // GS avait ça — MWW ?
+    // Continuation ligne F-G verticale
+    "F3>G3",
+    // Ligne rang 3-4 droite (GS avait K-N, présente en MWW ?)
+    "K3>K4","L3>L4","M3>M4","N3>N4",
+    // Côtés de l'enclos L2-M2 : zig-zag ou nuage ?
+    "M1>M2","M2>N2",
+    // Zone rang 6-7 visible sur image 2 (côté droit)
+    "E6>E7","F6>F7"
+  ])
+};
+
+
 const MAP_WINDS={
   "Great Sea":new Set([
     // Horizontales (entre rangs)
@@ -858,6 +887,12 @@ const MAP_WINDS={
     "K3>K4","L3>L4","M3>M4","N3>N4",
     // Verticales (entre colonnes)
     "F1>G1","F2>G2","F3>G3"  // confirmé joueur F1>G1
+  ]),
+  "Master Wind Waker":new Set([
+    // Nuages CONFIRMÉS Master Wind Waker (captures in-game)
+    "A3>A4",                   // ligne nuage gauche — confirmé image 2 (A3 visible en haut)
+    "F1>G1","F2>G2",           // ligne F-G verticale — confirmé (identique Great Sea)
+    "H3>H4","I3>I4"            // sortie sud enclos H3-I3 — confirmé image 4
   ])
 };
 function renderAll(){tabsEl.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.map===activeMap));renderGrid();closeModal();window._dm=null;window._dc=null;}
