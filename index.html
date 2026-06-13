@@ -735,20 +735,80 @@ const MAP_WALLS={
     "N2>N3","N3>N4","N5>N6","N6>N7",
     "O5>O6","O6>O7","O7>O8",
     "P5>P6"
+  ]),
+
+  "Great Sea":new Set([
+    // ── A1-B1 enclos orange ──────────────────────────────────────────────────
+    "B1>C1","B1>B2",
+    // ── B2 enclos pierre ─────────────────────────────────────────────────────
+    "A2>B2","B2>C2","B2>B3",
+    // ── B3 enclos bleu ───────────────────────────────────────────────────────
+    "A3>B3","B3>C3","B3>B4",
+    // ── B4 enclos pierre ─────────────────────────────────────────────────────
+    "A4>B4","B4>C4",
+    // ── Zone pierre C4-C5 ────────────────────────────────────────────────────
+    "C3>C4","C4>D4","C5>D5","C5>C6",
+    // ── D2 enclos orange (ouvert au sud vers D3) ─────────────────────────────
+    "D1>D2","C2>D2","D2>E2",
+    // ── E4 enclos pierre ─────────────────────────────────────────────────────
+    "E3>E4","D4>E4","E4>F4","E4>E5",
+    // ── H2-I2-H3-I3 forteresse orange ────────────────────────────────────────
+    "G2>H2","H1>H2","G3>H3",
+    "I2>J2","I3>J3","H3>H4","I3>I4",
+    // ── L2-M2 enclos orange ──────────────────────────────────────────────────
+    "K2>L2","L1>L2","M1>M2","M2>N2",
+    "L2>L3","M2>M3",
+    // ── L3 enclos pierre gris ────────────────────────────────────────────────
+    "K3>L3","L3>M3",
+    // ── G4 petit enclos + structure H4-I4 ────────────────────────────────────
+    "G3>G4","G4>G5","G4>H4","H4>I4",
+    // ── K4-K5 île verte ──────────────────────────────────────────────────────
+    "J4>K4","J5>K5","K5>L5",
+    // ── K6-L6 enclos vert ────────────────────────────────────────────────────
+    "K5>K6","J6>K6","L6>M6","K6>K7","L6>L7",
+    // ── A7 enclos pierre ─────────────────────────────────────────────────────
+    "A7>B7",
+    // ── C7-D7 structure blanche ──────────────────────────────────────────────
+    "B7>C7","C6>C7","D6>D7","D7>E7",
+    // ── E7 enclos orange ─────────────────────────────────────────────────────
+    "E6>E7","E7>F7",
+    // ── Divers ───────────────────────────────────────────────────────────────
+    "G6>G7"
   ])
+
 };
 function cellWalls(mapName,coord){
-  const ws=MAP_WALLS[mapName];if(!ws||!ws.size)return null;
   const dims=MAP_DIMS[mapName];if(!dims)return null;
   const letters=dims.rows,col=coord[0],row=parseInt(coord.slice(1));
   const ci=letters.indexOf(col);if(ci<0)return null;
-  const sh=[],W='#ff6600';
-  if(ci<letters.length-1&&ws.has(col+row+'>'+letters[ci+1]+row))sh.push('inset -4px 0 0 0 '+W);
-  if(ci>0&&ws.has(letters[ci-1]+row+'>'+col+row))sh.push('inset 4px 0 0 0 '+W);
-  if(ws.has(col+row+'>'+col+(row+1)))sh.push('inset 0 -4px 0 0 '+W);
-  if(row>1&&ws.has(col+(row-1)+'>'+col+row))sh.push('inset 0 4px 0 0 '+W);
+  const sh=[];
+  function sides(set,C){
+    if(!set||!set.size)return;
+    if(ci<letters.length-1&&set.has(col+row+'>'+letters[ci+1]+row))sh.push('inset -4px 0 0 0 '+C);
+    if(ci>0&&set.has(letters[ci-1]+row+'>'+col+row))sh.push('inset 4px 0 0 0 '+C);
+    if(set.has(col+row+'>'+col+(row+1)))sh.push('inset 0 -4px 0 0 '+C);
+    if(row>1&&set.has(col+(row-1)+'>'+col+row))sh.push('inset 0 4px 0 0 '+C);
+  }
+  sides(MAP_WALLS[mapName],'#ff6600');
+  sides(typeof MAP_WINDS!=='undefined'?MAP_WINDS[mapName]:null,'#44ccff');
   return sh.length?sh.join(','):null;
 }
+
+/* ═══ BARRIÈRES DE NUAGES (Règle Grande Mer — Baguette des Vents) ═══════════
+ * Affichées en bleu, effaçables avec la Baguette des Vents in-game.
+ * Exemples confirmés par le joueur : A1>A2, F1>G1, M3>M4.
+ * ═══════════════════════════════════════════════════════════════════════ */
+const MAP_WINDS={
+  "Great Sea":new Set([
+    // Horizontales (entre rangs)
+    "A1>A2",           // confirmé joueur
+    "A4>A5","B4>B5",
+    "A6>A7",
+    "K3>K4","L3>L4","M3>M4","N3>N4",
+    // Verticales (entre colonnes)
+    "F1>G1","F2>G2","F3>G3"  // confirmé joueur F1>G1
+  ])
+};
 function renderAll(){tabsEl.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.map===activeMap));renderGrid();closeModal();window._dm=null;window._dc=null;}
 
 const mn_=s=>s.replace(/\s/g,'_');
