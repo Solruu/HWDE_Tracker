@@ -678,6 +678,49 @@ renderAll();
 };
   tabsEl.appendChild(t);
 });
+
+/* ═══ MURS D'ADJACENCE ══════════════════════════════════════════════════════
+ * "CoordA>CoordB" : A est à gauche (mur H) ou au-dessus (mur V) de B
+ * Source : captures in-game carte principale v2.7 — juin 2026
+ * Incertains commentés, à confirmer en jeu.
+ * ════════════════════════════════════════════════════════════════════════ */
+const MAP_WALLS={
+  "Adventure":new Set([
+    "D1>E1","E1>F1",
+    "B2>C2",
+    "B3>C3",
+    "B4>C4","G4>H4","L4>M4","O4>P4",
+    "B5>C5","E5>F5",
+    "A6>B6",
+    "J1>K1",
+    "K2>L2",
+    "A2>A3","A5>A6","A6>A7",
+    "B2>B3","B5>B6",
+    "C2>C3","C4>C5",
+    "D2>D3",
+    "E2>E3",
+    "F5>F6",
+    "G2>G3","G3>G4","G4>G5",
+    "H2>H3","H4>H5",
+    "I2>I3",
+    "J2>J3",
+    "K2>K3",
+    "L1>L2",
+    "P3>P4"
+  ])
+};
+function cellWalls(mapName,coord){
+  const ws=MAP_WALLS[mapName];if(!ws||!ws.size)return null;
+  const dims=MAP_DIMS[mapName];if(!dims)return null;
+  const letters=dims.rows,col=coord[0],row=parseInt(coord.slice(1));
+  const ci=letters.indexOf(col);if(ci<0)return null;
+  const sh=[],W='rgba(0,0,0,0.82)';
+  if(ci<letters.length-1&&ws.has(col+row+'>'+letters[ci+1]+row))sh.push('inset -4px 0 0 0 '+W);
+  if(ci>0&&ws.has(letters[ci-1]+row+'>'+col+row))sh.push('inset 4px 0 0 0 '+W);
+  if(ws.has(col+row+'>'+col+(row+1)))sh.push('inset 0 -4px 0 0 '+W);
+  if(row>1&&ws.has(col+(row-1)+'>'+col+row))sh.push('inset 0 4px 0 0 '+W);
+  return sh.length?sh.join(','):null;
+}
 function renderAll(){tabsEl.querySelectorAll('.tab').forEach(t=>t.classList.toggle('active',t.dataset.map===activeMap));renderGrid();closeModal();window._dm=null;window._dc=null;}
 
 const mn_=s=>s.replace(/\s/g,'_');
@@ -715,6 +758,7 @@ function renderGrid(){
       cell.className='cell'+(t?'':' empty');cell.dataset.coord=coord;
       cell.id='cell-'+mn_(activeMap)+'-'+coord;
       if(t){cell.style.background=DCSS[t.d||0];buildCell(cell,t,activeMap,coord);
+        const _ws=cellWalls(activeMap,coord);if(_ws)cell.style.boxShadow=_ws;
         if(activeFilter!=='all'){var _f=FILTERS_DEF.find(function(f){return f.id===activeFilter;});if(_f&&!_f.test(t)){cell.style.opacity='0.12';cell.style.filter='grayscale(1)';}}
         // handler via delegation
       }else cell.innerHTML=`<div class="c-coord">${coord}</div>`;
