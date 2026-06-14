@@ -694,7 +694,7 @@ const MAP_WALLS={
     "A6>B6",
     "J1>K1",
     "K2>L2",
-    "A2>A3","A5>A6","A6>A7",
+    "A2>A3","A5>A6",
     "B2>B3","B5>B6",
     "C2>C3","C4>C5",
     "D2>D3",
@@ -719,7 +719,7 @@ const MAP_WALLS={
     "G6>H6","H6>I6","I6>J6","M6>N6","N6>O6",
     "G7>H7","H7>I7","I7>J7","K7>L7","L7>M7","N7>O7","O7>P7",
     "G8>H8","K8>L8","L8>M8",
-    "A2>A3","A5>A6","A6>A7",
+    "A2>A3","A5>A6",
     "B2>B3","B5>B6","B6>B7",
     "C2>C3","C5>C6",
     "D3>D4","D5>D6",
@@ -774,58 +774,6 @@ const MAP_WALLS={
     "E6>E7","E7>F7",
     // ── Divers ───────────────────────────────────────────────────────────────
     "G6>G7"
-  ]),
-  "Master Quest":new Set([
-    // ── NB : Adventure Map et Master Quest utilisent le même overworld NES LoZ
-    //        → même topologie de murs. Données issues des captures MQ (labellisées).
-    // ── Murs HORIZONTAUX ─────────────────────────────────────────────────────
-    // Rang 1
-    "E1>F1","F1>G1","O1>P1",
-    // Rang 2
-    "C2>D2",
-    // Rang 3
-    "B3>C3","C3>D3","O3>P3",
-    // Rang 4
-    "B4>C4","E4>F4","L4>M4","M4>N4","O4>P4",
-    // Rang 5
-    "B5>C5","E5>F5","O5>P5",
-    // Rang 6
-    "K6>L6",
-    // Rang 8
-    "A8>B8","L8>M8",
-    // ── Murs VERTICAUX ────────────────────────────────────────────────────────
-    // Col A : zone grise armée
-    "A2>A3","A6>A7",
-    // Col B
-    "B2>B3","B5>B6",
-    // Col C : forteresse orange C3
-    "C2>C3","C4>C5","C5>C6",
-    // Col D
-    "D2>D3","D5>D6",
-    // Col E
-    "E1>E2","E2>E3","E5>E6",
-    // Col F : transitions forêt/sable/eau/enclos vert
-    "F2>F3","F4>F5","F5>F6",
-    // Col G : forêt puis eau
-    "G1>G2","G2>G3","G3>G4","G4>G5",
-    // Col H : lac H3 + structure H4
-    "H2>H3","H3>H4","H4>H5",
-    // Col I : forêt→sable→zone verte
-    "I1>I2","I2>I3","I3>I4",
-    // Col J
-    "J1>J2","J2>J3","J3>J4","J7>J8",
-    // Col K : lac K6
-    "K2>K3","K5>K6","K6>K7","K7>K8",
-    // Col L
-    "L2>L3","L7>L8",
-    // Col M : enclos vert M4
-    "M1>M2","M3>M4","M7>M8",
-    // Col N
-    "N1>N2","N2>N3",
-    // Col O
-    "O2>O3",
-    // Col P : enclos armée P1/P3, eau P4-P5
-    "P1>P2","P2>P3","P3>P4","P5>P6"
   ]),
 };
 function cellWalls(mapName,coord){
