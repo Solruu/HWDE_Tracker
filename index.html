@@ -774,7 +774,13 @@ const MAP_WALLS={
     "E6>E7","E7>F7",
     // ── Divers ───────────────────────────────────────────────────────────────
     "G6>G7"
-  ]),
+  ]),,
+  "Twilight":new Set([
+    // Horizontaux (bloquent mouvement haut↔bas)
+    "A-3>A-4","B-3>B-4","B-5>B-6","C-3>C-4","C-5>C-6","D-3>D-4","E-1>E-2","E-3>E-4","E-4>E-5","E-5>E-6","F-3>F-4","G-3>G-4","G-5>G-6","H-3>H-4","H-4>H-5","H-5>H-6","I-3>I-4","I-5>I-6","J-3>J-4","J-5>J-6","K-3>K-4","K-5>K-6","L-5>L-6","M-5>M-6",
+    // Verticaux (bloquent mouvement gauche↔droite)
+    "D-1>E-1","E-1>F-1","G-4>H-4","H-4>I-4","K-3>L-3","L-4>M-4","M-4>N-4"
+  ])
 };
 function cellWalls(mapName,coord){
   const dims=MAP_DIMS[mapName];if(!dims)return null;
