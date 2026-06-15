@@ -34,7 +34,7 @@ main{flex:1;overflow:hidden}
 .grid-info b{color:var(--text)}
 .gi-f{color:var(--light)}.gi-fd{color:#88aacc}.gi-sk{color:#aaa}
 .map-grid{display:grid;gap:2px}
-.cell{width:40px;height:40px;border:1px solid var(--border);border-radius:3px;cursor:pointer;touch-action:manipulation;
+.cell{width:40px;height:40px;border:1px solid var(--border);border-radius:3px;cursor:pointer;touch-action:manipulation;position:relative;
       position:relative;display:flex;flex-direction:column;align-items:center;
       justify-content:center;gap:1px;padding:1px;overflow:hidden;transition:border-color .1s,transform .08s}
 .cell:hover{border-color:var(--gold)!important;transform:scale(1.08);z-index:2}
@@ -125,6 +125,16 @@ main{flex:1;overflow:hidden}
 ::-webkit-scrollbar{width:5px;height:5px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+
+.portal-badge{
+  display:inline-flex;align-items:center;gap:2px;
+  background:rgba(160,80,220,0.85);
+  color:#fff;font-size:9px;font-weight:bold;
+  border-radius:3px;padding:1px 3px;
+  position:absolute;bottom:2px;right:2px;
+  line-height:1;cursor:default;z-index:2;
+  border:1px solid rgba(220,160,255,0.5);
+}
 </style>
 </head>
 <body>
@@ -684,6 +694,7 @@ renderAll();
  * Source : captures in-game carte principale v2.7 — juin 2026
  * Incertains commentés, à confirmer en jeu.
  * ════════════════════════════════════════════════════════════════════════ */
+const MAP_PORTALS={"Lorule":{"A3":"I3","I3":"A3","A8":"I8","I8":"A8","C6":"K6","K6":"C6","E1":"M1","M1":"E1","E8":"M8","M8":"E8","F4":"N4","N4":"F4","F6":"N6","N6":"F6","H2":"P2","P2":"H2","H7":"P7","P7":"H7"}};
 const MAP_WALLS={
   "Adventure":new Set([
     "D1>E1","E1>F1",
@@ -876,7 +887,9 @@ function buildCell(cell,t,mapName,coord){
   r1+='</div>';
   const icons=activeIcons(t,mapName,coord);
   const skR=skullRemaining(t,mapName,coord);
-  cell.innerHTML=`<div class="c-coord">${coord}</div>`+r1+icoRow(icons,skR);
+  const _pDest=MAP_PORTALS?.[mapName]?.[coord];
+  const _pBadge=_pDest?`<div class="portal-badge" title="Portail → ${_pDest}">⧉ ${_pDest}</div>`:'';
+  cell.innerHTML=`<div class="c-coord">${coord}</div>`+r1+icoRow(icons,skR)+_pBadge;
   cell.classList.toggle('all-done',cellDone(t,mapName,coord));
 }
 function refreshCell(mn2,coord){
