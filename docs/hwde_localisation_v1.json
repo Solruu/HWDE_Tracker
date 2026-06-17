@@ -1,0 +1,387 @@
+{
+  "meta": {
+    "fichier": "hwde_localisation_v1.json",
+    "objet": "Cartographie du système de localisation FR du tracker HWDE (index.html) + todo-list d'enrichissement + audit inter-fichiers",
+    "version": "1.0",
+    "date": "2026-06-17",
+    "cible": "Solruu/HWDE_Tracker / index.html",
+    "note": "v1 initiale. Créée suite à l'audit de localisation (script audit_localisation.js). Inclut l'état APRÈS correctif #1 (commit 857a7aceba : traduction des règles de mission)."
+  },
+  "echelle_confiance": {
+    "HIGH": "Vérifié par exécution réelle des fonctions JS du tracker (script audit_localisation.js) OU confirmé en jeu DE",
+    "MEDIUM": "Déduit de la lecture du code source du tracker, non exécuté",
+    "LOW": "Hypothèse non vérifiée"
+  },
+  "architecture": {
+    "confidence": "HIGH",
+    "principe": "Localisation à la volée par dictionnaires de substitution. Les données restent en anglais dans MAPS_RAW ; buildDetail() traduit chaque champ au rendu via des fonctions pures appliquant des dictionnaires. GUIDE est une structure parallèle déjà bilingue (card EN + card_fr FR + desc FR).",
+    "structures_donnees": {
+      "MAPS_RAW": {
+        "role": "Données brutes par case, EN (sauf lv désormais FR)",
+        "cle": "format 'A1' (sans tiret)",
+        "champs": {
+          "m": "mission + règles (EN) — séparées par ' · '",
+          "d": "difficulté (int 0-6)",
+          "la": "récompense A : arme/cœur (EN)",
+          "lv": "récompense V : carte-objet/costume (carte=FR depuis commit lv-i18n, reste EN)",
+          "ta": "temps rang A",
+          "ka": "KO requis (nombre)",
+          "da": "dégâts max (nombre)",
+          "t": "trésors dans la case (array, EN)",
+          "f": "fée {element, location}",
+          "ff": "foods [{name, location}]",
+          "s": "skulltula présente (bool)"
+        }
+      },
+      "GUIDE": {
+        "role": "Données enrichies FR par case",
+        "cle": "format 'A-1' (avec tiret) — CONVERSION nécessaire depuis MAPS_RAW",
+        "champs": {
+          "search[]": "{card (EN), card_fr (FR), desc (FR)}",
+          "skull_1": "condition skulltula 1 (FR)",
+          "skull_2": "condition skulltula 2 (FR)",
+          "boss_key": "clé de boss (EN → tKeep au rendu)",
+          "notes[]": "notes diverses"
+        }
+      }
+    },
+    "fonctions_traduction": {
+      "tMis(s)": {
+        "dicts": [
+          "MIS_PRE (regex préfixes)",
+          "MIS_PH (phrases)"
+        ],
+        "applique_sur": [
+          "m",
+          "ta"
+        ]
+      },
+      "tLoot(s)": {
+        "dicts": [
+          "LOOT_T",
+          "puis tKeep"
+        ],
+        "applique_sur": [
+          "la",
+          "lv",
+          "t[]"
+        ]
+      },
+      "tKeep(s)": {
+        "dicts": [
+          "BASE_LOC",
+          "DIR_MAP via tBase"
+        ],
+        "applique_sur": [
+          "locations fées/foods",
+          "boss_key"
+        ]
+      },
+      "tBase(s)": {
+        "dicts": [
+          "BASE_LOC"
+        ],
+        "note": "sous-fonction de tKeep, traduit les noms de forts/lieux"
+      },
+      "tSearch(s)": {
+        "dicts": [
+          "SEARCH_PH"
+        ],
+        "applique_sur": [
+          "GUIDE.search[].desc"
+        ]
+      },
+      "tSkull(s)": {
+        "dicts": [
+          "phrases inline + tKeep"
+        ],
+        "applique_sur": [
+          "skull_1",
+          "skull_2"
+        ]
+      },
+      "efr/eb": {
+        "dicts": [
+          "EFR"
+        ],
+        "applique_sur": [
+          "éléments fées/foods (Light→Lumière)"
+        ]
+      }
+    },
+    "dictionnaires": {
+      "MIS_PRE": "préfixes de mission (regex) : 'Adventure Battle:'→'Bataille :', règles. 11 entrées après correctif #1.",
+      "MIS_PH": "phrases de mission/règles (substitution littérale)",
+      "LOOT_T": "noms de récompenses : Heart Container→Réceptacle de Cœur, etc.",
+      "BASE_LOC": "noms de forts/lieux : Dark Forest Keep→Fort de la Forêt Sombre",
+      "DIR_MAP": "directions : North→Nord, NW→Nord-Ouest",
+      "SEARCH_PH": "descriptions de recherche : 'Bomb the rock'→'Bombez le rocher'",
+      "EFR": "éléments : Light→Lumière, Darkness→Ténèbres, Fire→Feu, Water→Eau, Lightning→Foudre"
+    },
+    "piege_cle": "GUIDE utilise 'A-1', MAPS_RAW utilise 'A1'. buildDetail convertit via coord[0]+'-'+coord.slice(1)."
+  },
+  "todo_localisation": {
+    "confidence": "HIGH",
+    "methode": "Mesuré par exécution réelle des dictionnaires (audit_localisation.js) sur index.html APRÈS correctif #1.",
+    "etat_post_correctif_1": {
+      "t": {
+        "distinctes": 99,
+        "occurrences": 102,
+        "exemples": [
+          {
+            "en": "Fairy Accessory - Demon Lord Earrings (Mountain Keep)",
+            "rendu": "Accessoire Fée - Demon Lord Earrings (Fort de la Montagne)"
+          },
+          {
+            "en": "Heart Container - Ganondorf (South Garden)",
+            "rendu": "Réceptacle de Cœur - Ganondorf (South Jardin)"
+          },
+          {
+            "en": "Fairy Top - Skyloft Shirt (West Ruins)",
+            "rendu": "Vêtement Fée (Haut) - Skyloft Shirt (West Ruines)"
+          },
+          {
+            "en": "Piece of Heart - Toon Link (West Square)",
+            "rendu": "Fragment de Cœur - Toon Link (West Place)"
+          },
+          {
+            "en": "Piece of Heart - Zelda (South Temple)",
+            "rendu": "Fragment de Cœur - Zelda (South Temple)"
+          }
+        ]
+      },
+      "m": {
+        "distinctes": 300,
+        "occurrences": 410,
+        "exemples": [
+          {
+            "en": "Challenge Battle: Guard the allied keeps with your life! Lv.1",
+            "rendu": "Défi : Guard the allied keeps with your life! Lv.1"
+          },
+          {
+            "en": "Challenge Battle: Put an end to the enemy's divisive plan! Lv.4",
+            "rendu": "Défi : Put an end to the enemy's divisive plan! Lv.4"
+          },
+          {
+            "en": "Adventure Battle: Defeat the disorderly forces! Lv.2",
+            "rendu": "Bataille : Defeat the disorderly forces! Lv.2"
+          },
+          {
+            "en": "Challenge Battle: Put an end to the enemy's divisive plan! Lv.2",
+            "rendu": "Défi : Put an end to the enemy's divisive plan! Lv.2"
+          },
+          {
+            "en": "Challenge Battle: Put an end to the enemy's divisive plan! Lv.3",
+            "rendu": "Défi : Put an end to the enemy's divisive plan! Lv.3"
+          }
+        ]
+      },
+      "lv": {
+        "distinctes": 37,
+        "occurrences": 44,
+        "exemples": [
+          {
+            "en": "Masque Goron (Carte-Objet)",
+            "rendu": "Masque Goron (Carte-Objet)"
+          },
+          {
+            "en": "Masque Zora (Carte-Objet)",
+            "rendu": "Masque Zora (Carte-Objet)"
+          },
+          {
+            "en": "Knight of Skyloft - Link",
+            "rendu": "Knight of Skyloft - Link"
+          },
+          {
+            "en": "Skyloft Robes - Zelda",
+            "rendu": "Skyloft Robes - Zelda"
+          },
+          {
+            "en": "Zora Tunic - Link",
+            "rendu": "Tunique Zora - Link"
+          }
+        ]
+      },
+      "la": {
+        "distinctes": 17,
+        "occurrences": 17,
+        "exemples": [
+          {
+            "en": "Agitha's Pendant Material",
+            "rendu": "Machaon's Pendant Matériau"
+          },
+          {
+            "en": "King Daphnes's Crown Material",
+            "rendu": "King Daphnes's Crown Matériau"
+          },
+          {
+            "en": "Island Outfit Material",
+            "rendu": "Island Outfit Matériau"
+          },
+          {
+            "en": "Zora Scale Lv.2 - Ruto",
+            "rendu": "Écaille Zora Niv.2 - Ruto"
+          },
+          {
+            "en": "Tetra's Bandana Material",
+            "rendu": "Tetra's Bandana Matériau"
+          }
+        ]
+      },
+      "location": {
+        "distinctes": 8,
+        "occurrences": 26,
+        "exemples": [
+          {
+            "en": "Enemy Base [Pot]",
+            "rendu": "Base Ennemie [Pot]"
+          },
+          {
+            "en": "Central Square [Pot]",
+            "rendu": "Central Place [Pot]"
+          },
+          {
+            "en": "West Temple [Pot]",
+            "rendu": "Temple Ouest [Pot]"
+          },
+          {
+            "en": "Exit Square [Pot]",
+            "rendu": "Exit Place [Pot]"
+          },
+          {
+            "en": "Central Chamber [Pot]",
+            "rendu": "Central Chambre [Pot]"
+          }
+        ]
+      },
+      "boss_key": {
+        "distinctes": 6,
+        "occurrences": 10,
+        "exemples": [
+          {
+            "en": "Couloir Central",
+            "rendu": "Couloir Central"
+          },
+          {
+            "en": "Central Hall",
+            "rendu": "Central Couloir"
+          },
+          {
+            "en": "West Temple",
+            "rendu": "Temple Ouest"
+          },
+          {
+            "en": "Exit Square",
+            "rendu": "Exit Place"
+          },
+          {
+            "en": "East Temple",
+            "rendu": "Temple Est"
+          }
+        ]
+      }
+    },
+    "priorites": [
+      {
+        "champ": "m",
+        "dict": "MIS_PH",
+        "reste": "300 titres de bataille distincts",
+        "nature": "Titres de mission EN (ex: 'Defeat the disorderly forces!', 'divisive plan!'). Nécessite traduction de contenu, pas juste ajout de règles."
+      },
+      {
+        "champ": "t",
+        "dict": "LOOT_T + BASE_LOC",
+        "reste": "99 trésors distincts",
+        "nature": "Noms d'accessoires/costumes fée (Demon Lord Earrings, Skyloft Shirt) + lieux entre parenthèses (Square→Place partiel)."
+      },
+      {
+        "champ": "lv",
+        "dict": "LOOT_T",
+        "reste": "37 distincts",
+        "nature": "Costumes accolés aux cartes (Skyloft Robes, Era of Twilight). Les cartes-objets elles-mêmes sont faites."
+      },
+      {
+        "champ": "la",
+        "dict": "LOOT_T",
+        "reste": "17 distincts",
+        "nature": "Suffixes 's Pendant Material, Crown, noms d'armes par personnage."
+      },
+      {
+        "champ": "location",
+        "dict": "BASE_LOC",
+        "reste": "8 distincts",
+        "nature": "Lieux non couverts + '[Pot]' non traduit (→'[Pot]' devrait être '[Pot]'/'[Jarre]')."
+      },
+      {
+        "champ": "boss_key",
+        "dict": "BASE_LOC",
+        "reste": "6 distincts",
+        "nature": "Lieux de clés de boss non couverts par BASE_LOC."
+      }
+    ]
+  },
+  "bugs_localisation": [
+    {
+      "id": "bug_loc_001",
+      "severity": "RÉSOLU",
+      "titre": "Règles de mission non traduites",
+      "confidence": "HIGH",
+      "description": "buildDetail fait t.m.split(' · ') AVANT tMis, retirant le préfixe ' · ' que les regex MIS_PRE exigeaient. Résultat : 'Master Quest Rule: Chrono !' etc. restaient en anglais partiel.",
+      "correctif": "Ajout de 4 variantes ancrées /^...Rule: / dans MIS_PRE. Commit 857a7aceba. Vérifié : 0 règle résiduelle, -59 occurrences sur champ m.",
+      "statut": "Poussé sur GitHub le 2026-06-17"
+    },
+    {
+      "id": "bug_loc_002",
+      "severity": "OUVERT",
+      "titre": "Pluriel cassé 'Vêtement Fée (Bas)s'",
+      "confidence": "HIGH",
+      "description": "LOOT_T contient 'Fairy Bottom' ET 'Fairy Bottoms' mais l'ordre d'application fait matcher 'Fairy Bottom' d'abord, laissant un 's' orphelin → 'Vêtement Fée (Bas)s'.",
+      "correctif_propose": "Réordonner LOOT_T pour que 'Fairy Bottoms' (plus long) soit testé AVANT 'Fairy Bottom'. Règle générale : trier les clés LOOT_T par longueur décroissante.",
+      "statut": "Non corrigé — candidat correctif #2"
+    }
+  ],
+  "audit_inter_fichiers": {
+    "confidence": "HIGH",
+    "date": "2026-06-17",
+    "perimetre": "hwde_knowledge_base_v2_8.json (standalone) vs KB embarqué dans index.html vs plan_001",
+    "incoherences": [
+      {
+        "id": "inc_001",
+        "severity": "SÉRIEUX",
+        "titre": "Noms FR des aliments périmés dans nour_011.aliments[].fr",
+        "description": "30 des 39 aliments ont un champ 'fr' obsolète dans nour_011 de la KB standalone (anciens noms mistranslatés : 'Fromage de chèvre d'Ordinn', 'Soupe Élixir', 'Verdâtre', 'Poire Hyoï'...). L'index.html (KB.kb_foods) contient déjà les noms corrigés v2.8 ('Fromage toalien', 'Soupe de mémé', 'Goujon', 'Fruit miam miam'...). La correction nour_019 a été appliquée à l'index.html et aux champs fr_bronze/fr_or, mais PAS au champ 'fr' principal de nour_011.",
+        "action": "Mettre à jour nour_011.aliments[].fr depuis KB.kb_foods de l'index.html (source faisant foi). 30 entrées à corriger.",
+        "exemples": [
+          "Ordon Goat Cheese: 'Fromage de chèvre d'Ordinn' → 'Fromage toalien'",
+          "Hyoi Pear: 'Poire Hyoï' → 'Fruit miam miam'",
+          "Greengill: 'Verdâtre' → 'Goujon'"
+        ]
+      },
+      {
+        "id": "inc_002",
+        "severity": "SÉRIEUX",
+        "titre": "plan_001 : cibles 'boisson_lumiere' qui ne sont PAS Lumière",
+        "description": "5 des 6 cibles catégorisées 'boisson_lumiere' dans plan_001 ont en réalité un autre élément, d'après les éléments du référentiel nour_011. La catégorisation date d'une époque où l'on supposait 'Boisson = Lumière'.",
+        "detail": [
+          "Grande Mer A-1 'Soupe Élixir' → élément réel FEU (pas Lumière)",
+          "Master Quest C-5 'Eau Sacrée' → élément réel EAU",
+          "Master Quest F-5 'Soupe au Potimarron' → élément réel FEU",
+          "Termina E-4 'Eau en Bouteille' → élément réel EAU",
+          "Termina G-8 'Eau des Sources Chaudes' → élément réel FEU",
+          "Crépuscule F-8 'Larmes de la Grande Fée' → LUMIÈRE (seule correcte)"
+        ],
+        "action": "Recatégoriser ces 5 cases dans plan_001 (cat + desc). Seule Crépuscule F-8 (Larmes de fées) est une vraie cible Lumière. NB : noms aussi périmés (cf inc_001)."
+      },
+      {
+        "id": "inc_003",
+        "severity": "MINEUR",
+        "titre": "xlsx projet illisible",
+        "description": "hwde_nourritures_v2_8.xlsx dans /mnt/project/ n'est pas un zip valide (BadZipFile) — copie projet tronquée ou placeholder. Audit xlsx↔KB non réalisable depuis cette copie.",
+        "action": "Re-fournir le xlsx si un audit des traits OR (xlsx vs nour_011.or_traits) est souhaité."
+      }
+    ]
+  },
+  "historique_versions": {
+    "1.0": "Création. Architecture + dictionnaires + todo-list (post-correctif #1) + 2 bugs + audit inter-fichiers (3 incohérences)."
+  }
+}
