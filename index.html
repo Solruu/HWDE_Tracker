@@ -329,7 +329,7 @@ function tKeep(s){
   const dm=DIR_RE.exec(loc);
   return(dm?tBase(dm[2])+' '+(DIR_MAP[dm[1]]||dm[1]):tBase(loc))+cont;
 }
-const MIS_PRE=[[/^Adventure Battle: /,'Bataille\u00a0: '],[/^Challenge Battle: /,'Défi\u00a0: '],
+const MIS_PRE=[[/^Master Quest Rule: /,'Règle MQ\u00a0: '],[/^Twilight Rule: /,'Règle Crépuscule\u00a0: '],[/^Great Sea Rule: /,'Règle Grande Mer\u00a0: '],[/^Endless Night Rule: /,'Règle Nuit Éternelle\u00a0: '],[/^Adventure Battle: /,'Bataille\u00a0: '],[/^Challenge Battle: /,'Défi\u00a0: '],
   [/^Final battle! /,'Combat final\u00a0! '],[/ · Master Quest Rule: /,' · Règle MQ\u00a0: '],
   [/ · Twilight Rule: /,' · Règle Crépuscule\u00a0: '],[/ · Great Sea Rule: /,' · Règle Grande Mer\u00a0: '],
   [/ · Endless Night Rule: /,' · Règle Nuit Éternelle\u00a0: ']];
