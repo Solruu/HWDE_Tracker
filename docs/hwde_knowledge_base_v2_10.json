@@ -1,0 +1,2250 @@
+{
+  "meta": {
+    "game": "Hyrule Warriors: Definitive Edition (Switch)",
+    "last_updated": "2026-06-17",
+    "version": "2.10",
+    "note": "v2.10 : NORMALISATION NOTATION. Découverte que RPG Site écrivait les coordonnées en ligne-lettre/colonne-chiffre (transposé), alors que PDF SBAllen, TheGamer, in-game et HTML utilisent colonne-lettre/ligne-chiffre (A1 haut-gauche → P8 bas-droite). Toutes les coords RPG Site/transposées alignées : fee_015 (DEBUNKED→HIGH, re-validé), fee_024, nour_006, weapon_001/003/008, plan_001. conflit_004 réétiqueté faux conflit (artefact de notation). Règle de conversion : ligne-lettre L + colonne-chiffre N  ⇔  colonne-lettre(N) + ligne-chiffre(position de L)."
+  },
+  "confidence_scale": {
+    "HIGH": "Confirmé directement en jeu par le joueur, OU recoupement multi-sources AVEC mention DE explicite",
+    "MEDIUM": "Mention DE dans au moins une source OU recoupement 2+ sources concordantes (sans garantie DE)",
+    "LOW": "Source unique, DE non précisé — info potentiellement valable sur Wii U/3DS seulement",
+    "DEBUNKED": "Formellement réfuté en jeu ou par source DE fiable",
+    "UNCERTAIN": "Partiellement documenté, sources contradictoires ou incomplètes"
+  },
+  "conflits_internes": [
+    {
+      "id": "conflit_001",
+      "severity": "GRAVE",
+      "entries_impliquees": [
+        "fee_004",
+        "fee_014",
+        "err_002"
+      ],
+      "description": "fee_004 dit que les compétences Niv25/50 sont FIXES par case (nourriture sans effet). fee_014 dit que la stat élémentaire la plus haute au moment d'atteindre ces niveaux DÉTERMINE l'effet obtenu. err_002 tente de les réconcilier en distinguant 'compétences actives' et 'effets élémentaires', mais dans le jeu ces deux termes décrivent vraisemblablement le même déclencheur. La distinction est probablement artificielle.",
+      "test_en_jeu": "Nourrir deux fées de la même case avec des nourritures élémentaires différentes. Observer si l'effet au niveau 25 diffère. Si oui : fee_014 a raison. Si non : fee_004 a raison.",
+      "resolution": "RÉSOLUE v1.2 — fee_014 a raison. 4 sources Conv2 concordantes (JeuxVideo 80%, Jeuxvideo.com 85%, Puissance-Zelda 75%, Le Palais de Zelda 75%) confirment que la nourriture détermine l'effet Niv25/50. fee_004 rétrogradé UNCERTAIN. err_002 (DEBUNKED) était lui-même incorrect."
+    },
+    {
+      "id": "conflit_002",
+      "severity": "SÉRIEUX",
+      "entries_impliquees": [
+        "fee_003",
+        "fee_012",
+        "fee_014",
+        "fee_019"
+      ],
+      "description": "fee_003 (HIGH) utilise Lacteä (Éclair avec 'Aurore') comme preuve que les arc-en-ciel sont indépendants de l'élément. Mais 'Aurore' dans fee_012 est un EFFET DE ZONE élémentaire (Lumière), et fee_019 dit que Lacteä a 'Aurore' à son niveau 25. Si c'est la même 'Aurore', alors Lacteä prouve l'indépendance des EFFETS DE ZONE vis-à-vis de l'élément natif — pas l'indépendance des compétences arc-en-ciel. La conclusion de fee_003 est probablement correcte, mais la preuve est mal attribuée.",
+      "test_en_jeu": "Vérifier dans l'École si 'Aurore' de Lacteä est listée comme compétence arc-en-ciel (trait à 255 requis) ou comme effet de zone de niveau 25.",
+      "resolution": "NON RÉSOLUE — à vérifier en jeu"
+    },
+    {
+      "id": "conflit_003",
+      "severity": "MINEUR",
+      "entries_impliquees": [
+        "fee_003"
+      ],
+      "description": "fee_003 est marquée multi_source_corroboration: true mais la seule source listée est Conv3 + confirmation en jeu (une seule source). Métadonnée incorrecte.",
+      "correction_appliquee": "multi_source_corroboration passé à false dans fee_003. Le niveau HIGH reste justifié par la confirmation directe en jeu."
+    },
+    {
+      "id": "conflit_004",
+      "severity": "RÉSOLU",
+      "entries_impliquees": [
+        "fee_015",
+        "fee_021"
+      ],
+      "description": "Coordonnées des fées Lumière contradictoires entre deux sources DE. RPG Site (fee_015) : carte principale G-8, Grande Mer B-4, Master Quest B-12, Crépuscule A-6. TheGamer (fee_021) : carte principale H-7, Grande Mer D-2, Master Quest L-2, Crépuscule F-1, Koholint G-6. Les deux sources sont explicitement HWDE. Les notations semblent identiques (lettre=ligne, chiffre=colonne selon RPG Site). Écart inexplicable par une différence de notation seule.",
+      "test_en_jeu": "Vérifier en jeu les cases G-8 et H-7 (carte principale), B-4 et D-2 (Grande Mer). Une seule devrait contenir une fée Lumière.",
+      "resolution": "RÉSOLU v2.10 — FAUX CONFLIT. L'écart RPG Site (fee_015) vs TheGamer (fee_021) n'était PAS un désaccord de données mais une différence de NOTATION : RPG Site = ligne-lettre/colonne-chiffre, TheGamer/in-game/PDF/HTML = colonne-lettre/ligne-chiffre. Transposition : G-8→H-7, B-4→D-2, B-12→L-2, A-6→F-1 = correspondance exacte 4/4. fee_015 re-validé HIGH. Aucune source n'avait tort."
+    },
+    {
+      "id": "conflit_005",
+      "severity": "SÉRIEUX",
+      "entries_impliquees": [
+        "fee_021",
+        "fee_022"
+      ],
+      "description": "TheGamer et Zelda Wiki associaient Neris (fée Lumière à nom fixe) à la case G-6 de Cocolint. Mais la fée obtenue en G-6 s'appelle Irène (nom aléatoire). Hypothèse initiale : Neris = seule fée Lumière de Cocolint → G-6 devrait donner Neris. MAIS RPG Site révèle que la carte principale a 6 fées (2 Ténèbres, pas 5 éléments uniques). La règle 'GameFAQs : 5 fées par map, une par élément' est donc FAUSSE pour la carte principale. Cocolint pourrait avoir plusieurs fées Lumière, dont l'une serait Neris à une case différente de G-6. Deux hypothèses restent ouvertes : (A) Neris est sur une autre case Lumière de Cocolint, (B) le joueur avait déjà obtenu Neris en G-6 lors d'une visite antérieure — Irène est le 'respawn' aléatoire.",
+      "test_en_jeu": "Explorer les autres cases de Cocolint avec une icône fée (pot brun dans un fort). Si une fée nommée 'Neris' apparaît dans le prompt de renommage → hypothèse A confirmée. Vérifier aussi si le joueur a déjà eu une fée de Cocolint avant cette session → hypothèse B.",
+      "resolution": "PARTIELLEMENT RÉSOLUE v1.9 — Hypothèse B éliminée : le joueur confirme n'avoir jamais complété G-6 auparavant. Irène est bien la fée de première visite de G-6. Neris est définitivement sur une autre case de Cocolint. Hypothèse A confirmée : Cocolint a au moins deux fées Lumière (G-6 = fée standard, autre case = Neris). Case exacte de Neris : inconnue. Source Legends (GameFAQs) : case des bottes Niv.2 de Linkle. Coordonnée DE non documentée dans les sources accessibles. À explorer en jeu."
+    },
+    {
+      "id": "conflit_006",
+      "severity": "SÉRIEUX",
+      "entries_impliquees": [
+        "nour_011"
+      ],
+      "description": "B06 Chateau Romani (Lait Lon Lon premium) : nour_011 marque Lumière avec element_confirme:true (source in-game Conv4 DE). GameFAQs Legends 3DS (SBAllen) liste cet aliment comme élément Ténèbres. Hypothèses : (A) changement DE vs 3DS, (B) erreur d'identification in-game.",
+      "test_en_jeu": "Nourrir une fée uniquement avec Lait Lon Lon premium et observer quelle affinité élémentaire monte dans l'onglet stats de la fée. Si Lumière → KB correct. Si Ténèbres → GameFAQs correct et KB à corriger.",
+      "resolution": "RÉSOLU v2.8 : 'Lait Lon Lon premium' = tier OR de B01 (Lait Lon Lon). Convention de nommage EXCEPTION pour ce lait : argent='Lait Lon Lon frais', or='Lait Lon Lon premium'. Chateau Romani = aliment DISTINCT B06, FR='Cuvée Romani', Ténèbres. Pas de conflit réel."
+    }
+  ],
+  "entries": [
+    {
+      "id": "fee_001",
+      "category": "FEES_SYSTEME",
+      "topic": "Traits de personnalité — structure",
+      "claim": "Chaque fée a 10 traits de personnalité : 5 actifs (visibles, valeurs 0-255) et 5 cachés (bloqués à 0). Seuls les traits actifs montent avec la nourriture.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameSpot",
+        "TheGamer"
+      ],
+      "notes": "Recoupement 2 sources concordantes. Pas de mention DE explicite dans ces sources."
+    },
+    {
+      "id": "fee_002",
+      "category": "FEES_SYSTEME",
+      "topic": "Compétences arc-en-ciel — condition de déblocage",
+      "claim": "Les 6 compétences arc-en-ciel nécessitent chacune qu'un trait spécifique atteigne la valeur 255. Aucun élément particulier n'est requis, uniquement la valeur maximale du bon trait. La compétence se débloque ensuite dans l'École (menu Ma Fée).",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameSpot",
+        "TheGamer"
+      ],
+      "notes": "Validé par la progression réelle du joueur (Endurance maxée → compétence débloquée). Nombre 6 = LOW seul mais cohérent avec les 6 traits actifs possibles."
+    },
+    {
+      "id": "fee_003",
+      "category": "FEES_SYSTEME",
+      "topic": "Compétences arc-en-ciel — indépendance vis-à-vis de l'élément",
+      "claim": "Les compétences arc-en-ciel ne sont PAS liées à l'élément de la fée. N'importe quelle fée peut obtenir n'importe quelle compétence arc-en-ciel, quelle que soit son affinité élémentaire. L'élément détermine uniquement l'attaque 'boule' et le bonus des cristaux.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Conv3 (raisonnement + confirmé en jeu : Lacteä est Éclair et a 'Aurore' soin)"
+      ],
+      "notes": "⚠️ CONFLIT_002 PARTIELLEMENT CLARIFIÉ v1.2 : avec fee_014 confirmé (nourriture détermine l'effet Niv25/50), l''Aurore' de Lacteä s'explique par la nourriture Lumière qu'elle a reçue — pas par sa case. La preuve pour fee_003 (arc-en-ciel indépendants de l'élément) reste donc indirecte. La conclusion est probablement correcte, mais Lacteä illustre fee_014, pas fee_003. Métadonnée corrigée v1.1 : multi_source mis à false."
+    },
+    {
+      "id": "fee_004",
+      "category": "FEES_SYSTEME",
+      "topic": "Compétences actives Niv25 / Niv50 — prédéterminées",
+      "claim": "INCERTAIN. Initialement affirmé que les compétences actives Niv25/50 étaient fixes par case. Contredit par 4 sources Conv2 concordantes (voir fee_014). Cette entrée est probablement incorrecte.",
+      "confidence": "UNCERTAIN",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Conv3 (auto-correction + raisonnement logique)"
+      ],
+      "notes": "⚠️ CONFLIT_001 RÉSOLU v1.2 : rétrogradé UNCERTAIN. Les 4 sources de Conv2 (JeuxVideo 80%, Jeuxvideo.com 85%, Puissance-Zelda 75%, Le Palais de Zelda 75%) confirment que c'est la nourriture élémentaire qui détermine l'effet. La conclusion de Conv3 (auto-correction) n'avait pas de source externe — elle est supersedée."
+    },
+    {
+      "id": "fee_005",
+      "category": "FEES_SYSTEME",
+      "topic": "Compétences passives — prédéterminées par case",
+      "claim": "Les compétences passives (section basse, débloquées par palier de niveau) sont également fixes selon la case d'origine. Pas de hasard : elles se révèlent progressivement au fur et à mesure que la fée monte en niveau.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Conv3 (observation en jeu)"
+      ],
+      "notes": "Thélès et Lacteä ont 'Guérison vitale' visible dès le départ. Pas de source externe."
+    },
+    {
+      "id": "fee_006",
+      "category": "FEES_SYSTEME",
+      "topic": "Traits actifs — configuration fixe par case, nom aléatoire",
+      "claim": "La configuration des traits actifs d'une fée (ex: Gaieté + Admiration pour Hylo) est fixe selon la case de la carte Aventure. Seul le nom de la fée est aléatoire, tiré d'un pool propre à son élément. Il n'y a pas de système de rareté.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Mention DE dans la source GameSpot. Validé par la cohérence avec Hylo (stats non-nulles à niveau 1 = traits actifs différents, pas une chance)."
+    },
+    {
+      "id": "fee_007",
+      "category": "FEES_RAVIVAGE",
+      "topic": "Ravivage — condition et emplacement",
+      "claim": "Le Ravivage (option 'Raviver', touche Y) est disponible uniquement quand la fée est niveau 99. L'option apparaît dans le menu Réfectoire/Cantine (là où on nourrit la fée), pas dans l'École.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameSpot",
+        "TheGamer",
+        "Confirmé en jeu par le joueur"
+      ],
+      "notes": "Le joueur a confirmé avoir trouvé et utilisé l'option en jeu."
+    },
+    {
+      "id": "fee_008",
+      "category": "FEES_RAVIVAGE",
+      "topic": "Ravivage — effets",
+      "claim": "Après un Ravivage : la fée revient niveau 1, conserve 10% de ses traits de personnalité, gagne accès à 10 compétences supplémentaires à apprendre, peut potentiellement changer d'élément selon la nourriture donnée, et le joueur peut remplacer UN trait actif par un trait caché.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameSpot",
+        "TheGamer"
+      ],
+      "notes": "2 sources concordantes. Pas DE explicite. Le '10%' est à prendre comme approximation."
+    },
+    {
+      "id": "fee_009",
+      "category": "FEES_RAVIVAGE",
+      "topic": "Progression niveau 99 — traits continuent",
+      "claim": "Une fois niveau 99 (cap d'XP), la fée peut toujours recevoir de la nourriture pour faire monter ses traits de personnalité (0-255). Le Ravivage devient disponible mais n'est pas obligatoire immédiatement.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Conv3 (raisonnement confirmé par la mécanique du jeu)"
+      ],
+      "notes": "Logique cohérente avec le reste du système. Source unique."
+    },
+    {
+      "id": "fee_010",
+      "category": "FEES_CRISTAUX",
+      "topic": "Cristaux de Gratitude — obtention",
+      "claim": "Pour obtenir un Cristal de Gratitude, il faut libérer une fée. Si la fée est en dessous du niveau 50 → cristal argent. Si elle est niveau 50 ou plus → cristal or.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "TheGamer"
+      ],
+      "notes": "Source unique, pas DE explicite. Cohérent avec la stratégie de farming décrite."
+    },
+    {
+      "id": "fee_011",
+      "category": "FEES_CRISTAUX",
+      "topic": "Cristaux de Gratitude — bonus sur les traits",
+      "claim": "Cristal argent : +5 à tous les traits actifs. Cristal or : +10 à tous les traits actifs. Cristal or d'une fée du même élément : +12 au lieu de +10.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "TheGamer"
+      ],
+      "notes": "Source unique mais précise. Intérêt stratégique : farm des fées du même élément pour les +12."
+    },
+    {
+      "id": "fee_012",
+      "category": "FEES_ELEMENTS",
+      "topic": "Effets élémentaires des 5 types",
+      "claim": "Flammes (Feu) = réduit la défense des ennemis dans la zone. Éther (Eau) = augmente la défense des alliés. Secousse (Foudre) = ralentit les ennemis ET maintient la jauge de point faible active plus longtemps. Aurore (Lumière) = restaure l'énergie vitale des alliés. Vacuité (Ténèbres) = inflige des dégâts aux ennemis.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Le Palais de Zelda",
+        "Puissance-Zelda"
+      ],
+      "notes": "2 sources concordantes. Secousse est particulièrement fort sur les boss (jauge de PF qui tient plus longtemps). ⚠️ CONFLIT_002 : 'Aurore' ici est un effet de zone élémentaire ; à ne pas confondre avec une compétence arc-en-ciel éventuellement homonyme."
+    },
+    {
+      "id": "fee_013",
+      "category": "FEES_ELEMENTS",
+      "topic": "Doubles effets Niv25 + Niv50",
+      "claim": "Si la fée obtient le même effet aux niveaux 25 et 50, il est doublé en puissance. Si elle obtient deux effets différents, les deux zones coexistent simultanément. L'élément de la fée reste inchangé quoi qu'il arrive.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Puissance-Zelda",
+        "Le Palais de Zelda"
+      ],
+      "notes": "2 sources concordantes. Aurore×2 (soin doublé) est l'objectif pour une fée de support."
+    },
+    {
+      "id": "fee_014",
+      "category": "FEES_ELEMENTS",
+      "topic": "Garantir un effet élémentaire au Niv25/50",
+      "claim": "La stat élémentaire la plus haute au moment d'atteindre le niveau 25 ou 50 détermine l'effet obtenu. Chaque aliment fait monter la stat de son élément (ex: Lait Lon Lon → Lumière, Champignon suspect → Ténèbres).",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "JeuxVideo (80% confiance Conv2)",
+        "Jeuxvideo.com (85% confiance Conv2)",
+        "Puissance-Zelda (75% confiance Conv2)",
+        "Le Palais de Zelda (75% confiance Conv2)"
+      ],
+      "notes": "✅ CONFLIT_001 RÉSOLU v1.2. 4 sources Conv2 concordantes. ✅ v2.1 : exemple 'Champignon suspect→Ténèbres' CONFIRMÉ en jeu. Note importante : Champignon suspect est catégorisé [Plant] dans le guide EN, mais son élément est Ténèbres — la catégorie ne détermine PAS l'élément. Lait Lon Lon→Lumière toujours valide."
+    },
+    {
+      "id": "fee_015",
+      "category": "FEES_LOCALISATION",
+      "topic": "Emplacements des fées Lumière sur les cartes",
+      "claim": "Carte principale : H-7. Grande Mer : D-2. Master Quest : L-2. Crépuscule : F-1. Koholint : 'Neris' (fée spéciale, nom fixe). Termina, Grand Travels et Lorule : non documentés. (Coordonnées RPG Site initialement notées G-8/B-4/B-12/A-6 en notation transposée ligne-lettre/colonne-chiffre ; corrigées ici en colonne-lettre/ligne-chiffre.)",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "RPG Site (spécifique Definitive Edition Switch)"
+      ],
+      "notes": "✅ v2.10 : RE-VALIDÉ. L'écart historique avec fee_021 (conflit_004) était un ARTEFACT DE NOTATION, pas un désaccord. RPG Site écrivait ligne-lettre/colonne-chiffre ; transposées, ses coordonnées tombent EXACTEMENT sur l'in-game (H-7) et TheGamer (fee_021) : G-8→H-7, B-4→D-2, B-12→L-2, A-6→F-1. Donnée juste depuis le début, seule la notation était fausse. Anciennement DEBUNKED à tort."
+    },
+    {
+      "id": "fee_016",
+      "category": "FEES_LOCALISATION",
+      "topic": "Neris — fée Lumière spéciale de Koholint",
+      "claim": "Neris est l'une des 3 fées à nom prédéterminé du jeu, trouvable sur la carte de Koholint. Son statut de 'fée spéciale' implique une configuration de traits unique et fixe.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Zelda Wiki"
+      ],
+      "notes": "Mention DE. Source unique. Les traits actifs spécifiques de Neris restent inconnus (GameFAQs inaccessible)."
+    },
+    {
+      "id": "fee_017",
+      "category": "FEES_LOCALISATION",
+      "topic": "Fée libérée — récupérable sur la même case",
+      "claim": "Si une fée est libérée, elle peut être récupérée immédiatement en retournant sur la case de la carte Aventure où elle avait été trouvée.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique. Utile pour 'inspecter' une fée sans engagement définitif quand on est déjà à 5/5 fées."
+    },
+    {
+      "id": "fee_018",
+      "category": "FEES_SPECIFIQUES",
+      "topic": "Hylo — meilleure candidate arc-en-ciel",
+      "claim": "Hylo a Gaieté ET Admiration comme traits actifs. Ce sont les deux traits qui nécessitent normalement les Refresh 1 et 2 pour les fées standards. Elle n'aura besoin que d'un seul Ravivage pour accéder aux 6 arc-en-ciel (contre 3 minimum pour une fée standard).",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Confirmé par captures d'écran du joueur dans Conv3"
+      ],
+      "notes": "Contexte HWDE explicite dans la conversation. Config. Pentagon visible sur captures."
+    },
+    {
+      "id": "fee_019",
+      "category": "FEES_SPECIFIQUES",
+      "topic": "Lacteä — fée de soin active",
+      "claim": "Lacteä (fée Éclair, niveau 43 au moment de l'inventaire) a déjà débloqué 'Aurore' comme compétence active (soin de la zone). Elle est la fée de soin fonctionnelle actuelle, malgré son élément Éclair.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Confirmé en jeu par le joueur, Conv1 et Conv3"
+      ],
+      "notes": "✅ CONFLIT_002 PARTIELLEMENT RÉSOLU v1.2 : 'Aurore' de Lacteä est son effet de zone Niv25, obtenu grâce à la nourriture Lumière donnée (cohérent avec fee_014 confirmé). Ce n'est PAS une compétence arc-en-ciel (trait à 255). Les deux systèmes sont désormais clairement distincts."
+    },
+    {
+      "id": "fee_020",
+      "category": "FEES_SPECIFIQUES",
+      "topic": "Thélès — Guérison vitale passive",
+      "claim": "Thélès a 'Guérison vitale' comme compétence passive visible dès le niveau 1.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Confirmé par captures d'écran du joueur dans Conv3"
+      ],
+      "notes": "Confirmé directement sur la capture."
+    },
+    {
+      "id": "nour_001",
+      "category": "NOURRITURE",
+      "topic": "Déblocage d'un aliment — mécanisme",
+      "claim": "La première fois qu'un aliment est ramassé, il est 'débloqué'. Avant cette première collecte, cet aliment n'existe pas dans les drops ennemis. Il faut donc collecter chaque aliment au moins une fois pour commencer à le farmer.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique, pas DE explicite. Mécanisme plausible mais à vérifier. ⚠️ EXCEPTION v2.7 : joueur a obtenu un drop 'Œuf curieux' sans déblocage explicite par pot OR. Deux hypothèses : (A) pot OR cassé sans s'en rendre compte lors d'une mission précédente, (B) la mécanique autorise un déblocage par drop ennemi (tout type de rareté). Voir nour_017."
+    },
+    {
+      "id": "nour_002",
+      "category": "NOURRITURE",
+      "topic": "Respawn de la nourriture",
+      "claim": "La nourriture (pots cassables en mode Aventure) se respawn simplement en quittant et en revenant dans la partie. Pas besoin de refaire toute une mission.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "TheGamer"
+      ],
+      "notes": "Source unique, pas DE explicite."
+    },
+    {
+      "id": "nour_003",
+      "category": "NOURRITURE",
+      "topic": "Qualité des aliments — bonus de niveau",
+      "claim": "Bronze = +1 niveau fée et +1 point d'affinité élémentaire. Argent (préfixe EN 'Tasty', FR à confirmer) = +2 niveaux et +2 affinité. Or (préfixe EN 'Delicious', FR à confirmer) = +3 niveaux et +3 affinité. Bonus de traits de personnalité : plus élevés avec les raretés supérieures, mais valeurs exactes spécifiques à chaque aliment. Manger un aliment de l'élément dominant de la fée donne de meilleures hausses de traits.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Zelda Dungeon Wiki (HWDE + Legends — explicit)",
+        "GameFAQs Legends SBAllen (bronze/silver/gold +1/+2/+3, 'Tasty'/'Delicious')"
+      ],
+      "notes": "v2.4 : upgradé MEDIUM. Zelda Dungeon mentionne HWDE explicitement. 2 sources concordantes. Préfixes FR ('Savoureux'/'Délicieux' ?) à confirmer en jeu."
+    },
+    {
+      "id": "nour_004",
+      "category": "NOURRITURE",
+      "topic": "Linebeck III — échange carte-objet contre aliment or",
+      "claim": "Linebeck III apparaît sur certaines cases du mode Aventure. En utilisant n'importe quelle carte-objet sur lui (via Chercher), il donne un aliment en or aléatoire parmi tous ceux déjà débloqués par le joueur. Plus le joueur a débloqué d'aliments, plus le pool est large.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Le Palais de Zelda",
+        "steamcommunity"
+      ],
+      "notes": "2 sources mais pas DE explicite. Utile pour recycler des cartes-objets en double."
+    },
+    {
+      "id": "nour_005",
+      "category": "NOURRITURE",
+      "topic": "Grand Travels — bonne source de nourriture",
+      "claim": "La map 'Grand Travels' est réputée comme une bonne source de nourriture, notamment grâce à une mission Tingle qui donne facilement des ressources pour nourrir rapidement les fées sacrifiées.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique, pas DE. À tester en jeu."
+    },
+    {
+      "id": "skull_001",
+      "category": "SKULLTULAS",
+      "topic": "Ordre obligatoire des 2 Skulltulas",
+      "claim": "Dans chaque mission, la 2ème Skulltula ne peut spawner que si la 1ère (à 1000 KOs) a déjà été obtenue dans une run précédente. Impossible d'obtenir les deux dans la même partie.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "pressreader",
+        "GameSpot"
+      ],
+      "notes": "2 sources concordantes. Correspond au problème rencontré par le joueur."
+    },
+    {
+      "id": "skull_002",
+      "category": "SKULLTULAS",
+      "topic": "3 conditions simultanées pour la 2ème Skulltula",
+      "claim": "La 2ème Skulltula exige 3 conditions remplies EN MÊME RUN : (1) ne pas perdre plus de 40% de la jauge de vie à aucun moment, (2) compléter le premier objectif principal de la mission, (3) remplir une condition variable spécifique à la mission.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique mais précise. 'Finir la 1ère mission' = compléter l'objectif initial EN COURS, pas une mission différente."
+    },
+    {
+      "id": "skull_003",
+      "category": "SKULLTULAS",
+      "topic": "Voir les conditions de Skulltulas en jeu",
+      "claim": "Menu pause → 'Informations du guerrier' → 'Skulltulas dorées' : affiche les conditions exactes requises pour chaque Skulltula de la mission en cours, y compris celles encore masquées par '????'.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique. Astuce pratique et vérifiable facilement."
+    },
+    {
+      "id": "skull_004",
+      "category": "SKULLTULAS",
+      "topic": "Personnage et arme imposés pour les récompenses",
+      "claim": "Les armes, cœurs et Skulltulas ne peuvent être obtenus que si on joue le personnage ET l'arme affichés sur la case. Seuls les costumes peuvent être récupérés avec n'importe quel guerrier.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameSpot",
+        "markuskunn"
+      ],
+      "notes": "2 sources concordantes. Règle critique à respecter."
+    },
+    {
+      "id": "map_001",
+      "category": "CARTE_AVENTURE",
+      "topic": "Baguette des Tempêtes — murs de vent Grande Mer",
+      "claim": "Sur la Grande Mer, les bords bleus clignotants (murs de vent) entre les cases sont supprimés en utilisant la Baguette des Tempêtes via l'action 'Chercher' sur la case adjacente.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Confirmé en jeu par le joueur dans Conv2"
+      ],
+      "notes": "Contexte HWDE explicite. Confirmation directe en jeu. CORRIGE l'erreur initiale de Claude (Arc du Héros)."
+    },
+    {
+      "id": "map_002",
+      "category": "CARTE_AVENTURE",
+      "topic": "Item Cards — spécifiques à chaque map",
+      "claim": "Chaque carte d'aventure a son propre inventaire d'Item Cards. Les Item Cards de la carte principale ne fonctionnent pas sur la Grande Mer, et vice-versa. Il faut jouer les missions de chaque carte pour récolter ses propres Item Cards.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique. Logique confirmée par l'expérience du joueur sur la Grande Mer."
+    },
+    {
+      "id": "map_003",
+      "category": "CARTE_AVENTURE",
+      "topic": "Rang A — formule de base",
+      "claim": "Pour la grande majorité des missions : terminer en moins de 15 minutes, prendre moins de 4000 points de dégâts (~40% de la jauge), et effectuer au minimum 1200 KOs.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "TheGamer"
+      ],
+      "notes": "Source unique, pas DE. Ces valeurs peuvent varier selon les missions."
+    },
+    {
+      "id": "map_004",
+      "category": "CARTE_AVENTURE",
+      "topic": "Network Links — récompense bonus",
+      "claim": "Quand un personnage fantôme (Network Link) apparaît sur une case du mode Aventure, jouer cette case donne une récompense bonus (arme ou matériau).",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique. Opportuniste — à exploiter quand disponible."
+    },
+    {
+      "id": "map_005",
+      "category": "CARTE_AVENTURE",
+      "topic": "Accès aux différentes cartes d'aventure — pas de blocage séquentiel",
+      "claim": "Les différentes cartes d'aventure (Grande Mer, Koholint, etc.) sont accessibles sans avoir obligatoirement terminé les précédentes.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Débunké dans les conversations (joueur a testé)"
+      ],
+      "notes": "Information contraire débunkée en jeu. Source : expérience directe du joueur en HWDE."
+    },
+    {
+      "id": "err_001",
+      "category": "ERREURS_CONNUES",
+      "topic": "ERREUR : Arc du Héros pour les murs de vent",
+      "claim": "FAUX. L'Arc du Héros n'est PAS l'Item Card pour supprimer les murs de vent (bords bleus) de la Grande Mer. C'est la Baguette des Tempêtes.",
+      "confidence": "DEBUNKED",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Confirmé en jeu par le joueur (Conv2)"
+      ],
+      "notes": "Claude avait initialement proposé l'Arc du Héros. Le joueur a découvert que c'était la Baguette. Arc du Héros peut servir à autre chose (tornades ?) — non confirmé."
+    },
+    {
+      "id": "err_002",
+      "category": "ERREURS_CONNUES",
+      "topic": "ERREUR : Nourriture élémentaire → compétences actives Niv25/50",
+      "claim": "INCORRECT. Cette entrée affirmait que la nourriture élémentaire n'influence PAS les effets Niv25/50. C'est l'inverse : les 4 sources Conv2 confirment que la nourriture détermine bien l'effet élémentaire (voir fee_014). L'auto-correction de Conv3 était elle-même une erreur.",
+      "confidence": "UNCERTAIN",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Auto-correction dans Conv3"
+      ],
+      "notes": "⚠️ CONFLIT_001 RÉSOLU v1.2 : err_002 était incorrecte. La nourriture élémentaire influence BIEN les effets Niv25/50. La distinction 'compétences actives' vs 'effets élémentaires' tentée dans cette entrée n'a pas de base dans les sources — elle était artificielle."
+    },
+    {
+      "id": "err_003",
+      "category": "ERREURS_CONNUES",
+      "topic": "ERREUR : Fée Lumière obligatoire pour avoir le soin",
+      "claim": "NUANCÉ. Une fée n'a pas besoin d'être de type Lumière pour avoir une compétence de soin. L'élément détermine l'orbe (projectile), mais la compétence active principale (Niv25/Niv50) est fixe par case. Exemple : Lacteä est Éclair et a 'Aurore' (soin).",
+      "confidence": "DEBUNKED",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Corrigé dans Conv3, confirmé par Lacteä en jeu"
+      ],
+      "notes": "⚠️ CONFLIT_002 : la nuance reste valide (Lacteä a bien le soin sans être Lumière), mais l'explication sous-jacente dépend de la résolution du CONFLIT_001. Si fee_014 a raison : Lacteä a Aurore parce qu'elle a été nourrie avec des aliments Lumière, pas parce que sa case le détermine."
+    },
+    {
+      "id": "err_004",
+      "category": "ERREURS_CONNUES",
+      "topic": "ERREUR : Fée libérée = perdue définitivement",
+      "claim": "FAUX. Une fée libérée peut être récupérée immédiatement en retournant sur la case de la carte Aventure où elle avait été trouvée.",
+      "confidence": "DEBUNKED",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameSpot"
+      ],
+      "notes": "Source unique mais importante. Utile pour inspecter les traits d'une fée sans engagement."
+    },
+    {
+      "id": "uncertain_001",
+      "category": "INCERTAIN",
+      "topic": "Traits actifs de Neris (fée Lumière de Koholint)",
+      "claim": "Neris est définitivement sur une case de Cocolint DIFFÉRENTE de G-6 (confirmé v1.9 : Irène = 1ère visite G-6). Sa case exacte n'est pas documentée dans les sources accessibles. Source Legends (GameFAQs) : Neris se trouve à la case où l'on obtient les bottes Niv.2 de Linkle — coordonnée DE inconnue. GameFAQs inaccessible (Cloudflare).",
+      "confidence": "UNCERTAIN",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameFAQs (inaccessible — protection Cloudflare)"
+      ],
+      "notes": "v1.9 : hypothèse B (déjà visitée) éliminée définitivement par confirmation joueur. Neris = autre case Cocolint (hypothèse A). Piste : chercher les cases de Cocolint avec icône pot brun qui ne sont pas G-6. Ou chercher la case récompense 'bottes Niv.2 Linkle' (source Legends, coordonnée DE inconnue). GameFAQs (Cloudflare) et RPG Site (article incomplet) ne couvrent pas Cocolint en détail."
+    },
+    {
+      "id": "uncertain_002",
+      "category": "INCERTAIN",
+      "topic": "Fées Lumière sur Termina, Grand Travels et Lorule",
+      "claim": "Les emplacements des fées Lumière sur les cartes Termina, Grand Travels et Lorule ne sont pas documentés dans les sources consultées.",
+      "confidence": "UNCERTAIN",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "RPG Site (source partielle, ne couvre pas ces 3 cartes)"
+      ],
+      "notes": "À rechercher directement en jeu ou via GameFAQs."
+    },
+    {
+      "id": "uncertain_003",
+      "category": "INCERTAIN",
+      "topic": "Mapping précis aliment → stats exactes",
+      "claim": "Le tableau complet aliment par aliment avec les stats exactes augmentées n'a pas pu être trouvé dans les sources consultées. Un Google Sheets communautaire existait (2016) mais était inaccessible.",
+      "confidence": "UNCERTAIN",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Le Palais de Zelda (source partielle)"
+      ],
+      "notes": "Page Cantine de Puissance-Zelda recommandée pour la liste des aliments par catégorie."
+    },
+    {
+      "id": "nour_006",
+      "category": "NOURRITURE",
+      "topic": "Emplacements nourriture par carte — mapping cases confirmées",
+      "claim": "Carte Principale : nourriture en pots bruns aux cases N-1, A-2, E-2, A-3, F-3, A-4, G-5, P-6, P-7, I-8, L-8. Grande Mer : N-3. Master Quest, Termina, Twilight, Koholint : partiellement documentés. Grand Travels et Lorule : à compléter en jeu.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "RPG Site (Switch/DE explicite — page guide dédiée HWDE)"
+      ],
+      "notes": "RPG Site mentionne explicitement Hyrule Warriors Definitive Edition Switch. Liste carte principale complète. Grande Mer partielle (N-3 confirmé). Article incomplet sur autres maps. Source unique mais DE clairement mentionné. ⚠️ v2.10 : coordonnées transposées depuis la notation RPG Site (ligne-lettre/colonne-chiffre) vers la notation officielle (colonne-lettre/ligne-chiffre)."
+    },
+    {
+      "id": "nour_007",
+      "category": "NOURRITURE",
+      "topic": "Grand Travels — meilleure map farming nourriture (drops x2, cap 8)",
+      "claim": "Grand Travels offre des drops de nourriture doublés sur toutes ses missions. Le plafond de nourriture collectée par bataille est relevé à 8. Linebeck III y propose ponctuellement une vente 2-pour-1 (carte-objet contre 2 nourritures or garanties).",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "ResetEra OT HWDE Switch (page 38) — Double food + Linebeck Yuga",
+        "ResetEra OT HWDE Switch (page 40) — Grand Travels = best food map",
+        "GameFAQs Q&A Switch HWDE — Linebeck 2-pour-1 mentionné"
+      ],
+      "notes": "ResetEra = fil OT dédié HWDE Switch, DE implicite. GameFAQs Q&A = page Switch DE. 3 sources concordantes. Hyrule Blog (Legends 3DS) dit identique mais DE non confirmé depuis cette source. Prudence : cap 8 et double drop hérités de Legends — comportement DE à valider en jeu."
+    },
+    {
+      "id": "nour_008",
+      "category": "NOURRITURE",
+      "topic": "Food+ sur arme — augmente les drops nourriture ennemis",
+      "claim": "La compétence Food+ sur une arme équipée augmente la fréquence des drops de nourriture par les ennemis lors des missions. Combinée avec le farming en pots, elle améliore significativement le rendement.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameFAQs Q&A Switch HWDE",
+        "ResetEra OT HWDE Switch (page 42)"
+      ],
+      "notes": "2 sources concordantes. Complémentaire avec nour_001 (déblocage d'aliments). À noter : les drops ennemis ne commencent qu'une fois la version or de l'aliment débloquée en pot (nour_001). Food+ booste des drops déjà débloqués."
+    },
+    {
+      "id": "weapon_001",
+      "category": "ARMES_FARMING",
+      "topic": "Missions Quiz carte principale — farming armes le plus rapide",
+      "claim": "Les 3 missions Quiz de la carte principale sont les plus efficaces pour farmer des armes rapidement : Quiz Triforce (E-1), Quiz des Légendaires (O-1), Quiz Royal (B-2). Le Quiz Triforce prend 3-4 minutes et donne fréquemment 3 armes + 3 matériaux. Méthode : maintenir les 2 ennemis-personnage visibles simultanément pour maximiser les drops des deux.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameFAQs guide Weapon Farming (page Switch HWDE explicite)"
+      ],
+      "notes": "Source unique mais très précise et depuis page Switch DE. Coordonnées quiz E-1/O-1/B-2 (anciennement A-5/A-15/B-2 en notation transposée — corrigées v2.10). Consensus communautaire fort autour de ces missions. Page Wii U du même guide existe — infos probablement identiques mais DE non garanti. ⚠️ v2.10 : coords quiz corrigées (notation transposée) — A-5→E-1, A-15→O-1, B-2 invariant."
+    },
+    {
+      "id": "weapon_002",
+      "category": "ARMES_FARMING",
+      "topic": "Potion Slots III — maximiser emplacements d'armes droppées",
+      "claim": "Fabriquer une Potion Slots III à l'Apothicaire (1 matériau or + 2000 rubis) augmente significativement les chances d'obtenir des armes avec le maximum d'emplacements. À préparer avant chaque session de farming end-game.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "GameFAQs guide Weapon Farming (Switch HWDE)"
+      ],
+      "notes": "Source unique, DE explicite. Complémentaire avec weapon_006 (compétence Slots+ sur l'arme portée). Matériau or requis = farming préalable sur Twilight (weapon_005)."
+    },
+    {
+      "id": "weapon_003",
+      "category": "ARMES_FARMING",
+      "topic": "Lorule — meilleure map armes Tier 4+ et rubis (mission Divisive Plan Yuga)",
+      "claim": "La carte Lorule est la meilleure pour les armes de haut niveau (Tier 4+) et les rubis grâce à ses double drops d'armes. La mission recommandée est 'Divisive Plan' avec Yuga (case rouge, completion rapide). Coordonnées : N-4 selon GameFAQs, N-4 selon ResetEra — probablement la même case, notation différente.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "ResetEra OT HWDE Switch (page 38) : Lorule double weapon drops, case N-4 Yuga",
+        "GameFAQs Q&A Switch HWDE : Lorule Yuga, case D-14 (rouge)"
+      ],
+      "notes": "2 sources concordantes sur l'essentiel. CONFLIT COORDONNÉES MINEUR : N-4 vs D-14 (notation différente probable). À vérifier en jeu. Consensus fort sur : Lorule = double drops armes, Yuga = mission rapide. Complémentaire avec weapon_005 (Twilight = matériaux). ⚠️ v2.10 : D-14 (GameFAQs) était la notation transposée de N-4 (ResetEra) — même case. Réglé sur N-4."
+    },
+    {
+      "id": "weapon_004",
+      "category": "ARMES_FARMING",
+      "topic": "Type d'arme équipée → booste les drops du même type",
+      "claim": "Jouer une mission avec une arme d'un type donné augmente la probabilité de recevoir des drops de ce type en fin de mission. Pour cibler une arme spécifique, utiliser ce type d'arme pendant le farming.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameFAQs guide Weapon Farming (Switch HWDE)",
+        "GameFAQs Q&A Switch HWDE (farm armes spécifiques)"
+      ],
+      "notes": "2 sources GameFAQs Switch concordantes. Mécanique fondamentale pour cibler une arme précise. Applicable sur toutes les maps."
+    },
+    {
+      "id": "weapon_005",
+      "category": "ARMES_FARMING",
+      "topic": "Twilight map — double drops matériaux",
+      "claim": "La carte Twilight offre des drops de matériaux doublés sur toutes ses missions, ce qui en fait la meilleure source de matériaux or (nécessaires pour la Potion Slots III et les fusions d'armes).",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "ResetEra OT HWDE Switch (page 38)"
+      ],
+      "notes": "Source unique, DE implicite (fil OT Switch). Cohérent avec la logique des maps spécialisées : Grand Travels=nourriture x2, Twilight=matériaux x2, Lorule=armes x2."
+    },
+    {
+      "id": "weapon_006",
+      "category": "ARMES_FARMING",
+      "topic": "Compétences de farm sur l'arme portée — priorités selon l'objectif",
+      "claim": "Pour maximiser le farming, équiper une arme avec : Slots+ et Stars+ (priorité end-game pour armes parfaites), Materials+ (farming matériaux), Food+ (farming nourriture). Règle : adapter les compétences à l'objectif de la session. Pour débuter : EXP+/Food+/Materials+. Pour end-game : Slots+/Stars+.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameFAQs guide Weapon Farming (Switch HWDE)",
+        "ResetEra OT HWDE Switch (page 42)"
+      ],
+      "notes": "2 sources concordantes, approches complémentaires (early vs end-game). Non contradictoires : adapter selon le stade de progression."
+    },
+    {
+      "id": "fee_021",
+      "category": "FEES_LOCALISATION",
+      "topic": "Fées Lumière — emplacements et compétences par défaut (TheGamer)",
+      "claim": "Fées Lumière et leurs compétences de départ selon TheGamer : H-7 carte principale (South Field Keep) = 'Hard Worker'. D-2 Grande Mer (S. Desert Keep) = 'Invincible Weakling'. L-2 Master Quest (Southeast Square) = 'Repair Technician'. F-1 Twilight (Southwest Keep) = 'Special Regain'. G-6 Koholint (East Goron Keep) = 'Magic Sponge' (= Neris).",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "TheGamer — guide complet My Fairy, Legends + Definitive Edition explicite"
+      ],
+      "notes": "✅ H-7 carte principale confirmé en jeu. ✅ G-6 Cocolint : fée Lumière confirmée, skill Absorption magique confirmé. ❌ Association Neris↔G-6 FAUSSE (v1.9) : joueur confirme 1ère visite, fée = Irène (nom aléatoire). Neris est sur une autre case de Cocolint. Voir conflit_005 et uncertain_001."
+    },
+    {
+      "id": "fee_022",
+      "category": "FEES_SPECIFIQUES",
+      "topic": "Trois fées à nom fixe : Loyla, Neris, Becka — emplacements et éléments",
+      "claim": "3 fées ont un nom prédéterminé dans HWDE : Loyla (Ténèbres, carte principale), Neris (Lumière, Koholint G-6, skill 'Magic Sponge'), Becka (Eau, Grand Travels). Toutes les autres fées ont un nom aléatoire tiré d'un pool propre à leur élément.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Zelda Wiki (zeldawiki.wiki) — mention HWDE explicite",
+        "TheGamer — guide My Fairy HWDE"
+      ],
+      "notes": "2 sources concordantes, DE explicite. Précise fee_016 (Neris connue) en ajoutant Loyla et Becka. Becka est une fée EAU sur Grand Travels (pas Lumière — pas pertinent pour l'objectif fée Lumière). Neris est la seule fée Lumière à nom fixe."
+    },
+    {
+      "id": "nour_009",
+      "category": "NOURRITURE",
+      "topic": "Respawn nourriture — 'quelques combats' en plus du restart",
+      "claim": "La nourriture en pots bruns respawn selon deux conditions : (a) en quittant et relançant le jeu (redémarrage), OU (b) automatiquement après quelques combats. Le restart forcé n'est donc pas la seule méthode — jouer normalement finit aussi par faire respawner les pots.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Zelda Dungeon Wiki (HWDE + Legends, wiki officiel Zelda)",
+        "Expérience en jeu du joueur (observation directe : respawn après map complétée)"
+      ],
+      "notes": "Zelda Dungeon dit explicitement 'every few battles OR each time the game is restarted'. Confirme et précise nour_002 (LOW, single source 'restart seul'). L'expérience joueur (respawn après une autre map) est cohérente avec 'every few battles'. À noter : 'quelques combats' est vague — le nombre exact n'est pas documenté."
+    },
+    {
+      "id": "nour_010",
+      "category": "NOURRITURE",
+      "topic": "Suivi des nourritures débloquées — absence de tracker in-game",
+      "claim": "Il n'existe pas de tracker in-game listant les nourritures déjà débloquées. Un aliment est débloqué quand sa version or a été trouvée au moins une fois en pot brun. Les 39 types de nourriture existent au total. Pour savoir ce qui est débloqué, la méthode externe recommandée est la table GameFAQs (guide SBAllen) avec les emplacements de tous les aliments.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "GameFAQs guide Switch HWDE (73095 — table complète 39 nourritures)",
+        "Zelda Dungeon Wiki (HWDE + Legends) — confirmation 39 types"
+      ],
+      "notes": "Zelda Dungeon confirme 39 types. GameFAQs liste chaque aliment avec emplacement en pot + quel ennemi le droppe une fois débloqué. Bonne référence externe à consulter pour savoir ce qui manque. Pas d'accès direct au fichier GameFAQs (Cloudflare) mais snippet accessible via recherche."
+    },
+    {
+      "id": "local_001",
+      "category": "LOCALISATION_FR",
+      "topic": "Koholint Island Map = 'Cartes de Cocolint' en français",
+      "claim": "Dans la version française européenne de HWDE, la carte Koholint Island s'appelle 'Cartes de Cocolint'. Dans la version canadienne française, c'est 'Carte de Cocolint' (singulier). Toutes les références anglophones à 'Koholint' correspondent à 'Cocolint' dans le jeu en français.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Zelda Wiki (zeldawiki.wiki) — sources in-game citées explicitement : '↑ Cartes de Cocolint — Tutorials (HWDE, European French version)' et '↑ Carte de Cocolint — Adventure Mode (HWDE, Canadian French version)'",
+        "Confirmation par le joueur (version FR)"
+      ],
+      "notes": "Confirmation directe en jeu + source wiki citant le jeu. HIGH justifié. S'applique à toutes les entrées de la KB : 'Koholint' → lire 'Cocolint' pour les joueurs en version française."
+    },
+    {
+      "id": "weapon_007",
+      "category": "ARMES_SYSTEME",
+      "topic": "Level 4+ — tier distinct au-dessus du niveau 4, exclusif Legends/DE",
+      "claim": "Le niveau 4+ est un palier d'arme distinct du niveau 4, et représente le maximum absolu dans HWDE. Les armes 4+ ont DEUX éléments au lieu d'un seul. Elles n'existaient pas dans la version Wii U (niveau 3 = max), ont été introduites dans Legends (3DS) et sont présentes dans DE. Visuellement : recoloriage de l'arme niveau 3 avec fond arc-en-ciel sur l'icône. Les armes de niveau 4 standard ('Magical Sword +') existent aussi et sont intermédiaires entre 3 et 4+.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Zelda Dungeon Wiki (article Hyrule Warriors Weapons, HWDE explicite)",
+        "Zeldapedia Fandom (Sealed Weapon, Legends + DE)"
+      ],
+      "notes": "Les 8-Bit weapons (Wii U) peuvent être utilisées comme skin cosmétique à la place des 4+ sur Switch via les paramètres. Deux éléments = mécanisme de double élément actif en combat, significativement plus fort. Hiérarchie complète DE : 1 → 2 → 3 → 4 → 4+ (max)."
+    },
+    {
+      "id": "weapon_008",
+      "category": "ARMES_SYSTEME",
+      "topic": "Emplacements Level 4+ — distribution par map (Switch/DE)",
+      "claim": "Les armes 4+ sont réparties sur les maps avancées uniquement. Exemples confirmés : Lorule (majorité des 4+), Grand Travels, Termina, Twilight, et Cocolint (ex: Burning Gloves en N-1, Gauntlets 4+). Sur Cocolint spécifiquement, plusieurs cases débloquent des armes 4+ en récompense. La carte principale et Grande Mer ne semblent contenir que des niveaux 1-3.",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Zelda Dungeon Wiki — tableau complet des emplacements par arme et par map (Switch)"
+      ],
+      "notes": "Source unique mais exhaustive (tableau complet). Burning Gloves (Power Gloves 4+) confirmés en Cocolint N-1. D'autres 4+ sont sur Cocolint mais la liste complète par case nécessite consultation directe du tableau Zelda Dungeon. Lorule est la map la plus dense en armes 4+. ⚠️ v2.10 : A-14→N-1 (notation transposée corrigée, Cocolint)."
+    },
+    {
+      "id": "fee_023",
+      "category": "FEES_SPECIFIQUES",
+      "topic": "Irène — fée Lumière de Cocolint G-6 (traits confirmés en jeu)",
+      "claim": "La fée Lumière obtenue en G-6 de la carte Cocolint s'appelle Irène (nom aléatoire, pool Lumière). Traits actifs : Volupté, Acrobatie, Admiration, Endurance, Passion. Compétence passive visible dès niveau 1 : Absorption magique. Effets actifs (niveaux 25 et 50) : ??? — inconnus, déterminés par la nourriture élémentaire donnée (voir fee_014). Ce n'est PAS Neris (nom aléatoire ≠ nom fixe).",
+      "confidence": "HIGH",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Confirmé en jeu par le joueur — capture d'écran Conv4"
+      ],
+      "notes": "Données directes captures d'écran. Traits actifs = les 5 du pentagone visible. Absorption magique = skill passif dès niveau 1. Aucun trait Gaieté. v1.9 CONFIRMÉ : cette fée est bien la fée de 1ère visite de G-6 (joueur confirme). Ce n'est PAS Neris — Irène est une fée Lumière standard à nom aléatoire. Cocolint a donc au moins 2 fées Lumière : G-6 (Irène/standard) + case inconnue (Neris)."
+    },
+    {
+      "id": "fee_024",
+      "category": "FEES_SYSTEME",
+      "topic": "Nombre de fées par map — règle '5 par map, 1 par élément' invalide",
+      "claim": "La règle GameFAQs '5 fées par map, une par élément' est inexacte pour au moins une map. La carte principale contient 6 fées (dont 2 Ténèbres : N-1 et L-8). D'autres maps pourraient avoir des doublons élémentaires. La règle correcte semble être : au moins une fée par élément, mais certains éléments peuvent apparaître plusieurs fois.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "RPG Site (Switch DE) — liste carte principale : N-1(Ténèbres), A-3(Feu), F-3(Éclair), H-7(Lumière), P-7(Eau), L-8(Ténèbres) = 6 fées"
+      ],
+      "notes": "Source unique mais DE explicite. Contredit le guide GameFAQs Switch. Implication directe : Cocolint pourrait avoir une 2e fée Lumière à une case différente de G-6 — ce qui expliquerait où se trouve Neris. ✅ v2.10 : 6 fées carte principale corrigées en notation officielle (transposition RPG Site) : N-1(Ténèbres), A-3(Feu), F-3(Éclair), H-7(Lumière), P-7(Eau), L-8(Ténèbres). H-7 confirmé en jeu. (Les références G-6/H-7 ailleurs dans la KB sont déjà en notation correcte.)"
+    },
+    {
+      "id": "nour_011",
+      "category": "NOURRITURE",
+      "topic": "Liste complète des 39 aliments — état de déblocage joueur",
+      "claim": "39 aliments total. 7 débloqués. Éléments confirmés : Lait Lon Lon→Lumière, Champignon suspect→Ténèbres. Règle catégorie=élément INVALIDE. Tous autres éléments INCERTAIN.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": true,
+      "sources": [
+        "SBAllen GameFAQs guide (Switch HWDE — partiellement commun Legends 3DS)",
+        "Noms FR partiellement confirmés en jeu par le joueur (Conv4)"
+      ],
+      "notes": "⚠️ v2.2 : zéro corrélation catégorie↔élément. 3 aliments [Plant] confirmés = 3 éléments différents : Champignon suspect→Ténèbres, Noix Mojo→Foudre, Haricots Magiques→Eau. Chaque aliment a son propre élément, indépendant de toute catégorie. Seuls éléments confirmés Lumière : Lait Lon Lon, Lait Lon Lon premium. Baie de lumière en attente. Tous autres : INCERTAIN. v2.4 : éléments LOW ajoutés depuis GameFAQs Legends 3DS (SBAllen). Seuls HIGH = confirmés en jeu DE. B06 → conflit_006. P11/P14 : anomalie de boost d'élément opposé signalée (3DS), à vérifier DE. v2.8 : table traits or complète (Zelda Fandom FR wiki). Noms FR corrigés. Wiki présente erreurs d'élément sur B01 (Eau→Lumière) et P02 (Lumière→Foudre) — ignorées. ✅ v2.9 : champ 'fr' de chaque aliment synchronisé avec index.html (inc_001, 30 corrections).",
+      "aliments": [
+        {
+          "id": "F01",
+          "en": "Weird Egg",
+          "fr": "Œuf curieux",
+          "fr_confiance": "HIGH",
+          "categorie": "Festin",
+          "element": "Lumière",
+          "case_principale_3ds": "Adventure Map A-3 (Dark Forest Keep)",
+          "debloque": true,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Œuf curieux",
+          "fr_argent": "Bon œuf curieux",
+          "fr_or": "Œuf curieux exquis",
+          "categorie_fr": "Aliments de luxe",
+          "carte_wiki_fr": "(plusieurs cartes)",
+          "or_traits": {
+            "VIV": 10,
+            "FRA": 2,
+            "CLA": 5,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": -5,
+            "ESQ": -2,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "F02",
+          "en": "All-Purpose Bait",
+          "fr": "Appât universel",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Festin",
+          "element": "Lumière",
+          "case_principale_3ds": "Great Sea Map B-6 (North Palace)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Appât universel",
+          "fr_argent": "Bon appât universel",
+          "fr_or": "Appât universel exquis",
+          "categorie_fr": "Aliments de luxe",
+          "carte_wiki_fr": "Grande Mer",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": 2,
+            "END": 5,
+            "PAS": -5,
+            "GAI": 10,
+            "ACR": 0,
+            "VOL": 0,
+            "ESQ": -2,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "F03",
+          "en": "Ordon Goat Cheese",
+          "fr": "Fromage toalien",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Festin",
+          "element": "Ténèbres",
+          "case_principale_3ds": "Twilight Map E-3 (Fairy Fountain)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Fromage toalien",
+          "fr_argent": "Fromage toalien affiné",
+          "fr_or": "Fromage toalien de luxe",
+          "categorie_fr": "Aliments de luxe",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 0,
+            "CLA": 10,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -5,
+            "VOL": 5,
+            "ESQ": -2,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "F04",
+          "en": "Meat",
+          "fr": "Viande",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Festin",
+          "element": "Feu",
+          "case_principale_3ds": "Termina Map F-5 (Enemy Base)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Viande",
+          "fr_argent": "Bonne viande",
+          "fr_or": "Viande exquise",
+          "categorie_fr": "Aliments de luxe",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 2,
+            "CLA": 10,
+            "END": -2,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": -5,
+            "VOL": 2,
+            "ESQ": 5,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "B01",
+          "en": "Lon Lon Milk",
+          "fr": "Lait Lon Lon",
+          "fr_confiance": "HIGH",
+          "categorie": "Boisson",
+          "element": "Lumière",
+          "case_principale_3ds": "Adventure Map E-2 (Fairy Fountain)",
+          "debloque": true,
+          "element_confirme": true,
+          "fr_bronze": "Lait Lon Lon",
+          "fr_argent": "Lait Lon Lon frais",
+          "fr_or": "Lait Lon Lon premium",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "(plusieurs cartes)",
+          "or_traits": {
+            "VIV": 5,
+            "FRA": 2,
+            "CLA": 2,
+            "END": 10,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 0,
+            "VOL": -2,
+            "ESQ": -5,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM",
+          "notes_nommage": "Exception de nommage : argent='Lait Lon Lon frais' (pas 'Bon Lait Lon Lon'), or='Lait Lon Lon premium' (pas 'Lait Lon Lon exquis'). Le tier or fait référence au Château Romani de Majora's Mask."
+        },
+        {
+          "id": "B02",
+          "en": "Pumpkin Soup",
+          "fr": "Soupe de citrouille",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Boisson",
+          "element": "Feu",
+          "case_principale_3ds": "Master Quest Map F-5 (SW Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Soupe de citrouille",
+          "fr_argent": "Soupe de citrouille nourrissante",
+          "fr_or": "Soupe de citrouille raffinée",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": 0,
+            "END": 10,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 2,
+            "VOL": 0,
+            "ESQ": -5,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "B03",
+          "en": "Sacred Water",
+          "fr": "Eau sacrée",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Boisson",
+          "element": "Eau",
+          "case_principale_3ds": "Master Quest Map C-5 (Rocky Square)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Eau sacrée",
+          "fr_argent": "Bonne eau sacrée",
+          "fr_or": "Eau sacrée exquise",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 10,
+            "FRA": 5,
+            "CLA": 0,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": 2,
+            "VOL": -5,
+            "ESQ": -2,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "B04",
+          "en": "Elixir Soup",
+          "fr": "Soupe de mémé",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Boisson",
+          "element": "Feu",
+          "case_principale_3ds": "Great Sea Map A-1 (Star Island Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Soupe de mémé",
+          "fr_argent": "Bonne soupe de mémé",
+          "fr_or": "Soupe de mémé exquise",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Grande Mer",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": 2,
+            "END": 5,
+            "PAS": -5,
+            "GAI": 10,
+            "ACR": 0,
+            "VOL": 0,
+            "ESQ": -2,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "B05",
+          "en": "Great Fairy's Tears",
+          "fr": "Larmes de fées",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Boisson",
+          "element": "Lumière",
+          "case_principale_3ds": "Twilight Map F-8 (E. Boulder Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Larmes de fées",
+          "fr_argent": "Bonnes larmes de fées",
+          "fr_or": "Larmes de fées exquises",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": -5,
+            "CLA": -2,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": 0,
+            "VOL": 5,
+            "ESQ": -2,
+            "ADM": 10
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "B06",
+          "en": "Chateau Romani",
+          "fr": "Cuvée Romani",
+          "fr_confiance": "HIGH",
+          "categorie": "Boisson",
+          "element": "Ténèbres",
+          "case_principale_3ds": "Termina Map G-6 (Temple Entrance)",
+          "debloque": true,
+          "element_confirme": false,
+          "element_gfaq_3ds": "Ténèbres",
+          "conflit": "conflit_006",
+          "notes_element": "✅ CONFLIT_007 RÉSOLU v2.8 : 'Cuvée Romani' = Chateau Romani EN, aliment distinct de B01. Élément Ténèbres confirmé multi-sources (wiki FR + GameFAQs). Note : 'Lait Lon Lon premium' = tier OR de B01 (exception de nommage, pas Cuvée Romani).",
+          "statut": "DISTINCT_FOOD",
+          "fr_bronze": "Cuvée Romani",
+          "fr_argent": "(À venir)",
+          "fr_or": "Cuvée Romani grand cru",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 5,
+            "CLA": 10,
+            "END": -2,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -5,
+            "VOL": 2,
+            "ESQ": 5,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM",
+          "element_source": "Zelda Fandom FR wiki + GameFAQs 3DS (SBAllen)"
+        },
+        {
+          "id": "B07",
+          "en": "Bottled Water",
+          "fr": "Eau de source",
+          "fr_confiance": "LOW",
+          "categorie": "Boisson",
+          "element": "Eau",
+          "case_principale_3ds": "Termina Map E-4 (East Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Eau de source",
+          "fr_argent": "Bonne eau de source",
+          "fr_or": "Eau de source exquise",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 10,
+            "CLA": 2,
+            "END": -2,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": 0,
+            "VOL": 5,
+            "ESQ": 5,
+            "ADM": -5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "B08",
+          "en": "Hot Spring Water",
+          "fr": "Eau de source chaude",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Boisson",
+          "element": "Feu",
+          "case_principale_3ds": "Termina Map G-8 (East Room)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Eau de source chaude",
+          "fr_argent": "Bonne eau de source chaude",
+          "fr_or": "Eau de source chaude exquise",
+          "categorie_fr": "Boissons",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": -5,
+            "FRA": 2,
+            "CLA": 2,
+            "END": -2,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 0,
+            "VOL": 10,
+            "ESQ": 5,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P01",
+          "en": "Odd Mushroom",
+          "fr": "Champignon suspect",
+          "fr_confiance": "HIGH",
+          "categorie": "Végétal",
+          "element": "Ténèbres",
+          "case_principale_3ds": "Adventure Map A-4 (Fairy Fountain)",
+          "debloque": true,
+          "element_confirme": true,
+          "fr_bronze": "Champignon suspect",
+          "fr_argent": "Bon champignon suspect",
+          "fr_or": "Champignon suspect exquis",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "(plusieurs cartes)",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": 10,
+            "END": 5,
+            "PAS": 0,
+            "GAI": 0,
+            "ACR": -5,
+            "VOL": 0,
+            "ESQ": 2,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P02",
+          "en": "Deku Nut",
+          "fr": "Noix mojo",
+          "fr_confiance": "HIGH",
+          "categorie": "Végétal",
+          "element": "Foudre",
+          "case_principale_3ds": "Adventure Map I-8 (Southern Tree)",
+          "debloque": true,
+          "element_confirme": true,
+          "fr_bronze": "Noix mojo",
+          "fr_argent": "Bonne noix mojo",
+          "fr_or": "Noix mojo exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "(plusieurs cartes)",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 10,
+            "CLA": 5,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": 0,
+            "ESQ": -2,
+            "ADM": -5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM",
+          "notes_element": "⚠️ Zelda Fandom FR wiki dit Lumière — ERREUR WIKI confirmée. Élément réel : Foudre (in-game DE + GameFAQs SBAllen). Wiki ignoré pour l'élément."
+        },
+        {
+          "id": "P03",
+          "en": "Magic Beans",
+          "fr": "Haricot magique",
+          "fr_confiance": "HIGH",
+          "categorie": "Végétal",
+          "element": "Eau",
+          "case_principale_3ds": "Adventure Map A-2 (South Field Keep)",
+          "debloque": true,
+          "element_confirme": true,
+          "fr_bronze": "Haricot magique",
+          "fr_argent": "Bon haricot magique",
+          "fr_or": "Haricot magique exquis",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "(plusieurs cartes)",
+          "or_traits": {
+            "VIV": 5,
+            "FRA": 10,
+            "CLA": 2,
+            "END": 2,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 0,
+            "VOL": -2,
+            "ESQ": -2,
+            "ADM": -5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P04",
+          "en": "Life Tree Fruit",
+          "fr": "Fruit de l'arbre de vie",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Lumière",
+          "case_principale_3ds": "Master Quest Map E-3 (SW Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Fruit de l'arbre de vie",
+          "fr_argent": "Bon fruit de l'arbre de vie",
+          "fr_or": "Fruit de l'arbre de vie exquis",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 10,
+            "CLA": 0,
+            "END": 5,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 2,
+            "VOL": 0,
+            "ESQ": -2,
+            "ADM": -5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P05",
+          "en": "Light Fruit",
+          "fr": "Baie de lumière",
+          "fr_confiance": "HIGH",
+          "categorie": "Végétal",
+          "element": "Lumière",
+          "case_principale_3ds": "Master Quest Map F-1 (North Palace)",
+          "debloque": true,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Baie de lumière",
+          "fr_argent": "Bonne baie de lumière",
+          "fr_or": "Baie de lumière exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 10,
+            "FRA": 5,
+            "CLA": 0,
+            "END": 2,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 2,
+            "VOL": -5,
+            "ESQ": 0,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P06",
+          "en": "Stamina Fruit",
+          "fr": "Baie d'endurance",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Feu",
+          "case_principale_3ds": "Master Quest Map E-6 (Lakeside Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Baie d'endurance",
+          "fr_argent": "Bonne baie d'endurance",
+          "fr_or": "Baie d'endurance exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 5,
+            "FRA": 2,
+            "CLA": 0,
+            "END": 10,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 2,
+            "VOL": -2,
+            "ESQ": -5,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P07",
+          "en": "Water Fruit",
+          "fr": "Fruit d'eau",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Eau",
+          "case_principale_3ds": "Master Quest Map G-5 (Stock Room)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Fruit d'eau",
+          "fr_argent": "Bon fruit d'eau",
+          "fr_or": "Fruit d'eau exquis",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": -2,
+            "END": 10,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": 5,
+            "VOL": 0,
+            "ESQ": -5,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P08",
+          "en": "Hyoi Pear",
+          "fr": "Fruit miam miam",
+          "fr_confiance": "HIGH",
+          "categorie": "Végétal",
+          "element": "Foudre",
+          "case_principale_3ds": "Great Sea Map A-5 (South Field Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Fruit miam miam",
+          "fr_argent": "Bon fruit miam miam",
+          "fr_or": "Fruit miam miam exquis",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Grande Mer",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": 5,
+            "END": 2,
+            "PAS": -5,
+            "GAI": 10,
+            "ACR": -2,
+            "VOL": 0,
+            "ESQ": 0,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P09",
+          "en": "Carrot",
+          "fr": "Carotte",
+          "fr_confiance": "HIGH",
+          "categorie": "Végétal",
+          "element": "Foudre",
+          "case_principale_3ds": "Great Sea Map D-2 (Enemy Base)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Carotte",
+          "fr_argent": "Bonne carotte",
+          "fr_or": "Carotte exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Grande Mer",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 2,
+            "CLA": 5,
+            "END": -5,
+            "PAS": -2,
+            "GAI": 5,
+            "ACR": 2,
+            "VOL": 0,
+            "ESQ": 10,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P10",
+          "en": "Ember Seeds",
+          "fr": "Graine braise",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Feu",
+          "case_principale_3ds": "Termina Map F-3 (West Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Graine braise",
+          "fr_argent": "Bonne graine braise",
+          "fr_or": "Graine braise exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 2,
+            "CLA": 10,
+            "END": -2,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": -5,
+            "VOL": 2,
+            "ESQ": 5,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P11",
+          "en": "Scent Seeds",
+          "fr": "Graine parfum",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Ténèbres",
+          "case_principale_3ds": "Termina Map I-3 (Rocky Square)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "notes_element": "⚠️ Source 3DS (SBAllen) : Scent Seeds boosteraient l'élément OPPOSÉ (Lumière) malgré classification Ténèbres. Comportement DE à vérifier en jeu.",
+          "fr_bronze": "Graine parfum",
+          "fr_argent": "Bonne graine parfum",
+          "fr_or": "Graine parfum exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 5,
+            "CLA": 5,
+            "END": -5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": 2,
+            "ESQ": 10,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P12",
+          "en": "Pegasus Seeds",
+          "fr": "Graine Pégase",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Foudre",
+          "case_principale_3ds": "Termina Map H-5 (Hall of Time)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Graine Pégase",
+          "fr_argent": "Bonne graine Pégase",
+          "fr_or": "Graine Pégase exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 5,
+            "CLA": 2,
+            "END": -5,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 0,
+            "VOL": 2,
+            "ESQ": 10,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P13",
+          "en": "Gale Seeds",
+          "fr": "Graine vent",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Eau",
+          "case_principale_3ds": "Termina Map L-2 (Central Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Graine vent",
+          "fr_argent": "Bonne graine vent",
+          "fr_or": "Graine vent exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 5,
+            "CLA": 10,
+            "END": 0,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -5,
+            "VOL": 5,
+            "ESQ": 2,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P14",
+          "en": "Mystery Seeds",
+          "fr": "Graine mystère",
+          "fr_confiance": "LOW",
+          "categorie": "Végétal",
+          "element": "Lumière",
+          "case_principale_3ds": "Termina Map G-2 (Stock Room)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "notes_element": "⚠️ Source 3DS (SBAllen) : Mystery Seeds boosteraient l'élément OPPOSÉ (Ténèbres) malgré classification Lumière. Comportement DE à vérifier en jeu.",
+          "fr_bronze": "Graine mystère",
+          "fr_argent": "Bonne graine mystère",
+          "fr_or": "Graine mystère exquise",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 10,
+            "CLA": 5,
+            "END": 0,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": 5,
+            "ESQ": 2,
+            "ADM": -5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "P15",
+          "en": "Pumpkin",
+          "fr": "Potiron",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Végétal",
+          "element": "Lumière",
+          "case_principale_3ds": "Master Quest Map I-7 (Fairy Fountain)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Potiron",
+          "fr_argent": "Bon potiron",
+          "fr_or": "Potiron exquis",
+          "categorie_fr": "Végétaux",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 2,
+            "FRA": 5,
+            "CLA": 0,
+            "END": 5,
+            "PAS": 10,
+            "GAI": -5,
+            "ACR": 2,
+            "VOL": 0,
+            "ESQ": -2,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "A01",
+          "en": "Greengill",
+          "fr": "Goujon",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Poisson",
+          "element": "Eau",
+          "case_principale_3ds": "Twilight Map D-5 (N. Entrance Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Goujon",
+          "fr_argent": "Goujon goûtu",
+          "fr_or": "Goujon délicieux",
+          "categorie_fr": "Poisson",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": -5,
+            "CLA": 2,
+            "END": 5,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 0,
+            "VOL": 2,
+            "ESQ": -2,
+            "ADM": 10
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "A02",
+          "en": "Ordon Catfish",
+          "fr": "Silure de Toal",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Poisson",
+          "element": "Eau",
+          "case_principale_3ds": "Twilight Map F-4 (Central Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Silure de Toal",
+          "fr_argent": "Silure de Toal goûtu",
+          "fr_or": "Silure de Toal délicieux",
+          "categorie_fr": "Poisson",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -5,
+            "FRA": -2,
+            "CLA": 5,
+            "END": 2,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": 10,
+            "ESQ": 0,
+            "ADM": 5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "A03",
+          "en": "Hyrule Bass",
+          "fr": "Perche d'Hyrule",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Poisson",
+          "element": "Eau",
+          "case_principale_3ds": "Twilight Map B-3 (West Garden)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Perche d'Hyrule",
+          "fr_argent": "Bonne perche d'Hyrule",
+          "fr_or": "Perche d'Hyrule délicieuse",
+          "categorie_fr": "Poisson",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -5,
+            "FRA": 0,
+            "CLA": 5,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": 10,
+            "ESQ": -2,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "A04",
+          "en": "Hylian Pike",
+          "fr": "Brochet d'Hylia",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Poisson",
+          "element": "Eau",
+          "case_principale_3ds": "Twilight Map B-2 (South Field Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Brochet d'Hylia",
+          "fr_argent": "Brochet d'Hylia goûtu",
+          "fr_or": "Brochet d'Hylia délicieux",
+          "categorie_fr": "Poisson",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 0,
+            "CLA": 2,
+            "END": 10,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": 0,
+            "VOL": 5,
+            "ESQ": -5,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "A05",
+          "en": "Reekfish",
+          "fr": "Truite fétide",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Poisson",
+          "element": "Eau",
+          "case_principale_3ds": "Twilight Map D-8 (King's Hall)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Truite fétide",
+          "fr_argent": "Truite fétide goûtue",
+          "fr_or": "Truite fétide délicieuse",
+          "categorie_fr": "Poisson",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 0,
+            "CLA": 10,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -5,
+            "VOL": 5,
+            "ESQ": -2,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "A06",
+          "en": "Hylian Loach",
+          "fr": "Loche d'Hyrule",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Poisson",
+          "element": "Eau",
+          "case_principale_3ds": "Twilight Map G-4 (Rocky Square)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Loche d'Hyrule",
+          "fr_argent": "Loche d'Hyrule goûtue",
+          "fr_or": "Loche d'Hyrule délicieuse",
+          "categorie_fr": "Poisson",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": -2,
+            "CLA": 2,
+            "END": 2,
+            "PAS": 10,
+            "GAI": -5,
+            "ACR": 0,
+            "VOL": 5,
+            "ESQ": 0,
+            "ADM": 5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "W01",
+          "en": "Mushroom Spores",
+          "fr": "Spores de champignon",
+          "fr_confiance": "MEDIUM",
+          "categorie": "Bizarre",
+          "element": "Foudre",
+          "case_principale_3ds": "Master Quest Map B-4 (North Oasis)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Spores de champignon",
+          "fr_argent": "Spores scintillantes",
+          "fr_or": "Spores scintillantes exquises",
+          "categorie_fr": "Aliments bizarres",
+          "carte_wiki_fr": "Master Quest",
+          "or_traits": {
+            "VIV": 10,
+            "FRA": 5,
+            "CLA": -2,
+            "END": 2,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": 5,
+            "VOL": -5,
+            "ESQ": 0,
+            "ADM": -2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "W02",
+          "en": "Skullfish",
+          "fr": "Poisscrâne",
+          "fr_confiance": "LOW",
+          "categorie": "Bizarre",
+          "element": "Ténèbres",
+          "case_principale_3ds": "Twilight Map C-7 (Rocky Square)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Poisscrâne",
+          "fr_argent": "Poisscrâne goûtu",
+          "fr_or": "Poisscrâne délicieux",
+          "categorie_fr": "Aliments bizarres",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 2,
+            "CLA": 10,
+            "END": 5,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -5,
+            "VOL": 2,
+            "ESQ": -2,
+            "ADM": 5
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "W03",
+          "en": "Bombfish",
+          "fr": "Nitropoisson",
+          "fr_confiance": "LOW",
+          "categorie": "Bizarre",
+          "element": "Ténèbres",
+          "case_principale_3ds": "Twilight Map E-6 (Central Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Nitropoisson",
+          "fr_argent": "Nitropoisson goûtu",
+          "fr_or": "Nitropoisson délicieux",
+          "categorie_fr": "Aliments bizarres",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 0,
+            "CLA": 5,
+            "END": 5,
+            "PAS": 10,
+            "GAI": -5,
+            "ACR": -2,
+            "VOL": 2,
+            "ESQ": -2,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "W04",
+          "en": "Chu Jelly",
+          "fr": "Gelée chuchu",
+          "fr_confiance": "HIGH",
+          "categorie": "Bizarre",
+          "element": "Foudre",
+          "case_principale_3ds": "Twilight Map I-8 (E. Boulder Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Gelée chuchu",
+          "fr_argent": "Bonne gelée chuchu",
+          "fr_or": "Gelée chuchu inouïe",
+          "categorie_fr": "Aliments bizarres",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": -2,
+            "FRA": 0,
+            "CLA": 5,
+            "END": 10,
+            "PAS": 2,
+            "GAI": 0,
+            "ACR": -2,
+            "VOL": 5,
+            "ESQ": -5,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "W05",
+          "en": "Bee Larvae",
+          "fr": "Larve d'abeille",
+          "fr_confiance": "HIGH",
+          "categorie": "Bizarre",
+          "element": "Foudre",
+          "case_principale_3ds": "Twilight Map C-5 (NE Keep)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Larve d'abeille",
+          "fr_argent": "Bonne larve d'abeille",
+          "fr_or": "Larve d'abeille exquise",
+          "categorie_fr": "Aliments bizarres",
+          "carte_wiki_fr": "Crépuscule",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 0,
+            "CLA": 5,
+            "END": 5,
+            "PAS": 10,
+            "GAI": -5,
+            "ACR": -2,
+            "VOL": 2,
+            "ESQ": -2,
+            "ADM": 2
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        },
+        {
+          "id": "W06",
+          "en": "Rock Sirloin",
+          "fr": "Gigot de caillasse",
+          "fr_confiance": "LOW",
+          "categorie": "Bizarre",
+          "element": "Feu",
+          "case_principale_3ds": "Termina Map N-1 (North Oasis)",
+          "debloque": false,
+          "element_confirme": false,
+          "element_source": "GameFAQs Legends 3DS (SBAllen) — LOW confidence, non-DE",
+          "fr_bronze": "Gigot de caillasse",
+          "fr_argent": "Gigot de caillasse ferme",
+          "fr_or": "Gigot de caillasse brise-dent",
+          "categorie_fr": "Aliments bizarres",
+          "carte_wiki_fr": "Termina",
+          "or_traits": {
+            "VIV": 0,
+            "FRA": 2,
+            "CLA": 5,
+            "END": -5,
+            "PAS": 5,
+            "GAI": -2,
+            "ACR": -2,
+            "VOL": 2,
+            "ESQ": 10,
+            "ADM": 0
+          },
+          "or_traits_source": "Zelda Fandom FR wiki (HWL/DE) — MEDIUM"
+        }
+      ]
+    },
+    {
+      "id": "nour_016",
+      "category": "NOURRITURE",
+      "topic": "Chateau Romani — aliment Boisson distinct, élément Ténèbres",
+      "claim": "Chateau Romani est un aliment de type Boisson distinct du 'Lait Lon Lon' (B01). Il possède l'élément Ténèbres. Confirmation lore : lait premium de Romani Ranch, vendu au Milk Bar de Termina (Majora's Mask). Ses 3 raretés sont bronze/argent/or. Localisation pot or (3DS) : Termina G-6. Nom FR en DE : INCONNU — nom localisé probable (ES = 'Reserva Romani' en HWL). ",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": true,
+      "sources": [
+        "Zelda Fandom Wiki (HWL explicite) : Drink-type, Darkness element",
+        "GameFAQs Legends guide SBAllen : Chateau Romani = Darkness, Termina G-6",
+        "Zelda Wiki zeldawiki.wiki : 'Reserva Romani' en ES HWL → nom localisé"
+      ],
+      "notes": "MEDIUM : sources concordantes sur élément Ténèbres et type Boisson pour HWL. DE non explicite mais mécanique stable entre Legends et DE (nour_001). Nom FR à confirmer en jeu (Termina G-6). Note : 'Lait Lon Lon premium' FR ≠ Chateau Romani — c'est le tier or de B01."
+    },
+    {
+      "id": "nour_017",
+      "category": "NOURRITURE",
+      "topic": "Exception mécanique déblocage — drop sans pot OR explicite (Œuf curieux)",
+      "claim": "Le joueur a obtenu un drop d'Œuf curieux (F01) sans souvenir d'avoir brisé le pot OR spécifique à Adventure Map A-3. Deux hypothèses : (A) Le pot OR a été cassé lors d'une mission antérieure sans que le joueur s'en aperçoive — ce qui est probable car les pots sont souvent cassés incidentellement en combat. (B) La mécanique de déblocage fonctionne pour toute rareté obtenue (pas uniquement OR), et les sources citant 'gold variant' seraient incomplètes ou propres à certains items.",
+      "confidence": "LOW",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Observation joueur in-game v2.7 (unique, non corroboré)"
+      ],
+      "notes": "Hypothèse A reste la plus probable : briser un pot incidentellement pendant une mission suffit à déclencher le déblocage. Le joueur n'a pas besoin de 'viser' le pot. Ne remet pas fondamentalement en cause nour_001/nour_015 mais nuance leur certitude. À surveiller : si d'autres aliments se débloquent 'spontanément' → hypothèse B plus crédible."
+    },
+    {
+      "id": "nour_018",
+      "category": "NOURRITURE",
+      "topic": "Table complète traits de personnalité par aliment (version or)",
+      "claim": "Chaque aliment modifie les 10 traits de personnalité de manière spécifique selon sa rareté. La Zelda Fandom FR wiki fournit les valeurs exactes pour les 39 aliments en version or (exquis/délicieux). La règle générale (or = +10×1, +5×2, +2×2, -2×2, -5×1) est une APPROXIMATION : certains aliments dévient (ex: Haricot magique exquis a 3×-2 au lieu de 2×-2). Traits: VIV=Vivacité, FRA=Franchise, CLA=Classe, END=Endurance, PAS=Passion, GAI=Gaieté, ACR=Acrobatie, VOL=Volupté, ESQ=Esquive, ADM=Admiration.",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Zelda Fandom FR wiki (zelda.fandom.com/fr) — page Sac de Nourriture (HWL/DE)"
+      ],
+      "notes": "MEDIUM : source unique wiki FR, couvre HWL et DE. Données traits vérifiées cohérentes avec test in-game Irène (Lait Lon Lon frais → VIV+2, END+5 confirmés). ⚠️ ERREURS WIKI : éléments incorrects pour B01 (Eau→devrait être Lumière) et P02 (Lumière→Foudre). Les données de traits sont fiables ; les types d'élément du wiki sont ignorés. Or traits stockés dans nour_011.aliments[*].or_traits."
+    },
+    {
+      "id": "nour_019",
+      "category": "NOURRITURE",
+      "topic": "Noms FR corrects des 39 aliments — corrections depuis Zelda Fandom FR",
+      "claim": "Les noms français des aliments dans le jeu HWL/DE diffèrent de plusieurs traductions supposées dans la KB. Corrections confirmées depuis Zelda Fandom FR wiki : Fromage toalien (pas 'Fromage chèvre d'Ordinn'), Soupe de mémé (pas 'Soupe Élixir'), Soupe de citrouille (pas 'Soupe au Potimarron'), Eau de source (pas 'Eau en Bouteille'), Cuvée Romani (pas 'Château Romani'), Fruit miam miam (pas 'Poire Hyoï'), Baie d'endurance (pas 'Fruit d'Endurance'), Fruit d'eau (pas 'Fruit Aquatique'), Potiron (pas 'Citrouille'), Graine braise, Graine parfum, Graine vent, Graine mystère (noms courts), Goujon (pas 'Verdâtre'), Silure de Toal (pas 'Poisson-Chat d'Ordinn'), Truite fétide (pas 'Poisson Puant'), Loche d'Hyrule (pas 'Loche Hylienne'), Gelée chuchu (pas 'Gelée Chu'), Larve d'abeille (pas 'Larves d'Abeille'), Gigot de caillasse (pas 'Aloyau de Roc').",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": false,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Zelda Fandom FR wiki — page Sac de Nourriture, liens individuels par aliment"
+      ],
+      "notes": "À confirmer en jeu DE pour chaque nom corrigé. La page wiki cite les noms HWL mais DE utilise généralement les mêmes noms FR. Nommage raretés par type : Poissons : argent='[nom] goûtu/goûtue', or='[nom] délicieux/délicieuse' (sauf Perche→'Bonne'). Spores : bronze='Spores de champignon', argent='Spores scintillantes', or='Spores scintillantes exquises'. Gelée chuchu : or='Gelée chuchu inouïe'. Fromage toalien : or='Fromage toalien de luxe'. Lait Lon Lon : argent='Lait Lon Lon frais', or='Lait Lon Lon premium' (exception). Cuvée Romani : or='Cuvée Romani grand cru'. Défaut général : argent='Bon/Bonne [nom]', or='[nom] exquis/exquise'."
+    },
+    {
+      "id": "plan_001",
+      "category": "PLANNING",
+      "topic": "Prochains objectifs — mapping par map et case",
+      "confidence": "MEDIUM",
+      "de_explicitly_mentioned": true,
+      "multi_source_corroboration": false,
+      "sources": [
+        "Consolidation KB interne v2.3"
+      ],
+      "notes": "Coordonnées issues du guide 3DS Legends — dérive possible sur DE (cf. conflit_004). À corriger en jeu. ✅ v2.9 : cibles boisson_lumiere recatégorisées par élément réel (inc_002). Seule Crépuscule F-8 reste Lumière. ⚠️ v2.10 : coords quiz (A-5→E-1, A-15→O-1) et Lorule (D-14→N-4) corrigées (notation transposée).",
+      "objectifs": [
+        {
+          "map": "Carte Principale",
+          "cases": [
+            {
+              "case": "E-1",
+              "cat": "armes",
+              "desc": "Quiz Triforce — farm armes rapide (3-4 min, ~3 armes/run)"
+            },
+            {
+              "case": "O-1",
+              "cat": "armes",
+              "desc": "Quiz Légendaires — farm armes rapide"
+            },
+            {
+              "case": "B-2",
+              "cat": "armes",
+              "desc": "Quiz Royal — farm armes rapide"
+            }
+          ]
+        },
+        {
+          "map": "Grande Mer",
+          "cases": [
+            {
+              "case": "A-1",
+              "cat": "boisson_feu",
+              "desc": "Soupe de mémé — Boisson Feu (B04)"
+            }
+          ]
+        },
+        {
+          "map": "Master Quest",
+          "cases": [
+            {
+              "case": "C-5",
+              "cat": "boisson_eau",
+              "desc": "Eau sacrée — Boisson Eau (B03)"
+            },
+            {
+              "case": "F-5",
+              "cat": "boisson_feu",
+              "desc": "Soupe de citrouille — Boisson Feu (B02)"
+            }
+          ]
+        },
+        {
+          "map": "Crépuscule",
+          "cases": [
+            {
+              "case": "F-8",
+              "cat": "boisson_lumiere",
+              "desc": "Larmes de fées — Boisson Lumière (B05)"
+            }
+          ]
+        },
+        {
+          "map": "Termina",
+          "cases": [
+            {
+              "case": "E-4",
+              "cat": "boisson_eau",
+              "desc": "Eau de source — Boisson Eau (B07)"
+            },
+            {
+              "case": "G-8",
+              "cat": "boisson_feu",
+              "desc": "Eau de source chaude — Boisson Feu (B08)"
+            }
+          ]
+        },
+        {
+          "map": "Cocolint",
+          "cases": [
+            {
+              "case": "G-6",
+              "cat": "fee_lumiere",
+              "desc": "Irène — fée Lumière obtenue ✅ (Absorption magique)"
+            },
+            {
+              "case": "???",
+              "cat": "fee_lumiere",
+              "desc": "Neris — fée Lumière nom fixe, case inconnue (conflit_005)"
+            }
+          ]
+        },
+        {
+          "map": "Grand Travels",
+          "cases": [
+            {
+              "case": "toute la map",
+              "cat": "nourriture_generale",
+              "desc": "Farm nourriture x2, cap 8 — meilleure map nourriture"
+            }
+          ]
+        },
+        {
+          "map": "Lorule",
+          "cases": [
+            {
+              "case": "~N-4",
+              "cat": "armes",
+              "desc": "Divisive Plan Yuga — farm armes 4+ et rubis (double drops)"
+            }
+          ]
+        },
+        {
+          "map": "Crépuscule",
+          "cases": [
+            {
+              "case": "toute la map",
+              "cat": "materiaux",
+              "desc": "Double drops matériaux — farming Potion Slots III"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
