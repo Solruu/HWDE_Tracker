@@ -493,9 +493,11 @@ const LOOT_T=[
   ['Dragon Spear','Lance du Dragon'],['Magic Rod','Baguette Magique'],
   ['Dominion Rod','Baguette Dominante'],['Summoning Gate',"Portail d'Invocation"],
   ['Zora Scale','Écaille Zora'],['Ring','Anneau'],['Spear','Lance'],
-  ['Baton','Bâton'],['Mask','Masque'],['Agitha','Machaon']];
-function tMis(s){if(!s)return s;for(const[p,r]of MIS_PRE)s=s.replace(p,r);for(const[en,fr]of MIS_PH)s=s.split(en).join(fr);return s;}
-function tLoot(s){if(!s)return s;for(const[en,fr]of LOOT_T)s=s.split(en).join(fr);return tKeep(s);}
+  ['Baton','Bâton'],['Mask','Masque']];
+const NAMES=[["King Daphnes","Roi d'Hyrule"],["Twili Midna","Midona (vraie forme)"],["Young Link","Jeune Link"],["Toon Zelda","Zelda Cartoon"],["Toon Link","Link Cartoon"],["Wizzro","Iscerro"],["Agitha","Machaon"],["Medli","Médolie"],["Midna","Midona"],["Marin","Marine"],["Ravio","Lavio"],["Zant","Xanto"],["Cia","Cya"],["Fi","Fay"]];
+function tName(s){if(!s)return s;for(const[en,fr]of NAMES)s=s.replace(new RegExp('\\b'+en.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b','g'),fr);return s;}
+function tMis(s){if(!s)return s;for(const[p,r]of MIS_PRE)s=s.replace(p,r);for(const[en,fr]of MIS_PH)s=s.split(en).join(fr);return tName(s);}
+function tLoot(s){if(!s)return s;for(const[en,fr]of LOOT_T)s=s.split(en).join(fr);return tKeep(tName(s));}
 function tSearch(s){if(!s)return s;let r=s;for(const[en,fr]of SEARCH_PH)r=r.replace(en,fr);return r;}
 function tSkull(s){
   if(!s)return s;
