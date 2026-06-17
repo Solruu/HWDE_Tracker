@@ -62,7 +62,7 @@ const sandbox = {};
 vm.createContext(sandbox);
 
 // Dictionnaires (ordre indifférent, ils ne se référencent pas entre eux)
-const DICT_CONSTS = ['BASE_LOC', 'MIS_PRE', 'MIS_PH', 'SEARCH_PH', 'LOOT_T', 'DIR_MAP', 'EFR'];
+const DICT_CONSTS = ['BASE_LOC', 'MIS_PRE', 'MIS_PH', 'SEARCH_PH', 'LOOT_T', 'DIR_MAP', 'EFR', 'NAMES'];
 // DIR_RE est une regex utilisée par tKeep
 const REGEX_CONSTS = ['DIR_RE'];
 
@@ -71,7 +71,7 @@ for (const name of [...DICT_CONSTS, ...REGEX_CONSTS]) {
 }
 
 // Fonctions de traduction pures (déclarées dans l'ordre de dépendance)
-const FUNCS = ['tBase', 'tKeep', 'tMis', 'tLoot', 'tSearch', 'tSkull'];
+const FUNCS = ['tBase', 'tKeep', 'tName', 'tMis', 'tLoot', 'tSearch', 'tSkull'];
 for (const fn of FUNCS) {
   vm.runInContext(extractFunction(fn), sandbox);
 }
