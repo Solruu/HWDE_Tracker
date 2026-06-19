@@ -1,0 +1,2157 @@
+{
+ "A-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the dragon of the cavern!",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   },
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   }
+  ],
+  "heart_container": {
+   "from": "Ganondorf",
+   "stage": "Dragon Roost"
+  },
+  "weapon": {
+   "name": "Trident",
+   "lvl": 2,
+   "char": "Ganondorf"
+  },
+  "item_card_reward": "Boomerang",
+  "fairy": {
+   "element": "Darkness",
+   "loc": "Jail Watch Keep [Pot]"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "B04",
+   "loc": "Star Island Keep [Pot]"
+  }
+ },
+ "A-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Lead a raid deep into enemy territory!",
+  "great_sea_rule": "Don't Get Hit!",
+  "search": [
+   {
+    "card": "Boomerang",
+    "action": "Use on the Big Octo to remove the Great Sea Rule"
+   }
+  ],
+  "material_reward": "Volga's Dragon Spear",
+  "item_card_reward": "Hammer",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "A-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Strengthen your army and defeat the enemy! Lv.3",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Link",
+   "stage": "E. Boulder Keep"
+  },
+  "weapon": {
+   "name": "Great Fairy",
+   "lvl": 2,
+   "char": "Link"
+  },
+  "item_card_reward": "Boomerang",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located in the dead end found along the path northwest from the Allied Base. Use the hookshot to reach it.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (                 4+ hearts |         40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "A-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Hustle in the east and bustle in the west!",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "heart_container": {
+   "from": "Twili Midna",
+   "stage": "South Mine Keep"
+  },
+  "weapon": {
+   "name": "Mirror",
+   "lvl": 2,
+   "char": "Twili Midna"
+  },
+  "item_card_reward": "Hyoi Pear",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located along the east wall of the large circular room in the middle of the map.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (                4+ hearts |        40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "A-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Pierce through enemy defenses!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   },
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   }
+  ],
+  "fairy_deco": {
+   "name": "Island Aura",
+   "loc": "Hilltop Keep"
+  },
+  "weapon": {
+   "name": "Spinner",
+   "lvl": 2,
+   "char": "Link"
+  },
+  "item_card_reward": "Cannon",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "P08",
+   "loc": "South Field Keep [Pot]"
+  }
+ },
+ "A-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Destroy enemies and traitors alike! Lv.1",
+  "great_sea_rule": "No Item Attacks!",
+  "search": [
+   {
+    "card": "Hero's Bow",
+    "action": "Use on the tornado to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "King Daphnes's Crown",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "A-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Strengthen your army and defeat the enemy! Lv.4",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "weapon": {
+   "name": "Horse",
+   "lvl": 2,
+   "char": "Link"
+  },
+  "item_card_reward": "Wind Waker",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located in the dead end in the southeast corner of the map.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (               4+ hearts |               40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "B-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the bird of the fortress!",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "heart_container": {
+   "from": "King Daphnes",
+   "stage": "Fairy Fountain"
+  },
+  "item_card_reward": "Hammer",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "B-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Strengthen your army and defeat the enemy! Lv.2",
+  "great_sea_rule": "Double Damage!",
+  "search": [
+   {
+    "card": "Cannon",
+    "action": "Use on the warship to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "Ruto's Scale",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "B-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.5",
+  "item_card_reward": "Hero's Bow",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "B-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Team up and defeat the enemy forces! Lv.3",
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "B-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Fight the heroes of the Wind Waker!",
+  "great_sea_rule": "No Item Attacks!",
+  "search": [
+   {
+    "card": "Hero's Bow",
+    "action": "Use on the tornado to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "Island Outfit",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "B-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Get to those troops before the others do! Lv.5",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Ganondorf",
+   "stage": "Lower Level East"
+  },
+  "weapon": {
+   "name": "Great Swords",
+   "lvl": 2,
+   "char": "Ganondorf"
+  },
+  "item_card_reward": "Salvage Arm",
+  "fairy": {
+   "element": "Lightning",
+   "loc": "North Palace [Pot]"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "F02",
+   "loc": "North Palace [Pot]"
+  }
+ },
+ "B-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Fight through the travel memories quiz! Lv.2",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   },
+   {
+    "card": "Defeat Order",
+    "action": "Tetra, King Daphnes, Cia"
+   }
+  ],
+  "item_card_reward": "Hero's Bow",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "C-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Triumph over the trickster ghost gang!",
+  "great_sea_rule": "No Item Attacks!",
+  "search": [
+   {
+    "card": "Hero's Bow",
+    "action": "Use on the tornado to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "Majora's Mask",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "C-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat the barrier specialist forces! Lv.3",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "weapon": {
+   "name": "Gauntlets",
+   "lvl": 2,
+   "char": "Link"
+  },
+  "item_card_reward": "Wind Waker",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "C-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.6",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "item_card_reward": "Compass"
+ },
+ "C-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 500 enemies in time! Lv.2",
+  "item_card_reward": "Salvage Arm",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "C-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Fight through the Majora's Mask quiz!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   },
+   {
+    "card": "Defeat Order",
+    "action": "Tingle, Skull Kid, Young Link"
+   }
+  ],
+  "item_card_reward": "Compass",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "C-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.6",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "C-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Best the secretive enemies!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Zelda",
+   "stage": "North Field Keep"
+  },
+  "weapon": {
+   "name": "Dominion Rod",
+   "lvl": 2,
+   "char": "Zelda"
+  },
+  "item_card_reward": "Sea Chart",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "B04",
+   "loc": "West Field Keep [Pot]"
+  }
+ },
+ "D-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat the allied keeps! Lv.2",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Lana",
+   "stage": "NW Sage Keep"
+  },
+  "weapon": {
+   "name": "Summoning Gate",
+   "lvl": 2,
+   "char": "Lana"
+  },
+  "item_card_reward": "Power Bracelet",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located along the east wall in the large circular area in the middle of the map.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (               4+ hearts |               40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "D-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat the barrier specialist forces! Lv.4",
+  "search": [
+   {
+    "card": "Power Bracelet",
+    "action": "Use on the stone head"
+   },
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Fi",
+   "stage": "North Oasis"
+  },
+  "weapon": {
+   "name": "Goddess Blade",
+   "lvl": 2,
+   "char": "Fi"
+  },
+  "item_card_reward": "Deku Leaf",
+  "fairy": {
+   "element": "Light",
+   "loc": "S. Desert Keep [Pot]"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "P09",
+   "loc": "Enemy Base [Pot]"
+  }
+ },
+ "D-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Crush the spirits of these pesky upstarts!",
+  "great_sea_rule": "Double Damage!",
+  "search": [
+   {
+    "card": "Cannon",
+    "action": "Use on the warship to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "Lana's Cloak",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "D-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Fight your way through fire and flames!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Ruto",
+   "stage": "E. Mountain Keep"
+  },
+  "weapon": {
+   "name": "Zora Scale",
+   "lvl": 2,
+   "char": "Ruto"
+  },
+  "item_card_reward": "Hero's Bow",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located behind a cracked wall found along the west wall of the path between E. Boulder Keep and East",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (                4+ hearts |               40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "D-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.7",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Cannon"
+ },
+ "D-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Fight as a warrior of water!",
+  "great_sea_rule": "Don't Get Hit!",
+  "search": [
+   {
+    "card": "Hammer",
+    "action": "Use on the giant switch"
+   },
+   {
+    "card": "Boomerang",
+    "action": "Use on the Big Octo to remove the Great Sea Rule"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "D-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Team up and defeat the enemy forces! Lv.4",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   },
+   {
+    "card": "Hammer",
+    "action": "Use on the giant switch"
+   }
+  ],
+  "item_card_reward": "Boomerang",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Destroy enemies and traitors alike! Lv.2",
+  "great_sea_rule": "Double Damage!",
+  "search": [
+   {
+    "card": "Cannon",
+    "action": "Use on the warship to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "Tetra's Bandana",
+  "item_card_reward": "Power Bracelet",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Strengthen your army and defeat the enemy! Lv.5",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "heart_container": {
+   "from": "Tingle",
+   "stage": "Hall of Time"
+  },
+  "weapon": {
+   "name": "Balloon",
+   "lvl": 2,
+   "char": "Tingle"
+  },
+  "item_card_reward": "Wind Waker",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (                 4+ hearts |                 40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Prove your worth on Tingle Island!",
+  "great_sea_rule": "Don't Get Hit!",
+  "search": [
+   {
+    "card": "Boomerang",
+    "action": "Use on the Big Octo to remove the Great Sea Rule"
+   }
+  ],
+  "material_reward": "Tingle's Watch",
+  "item_card_reward": "Cannon",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.4",
+  "item_card_reward": "Hyoi Pear",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Be courageous and protect your keeps!",
+  "item_card_reward": "Deku Leaf",
+  "fairy_deco": {
+   "name": "Farore's Aura",
+   "loc": "Stone Square"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 500 enemies in time! Lv.1",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "E-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the dragon of the ruins!",
+  "item_card_reward": "Power Bracelet",
+  "fairy_deco": {
+   "name": "Island Aura",
+   "loc": "SE Sage Keep"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "F-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.7",
+  "search": [
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   }
+  ],
+  "item_card_reward": "Boomerang",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "F-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Team up and defeat the enemy forces! Lv.5",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Power Bracelet",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "F-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Rack up your KO count! Lv.4",
+  "search": [
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   },
+   {
+    "card": "Power Bracelet",
+    "action": "Use on the stone head"
+   }
+  ],
+  "item_card_reward": "Compass"
+ },
+ "F-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Get to those troops before the others do! Lv.4",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "heart_container": {
+   "from": "Skull Kid",
+   "stage": "W. Boulder Keep"
+  },
+  "weapon": {
+   "name": "Ocarina",
+   "lvl": 2,
+   "char": "Skull Kid"
+  },
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located in the middle of the large open area south of the Chief's Room.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (            4+ hearts |                40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "F-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Rack up your KO count! Lv.3",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "item_card_reward": "Salvage Arm"
+ },
+ "F-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all enemies! Lv.3",
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "F-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Battle alongside your...twin?",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "heart_container": {
+   "from": "Wizzro",
+   "stage": "Lakeside Keep"
+  },
+  "weapon": {
+   "name": "Ring",
+   "lvl": 2,
+   "char": "Wizzro"
+  },
+  "item_card_reward": "Hyoi Pear",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (           4+ hearts |             40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "G-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the beast of the temple!",
+  "search": [
+   {
+    "card": "Power Bracelet",
+    "action": "Use on the stone head"
+   },
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Volga",
+   "stage": "South Mine Keep"
+  },
+  "weapon": {
+   "name": "Dragon Spear",
+   "lvl": 2,
+   "char": "Volga"
+  },
+  "item_card_reward": "Hookshot",
+  "fairy_deco": {
+   "name": "Swirly Cheeks",
+   "loc": "NE Sage Keep"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "G-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.1",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Salvage Arm",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "G-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Prove you're more than a pip-squeak!",
+  "great_sea_rule": "Don't Get Hit!",
+  "search": [
+   {
+    "card": "Boomerang",
+    "action": "Use on the Big Octo to remove the Great Sea Rule"
+   }
+  ],
+  "material_reward": "Midna's Fused Shadow",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1600,
+   4000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "G-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.8",
+  "item_card_reward": "Hyoi Pear"
+ },
+ "G-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Fight as a warrior of fire!",
+  "great_sea_rule": "Double Damage!",
+  "search": [
+   {
+    "card": "Cannon",
+    "action": "Use on the warship to remove Great Sea Rule"
+   }
+  ],
+  "material_reward": "Twili Midna's Robe",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1600,
+   4000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "G-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.7",
+  "search": [
+   {
+    "card": "Sea Chart",
+    "action": "Use on the sea spray"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000,
+   149
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "G-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Get to those troops before the others do! Lv.3",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "heart_container": {
+   "from": "Zant",
+   "stage": "North Field Keep"
+  },
+  "weapon": {
+   "name": "Scimitars",
+   "lvl": 2,
+   "char": "Zant"
+  },
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "H-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 300 enemies in time! Lv.1",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Hyoi Pear",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "H-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO Competition! Lv.1",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Salvage Arm"
+ },
+ "H-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 1,000 enemies before the Rogue Forces do!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "item_card_reward": "Hookshot",
+  "time_limit_min": 15,
+  "stats_raw": [
+   10000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "H-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final Battle! Defeat the shadow of the sky!",
+  "search": [
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   }
+  ],
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located in a dead end in the northwest corner of the map.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (                  4+ hearts |             40%",
+   "NW Sage Keep."
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1600,
+   4000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "heart_container": {
+   "from": "Linkle                             None                                       Piece of Heart - Toon Link",
+   "stage": "Rock Keep"
+  }
+ },
+ "H-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the dragon of the tower!",
+  "search": [
+   {
+    "card": "Hookshot",
+    "action": "Use on the marker northeast of the tower door"
+   }
+  ],
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located along the western wall just west of the Enemy Base.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (                  4+ hearts |        40%",
+   "Sacred Pedestal"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1600,
+   4000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "H-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Destroy the army with boosted morale! Lv.3",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Ghirahim",
+   "stage": "West Temple"
+  },
+  "weapon": {
+   "name": "Demon Blade",
+   "lvl": 2,
+   "char": "Ghirahim"
+  },
+  "item_card_reward": "Deku Leaf",
+  "fairy_deco": {
+   "name": "Treasure Aura",
+   "loc": "East Keep"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "P09",
+   "loc": "Eastern Room [Pot]"
+  }
+ },
+ "H-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.3",
+  "item_card_reward": "Hyoi Pear",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Team up and defeat the enemy forces! Lv.1",
+  "item_card_reward": "Compass",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the Demon King of the castle!",
+  "heart_container": {
+   "from": "King Daphnes",
+   "stage": "South Field Keep"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1600,
+   10000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Have a showdown between hero and imp!",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   },
+   {
+    "card": "Sea Chart",
+    "action": "Use on the sea spray"
+   }
+  ],
+  "heart_container": {
+   "from": "Young Link",
+   "stage": "S. Entrance Keep"
+  },
+  "weapon": {
+   "name": "Mask",
+   "lvl": 2,
+   "char": "Young Link"
+  },
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located just north from the southeasternmost owl statue.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (                4+ hearts |              40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1600,
+   4000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.8",
+  "search": [
+   {
+    "card": "Hookshot",
+    "action": "Use on the marker west of the large rock in the north"
+   },
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Salvage Arm",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000,
+   199
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies in time! Lv.4",
+  "item_card_reward": "Salvage Arm",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "I-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Fight through the Wind Waker quiz!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   },
+   {
+    "card": "Defeat Order",
+    "action": "King Daphnes, Tetra, Toon Link"
+   }
+  ],
+  "item_card_reward": "Compass",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "J-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.2",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Hyoi Pear",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "J-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Rack up your KO count! Lv.1",
+  "item_card_reward": "Hyoi Pear"
+ },
+ "J-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Fight through the item master quiz!",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   },
+   {
+    "card": "Defeat Order",
+    "action": "Moblin, Stalmaster, Big Blin"
+   }
+  ],
+  "item_card_reward": "Hero's Bow",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "J-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Get to those troops before the others do! Lv.2",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "heart_container": {
+   "from": "Midna",
+   "stage": "West Temple"
+  },
+  "weapon": {
+   "name": "Shackle",
+   "lvl": 2,
+   "char": "Midna"
+  },
+  "item_card_reward": "Deku Leaf",
+  "fairy": {
+   "element": "Water",
+   "loc": "Ruins Summit [Pot]"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "J-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat the barrier specialist forces! Lv.2",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "heart_container": {
+   "from": "Darunia",
+   "stage": "Mountain Keep"
+  },
+  "weapon": {
+   "name": "Hammer",
+   "lvl": 2,
+   "char": "Darunia"
+  },
+  "item_card_reward": "Salvage Arm",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (              4+ hearts |              40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "J-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all enemies! Lv.2",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Hero's Bow",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "J-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.5",
+  "item_card_reward": "Wind Waker"
+ },
+ "K-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Get to those troops before the others do! Lv.1",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "heart_container": {
+   "from": "Agitha",
+   "stage": "School of Joy"
+  },
+  "weapon": {
+   "name": "Parasol",
+   "lvl": 2,
+   "char": "Agitha"
+  },
+  "item_card_reward": "Salvage Arm",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located northeast of the Dragon Roost.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (            4+ hearts |               40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "K-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all enemies! Lv.1",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "K-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat the barrier specialist forces! Lv.1",
+  "great_sea_rule": "No Item Attacks!",
+  "search": [
+   {
+    "card": "Hero's Bow",
+    "action": "Use on the tornado to remove Great Sea Rule"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "K-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.5",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "item_card_reward": "Cannon",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "K-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies in time! Lv.3",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "K-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the beast of the forest!",
+  "heart_container": {
+   "from": "King Daphnes",
+   "stage": "North Square"
+  },
+  "item_card_reward": "Sea Chart",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "K-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat your enemies...with kindness!",
+  "great_sea_rule": "No Item Attacks!",
+  "search": [
+   {
+    "card": "Hero's Bow",
+    "action": "Use on the tornado to remove Great Sea Rule"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "L-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.3",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "item_card_reward": "Hyoi Pear",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "L-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.2",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Hyoi Pear"
+ },
+ "L-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 300 enemies in time! Lv.2",
+  "item_card_reward": "Compass",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "L-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Fight through the travel memories quiz! Lv.1",
+  "item_card_reward": "Hyoi Pear",
+  "search": [
+   {
+    "card": "Defeat Order",
+    "action": "Volga, Ceremonial Troop (Moblin), Linkle"
+   }
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "L-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Strengthen your army and defeat the enemy! Lv.1",
+  "heart_container": {
+   "from": "King Daphnes",
+   "stage": "South Square"
+  },
+  "item_card_reward": "Salvage Arm",
+  "fairy_deco": {
+   "name": "Wind Aura",
+   "loc": "Tunnel Square"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "L-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.6",
+  "search": [
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   }
+  ],
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "L-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Team up and defeat the enemy forces! Lv.2",
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "M-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.3",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Salvage Arm"
+ },
+ "M-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Final battle! Defeat the beast of the volcano!",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "heart_container": {
+   "from": "Zelda",
+   "stage": "Stock Room"
+  },
+  "weapon": {
+   "name": "Baton",
+   "lvl": 2,
+   "char": "Zelda"
+  },
+  "item_card_reward": "Wind Waker",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "M-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Rack up your KO count! Lv.2",
+  "search": [
+   {
+    "card": "Wind Waker",
+    "action": "Use to clear the headwinds"
+   },
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Salvage Arm"
+ },
+ "M-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies in time! Lv.1",
+  "item_card_reward": "Deku Leaf",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "M-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Win the KO competition! Lv.4",
+  "item_card_reward": "Hyoi Pear"
+ },
+ "M-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Destroy the army with boosted morale! Lv.2",
+  "great_sea_rule": "Double Damage!",
+  "search": [
+   {
+    "card": "Cannon",
+    "action": "Use on the warship to remove Great Sea Rule"
+   }
+  ],
+  "item_card_reward": "Wind Waker",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "M-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies in time! Lv.2",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Compass",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "N-1": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defeat the enemy celebrities!",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "weapon": {
+   "name": "Spear",
+   "lvl": 2,
+   "char": "Lana"
+  },
+  "item_card_reward": "Hyoi Pear",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located in the dead end northwest of the Enemy Base.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (              4+ hearts |                40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "N-2": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.4",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Hyoi Pear",
+  "time_limit_min": 15,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "N-3": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Destroy the army with boosted morale! Lv.1",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "heart_container": {
+   "from": "Toon Link",
+   "stage": "Fairy Fountain"
+  },
+  "weapon": {
+   "name": "Light Sword",
+   "lvl": 2,
+   "char": "Toon Link"
+  },
+  "item_card_reward": "Salvage Arm",
+  "fairy_deco": {
+   "name": "Pirate Aura",
+   "loc": "North Field Keep"
+  },
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "F02",
+   "loc": "Fairy Fountain [Pot]"
+  }
+ },
+ "N-4": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Don't leave your troops hanging!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "heart_container": {
+   "from": "Cia",
+   "stage": "Glutton's Keep"
+  },
+  "weapon": {
+   "name": "Scepter",
+   "lvl": 2,
+   "char": "Cia"
+  },
+  "item_card_reward": "Deku Leaf",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located in the dead end northeast from Star Island Keep.",
+   "Complete the first mission and capture five or more enemy Keeps without losing (               4+ hearts |                 40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "N-5": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Challenge",
+  "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+  "search": [
+   {
+    "card": "Hyoi Pear",
+    "action": "Use on the seagull"
+   }
+  ],
+  "item_card_reward": "Compass",
+  "time_limit_min": 7,
+  "stats_raw": [
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ },
+ "N-6": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Trust in your troops' resilience!",
+  "search": [
+   {
+    "card": "Deku Leaf",
+    "action": "Use on the windmill"
+   }
+  ],
+  "fairy": {
+   "element": "Fire",
+   "loc": "Fairy Fountain [Pot]"
+  },
+  "weapon": {
+   "name": "Magic Rod",
+   "lvl": 2,
+   "char": "Link"
+  },
+  "item_card_reward": "Salvage Arm",
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)",
+  "fairy_food": {
+   "ref_kb": "P08",
+   "loc": "West Temple [Pot]"
+  }
+ },
+ "N-7": {
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mission_type": "Adventure",
+  "mission_en": "Defend the allied keeps! Lv.1",
+  "search": [
+   {
+    "card": "Salvage Arm",
+    "action": "Use on the ring of light"
+   }
+  ],
+  "heart_container": {
+   "from": "Impa",
+   "stage": "Glutton's Keep"
+  },
+  "weapon": {
+   "name": "Naginata",
+   "lvl": 2,
+   "char": "Impa"
+  },
+  "item_card_reward": "Deku Leaf",
+  "skulltula_count": 2,
+  "skulltula_cond": [
+   "KO 1000 enemies. Located northeast of the Dragon Roost in the grass.",
+   "Complete the first mission and KO 150 enemies with special attacks without losing (           4+ hearts |              40%"
+  ],
+  "time_limit_min": 15,
+  "stats_raw": [
+   1200,
+   1000,
+   4000
+  ],
+  "stats_note": "non labellisé (KO/rubis à confirmer en jeu)"
+ }
+}
