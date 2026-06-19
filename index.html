@@ -20,6 +20,8 @@ header{background:var(--panel);border-bottom:1px solid var(--border);padding:8px
 .hdr{display:flex;align-items:center;gap:10px;margin-bottom:6px}
 .hdr h1{font-size:17px;font-weight:700;color:var(--gold)}
 .badge{font-size:10px;background:#1a3020;color:#66cc88;border:1px solid #336644;border-radius:3px;padding:1px 5px}
+.io-btn{font-size:10px;background:#16243a;color:#7fb2e0;border:1px solid #2d4a6b;border-radius:3px;padding:2px 7px;cursor:pointer;font-family:inherit}
+.io-btn:hover{background:#1d3050;color:#a9cdf0}
 .ver{font-size:11px;color:var(--dim)}
 .save-ind{font-size:10px;color:var(--yes);margin-left:auto;opacity:0;transition:opacity .4s}
 .save-ind.show{opacity:1}
@@ -145,6 +147,9 @@ main{flex:1;overflow:hidden}
     <span class="badge">KB v2.7</span>
     <span class="ver">Switch/DE · Fées &amp; Nourritures</span>
     <span class="save-ind" id="saveInd">💾 Sauvegardé</span>
+    <button class="io-btn" id="btnExport" title="Exporter ma progression dans un fichier .json">⬇ Exporter</button>
+    <button class="io-btn" id="btnImport" title="Importer une progression depuis un fichier .json">⬆ Importer</button>
+    <input type="file" id="importFile" accept="application/json,.json" style="display:none">
   </div>
   <div class="tabs" id="tabs"></div>
 </header>
@@ -205,6 +210,42 @@ function save(){
     const i=document.getElementById('saveInd');i.classList.add('show');
     clearTimeout(i._t);i._t=setTimeout(()=>i.classList.remove('show'),1800);}catch(e){}
 }
+/* ═══ EXPORT / IMPORT PROGRESSION ═══ */
+function exportProgress(){
+  try{
+    const raw=localStorage.getItem(LS)||JSON.stringify(S);
+    const payload={app:'HWDE_Tracker',ls_key:LS,exported_at:new Date().toISOString(),data:JSON.parse(raw)};
+    const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+    const d=new Date(),pad=n=>String(n).padStart(2,'0');
+    const fname='hwde_progression_'+d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())+'.json';
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);a.download=fname;
+    document.body.appendChild(a);a.click();
+    setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},0);
+  }catch(e){alert("Échec de l'export : "+e.message);}
+}
+function importProgressFile(file){
+  const r=new FileReader();
+  r.onload=function(){
+    try{
+      const obj=JSON.parse(r.result);
+      const data=(obj&&obj.data&&typeof obj.data==='object')?obj.data:obj;
+      if(!data||typeof data!=='object')throw new Error('format non reconnu');
+      const n=Object.keys(data.searches||{}).length+Object.keys(data.foods||{}).length+Object.keys(data.fairies||{}).length+Object.keys(data.rewards||{}).length;
+      if(!confirm('Importer cette progression ?\nElle remplacera la progression actuelle de CE navigateur.\n\nÉléments détectés : '+n))return;
+      localStorage.setItem(LS,JSON.stringify(data));
+      location.reload();
+    }catch(e){alert('Fichier invalide : '+e.message);}
+  };
+  r.onerror=function(){alert('Lecture du fichier impossible.');};
+  r.readAsText(file);
+}
+(function(){
+  var be=document.getElementById('btnExport'),bi=document.getElementById('btnImport'),fi=document.getElementById('importFile');
+  if(be)be.onclick=exportProgress;
+  if(bi&&fi)bi.onclick=function(){fi.click();};
+  if(fi)fi.onchange=function(){if(this.files&&this.files[0])importProgressFile(this.files[0]);this.value='';};
+})();
 function fv(fn,f){return S.foods[fn]?.[f]!==undefined?S.foods[fn][f]:(KB.kb_foods[fn]?.[f]??null);}
 function yv(k,f){return S.fairies[k]?.[f]!==undefined?S.fairies[k][f]:(KB.kb_fairies[k]?.[f]??null);}
 function togFood(fn,f){if(!S.foods[fn])S.foods[fn]={};S.foods[fn][f]=!fv(fn,f);save();rerender();}
