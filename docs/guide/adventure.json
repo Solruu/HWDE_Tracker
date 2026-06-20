@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Adventure",
-  "version": "v0",
+  "version": "v1",
   "n_cells": 128,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
@@ -17,7 +17,9 @@
    "fairy_food.ref_kb": "id aliment KB nour_011",
    "malus_rule": "contrainte (removable=annulable via Item Card)",
    "warp": "teleport entre cases (cf MAP_PORTALS)",
-   "instrument": "Instrument des Sirenes (Koholint)"
+   "instrument": "Instrument des Sirenes (Koholint)",
+   "quiz_solution": "ordre des ennemis à battre (cases quizz) — validé coords texte + solution lue sur PDF propre",
+   "boss_key": "emplacement de la clé du boss (parse texte)"
   }
  },
  "cells": {
@@ -238,7 +240,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the royalty quiz!",
+   "quiz_solution": "Zant, Impa, Zelda"
   },
   "B-3": {
    "confidence": "HIGH",
@@ -714,7 +719,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Aeralfos, Shield Moblin, Big Poe"
   },
   "E-1": {
    "confidence": "HIGH",
@@ -735,7 +741,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "quiz_solution": "Ganondorf, Zelda, Link"
   },
   "E-2": {
    "confidence": "HIGH",
@@ -777,7 +784,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Aeralfos, Moblin, Lizalfos"
   },
   "E-4": {
    "confidence": "HIGH",
@@ -1011,7 +1019,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Agitha, Agitha, Midna"
   },
   "F-7": {
    "confidence": "HIGH",
@@ -1051,7 +1060,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Ghirahim, Moblin, Fi"
   },
   "G-1": {
    "confidence": "HIGH",
@@ -1366,7 +1376,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Darknut, Stalmaster, Moblin"
   },
   "H-7": {
    "confidence": "HIGH",
@@ -1534,7 +1545,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Moblin, Big Poe, Shield Moblin"
   },
   "I-7": {
    "confidence": "HIGH",
@@ -1623,7 +1635,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Lana, Lana, Midna"
   },
   "J-3": {
    "confidence": "HIGH",
@@ -1799,7 +1812,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Big Poe, ReDead Knight, Sheik"
   },
   "K-4": {
    "confidence": "HIGH",
@@ -2098,7 +2112,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the Ocarina of Time quiz!",
+   "quiz_solution": "Darunia, Sheik, Ruto"
   },
   "M-3": {
    "confidence": "HIGH",
@@ -2167,7 +2184,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "quiz_solution": "Ruto, Impa, Darunia"
   },
   "M-6": {
    "confidence": "HIGH",
@@ -2432,7 +2450,8 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "quiz_solution": "Ruto, Agitha, Ganondorf"
   },
   "O-2": {
    "confidence": "HIGH",
@@ -2584,7 +2603,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the travel memories quiz!",
+   "quiz_solution": "Lizalfos, Wizzro, Cia"
   },
   "O-8": {
    "confidence": "HIGH",
