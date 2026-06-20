@@ -1,0 +1,2595 @@
+{
+ "meta": {
+  "map": "Grand Travels",
+  "version": "v0",
+  "n_cells": 128,
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "hourglass_dual_area",
+   "removable": null,
+   "summary": "Carte en deux zones disjointes (deux departs). Sablier central : du sable tombe toutes les 3 batailles ; une fois vide, il faut decrocher un Rang A (au lieu de B/C) pour debloquer les cases adjacentes. On le recharge en battant les niveaux 'Final battle!' ou il se trouve.",
+   "ref_kb": "map_008"
+  },
+  "schema": {
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
+  }
+ },
+ "cells": {
+  "A-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.2",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.2",
+   "item_card_reward": "Whirlwind"
+  },
+  "A-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the commanders of two armies!",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Chancellor's Trousers",
+    "loc": "Arbiter's Keep"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Central Keep [Pot]"
+   }
+  },
+  "A-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Impa"
+   ],
+   "item_card_reward": "Steel Train",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take on the warriors of Majora's Mask! Lv.1",
+   "item_card_reward": "Whirlwind",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the middle of the path going diagonally between East Goron Keep and E. Boulder Keep behind a",
+    "Complete the first mission and capture five or more keeps without losing (             + hearts |           40% health). It is"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.6",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Ganondorf"
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "A-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of lightning!",
+   "item_card_reward": "Whirlwind",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                 + hearts |            40% health). It is located in"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "A-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the shadow in the dark den!",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "W. Rockface Keep"
+   },
+   "weapon": {
+    "name": "Dragon Spear",
+    "lvl": 4,
+    "char": "Volga"
+   },
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "North Field Keep [Pot]"
+   }
+  },
+  "B-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the snowy plains' beast!",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Anouki Headband",
+    "loc": "Lakeside Keep"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "West Room [Pot]"
+   }
+  },
+  "B-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Can you become king of the castle!",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Linkle"
+   ],
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "Mountain Keep [Pot]"
+   }
+  },
+  "B-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.4",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the great tree!",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 1,
+    "char": "Toon Link"
+   },
+   "heart_container": {
+    "from": "Toon Link",
+    "stage": "W. Rockface Keep"
+   },
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F01",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "B-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.1",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.3",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time!",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "B-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rack up your KO count! Lv.1",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Young Link"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Chancellor's Hat",
+    "loc": "SE Room"
+   },
+   "item_card_reward": "Spirit Train",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "Hall of Mirrors [Pot]"
+   }
+  },
+  "C-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defend the allied keeps! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "NW Sage Keep"
+   },
+   "weapon": {
+    "name": "Demon Blade",
+    "lvl": 4,
+    "char": "Ghirahim"
+   },
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "NE Sage Keep [Pot]"
+   }
+  },
+  "C-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.4",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defend the allied keeps! Lv.1",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Railway Track",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end northeast of Star Island Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              + hearts |           40% health). It is located in"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "C-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.1",
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F03",
+    "loc": "East Garden [Pot]"
+   }
+  },
+  "C-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the mystery mastery quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Big Poe, Dinolfos, Darknut"
+    }
+   ],
+   "item_card_reward": "Spirit Train",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.2",
+   "item_card_reward": "Cannon",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the little round area just southwest of the Allied Base.",
+    "Complete the first mission and KO 1200 enemies without losing (              + hearts |   40% health). It is located in"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "C-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.1",
+   "item_card_reward": "Railway Track"
+  },
+  "C-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.2",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.2",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 4,
+    "char": "Toon Link"
+   },
+   "heart_container": {
+    "from": "Toon Link",
+    "stage": "Academy Keep"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "Academy Keep [Pot]"
+   }
+  },
+  "D-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.10",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Steel Train",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Twilight! Lv.2",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Darunia"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Twilight! Lv.2",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "D-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the barrier specialist forces! Lv.1",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Chancellor's Jacket",
+    "loc": "South Square"
+   },
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P06",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "D-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.5",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Twilight! Lv.1",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Forest Trousers",
+    "loc": "West Field Keep"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P06",
+    "loc": "Rocky Square [Pot]"
+   }
+  },
+  "D-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.1",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.3",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the giant bird of the Fire Temple!",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Volga"
+   ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F03",
+    "loc": "Exit Square [Pot]"
+   }
+  },
+  "E-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.2",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "weapon": {
+    "name": "Rito Harp",
+    "lvl": 4,
+    "char": "Medli"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Aeralfos Forces! Lv.2",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Armored Trousers",
+    "loc": "N. Settlement"
+   },
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P04",
+    "loc": "North Oasis [Pot]"
+   }
+  },
+  "E-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.7",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Toon Link"
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take the steam out of their engines!",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Cia",
+    "stage": "West Square"
+   },
+   "weapon": {
+    "name": "Scepter",
+    "lvl": 4,
+    "char": "Cia"
+   },
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "E-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.3",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.4",
+   "item_card_reward": "Golden Train"
+  },
+  "F-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the heroes of the Wind Waker! Lv.1",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "F-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.5",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "F-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Dinolfos Forces!",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Spirit Train",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                + hearts |   40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.3",
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.3",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Whirlwind"
+  },
+  "F-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.6",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 2,
+    "char": "Toon Link"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.7",
+   "item_card_reward": "Cyclone Slate",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.1",
+   "item_card_reward": "Golden Ship",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located just to the southwest of the Enemy Base.",
+    "Complete the first mission and capture five or more enemy keeps without losing (      + hearts |               40% health)."
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.13",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Golden Train",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "G-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the army of Big Blins! Lv.1",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "G-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.8",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.14",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Hero's Clothes (Grand Travels) - Link"
+   ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "G-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the demon king in the castle!",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "G-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Aeralfos Forces! Lv.1",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.6",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Tetra"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the distant seas!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    },
+    {
+     "card": "Cyclone Slate",
+     "action": "Use on the golden frog"
+    }
+   ],
+   "heart_container": {
+    "from": "Toon Zelda",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Phantom Arms",
+    "lvl": 3,
+    "char": "Toon Zelda"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "Central Square [Pot]"
+   }
+  },
+  "H-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the sand castle!",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 4,
+    "char": "Toon Link"
+   },
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "North Oasis [Pot]"
+   }
+  },
+  "H-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the vehicle quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Ruto, Midna, Toon Link"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "H-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 3,
+    "char": "Toon Link"
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 1200,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the bird of the deep!",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "weapon": {
+    "name": "Baton",
+    "lvl": 4,
+    "char": "Zelda"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "Faces Keep [Pot]"
+   }
+  },
+  "H-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the barrier specialist forces! Lv.2",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "weapon": {
+    "name": "Trident",
+    "lvl": 4,
+    "char": "Ganondorf"
+   },
+   "item_card_reward": "Cannon",
+   "heart_container": {
+    "from": "Ganondorf",
+    "stage": "West Cannon Keep"
+   },
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "H-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.3",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.5",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.1",
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.4",
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of fire!",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Armored Top",
+    "loc": "East Temple"
+   },
+   "item_card_reward": "Steel Train",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "I-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the traveling hero quiz!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    },
+    {
+     "card": "Defeat order",
+     "action": "Toon Link, Tetra, Toon Zelda"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "I-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.14",
+   "search": [
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "I-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of time! Lv.1",
+   "search": [
+    {
+     "card": "Cyclone Slate",
+     "action": "Use on the golden frog"
+    },
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Ruto"
+   ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "I-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the cave!",
+   "fairy": {
+    "element": "Water",
+    "loc": "Eastern Tree"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Eastern Tree [Pot]"
+   }
+  },
+  "I-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the forgetful foe quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Darunia, Toon Link, Toon Zelda"
+    }
+   ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the seafloor!",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    },
+    {
+     "card": "Railway Track",
+     "action": "Use on the severed railway"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Armored Helmet",
+    "loc": "Southwest Keep"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P04",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "J-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.10",
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Skyloft! Lv.1",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.8",
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "J-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the temple!",
+   "search": [
+    {
+     "card": "Whirlwind",
+     "action": "Use on the windmill"
+    }
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "East Room"
+   },
+   "weapon": {
+    "name": "Magic Rod",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "West Room [Pot]"
+   }
+  },
+  "J-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Gibdo Forces!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cyclone Slate",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (               + hearts |            40%"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.1",
+   "item_card_reward": "Iron Ship",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the secret island!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Fi"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Skyloft Slacks",
+    "loc": "Temple Face Keep"
+   },
+   "item_card_reward": "Cyclone Slate",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "East Room [Pot]"
+   }
+  },
+  "K-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the army of Big Blins! Lv.2",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "K-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the army of Big Blins! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Impa",
+    "stage": "W. Rockface Keep"
+   },
+   "weapon": {
+    "name": "Naginata",
+    "lvl": 4,
+    "char": "Impa"
+   },
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "K-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike! Lv.1",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Lana",
+    "stage": "Faces Keep"
+   },
+   "weapon": {
+    "name": "Spear",
+    "lvl": 4,
+    "char": "Lana"
+   },
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B01",
+    "loc": "SW Sage Keep [Pot]"
+   }
+  },
+  "K-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.7",
+   "item_card_reward": "Cyclone Slate",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "K-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.1",
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.1",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.1",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.3",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Zant",
+    "stage": "NW Sage Keep"
+   },
+   "weapon": {
+    "name": "Scimitars",
+    "lvl": 4,
+    "char": "Zant"
+   },
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "NE Sage Keep [Pot]"
+   }
+  },
+  "L-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take on the warriors of Majora's Mask! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Twili Midna",
+    "stage": "Lakeside Keep"
+   },
+   "weapon": {
+    "name": "Mirror",
+    "lvl": 4,
+    "char": "Twili Midna"
+   },
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A02",
+    "loc": "Hall of Mirrors [Pot]"
+   }
+  },
+  "L-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Skyloft! Lv.2",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "L-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.11",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Iron Ship",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Tingle"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.2",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Destiny Tiara",
+    "loc": "South Square"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A02",
+    "loc": "Sacred Pedestal [Pot]"
+   }
+  },
+  "L-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.2",
+   "item_card_reward": "S.S. Linebeck",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! lv.1",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "L-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.1",
+   "item_card_reward": "Fishing Rod"
+  },
+  "M-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.5",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Destiny Skirt",
+    "loc": "East Garden"
+   },
+   "item_card_reward": "S.S. Linebeck",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A06",
+    "loc": "Northeast Keep [Pot]"
+   }
+  },
+  "M-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the ruins!",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "S. Entrance Keep [Pot]"
+   }
+  },
+  "M-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.13",
+   "search": [
+    {
+     "card": "Cyclone Slate",
+     "action": "Use on the golden frog"
+    },
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "weapon": {
+    "name": "Phantom Arms",
+    "lvl": 4,
+    "char": "Toon Zelda"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "M-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of time! Lv.2",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Destiny Necklace",
+    "loc": "Stronghold"
+   },
+   "item_card_reward": "Cyclone Slate",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A06",
+    "loc": "Stronghold [Pot]"
+   }
+  },
+  "M-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.3",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "M-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.2",
+   "search": [
+    {
+     "card": "Cyclone Slate",
+     "action": "Use on the golden frog"
+    }
+   ],
+   "item_card_reward": "Fishing Rod",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located northwest of the Allied Base.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (              + hearts |                 40%"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "M-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.1",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Twili Midna"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the eternal fire!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "heart_container": {
+    "from": "Toon Zelda",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Phantom Arms",
+    "lvl": 2,
+    "char": "Toon Zelda"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F01",
+    "loc": "Stock Room [Pot]"
+   }
+  },
+  "N-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the enemy forces!",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "N-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.5",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cannon"
+  },
+  "N-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "An SOS?! Quickly, to the rescue!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Zelda"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Destiny Top",
+    "loc": "Hilltop Keep"
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "N-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the enemy's recruitment efforts!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Skull Kid"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "Eastern Tree [Pot]"
+   }
+  },
+  "N-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.8",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the center boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Balloon",
+    "lvl": 4,
+    "char": "Tingle"
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "S. Rockface Keep [Pot]"
+   }
+  },
+  "N-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.8",
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the heroes of the Wind Waker! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Jail Watch Keep"
+   },
+   "weapon": {
+    "name": "Ring",
+    "lvl": 4,
+    "char": "Wizzro"
+   },
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "Star Island Keep [Pot]"
+   }
+  },
+  "O-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.4",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cyclone Slate",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "O-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of light! Lv.3",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "O-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of light! Lv.2",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (    + hearts |          40%"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "O-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.2",
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.9",
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.2",
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 1200,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the mountain!",
+   "item_card_reward": "Cyclone Slate",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                4+ hearts |      40% health). It is located in",
+    "N. Settlement"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the action quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Fi, Volga, Toon Zelda"
+    }
+   ],
+   "item_card_reward": "Iron Ship",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "P-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike! Lv.2",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Phantom Arms",
+    "lvl": 4,
+    "char": "Toon Zelda"
+   },
+   "heart_container": {
+    "from": "Toon Zelda",
+    "stage": "Central Chamber"
+   },
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "Northeast Keep [Pot]"
+   }
+  },
+  "P-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the chosen ones! Lv.1",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Captain's Jacket",
+    "loc": "Central Keep"
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "P-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.12",
+   "search": [
+    {
+     "card": "Cyclone Slate",
+     "action": "Use on the golden frog"
+    }
+   ],
+   "item_card_reward": "Golden Ship",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "P-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the iceberg!",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "P-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.9",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "P-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of light! Lv.1",
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the boulder"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - King Daphnes"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Captain's Trousers",
+    "loc": "East Keep"
+   },
+   "item_card_reward": "S.S. Linebeck",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "Eastern Room [Pot]"
+   }
+  },
+  "P-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.12",
+   "search": [
+    {
+     "card": "Cyclone Slate",
+     "action": "Use on the golden frog"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "P-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.4",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  }
+ }
+}
