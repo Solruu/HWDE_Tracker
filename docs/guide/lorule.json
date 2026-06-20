@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Lorule",
-  "version": "v0",
+  "version": "v1",
   "n_cells": 128,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
@@ -18,7 +18,10 @@
    "malus_rule": "contrainte (removable=annulable via Item Card)",
    "warp": "teleport entre cases (cf MAP_PORTALS)",
    "instrument": "Instrument des Sirenes (Koholint)"
-  }
+  },
+  "changelog": [
+   "v1: Defeat Order deplaces de search vers champ quiz_order (source GUIDE inline)."
+  ]
  },
  "cells": {
   "A-1": {
@@ -32,21 +35,7 @@
      "action": "Use on the tile"
     }
    ],
-   "heart_container": {
-    "from": "Ravio",
-    "stage": "Stock Room"
-   },
-   "weapon": {
-    "name": "Rental Hammer",
-    "lvl": 3,
-    "char": "Ravio"
-   },
    "item_card_reward": "Power Glove",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Witch's Dress",
-    "loc": "Stone Square"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -58,6 +47,20 @@
    "fairy_food": {
     "ref_kb": "P04",
     "loc": "West Square [Pot]"
+   },
+   "heart_container": {
+    "from": "Ravio",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Rental Hammer",
+    "lvl": 3,
+    "char": "Ravio"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Witch's Dress",
+    "loc": "Stone Square"
    }
   },
   "A-2": {
@@ -71,9 +74,6 @@
      "action": "Use on the wooden post"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Skull Kid"
-   ],
    "item_card_reward": "Tornado Rod",
    "rang_a": {
     "temps_max_min": 15,
@@ -81,16 +81,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Skull Kid"
+   ]
   },
   "A-3": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Battlefield chaos! Territory tug-of-war!",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -98,7 +98,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "A-4": {
    "confidence": "HIGH",
@@ -110,9 +113,6 @@
      "card": "Hammer",
      "action": "Use on the wooden post"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Zant"
    ],
    "item_card_reward": "Baby Maiamai",
    "rang_a": {
@@ -126,7 +126,10 @@
    "fairy_food": {
     "ref_kb": "F01",
     "loc": "Stock Room [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Zant"
+   ]
   },
   "A-5": {
    "confidence": "HIGH",
@@ -159,11 +162,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "weapon": {
-    "name": "Crossbows",
-    "lvl": 4,
-    "char": "Linkle"
-   },
    "item_card_reward": "Hammer",
    "rang_a": {
     "temps_max_min": 15
@@ -171,6 +169,11 @@
    "fairy_food": {
     "ref_kb": "F01",
     "loc": "Star Island Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Crossbows",
+    "lvl": 4,
+    "char": "Linkle"
    }
   },
   "A-7": {
@@ -184,6 +187,14 @@
      "action": "Use on the cracked wall"
     }
    ],
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "S. Desert Keep [Pot]"
+   },
    "heart_container": {
     "from": "Link",
     "stage": "North Oasis"
@@ -192,14 +203,6 @@
     "name": "Spinner",
     "lvl": 4,
     "char": "Link"
-   },
-   "item_card_reward": "Hammer",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "B05",
-    "loc": "S. Desert Keep [Pot]"
    }
   },
   "A-8": {
@@ -207,16 +210,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Stop the enemy merger! Lv.5",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "B-1": {
    "confidence": "HIGH",
@@ -278,11 +281,6 @@
     }
    ],
    "item_card_reward": "Wall Painting",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located southeast of Hilltop Keep.",
-    "Complete the first mission and defeat 100 enemies while using Focus Spirit without losing (     4+ hearts |"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -290,7 +288,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located southeast of Hilltop Keep.",
+    "Complete the first mission and defeat 100 enemies while using Focus Spirit without losing (     4+ hearts |"
+   ]
   },
   "B-5": {
    "confidence": "HIGH",
@@ -317,11 +320,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the action quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Medli, Yuga, Ravio"
-    }
+   "quiz_order": [
+    "Medli",
+    "Yuga",
+    "Ravio"
    ],
    "item_card_reward": "Baby Maiamai",
    "rang_a": {
@@ -344,6 +346,14 @@
      "action": "Use on the cracked wall"
     }
    ],
+   "item_card_reward": "Power Glove",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "North Mine Keep [Pot]"
+   },
    "heart_container": {
     "from": "Impa",
     "stage": "South Mine Keep"
@@ -352,14 +362,6 @@
     "name": "Giant Blade",
     "lvl": 4,
     "char": "Impa"
-   },
-   "item_card_reward": "Power Glove",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "F04",
-    "loc": "North Mine Keep [Pot]"
    }
   },
   "B-8": {
@@ -373,9 +375,6 @@
      "action": "Use on the wooden post"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Ganondorf"
-   ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
@@ -383,7 +382,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Ganondorf"
+   ]
   },
   "C-1": {
    "confidence": "HIGH",
@@ -397,11 +399,6 @@
     }
    ],
    "item_card_reward": "Tornado Rod",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located on the plateau north from East Field Keep, accessible via Hookshot.",
-    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |        40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -409,7 +406,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the plateau north from East Field Keep, accessible via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |        40% health). It is located in"
+   ]
   },
   "C-2": {
    "confidence": "HIGH",
@@ -464,11 +466,6 @@
      "action": "Use on the wooden post"
     }
    ],
-   "weapon": {
-    "name": "Rental Hammer",
-    "lvl": 2,
-    "char": "Ravio"
-   },
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 1200,
@@ -481,6 +478,11 @@
    "fairy_food": {
     "ref_kb": "F02",
     "loc": "South Square [Pot]"
+   },
+   "weapon": {
+    "name": "Rental Hammer",
+    "lvl": 2,
+    "char": "Ravio"
    }
   },
   "C-6": {
@@ -494,9 +496,6 @@
      "action": "Use on the rock"
     }
    ],
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -504,7 +503,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "C-7": {
    "confidence": "HIGH",
@@ -579,18 +581,6 @@
      "action": "Use on the switch"
     }
    ],
-   "heart_container": {
-    "from": "Yuga",
-    "stage": "East Temple"
-   },
-   "rewards_other": [
-    "Standard Outfit (Lorule) - King Daphnes"
-   ],
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Beautiful Trousers",
-    "loc": "West Ruins"
-   },
    "item_card_reward": "Bow",
    "rang_a": {
     "ko": 1200,
@@ -603,6 +593,18 @@
    "fairy_food": {
     "ref_kb": "P12",
     "loc": "West Temple [Pot]"
+   },
+   "heart_container": {
+    "from": "Yuga",
+    "stage": "East Temple"
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - King Daphnes"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Beautiful Trousers",
+    "loc": "West Ruins"
    }
   },
   "D-4": {
@@ -670,14 +672,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Tingle"
-   ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Rabbit Robe",
-    "loc": "North Field Keep"
-   },
    "item_card_reward": "Hammer",
    "rang_a": {
     "temps_max_min": 15
@@ -685,6 +679,14 @@
    "fairy_food": {
     "ref_kb": "F02",
     "loc": "Abandoned Fort [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Tingle"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Rabbit Robe",
+    "loc": "North Field Keep"
    }
   },
   "D-8": {
@@ -706,12 +708,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the beast in the Tower of Hera!",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "E-2": {
    "confidence": "HIGH",
@@ -752,11 +754,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the giant shadow in Hyrule Castle!",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Beautiful Cape",
-    "loc": "Fairy Fountain"
-   },
    "item_card_reward": "Fire Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -764,6 +761,11 @@
    "fairy_food": {
     "ref_kb": "F04",
     "loc": "South Field Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Beautiful Cape",
+    "loc": "Fairy Fountain"
    }
   },
   "E-5": {
@@ -810,28 +812,28 @@
      "action": "Shoot the Beamos"
     }
    ],
-   "warp": [
-    "Item Card"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Item Card"
+   ]
   },
   "E-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Get more allied keeps and defeat the enemy! Lv.1",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "F-1": {
    "confidence": "HIGH",
@@ -867,11 +869,6 @@
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.1",
    "item_card_reward": "Bow",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located on the plateau in the dead end just northwest from W. Boulder Keep, accessible via Hookshot.",
-    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |               40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -879,19 +876,24 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the plateau in the dead end just northwest from W. Boulder Keep, accessible via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |               40% health). It is located in"
+   ]
   },
   "F-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of Skyloft! Lv.2",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "F-5": {
    "confidence": "HIGH",
@@ -904,9 +906,6 @@
      "action": "Use on the wooden post"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Lana"
-   ],
    "item_card_reward": "Sand Rod",
    "rang_a": {
     "temps_max_min": 15,
@@ -914,16 +913,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Lana"
+   ]
   },
   "F-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Aeralfos Forces!",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "search": [
     {
      "card": "Ice Rod",
@@ -932,7 +931,10 @@
    ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "F-7": {
    "confidence": "HIGH",
@@ -960,14 +962,14 @@
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of Twilight!",
    "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies.",
     "Complete the first mission and capture five or more enemy keeps without losing (          4+ hearts |                 40% health)."
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "G-1": {
    "confidence": "HIGH",
@@ -1023,13 +1025,13 @@
    "mission_type": "Adventure",
    "mission_en": "Defeat the Stone Moblin Forces!",
    "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "fairy_cosmetic": {
     "type": "Headwear",
     "name": "Witch's Hat",
     "loc": "West Town Keep"
-   },
-   "rang_a": {
-    "temps_max_min": 15
    }
   },
   "G-5": {
@@ -1083,11 +1085,6 @@
      "action": "Bomb Shop"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Queen's Crown",
-    "loc": "Jail Watch Keep"
-   },
    "item_card_reward": "Tornado Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -1095,6 +1092,11 @@
    "fairy_food": {
     "ref_kb": "A03",
     "loc": "Bomb Shop [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Queen's Crown",
+    "loc": "Jail Watch Keep"
    }
   },
   "G-8": {
@@ -1122,11 +1124,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "weapon": {
-    "name": "Great Swords",
-    "lvl": 4,
-    "char": "Ganondorf"
-   },
    "item_card_reward": "Power Glove",
    "rang_a": {
     "temps_max_min": 15
@@ -1134,6 +1131,11 @@
    "fairy_food": {
     "ref_kb": "B05",
     "loc": "West Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Great Swords",
+    "lvl": 4,
+    "char": "Ganondorf"
    }
   },
   "H-2": {
@@ -1141,12 +1143,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of time! Lv.2",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "H-3": {
    "confidence": "HIGH",
@@ -1163,9 +1165,6 @@
      "action": "Use on the ice statue"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Midna"
-   ],
    "item_card_reward": "Boomerang",
    "rang_a": {
     "temps_max_min": 15,
@@ -1173,7 +1172,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Midna"
+   ]
   },
   "H-4": {
    "confidence": "HIGH",
@@ -1186,23 +1188,23 @@
      "action": "Shoot the Beamos"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Decoration",
-    "name": "Beautiful Aura",
-    "loc": "South Square"
-   },
    "item_card_reward": "Boomerang",
-   "weapon": {
-    "name": "Rental Hammer",
-    "lvl": 4,
-    "char": "Ravio"
-   },
    "rang_a": {
     "temps_max_min": 15
    },
    "fairy_food": {
     "ref_kb": "A03",
     "loc": "Sacred Pedestal [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Beautiful Aura",
+    "loc": "South Square"
+   },
+   "weapon": {
+    "name": "Rental Hammer",
+    "lvl": 4,
+    "char": "Ravio"
    }
   },
   "H-5": {
@@ -1217,14 +1219,14 @@
     }
    ],
    "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located in the northeast pointy dead end.",
     "Complete the first mission and defeat 150 enemies with Special Attacks without losing (            4+ hearts |              40%"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "H-6": {
    "confidence": "HIGH",
@@ -1251,23 +1253,22 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Push, push! Shove, shove! Move that weight!",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "H-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the legendary warrior quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Ghirahim, Ravio, Yuga"
-    }
+   "quiz_order": [
+    "Ghirahim",
+    "Ravio",
+    "Yuga"
    ],
    "item_card_reward": "Bomb",
    "rang_a": {
@@ -1290,11 +1291,6 @@
      "action": "Use on the switch"
     }
    ],
-   "weapon": {
-    "name": "Picture Frame",
-    "lvl": 3,
-    "char": "Yuga"
-   },
    "item_card_reward": "Wall Painting",
    "rang_a": {
     "ko": 1200,
@@ -1307,6 +1303,11 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "West Town Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 3,
+    "char": "Yuga"
    }
   },
   "I-2": {
@@ -1339,16 +1340,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Hunt down and defeat your foes! Lv.4",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "I-4": {
    "confidence": "HIGH",
@@ -1400,6 +1401,14 @@
      "action": "Use on the cracked wall"
     }
    ],
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "SE Sage Keep [Pot]"
+   },
    "fairy_cosmetic": {
     "type": "Accessory",
     "name": "Queen's Earrings",
@@ -1409,14 +1418,6 @@
     "name": "Epona",
     "lvl": 4,
     "char": "Link"
-   },
-   "item_card_reward": "Sand Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "B04",
-    "loc": "SE Sage Keep [Pot]"
    }
   },
   "I-7": {
@@ -1430,9 +1431,6 @@
      "action": "Use on the wooden post"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Fi"
-   ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15
@@ -1440,7 +1438,10 @@
    "fairy_food": {
     "ref_kb": "W03",
     "loc": "Rockface Keep [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Fi"
+   ]
   },
   "I-8": {
    "confidence": "HIGH",
@@ -1453,12 +1454,12 @@
      "action": "Use on the rock"
     }
    ],
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "J-1": {
    "confidence": "HIGH",
@@ -1470,9 +1471,6 @@
      "card": "Bow",
      "action": "Shoot the Beamos"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Agitha"
    ],
    "item_card_reward": "Hookshot",
    "rang_a": {
@@ -1486,7 +1484,10 @@
    "fairy_food": {
     "ref_kb": "P14",
     "loc": "Deku Tree [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Agitha"
+   ]
   },
   "J-2": {
    "confidence": "HIGH",
@@ -1514,11 +1515,6 @@
     }
    ],
    "item_card_reward": "Bow",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located just northeast of West Field Keep.",
-    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |              40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1526,7 +1522,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located just northeast of West Field Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |              40% health). It is located in"
+   ]
   },
   "J-4": {
    "confidence": "HIGH",
@@ -1538,9 +1539,6 @@
      "card": "Sand Rod",
      "action": "Use on the sand mound"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Ghirahim"
    ],
    "item_card_reward": "Hookshot",
    "rang_a": {
@@ -1554,7 +1552,10 @@
    "fairy_food": {
     "ref_kb": "P09",
     "loc": "Rocky Square [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Ghirahim"
+   ]
   },
   "J-5": {
    "confidence": "HIGH",
@@ -1646,11 +1647,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "weapon": {
-    "name": "Hylian Sword",
-    "lvl": 4,
-    "char": "Link"
-   },
    "item_card_reward": "Tornado Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -1658,6 +1654,11 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "Town Entrance [Pot]"
+   },
+   "weapon": {
+    "name": "Hylian Sword",
+    "lvl": 4,
+    "char": "Link"
    }
   },
   "K-2": {
@@ -1700,11 +1701,6 @@
    "mission_type": "Adventure",
    "mission_en": "Defeat the Big Poe Forces!",
    "item_card_reward": "Boomerang",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located in the dead end just northwest of the Enemy Base.",
-    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |    40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1712,7 +1708,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end just northwest of the Enemy Base.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |    40% health). It is located in"
+   ]
   },
   "K-5": {
    "confidence": "HIGH",
@@ -1733,27 +1734,22 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Hunt down and defeat your foes! Lv.3",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "K-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.3",
-   "fairy_cosmetic": {
-    "type": "Decoration",
-    "name": "Shell Aura",
-    "loc": "West Keep"
-   },
    "item_card_reward": "Sand Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -1761,6 +1757,11 @@
    "fairy_food": {
     "ref_kb": "W02",
     "loc": "West Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Shell Aura",
+    "loc": "West Keep"
    }
   },
   "K-8": {
@@ -1794,11 +1795,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "weapon": {
-    "name": "Dominion Rod",
-    "lvl": 4,
-    "char": "Zelda"
-   },
    "item_card_reward": "Power Glove",
    "rang_a": {
     "temps_max_min": 15
@@ -1806,6 +1802,11 @@
    "fairy_food": {
     "ref_kb": "F03",
     "loc": "Rock Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Dominion Rod",
+    "lvl": 4,
+    "char": "Zelda"
    }
   },
   "L-2": {
@@ -1820,17 +1821,17 @@
     }
    ],
    "item_card_reward": "Hammer",
-   "weapon": {
-    "name": "Picture Frame",
-    "lvl": 4,
-    "char": "Yuga"
-   },
    "rang_a": {
     "temps_max_min": 15
    },
    "fairy_food": {
     "ref_kb": "W06",
     "loc": "E. Mountain Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 4,
+    "char": "Yuga"
    }
   },
   "L-3": {
@@ -1848,11 +1849,6 @@
      "action": "Use on the ice statue"
     }
    ],
-   "weapon": {
-    "name": "Book of Sorcery",
-    "lvl": 4,
-    "char": "Lana"
-   },
    "item_card_reward": "Wall Painting",
    "rang_a": {
     "temps_max_min": 15
@@ -1860,6 +1856,11 @@
    "fairy_food": {
     "ref_kb": "P09",
     "loc": "North Mine Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Book of Sorcery",
+    "lvl": 4,
+    "char": "Lana"
    }
   },
   "L-4": {
@@ -1873,6 +1874,14 @@
      "action": "Use on the cracked wall"
     }
    ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "West Field Keep [Pot]"
+   },
    "fairy_cosmetic": {
     "type": "Top",
     "name": "Dark Beast Top",
@@ -1882,14 +1891,6 @@
     "name": "Rapier",
     "lvl": 4,
     "char": "Zelda"
-   },
-   "item_card_reward": "Boomerang",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "W01",
-    "loc": "West Field Keep [Pot]"
    }
   },
   "L-5": {
@@ -1957,16 +1958,7 @@
      "action": "Shoot the Beamos"
     }
    ],
-   "rewards_other": [
-    "Standard Outift (Lorule) - Ruto"
-   ],
    "item_card_reward": "Power Glove",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (   4+ hearts |             40%",
-    "Central Hall"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1974,7 +1966,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outift (Lorule) - Ruto"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (   4+ hearts |             40%",
+    "Central Hall"
+   ]
   },
   "M-1": {
    "confidence": "HIGH",
@@ -2037,11 +2038,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight the chosen ones!",
-   "fairy_cosmetic": {
-    "type": "Decoration",
-    "name": "Lorulean Earrings",
-    "loc": "SW Sage Keep"
-   },
    "item_card_reward": "Boomerang",
    "rang_a": {
     "temps_max_min": 15
@@ -2049,6 +2045,11 @@
    "fairy_food": {
     "ref_kb": "P08",
     "loc": "Faces Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Lorulean Earrings",
+    "loc": "SW Sage Keep"
    }
   },
   "M-6": {
@@ -2062,6 +2063,14 @@
      "action": "Use on the wooden post"
     }
    ],
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "Mountain Keep [Pot]"
+   },
    "heart_container": {
     "from": "Ravio",
     "stage": "Mountain Keep"
@@ -2073,14 +2082,6 @@
     "type": "Headwear",
     "name": "Rabbit Hood",
     "loc": "South Field Keep"
-   },
-   "item_card_reward": "Bow",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "A01",
-    "loc": "Mountain Keep [Pot]"
    }
   },
   "M-7": {
@@ -2094,16 +2095,6 @@
      "action": "Use on the switch"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Queen's Skirt",
-    "loc": "West Ruins"
-   },
-   "weapon": {
-    "name": "Picture Frame",
-    "lvl": 2,
-    "char": "Yuga"
-   },
    "item_card_reward": "Bow",
    "rang_a": {
     "ko": 1200,
@@ -2116,6 +2107,16 @@
    "fairy_food": {
     "ref_kb": "W03",
     "loc": "Enemy Base [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Queen's Skirt",
+    "loc": "West Ruins"
+   },
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 2,
+    "char": "Yuga"
    }
   },
   "M-8": {
@@ -2123,16 +2124,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Put an end to the enemy's divisive plan! Lv.1",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "N-1": {
    "confidence": "HIGH",
@@ -2153,11 +2154,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "A hyper-focused army unit advances!",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Dark Beast Skirt",
-    "loc": "Bomb Shop"
-   },
    "item_card_reward": "Wall Painting",
    "rang_a": {
     "temps_max_min": 15
@@ -2165,6 +2161,11 @@
    "fairy_food": {
     "ref_kb": "F03",
     "loc": "Beast's Vault [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Dark Beast Skirt",
+    "loc": "Bomb Shop"
    }
   },
   "N-3": {
@@ -2196,16 +2197,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Put an end to the enemy's divisive plan! Lv.4",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "N-5": {
    "confidence": "HIGH",
@@ -2222,11 +2223,6 @@
      "action": "Use on the flame statue"
     }
    ],
-   "rewards_other": [
-    "Masked (Lorule) - Cia",
-    "Unmasked (Lorule) - Cia",
-    "Hatless (Lorule) - Cia"
-   ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
@@ -2234,23 +2230,28 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Masked (Lorule) - Cia",
+    "Unmasked (Lorule) - Cia",
+    "Hatless (Lorule) - Cia"
+   ]
   },
   "N-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.3",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "N-7": {
    "confidence": "HIGH",
@@ -2263,11 +2264,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "weapon": {
-    "name": "Picture Frame",
-    "lvl": 4,
-    "char": "Yuga"
-   },
    "item_card_reward": "Baby Maiamai",
    "rang_a": {
     "temps_max_min": 15
@@ -2275,6 +2271,11 @@
    "fairy_food": {
     "ref_kb": "A04",
     "loc": "West Garden [Pot]"
+   },
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 4,
+    "char": "Yuga"
    }
   },
   "N-8": {
@@ -2297,14 +2298,14 @@
    "mission_type": "Adventure",
    "mission_en": "Defeat the enemy forces!",
    "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located in the middle of the large open area just south of the Allied Base.",
     "Complete the first mission and capture five or more keeps without losing (           4+ hearts |              40% health). It is"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "O-2": {
    "confidence": "HIGH",
@@ -2337,6 +2338,14 @@
      "action": "Use on the cracked wall"
     }
    ],
+   "item_card_reward": "Fire Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "West Room [Pot]"
+   },
    "heart_container": {
     "from": "Toon Link",
     "stage": "East Room"
@@ -2345,14 +2354,6 @@
     "name": "Light Sword",
     "lvl": 4,
     "char": "Toon Link"
-   },
-   "item_card_reward": "Fire Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "B04",
-    "loc": "West Room [Pot]"
    }
   },
   "O-4": {
@@ -2424,14 +2425,6 @@
      "action": "Use on the switch"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Impa"
-   ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Queen's Top",
-    "loc": "Stone Square"
-   },
    "item_card_reward": "Fire Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -2439,6 +2432,14 @@
    "fairy_food": {
     "ref_kb": "W02",
     "loc": "Central Square [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Impa"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Queen's Top",
+    "loc": "Stone Square"
    }
   },
   "O-8": {
@@ -2466,9 +2467,6 @@
      "action": "Use on the tile"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Darunia"
-   ],
    "item_card_reward": "Ice Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -2476,23 +2474,26 @@
    "fairy_food": {
     "ref_kb": "W06",
     "loc": "Enemy Base [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Darunia"
+   ]
   },
   "P-2": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Put an end to the enemy's divisive plan! Lv.6",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "P-3": {
    "confidence": "HIGH",
@@ -2505,13 +2506,6 @@
      "action": "Use on the wooden post"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Twili Midna"
-   ],
-   "heart_container": {
-    "from": "Midna",
-    "stage": "N. Entrance Keep"
-   },
    "item_card_reward": "Tornado Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -2519,6 +2513,13 @@
    "fairy_food": {
     "ref_kb": "B08",
     "loc": "Temple Square [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Twili Midna"
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "N. Entrance Keep"
    }
   },
   "P-4": {
@@ -2532,9 +2533,6 @@
      "action": "Shoot the Beamos"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Lorule) - Young Link"
-   ],
    "item_card_reward": "Ice Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -2542,7 +2540,10 @@
    "fairy_food": {
     "ref_kb": "P08",
     "loc": "Northwest Keep [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Young Link"
+   ]
   },
   "P-5": {
    "confidence": "HIGH",
@@ -2575,9 +2576,6 @@
      "action": "Use on the cracked wall"
     }
    ],
-   "rewards_other": [
-    "Great Fairy Lv4+ - Link"
-   ],
    "item_card_reward": "Ice Rod",
    "rang_a": {
     "temps_max_min": 15
@@ -2585,23 +2583,26 @@
    "fairy_food": {
     "ref_kb": "A01",
     "loc": "Fairy Fountain [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Great Fairy Lv4+ - Link"
+   ]
   },
   "P-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Scour the battlefield in pursuit of victory! Lv.13",
-   "warp": [
-    "Use after clearing the stage to open fissure to"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ]
   },
   "P-8": {
    "confidence": "HIGH",
@@ -2615,14 +2616,14 @@
     }
    ],
    "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located in the dead end just northwest of the Deku Tree.",
     "Complete the first mission and defeat 150 enemies with Special Attacks without losing (   4+ hearts |             40%"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   }
  }
 }
