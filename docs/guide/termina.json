@@ -1,0 +1,2106 @@
+{
+ "meta": {
+  "map": "Termina",
+  "version": "v0",
+  "n_cells": 85,
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "timer_reset",
+   "removable": null,
+   "summary": "Timer (lune) : lorsqu'il atteint 0, la carte se reinitialise et la progression est en grande partie perdue ; cycle de 72 'heures' (72 niveaux).",
+   "ref_kb": "map_013"
+  },
+  "schema": {
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
+  }
+ },
+ "cells": {
+  "A-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.2",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    },
+    {
+     "card": "Deku Stick",
+     "action": "Use on the torch"
+    }
+   ],
+   "weapon": {
+    "name": "Mask",
+    "lvl": 4,
+    "char": "Young Link"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Trickster Mask",
+    "loc": "Southwest Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "A-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to the troops before the others do! Lv.7",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "heart_container": {
+    "from": "Ganondorf",
+    "stage": "South Field Keep"
+   },
+   "weapon": {
+    "name": "Trident",
+    "lvl": 4,
+    "char": "Ganondorf"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Moon's Aura",
+    "loc": "Hilltop Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "A-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.7",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "Fairy Fountain"
+   },
+   "rewards_other": [
+    "Bunny Hood Costume - Zelda"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the pointy dead end east of the Eastern Room.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "B-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the barrier specialist forces!",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the cliff north of East Field Keep accessible via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "B-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the Demon King of the moon!",
+   "heart_container": {
+    "from": "Link",
+    "stage": "South Field Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "B-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.9",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "rewards_other": [
+    "Fierce Diety Link Costume - Link"
+   ],
+   "item_card_reward": "Goron Mask",
+   "rang_a": {
+    "ko": 199,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 10000,
+    "degats_max": 10000
+   }
+  },
+  "C-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Yesterday's foes are today's allies!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    },
+    {
+     "card": "Deku Stick",
+     "action": "Use on the torch"
+    }
+   ],
+   "weapon": {
+    "name": "Dominion Rod",
+    "lvl": 4,
+    "char": "Zelda"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Fierce Diety Facepaint",
+    "loc": "North Square"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "C-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.9",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "rewards_other": [
+    "Skull Kid's Clothes - Lana"
+   ],
+   "item_card_reward": "Deku Stick",
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "C-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 1,000 enemies before the Rogue Forces do! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "rewards_other": [
+    "Odolwa's Remains Costume - Ganondorf"
+   ],
+   "item_card_reward": "Deku Stick",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "D-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the ocean beast!",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "item_card_reward": "Deku Stick",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in",
+    "Town Center Keep"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.5",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "fairy": {
+    "element": "Water",
+    "loc": "West Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B07",
+    "loc": "East Keep [Pot]"
+   }
+  },
+  "E-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Guard the allied keeps with your life! Lv.2",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rouse the troops with encouraging words!",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "item_card_reward": "Inverted Song of Time",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rouse the troops with encouraging words!",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.7",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "weapon": {
+    "name": "Ocarina",
+    "lvl": 4,
+    "char": "Skull Kid"
+   },
+   "item_card_reward": "Zora Mask",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "F-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the bay!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "weapon": {
+    "name": "Goddess Blade",
+    "lvl": 4,
+    "char": "Fi"
+   },
+   "item_card_reward": "Zora Mask",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P10",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "F-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.3",
+   "search": [
+    {
+     "card": "Goron Mask",
+     "action": "Use on the switch"
+    },
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "rewards_other": [
+    "Era of the Hero of Time Armor - Ganondorf"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Help those in need!",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Ranch Skirt",
+    "loc": "N. Settlement"
+   },
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "F-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.5",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "Southeast Tree"
+   },
+   "weapon": {
+    "name": "Demon Blade",
+    "lvl": 4,
+    "char": "Ghirahim"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "Southern Tree [Pot]"
+   }
+  },
+  "F-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 700 enemies before the Rogue Forces do! Lv.4",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder in the northeast"
+    },
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "rewards_other": [
+    "Kokiri Tunic Costume - Link"
+   ],
+   "item_card_reward": "Zora Mask",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the temple!",
+   "item_card_reward": "Goron Mask",
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Fairy Fountain"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                  + hearts |                40% health). It is located in",
+    "Abandoned Fort"
+   ]
+  },
+  "G-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.3",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Postman Hat",
+    "loc": "Stone Square"
+   },
+   "weapon": {
+    "name": "Great Fairy",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P14",
+    "loc": "Stock Room [Pot]"
+   }
+  },
+  "G-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Beware the ghost's blade!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder in the northeast"
+    }
+   ],
+   "weapon": {
+    "name": "Naginata",
+    "lvl": 4,
+    "char": "Impa"
+   },
+   "heart_container": {
+    "from": "Impa",
+    "stage": "Academy Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.6",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "G-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "FIght through the mask quiz! Lv.2",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    },
+    {
+     "card": "Defeat Order",
+     "action": "Impa, Ghirahim, Wizzro"
+    }
+   ],
+   "rewards_other": [
+    "Stone Mask Costume - Fi"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.4",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "heart_container": {
+    "from": "Cia",
+    "stage": "Southeast Keep"
+   },
+   "weapon": {
+    "name": "Scepter",
+    "lvl": 4,
+    "char": "Cia"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Bunny Hood",
+    "loc": "Southwest Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B06",
+    "loc": "Temple Entrance [Pot]"
+   }
+  },
+  "G-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the westernmost boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Darunia",
+    "stage": "Temple Face Keep"
+   },
+   "weapon": {
+    "name": "Hammer",
+    "lvl": 4,
+    "char": "Darunia"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Deku Dress",
+    "loc": "King's Hall"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "East Room [Pot]"
+   }
+  },
+  "H-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 700 enemies before the Rogue Forces do! ! Lv.2",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.5",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the southernmost boulder"
+    }
+   ],
+   "rewards_other": [
+    "Troupe Leader's Mask Costume - Zant"
+   ],
+   "item_card_reward": "Deku Mask",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "H-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.2",
+   "item_card_reward": "Goron Mask",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 700 enemies before the Rogue Forces do! Lv.3",
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "The Cucco army rises once more!",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Ranch Top",
+    "loc": "Southwest Keep"
+   },
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "Hall of Time [Pot]"
+   }
+  },
+  "H-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.6",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    },
+    {
+     "card": "Deku Mask",
+     "action": "Use on the flower"
+    }
+   ],
+   "rewards_other": [
+    "Majora's Mask Costume - Cia"
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the forest dragon!",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    },
+    {
+     "card": "Deku Mask",
+     "action": "Use on the flower"
+    }
+   ],
+   "weapon": {
+    "name": "Horse",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Deku Mask",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Deku Tiara",
+    "loc": "Fairy Fountain"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Will you fall, or will you bloom?",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the northernmost boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "Lower Level East"
+   },
+   "rewards_other": [
+    "Deku Mask Costume - Lana"
+   ],
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Snowhead Necklace",
+    "loc": "Upper Level East"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "North Palace [Pot]"
+   }
+  },
+  "I-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.5",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the northernmost boulder"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "I-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Enjoy this house of horrors!",
+   "search": [
+    {
+     "card": "Goron Mask",
+     "action": "Use on the switch"
+    }
+   ],
+   "fairy": {
+    "element": "Lightning",
+    "loc": "Central Keep [Pot]"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P11",
+    "loc": "Rocky Square [Pot]"
+   }
+  },
+  "I-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.2",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 99,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "I-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.1",
+   "item_card_reward": "Bomb",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Balloon Shorts",
+    "loc": "North Oasis"
+   },
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "I-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.2",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "I-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.1",
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.3",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "rewards_other": [
+    "Era of the Hero of Time Outfit - Sheik"
+   ],
+   "item_card_reward": "Mask of Truth",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "J-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.2",
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the mask quiz! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the second boulder down on the western row"
+    },
+    {
+     "card": "Defeat order",
+     "action": "Zelda, Agitha, Midna"
+    }
+   ],
+   "rewards_other": [
+    "Goron Mask Costume - Darunia"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.4",
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "J-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.1",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Forest Top",
+    "loc": "East Keep"
+   },
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B06",
+    "loc": "West Ruins [Pot]"
+   }
+  },
+  "J-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.1",
+   "search": [
+    {
+     "card": "Giant",
+     "action": "Use all 4 Giant Item Cards to expose the northwest corner of the map"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "rewards_other": [
+    "Era of the Hero of Time Outfit - Impa"
+   ],
+   "rang_a": {
+    "ko": 99,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "J-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "rewards_other": [
+    "Zora Mask Costume - Ruto"
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use diversionary tactics to defeat the enemy! Lv.1",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Ranch Skirt",
+    "loc": "Fairy Fountain"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "K-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 700 enemies before the Rogue Forces do! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the sole boulder (hiding in the wall in the northeast corner)"
+    }
+   ],
+   "rewards_other": [
+    "Mask of Truth Costume - Impa"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.4",
+   "search": [
+    {
+     "card": "Goron Mask",
+     "action": "Use on the switch"
+    }
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on a cliff north of the Rogue Base accessible via Hookshot.",
+    "Complete the first mission and KO 150 enemies with Special Attacks without losing (               + hearts |          40%"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "rewards_other": [
+    "Don Gero's Mask Costume - Agitha"
+   ],
+   "item_card_reward": "Mask of Truth",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.1",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 1000,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "K-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Search the battlefield for wandering enemies!",
+   "item_card_reward": "Bomb",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                    40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "K-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "item_card_reward": "Mask of Truth",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.2",
+   "search": [
+    {
+     "card": "Deku Mask",
+     "action": "Use on the flower"
+    }
+   ],
+   "fairy": {
+    "element": "Fire",
+    "loc": "East Goron Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P10",
+    "loc": "East Keep [Pot]"
+   }
+  },
+  "K-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.1",
+   "search": [
+    {
+     "card": "Deku Mask",
+     "action": "Use on the flower"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.4",
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "L-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Don't ignore the messenger!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the middle of the three boulders"
+    }
+   ],
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Fairy Fountain"
+   },
+   "rewards_other": [
+    "Captain's Hat Costume - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Happiness Tiara",
+    "loc": "East Field Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P13",
+    "loc": "Central Keep [Pot]"
+   }
+  },
+  "L-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.3",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.4",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.7",
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "L-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.3",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "L-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.1",
+   "item_card_reward": "Deku Mask",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the swamp!",
+   "search": [
+    {
+     "card": "Goron Mask",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Deku Mask",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more keeps without losing (            4+ hearts |               40% health). It is",
+    "Exit Square."
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the valley!",
+   "search": [
+    {
+     "card": "Deku Mask",
+     "action": "Use on the flower"
+    }
+   ],
+   "item_card_reward": "Goron Mask",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (              + hearts |              40% health). It is located in",
+    "North Palace."
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.2",
+   "search": [
+    {
+     "card": "Goron Mask",
+     "action": "Use on the switch"
+    },
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "rewards_other": [
+    "Ordon Shield Costume - Midna"
+   ],
+   "item_card_reward": "Inverted Song of Time",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of water!",
+   "search": [
+    {
+     "card": "Deku Stick",
+     "action": "Use on the torch"
+    }
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (               + hearts |             40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "M-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the KO competition! Lv.8",
+   "search": [
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "item_card_reward": "Goron Mask",
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "M-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.8",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "rewards_other": [
+    "Era of the Hero of Time Robes - Zelda"
+   ],
+   "item_card_reward": "Majora's Mask",
+   "rang_a": {
+    "ko": 199,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "M-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Send the ghosts packing!",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    },
+    {
+     "card": "Deku Mask",
+     "action": "Use on the flower"
+    }
+   ],
+   "weapon": {
+    "name": "Baton",
+    "lvl": 4,
+    "char": "Zelda"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B07",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "M-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Guard the allied keeps with your life! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    },
+    {
+     "card": "Zora Mask",
+     "action": "Use on the whirlpool"
+    }
+   ],
+   "rewards_other": [
+    "Kafei's Mask Costume - Sheik"
+   ],
+   "item_card_reward": "Inverted Song of Time",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.3",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Postman Hat",
+    "loc": "East Keep"
+   },
+   "weapon": {
+    "name": "Harp",
+    "lvl": 4,
+    "char": "Sheik"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P11",
+    "loc": "East Keep [Pot]"
+   }
+  },
+  "N-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the westernmost boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Twili Midna",
+    "stage": "Central Keep"
+   },
+   "weapon": {
+    "name": "Mirror",
+    "lvl": 4,
+    "char": "Twili Midna"
+   },
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Snowhead Necklace",
+    "loc": "N. Settlement"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "North Oasis [Pot]"
+   }
+  },
+  "N-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.5",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up easternmost boulder on the third row up from the bottom"
+    }
+   ],
+   "rewards_other": [
+    "Giant's Mask Costume - Volga"
+   ],
+   "item_card_reward": "Inverted Song of Time",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Sword-fighting practice!",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "East Goron Keep"
+   },
+   "weapon": {
+    "name": "Dragon Spear",
+    "lvl": 4,
+    "char": "Volga"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Ranch Top",
+    "loc": "West Goron Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the castle!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the westernmost boulder"
+    }
+   ],
+   "rewards_other": [
+    "Kamaro's Mask Costume - Ghirahim"
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "West Square"
+   },
+   "item_card_reward": "Deku Stick",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Bunny Hood",
+    "loc": "Fairy Fountain"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 400 enemies before the Rogue Forces do! Lv.3",
+   "item_card_reward": "Deku Mask",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use diversionary tactics to defeat the enemy! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the northernmost boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Ruto",
+    "stage": "E. Mountain Keep"
+   },
+   "weapon": {
+    "name": "Zora Scale",
+    "lvl": 4,
+    "char": "Ruto"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Deku Tiara",
+    "loc": "West Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P13",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "O-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Lurking treachery, lurking shadows!",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Happiness Dress",
+    "loc": "South Square"
+   },
+   "weapon": {
+    "name": "Ring",
+    "lvl": 4,
+    "char": "Wizzro"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "Central Square [Pot]"
+   }
+  },
+  "O-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 1,000 enemies before the Rogue Forces do! Lv.1",
+   "search": [
+    {
+     "card": "Deku Stick",
+     "action": "Use on the torch"
+    }
+   ],
+   "item_card_reward": "Zora Mask",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Win the keep-capturing competition! Lv.6",
+   "search": [
+    {
+     "card": "Goron Mask",
+     "action": "Use on the switch"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "O-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the canyon!",
+   "item_card_reward": "Deku Stick",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end north of West Square.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |              40% health). It is located on",
+    "Fairy Fountain."
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "P-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.6",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the right of the three grouped boulders at the top of the square"
+    }
+   ],
+   "weapon": {
+    "name": "Summoning Gate",
+    "lvl": 4,
+    "char": "Lana"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P14",
+    "loc": "Sacred Pedestal [Pot]"
+   }
+  }
+ }
+}
