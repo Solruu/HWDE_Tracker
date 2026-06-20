@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Grand Travels",
-  "version": "v0",
+  "version": "v1",
   "n_cells": 128,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
@@ -18,7 +18,10 @@
    "malus_rule": "contrainte (removable=annulable via Item Card)",
    "warp": "teleport entre cases (cf MAP_PORTALS)",
    "instrument": "Instrument des Sirenes (Koholint)"
-  }
+  },
+  "changelog": [
+   "v1: Defeat Order deplaces de search vers champ quiz_order (source GUIDE inline)."
+  ]
  },
  "cells": {
   "A-1": {
@@ -47,11 +50,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the commanders of two armies!",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Chancellor's Trousers",
-    "loc": "Arbiter's Keep"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "ko": 1200,
@@ -64,6 +62,11 @@
    "fairy_food": {
     "ref_kb": "P08",
     "loc": "Central Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Chancellor's Trousers",
+    "loc": "Arbiter's Keep"
    }
   },
   "A-4": {
@@ -77,9 +80,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Impa"
-   ],
    "item_card_reward": "Steel Train",
    "rang_a": {
     "temps_max_min": 7,
@@ -87,7 +87,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Impa"
+   ]
   },
   "A-5": {
    "confidence": "HIGH",
@@ -95,11 +98,6 @@
    "mission_type": "Adventure",
    "mission_en": "Take on the warriors of Majora's Mask! Lv.1",
    "item_card_reward": "Whirlwind",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located in the middle of the path going diagonally between East Goron Keep and E. Boulder Keep behind a",
-    "Complete the first mission and capture five or more keeps without losing (             + hearts |           40% health). It is"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -107,7 +105,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the middle of the path going diagonally between East Goron Keep and E. Boulder Keep behind a",
+    "Complete the first mission and capture five or more keeps without losing (             + hearts |           40% health). It is"
+   ]
   },
   "A-6": {
    "confidence": "HIGH",
@@ -120,9 +123,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Ganondorf"
-   ],
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15,
@@ -130,7 +130,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Ganondorf"
+   ]
   },
   "A-7": {
    "confidence": "HIGH",
@@ -138,14 +141,14 @@
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of lightning!",
    "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies.",
     "Complete the first mission and KO 1200 enemies without losing (                 + hearts |            40% health). It is located in"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "A-8": {
    "confidence": "HIGH",
@@ -158,6 +161,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "North Field Keep [Pot]"
+   },
    "heart_container": {
     "from": "Volga",
     "stage": "W. Rockface Keep"
@@ -166,14 +177,6 @@
     "name": "Dragon Spear",
     "lvl": 4,
     "char": "Volga"
-   },
-   "item_card_reward": "Whirlwind",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "F04",
-    "loc": "North Field Keep [Pot]"
    }
   },
   "B-1": {
@@ -187,11 +190,6 @@
      "action": "Use on the severed railway"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Anouki Headband",
-    "loc": "Lakeside Keep"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "ko": 1200,
@@ -204,6 +202,11 @@
    "fairy_food": {
     "ref_kb": "F02",
     "loc": "West Room [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Anouki Headband",
+    "loc": "Lakeside Keep"
    }
   },
   "B-2": {
@@ -217,9 +220,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Linkle"
-   ],
    "item_card_reward": "Railway Track",
    "rang_a": {
     "ko": 1200,
@@ -232,7 +232,10 @@
    "fairy_food": {
     "ref_kb": "B04",
     "loc": "Mountain Keep [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Linkle"
+   ]
   },
   "B-3": {
    "confidence": "HIGH",
@@ -258,6 +261,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F01",
+    "loc": "Fairy Fountain [Pot]"
+   },
    "weapon": {
     "name": "Sand Wand",
     "lvl": 1,
@@ -266,14 +277,6 @@
    "heart_container": {
     "from": "Toon Link",
     "stage": "W. Rockface Keep"
-   },
-   "item_card_reward": "Railway Track",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "F01",
-    "loc": "Fairy Fountain [Pot]"
    }
   },
   "B-5": {
@@ -339,14 +342,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Young Link"
-   ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Chancellor's Hat",
-    "loc": "SE Room"
-   },
    "item_card_reward": "Spirit Train",
    "rang_a": {
     "ko": 1200,
@@ -359,6 +354,14 @@
    "fairy_food": {
     "ref_kb": "F02",
     "loc": "Hall of Mirrors [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Young Link"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Chancellor's Hat",
+    "loc": "SE Room"
    }
   },
   "C-1": {
@@ -372,6 +375,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Whirlwind",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "NE Sage Keep [Pot]"
+   },
    "heart_container": {
     "from": "Ghirahim",
     "stage": "NW Sage Keep"
@@ -380,14 +391,6 @@
     "name": "Demon Blade",
     "lvl": 4,
     "char": "Ghirahim"
-   },
-   "item_card_reward": "Whirlwind",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "B05",
-    "loc": "NE Sage Keep [Pot]"
    }
   },
   "C-2": {
@@ -416,14 +419,14 @@
     }
    ],
    "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located in the dead end northeast of Star Island Keep.",
     "Complete the first mission and KO 1200 enemies without losing (              + hearts |           40% health). It is located in"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "C-4": {
    "confidence": "HIGH",
@@ -444,11 +447,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the mystery mastery quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Big Poe, Dinolfos, Darknut"
-    }
+   "quiz_order": [
+    "Big Poe",
+    "Dinolfos",
+    "Darknut"
    ],
    "item_card_reward": "Spirit Train",
    "rang_a": {
@@ -466,14 +468,14 @@
    "mission_type": "Adventure",
    "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.2",
    "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located in the little round area just southwest of the Allied Base.",
     "Complete the first mission and KO 1200 enemies without losing (              + hearts |   40% health). It is located in"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "C-7": {
    "confidence": "HIGH",
@@ -513,6 +515,14 @@
      "action": "Use on the windmill"
     }
    ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "Academy Keep [Pot]"
+   },
    "weapon": {
     "name": "Sand Wand",
     "lvl": 4,
@@ -521,14 +531,6 @@
    "heart_container": {
     "from": "Toon Link",
     "stage": "Academy Keep"
-   },
-   "item_card_reward": "Cannon",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "W02",
-    "loc": "Academy Keep [Pot]"
    }
   },
   "D-2": {
@@ -562,9 +564,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Darunia"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -572,7 +571,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Darunia"
+   ]
   },
   "D-4": {
    "confidence": "HIGH",
@@ -588,11 +590,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the barrier specialist forces! Lv.1",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Chancellor's Jacket",
-    "loc": "South Square"
-   },
    "item_card_reward": "Railway Track",
    "rang_a": {
     "ko": 1200,
@@ -605,6 +602,11 @@
    "fairy_food": {
     "ref_kb": "P06",
     "loc": "Enemy Base [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Chancellor's Jacket",
+    "loc": "South Square"
    }
   },
   "D-6": {
@@ -627,11 +629,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of Twilight! Lv.1",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Forest Trousers",
-    "loc": "West Field Keep"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "ko": 1200,
@@ -644,6 +641,11 @@
    "fairy_food": {
     "ref_kb": "P06",
     "loc": "Rocky Square [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Forest Trousers",
+    "loc": "West Field Keep"
    }
   },
   "D-8": {
@@ -696,9 +698,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Volga"
-   ],
    "item_card_reward": "Whirlwind",
    "rang_a": {
     "temps_max_min": 15
@@ -706,7 +705,10 @@
    "fairy_food": {
     "ref_kb": "F03",
     "loc": "Exit Square [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Volga"
+   ]
   },
   "E-3": {
    "confidence": "HIGH",
@@ -719,11 +721,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "weapon": {
-    "name": "Rito Harp",
-    "lvl": 4,
-    "char": "Medli"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15,
@@ -731,6 +728,11 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Rito Harp",
+    "lvl": 4,
+    "char": "Medli"
    }
   },
   "E-4": {
@@ -738,11 +740,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Aeralfos Forces! Lv.2",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Armored Trousers",
-    "loc": "N. Settlement"
-   },
    "item_card_reward": "Whirlwind",
    "rang_a": {
     "ko": 1200,
@@ -755,6 +752,11 @@
    "fairy_food": {
     "ref_kb": "P04",
     "loc": "North Oasis [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Armored Trousers",
+    "loc": "N. Settlement"
    }
   },
   "E-5": {
@@ -768,9 +770,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Toon Link"
-   ],
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15,
@@ -778,7 +777,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Toon Link"
+   ]
   },
   "E-6": {
    "confidence": "HIGH",
@@ -791,15 +793,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "heart_container": {
-    "from": "Cia",
-    "stage": "West Square"
-   },
-   "weapon": {
-    "name": "Scepter",
-    "lvl": 4,
-    "char": "Cia"
-   },
    "item_card_reward": "Whirlwind",
    "rang_a": {
     "ko": 1200,
@@ -812,6 +805,15 @@
    "fairy_food": {
     "ref_kb": "W01",
     "loc": "West Square [Pot]"
+   },
+   "heart_container": {
+    "from": "Cia",
+    "stage": "West Square"
+   },
+   "weapon": {
+    "name": "Scepter",
+    "lvl": 4,
+    "char": "Cia"
    }
   },
   "E-7": {
@@ -876,11 +878,6 @@
     }
    ],
    "item_card_reward": "Spirit Train",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (                + hearts |   40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -888,7 +885,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                + hearts |   40% health). It is located in"
+   ]
   },
   "F-4": {
    "confidence": "HIGH",
@@ -928,11 +930,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "weapon": {
-    "name": "Sand Wand",
-    "lvl": 2,
-    "char": "Toon Link"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15,
@@ -940,6 +937,11 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 2,
+    "char": "Toon Link"
    }
   },
   "F-7": {
@@ -962,11 +964,6 @@
    "mission_type": "Adventure",
    "mission_en": "Get to those troops before the others do! Lv.1",
    "item_card_reward": "Golden Ship",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located just to the southwest of the Enemy Base.",
-    "Complete the first mission and capture five or more enemy keeps without losing (      + hearts |               40% health)."
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -974,7 +971,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located just to the southwest of the Enemy Base.",
+    "Complete the first mission and capture five or more enemy keeps without losing (      + hearts |               40% health)."
+   ]
   },
   "G-1": {
    "confidence": "HIGH",
@@ -1036,9 +1038,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Hero's Clothes (Grand Travels) - Link"
-   ],
    "item_card_reward": "Whirlwind",
    "rang_a": {
     "temps_max_min": 15,
@@ -1046,7 +1045,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Hero's Clothes (Grand Travels) - Link"
+   ]
   },
   "G-5": {
    "confidence": "HIGH",
@@ -1082,9 +1084,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Tetra"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -1092,7 +1091,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Tetra"
+   ]
   },
   "G-8": {
    "confidence": "HIGH",
@@ -1109,15 +1111,6 @@
      "action": "Use on the golden frog"
     }
    ],
-   "heart_container": {
-    "from": "Toon Zelda",
-    "stage": "Stock Room"
-   },
-   "weapon": {
-    "name": "Phantom Arms",
-    "lvl": 3,
-    "char": "Toon Zelda"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "ko": 1200,
@@ -1130,6 +1123,15 @@
    "fairy_food": {
     "ref_kb": "P09",
     "loc": "Central Square [Pot]"
+   },
+   "heart_container": {
+    "from": "Toon Zelda",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Phantom Arms",
+    "lvl": 3,
+    "char": "Toon Zelda"
    }
   },
   "H-1": {
@@ -1143,11 +1145,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "weapon": {
-    "name": "Sand Wand",
-    "lvl": 4,
-    "char": "Toon Link"
-   },
    "item_card_reward": "Railway Track",
    "rang_a": {
     "temps_max_min": 15
@@ -1155,6 +1152,11 @@
    "fairy_food": {
     "ref_kb": "W06",
     "loc": "North Oasis [Pot]"
+   },
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 4,
+    "char": "Toon Link"
    }
   },
   "H-2": {
@@ -1162,11 +1164,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the vehicle quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Ruto, Midna, Toon Link"
-    }
+   "quiz_order": [
+    "Ruto",
+    "Midna",
+    "Toon Link"
    ],
    "item_card_reward": "Cannon",
    "rang_a": {
@@ -1189,11 +1190,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "weapon": {
-    "name": "Sand Wand",
-    "lvl": 3,
-    "char": "Toon Link"
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 1200,
@@ -1201,6 +1197,11 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Sand Wand",
+    "lvl": 3,
+    "char": "Toon Link"
    }
   },
   "H-4": {
@@ -1214,11 +1215,6 @@
      "action": "Use on the windmill"
     }
    ],
-   "weapon": {
-    "name": "Baton",
-    "lvl": 4,
-    "char": "Zelda"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15
@@ -1226,6 +1222,11 @@
    "fairy_food": {
     "ref_kb": "P12",
     "loc": "Faces Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Baton",
+    "lvl": 4,
+    "char": "Zelda"
    }
   },
   "H-5": {
@@ -1239,18 +1240,18 @@
      "action": "Catch the fish"
     }
    ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "weapon": {
     "name": "Trident",
     "lvl": 4,
     "char": "Ganondorf"
    },
-   "item_card_reward": "Cannon",
    "heart_container": {
     "from": "Ganondorf",
     "stage": "West Cannon Keep"
-   },
-   "rang_a": {
-    "temps_max_min": 15
    }
   },
   "H-6": {
@@ -1319,11 +1320,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of fire!",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Armored Top",
-    "loc": "East Temple"
-   },
    "item_card_reward": "Steel Train",
    "rang_a": {
     "ko": 1200,
@@ -1336,6 +1332,11 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "West Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Armored Top",
+    "loc": "East Temple"
    }
   },
   "I-3": {
@@ -1367,11 +1368,12 @@
     {
      "card": "Fishing Rod",
      "action": "Catch the fish"
-    },
-    {
-     "card": "Defeat order",
-     "action": "Toon Link, Tetra, Toon Zelda"
     }
+   ],
+   "quiz_order": [
+    "Toon Link",
+    "Tetra",
+    "Toon Zelda"
    ],
    "item_card_reward": "Cannon",
    "rang_a": {
@@ -1418,9 +1420,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Ruto"
-   ],
    "item_card_reward": "Fishing Rod",
    "rang_a": {
     "ko": 1200,
@@ -1433,17 +1432,16 @@
    "fairy_food": {
     "ref_kb": "P08",
     "loc": "West Keep [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Ruto"
+   ]
   },
   "I-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the beast of the cave!",
-   "fairy": {
-    "element": "Water",
-    "loc": "Eastern Tree"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "ko": 1200,
@@ -1452,6 +1450,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy": {
+    "element": "Water",
+    "loc": "Eastern Tree"
    },
    "fairy_food": {
     "ref_kb": "P08",
@@ -1463,11 +1465,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the forgetful foe quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Darunia, Toon Link, Toon Zelda"
-    }
+   "quiz_order": [
+    "Darunia",
+    "Toon Link",
+    "Toon Zelda"
    ],
    "item_card_reward": "Fishing Rod",
    "rang_a": {
@@ -1494,14 +1495,6 @@
      "action": "Use on the severed railway"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Wizzro"
-   ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Armored Helmet",
-    "loc": "Southwest Keep"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "ko": 1200,
@@ -1514,6 +1507,14 @@
    "fairy_food": {
     "ref_kb": "P04",
     "loc": "West Keep [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Armored Helmet",
+    "loc": "Southwest Keep"
    }
   },
   "J-2": {
@@ -1569,6 +1570,14 @@
      "action": "Use on the windmill"
     }
    ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "West Room [Pot]"
+   },
    "heart_container": {
     "from": "Link",
     "stage": "East Room"
@@ -1577,14 +1586,6 @@
     "name": "Magic Rod",
     "lvl": 4,
     "char": "Link"
-   },
-   "item_card_reward": "Compass",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "W06",
-    "loc": "West Room [Pot]"
    }
   },
   "J-6": {
@@ -1599,11 +1600,6 @@
     }
    ],
    "item_card_reward": "Cyclone Slate",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (               + hearts |            40%"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1611,7 +1607,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (               + hearts |            40%"
+   ]
   },
   "J-7": {
    "confidence": "HIGH",
@@ -1638,14 +1639,6 @@
      "action": "Catch the fish"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Fi"
-   ],
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Skyloft Slacks",
-    "loc": "Temple Face Keep"
-   },
    "item_card_reward": "Cyclone Slate",
    "rang_a": {
     "ko": 1200,
@@ -1658,6 +1651,14 @@
    "fairy_food": {
     "ref_kb": "B04",
     "loc": "East Room [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Fi"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Skyloft Slacks",
+    "loc": "Temple Face Keep"
    }
   },
   "K-1": {
@@ -1680,6 +1681,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Railway Track",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "South Field Keep [Pot]"
+   },
    "heart_container": {
     "from": "Impa",
     "stage": "W. Rockface Keep"
@@ -1688,14 +1697,6 @@
     "name": "Naginata",
     "lvl": 4,
     "char": "Impa"
-   },
-   "item_card_reward": "Railway Track",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "W03",
-    "loc": "South Field Keep [Pot]"
    }
   },
   "K-3": {
@@ -1709,6 +1710,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B01",
+    "loc": "SW Sage Keep [Pot]"
+   },
    "heart_container": {
     "from": "Lana",
     "stage": "Faces Keep"
@@ -1717,14 +1726,6 @@
     "name": "Spear",
     "lvl": 4,
     "char": "Lana"
-   },
-   "item_card_reward": "Fishing Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "B01",
-    "loc": "SW Sage Keep [Pot]"
    }
   },
   "K-4": {
@@ -1806,6 +1807,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "NE Sage Keep [Pot]"
+   },
    "heart_container": {
     "from": "Zant",
     "stage": "NW Sage Keep"
@@ -1814,14 +1823,6 @@
     "name": "Scimitars",
     "lvl": 4,
     "char": "Zant"
-   },
-   "item_card_reward": "Fishing Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "W03",
-    "loc": "NE Sage Keep [Pot]"
    }
   },
   "L-1": {
@@ -1835,6 +1836,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A02",
+    "loc": "Hall of Mirrors [Pot]"
+   },
    "heart_container": {
     "from": "Twili Midna",
     "stage": "Lakeside Keep"
@@ -1843,14 +1852,6 @@
     "name": "Mirror",
     "lvl": 4,
     "char": "Twili Midna"
-   },
-   "item_card_reward": "Fishing Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "A02",
-    "loc": "Hall of Mirrors [Pot]"
    }
   },
   "L-2": {
@@ -1893,9 +1894,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Tingle"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -1903,18 +1901,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Tingle"
+   ]
   },
   "L-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Get to those troops before the others do! Lv.2",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Destiny Tiara",
-    "loc": "South Square"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15
@@ -1922,6 +1918,11 @@
    "fairy_food": {
     "ref_kb": "A02",
     "loc": "Sacred Pedestal [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Destiny Tiara",
+    "loc": "South Square"
    }
   },
   "L-6": {
@@ -1959,11 +1960,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.5",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Destiny Skirt",
-    "loc": "East Garden"
-   },
    "item_card_reward": "S.S. Linebeck",
    "rang_a": {
     "temps_max_min": 15
@@ -1971,6 +1967,11 @@
    "fairy_food": {
     "ref_kb": "A06",
     "loc": "Northeast Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Destiny Skirt",
+    "loc": "East Garden"
    }
   },
   "M-2": {
@@ -2008,11 +2009,6 @@
      "action": "Catch the fish"
     }
    ],
-   "weapon": {
-    "name": "Phantom Arms",
-    "lvl": 4,
-    "char": "Toon Zelda"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15,
@@ -2020,6 +2016,11 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "weapon": {
+    "name": "Phantom Arms",
+    "lvl": 4,
+    "char": "Toon Zelda"
    }
   },
   "M-4": {
@@ -2027,11 +2028,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of time! Lv.2",
-   "fairy_cosmetic": {
-    "type": "Decoration",
-    "name": "Destiny Necklace",
-    "loc": "Stronghold"
-   },
    "item_card_reward": "Cyclone Slate",
    "rang_a": {
     "temps_max_min": 15
@@ -2039,6 +2035,11 @@
    "fairy_food": {
     "ref_kb": "A06",
     "loc": "Stronghold [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Destiny Necklace",
+    "loc": "Stronghold"
    }
   },
   "M-5": {
@@ -2066,14 +2067,14 @@
     }
    ],
    "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located northwest of the Allied Base.",
     "Complete the first mission and defeat 150 enemies with Special Attacks without losing (              + hearts |                 40%"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "M-7": {
    "confidence": "HIGH",
@@ -2086,9 +2087,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Twili Midna"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -2096,7 +2094,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Twili Midna"
+   ]
   },
   "M-8": {
    "confidence": "HIGH",
@@ -2109,6 +2110,14 @@
      "action": "Catch the fish"
     }
    ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F01",
+    "loc": "Stock Room [Pot]"
+   },
    "heart_container": {
     "from": "Toon Zelda",
     "stage": "Stock Room"
@@ -2117,14 +2126,6 @@
     "name": "Phantom Arms",
     "lvl": 2,
     "char": "Toon Zelda"
-   },
-   "item_card_reward": "Cannon",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "F01",
-    "loc": "Stock Room [Pot]"
    }
   },
   "N-1": {
@@ -2160,14 +2161,6 @@
      "action": "Catch the fish"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Zelda"
-   ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Destiny Top",
-    "loc": "Hilltop Keep"
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15
@@ -2175,6 +2168,14 @@
    "fairy_food": {
     "ref_kb": "A01",
     "loc": "South Field Keep [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Zelda"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Destiny Top",
+    "loc": "Hilltop Keep"
    }
   },
   "N-4": {
@@ -2208,9 +2209,6 @@
      "action": "Catch the fish"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - Skull Kid"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15
@@ -2218,7 +2216,10 @@
    "fairy_food": {
     "ref_kb": "B05",
     "loc": "Eastern Tree [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - Skull Kid"
+   ]
   },
   "N-6": {
    "confidence": "HIGH",
@@ -2231,11 +2232,6 @@
      "action": "Use on the center boulder"
     }
    ],
-   "weapon": {
-    "name": "Balloon",
-    "lvl": 4,
-    "char": "Tingle"
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 1200,
@@ -2248,6 +2244,11 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "S. Rockface Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Balloon",
+    "lvl": 4,
+    "char": "Tingle"
    }
   },
   "N-7": {
@@ -2275,6 +2276,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "Star Island Keep [Pot]"
+   },
    "heart_container": {
     "from": "Wizzro",
     "stage": "Jail Watch Keep"
@@ -2283,14 +2292,6 @@
     "name": "Ring",
     "lvl": 4,
     "char": "Wizzro"
-   },
-   "item_card_reward": "Fishing Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "A01",
-    "loc": "Star Island Keep [Pot]"
    }
   },
   "O-1": {
@@ -2334,14 +2335,14 @@
     }
    ],
    "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   },
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies.",
     "Complete the first mission and defeat 150 enemies with Special Attacks without losing (    + hearts |          40%"
-   ],
-   "rang_a": {
-    "temps_max_min": 15
-   }
+   ]
   },
   "O-4": {
    "confidence": "HIGH",
@@ -2391,12 +2392,6 @@
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the beast of the mountain!",
    "item_card_reward": "Cyclone Slate",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (                4+ hearts |      40% health). It is located in",
-    "N. Settlement"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2404,18 +2399,23 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                4+ hearts |      40% health). It is located in",
+    "N. Settlement"
+   ]
   },
   "O-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the action quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Fi, Volga, Toon Zelda"
-    }
+   "quiz_order": [
+    "Fi",
+    "Volga",
+    "Toon Zelda"
    ],
    "item_card_reward": "Iron Ship",
    "rang_a": {
@@ -2438,6 +2438,14 @@
      "action": "Use on the boulder"
     }
    ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "Northeast Keep [Pot]"
+   },
    "weapon": {
     "name": "Phantom Arms",
     "lvl": 4,
@@ -2446,14 +2454,6 @@
    "heart_container": {
     "from": "Toon Zelda",
     "stage": "Central Chamber"
-   },
-   "item_card_reward": "Fishing Rod",
-   "rang_a": {
-    "temps_max_min": 15
-   },
-   "fairy_food": {
-    "ref_kb": "P12",
-    "loc": "Northeast Keep [Pot]"
    }
   },
   "P-2": {
@@ -2461,11 +2461,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight the chosen ones! Lv.1",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Captain's Jacket",
-    "loc": "Central Keep"
-   },
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15
@@ -2473,6 +2468,11 @@
    "fairy_food": {
     "ref_kb": "F04",
     "loc": "South Field Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Captain's Jacket",
+    "loc": "Central Keep"
    }
   },
   "P-3": {
@@ -2540,14 +2540,6 @@
      "action": "Use on the boulder"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Grand Travels) - King Daphnes"
-   ],
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Captain's Trousers",
-    "loc": "East Keep"
-   },
    "item_card_reward": "S.S. Linebeck",
    "rang_a": {
     "ko": 1200,
@@ -2560,6 +2552,14 @@
    "fairy_food": {
     "ref_kb": "W01",
     "loc": "Eastern Room [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Grand Travels) - King Daphnes"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Captain's Trousers",
+    "loc": "East Keep"
    }
   },
   "P-7": {
