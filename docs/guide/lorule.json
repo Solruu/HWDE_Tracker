@@ -1,0 +1,2628 @@
+{
+ "meta": {
+  "map": "Lorule",
+  "version": "v0",
+  "n_cells": 128,
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "warps_fissures",
+   "removable": null,
+   "summary": "Deux sections (Hyrule/Lorule). Acces a Lorule via des Failles : terminer un niveau a Faille permet d'utiliser la Wall Painting pour se teleporter vers la case Lorule correspondante (et inversement). Ravio Board : debloque deux objets 'Nice'. Paires de warp deja encodees dans MAP_PORTALS.",
+   "ref_kb": "map_010"
+  },
+  "schema": {
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
+  }
+ },
+ "cells": {
+  "A-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Lizalfos Forces!",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "heart_container": {
+    "from": "Ravio",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Rental Hammer",
+    "lvl": 3,
+    "char": "Ravio"
+   },
+   "item_card_reward": "Power Glove",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Witch's Dress",
+    "loc": "Stone Square"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P04",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "A-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.3",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Skull Kid"
+   ],
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Battlefield chaos! Territory tug-of-war!",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Capture the enemy keeps! Lv.1",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Zant"
+   ],
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F01",
+    "loc": "Stock Room [Pot]"
+   }
+  },
+  "A-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.6",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "weapon": {
+    "name": "Crossbows",
+    "lvl": 4,
+    "char": "Linkle"
+   },
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F01",
+    "loc": "Star Island Keep [Pot]"
+   }
+  },
+  "A-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Capture the enemy keeps! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "North Oasis"
+   },
+   "weapon": {
+    "name": "Spinner",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "S. Desert Keep [Pot]"
+   }
+  },
+  "A-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.5",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "B-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.8",
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.2",
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.5",
+   "search": [
+    {
+     "card": "Hookshot",
+     "action": "Use on the target"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Darknut Forces! Lv.2",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Wall Painting",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located southeast of Hilltop Keep.",
+    "Complete the first mission and defeat 100 enemies while using Focus Spirit without losing (     4+ hearts |"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.2",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the action quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Medli, Yuga, Ravio"
+    }
+   ],
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy the army with boosted morale! Lv.3",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "heart_container": {
+    "from": "Impa",
+    "stage": "South Mine Keep"
+   },
+   "weapon": {
+    "name": "Giant Blade",
+    "lvl": 4,
+    "char": "Impa"
+   },
+   "item_card_reward": "Power Glove",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "North Mine Keep [Pot]"
+   }
+  },
+  "B-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.12",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Ganondorf"
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "C-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get more allied keeps and defeat the enemy! Lv.2",
+   "search": [
+    {
+     "card": "Sand Rod",
+     "action": "Use on the sand mound"
+    }
+   ],
+   "item_card_reward": "Tornado Rod",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the plateau north from East Field Keep, accessible via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |        40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.2",
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.2",
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and destroy the enemy forces! Lv.1",
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Dinolfos Forces!",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "weapon": {
+    "name": "Rental Hammer",
+    "lvl": 2,
+    "char": "Ravio"
+   },
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "South Square [Pot]"
+   }
+  },
+  "C-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take on the warriors of Majora's Mask! Lv.1",
+   "search": [
+    {
+     "card": "Power Glove",
+     "action": "Use on the rock"
+    }
+   ],
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.2",
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.1",
+   "search": [
+    {
+     "card": "Sand Rod",
+     "action": "Use on the sand mound"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Fiery Aeralfos Forces! Lv.1",
+   "item_card_reward": "Hookshot",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P15",
+    "loc": "Southeast Square [Pot]"
+   }
+  },
+  "D-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the ReDead Knight Forces!",
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P04",
+    "loc": "S. Entrance Keep [Pot]"
+   }
+  },
+  "D-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of time! Lv.1",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "heart_container": {
+    "from": "Yuga",
+    "stage": "East Temple"
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - King Daphnes"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Beautiful Trousers",
+    "loc": "West Ruins"
+   },
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "West Temple [Pot]"
+   }
+  },
+  "D-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.2",
+   "search": [
+    {
+     "card": "Power Glove",
+     "action": "Use on the rock"
+    }
+   ],
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.3",
+   "search": [
+    {
+     "card": "Fire Rod",
+     "action": "Use on the ice statue"
+    }
+   ],
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "D-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.1",
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Darknut Forces! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Tingle"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Rabbit Robe",
+    "loc": "North Field Keep"
+   },
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "Abandoned Fort [Pot]"
+   }
+  },
+  "D-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.1",
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast in the Tower of Hera!",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "E-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.2",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.3",
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the giant shadow in Hyrule Castle!",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Beautiful Cape",
+    "loc": "Fairy Fountain"
+   },
+   "item_card_reward": "Fire Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F04",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "E-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.13",
+   "search": [
+    {
+     "card": "Fire Rod",
+     "action": "Use on the ice statue"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "E-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.1",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.1",
+   "search": [
+    {
+     "card": "Bow",
+     "action": "Shoot the Beamos"
+    }
+   ],
+   "warp": [
+    "Item Card"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get more allied keeps and defeat the enemy! Lv.1",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "F-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.2",
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P15",
+    "loc": "Hall of Time [Pot]"
+   }
+  },
+  "F-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.6",
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy the army with boosted morale! Lv.1",
+   "item_card_reward": "Bow",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the plateau in the dead end just northwest from W. Boulder Keep, accessible via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |               40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Skyloft! Lv.2",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "F-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.12",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Lana"
+   ],
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Aeralfos Forces!",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "search": [
+    {
+     "card": "Ice Rod",
+     "action": "Use on the flame statue"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "F-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.10",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "F-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Twilight!",
+   "item_card_reward": "Bomb",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more enemy keeps without losing (          4+ hearts |                 40% health)."
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "G-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.3",
+   "search": [
+    {
+     "card": "Power Glove",
+     "action": "Use on the rock"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.10",
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.1",
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Stone Moblin Forces!",
+   "item_card_reward": "Bomb",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Witch's Hat",
+    "loc": "West Town Keep"
+   },
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "G-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.3",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.3",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the bird of Lake Hylia!",
+   "search": [
+    {
+     "card": null,
+     "action": "Bomb Shop"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Queen's Crown",
+    "loc": "Jail Watch Keep"
+   },
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A03",
+    "loc": "Bomb Shop [Pot]"
+   }
+  },
+  "G-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.4",
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "H-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get more allied keeps and defeat the enemy! Lv.3",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "weapon": {
+    "name": "Great Swords",
+    "lvl": 4,
+    "char": "Ganondorf"
+   },
+   "item_card_reward": "Power Glove",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "H-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of time! Lv.2",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "H-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Thwart the supercharged enemies! Lv.4",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    },
+    {
+     "card": "Fire Rod",
+     "action": "Use on the ice statue"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Midna"
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "H-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Stone Moblin Forces!",
+   "search": [
+    {
+     "card": "Bow",
+     "action": "Shoot the Beamos"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Beautiful Aura",
+    "loc": "South Square"
+   },
+   "item_card_reward": "Boomerang",
+   "weapon": {
+    "name": "Rental Hammer",
+    "lvl": 4,
+    "char": "Ravio"
+   },
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A03",
+    "loc": "Sacred Pedestal [Pot]"
+   }
+  },
+  "H-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the Rogue Forces and defeat the enemy! Lv.3",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Hammer",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the northeast pointy dead end.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (            4+ hearts |              40%"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "H-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy the army with boosted morale!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "item_card_reward": "Hookshot",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P12",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "H-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Push, push! Shove, shove! Move that weight!",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "H-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the legendary warrior quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Ghirahim, Ravio, Yuga"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "I-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Skyloft! Lv.1",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 3,
+    "char": "Yuga"
+   },
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "West Town Keep [Pot]"
+   }
+  },
+  "I-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike! Lv.1",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P14",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "I-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.4",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "The perfect land-grab scheme!",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B06",
+    "loc": "North Palace [Pot]"
+   }
+  },
+  "I-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.7",
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use diversionary tactics to defeat the enemy! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Queen's Earrings",
+    "loc": "SE Sage Keep"
+   },
+   "weapon": {
+    "name": "Epona",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "SE Sage Keep [Pot]"
+   }
+  },
+  "I-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the Desert Palace!",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Fi"
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "Rockface Keep [Pot]"
+   }
+  },
+  "I-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the heroes of the Wind Waker! Lv.2",
+   "search": [
+    {
+     "card": "Power Glove",
+     "action": "Use on the rock"
+    }
+   ],
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "J-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast in the Skull Woods!",
+   "search": [
+    {
+     "card": "Bow",
+     "action": "Shoot the Beamos"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Agitha"
+   ],
+   "item_card_reward": "Hookshot",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P14",
+    "loc": "Deku Tree [Pot]"
+   }
+  },
+  "J-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.2",
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rescue the allied forces!",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Bow",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located just northeast of West Field Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |              40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the dragon in the wastelands!",
+   "search": [
+    {
+     "card": "Sand Rod",
+     "action": "Use on the sand mound"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Ghirahim"
+   ],
+   "item_card_reward": "Hookshot",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "Rocky Square [Pot]"
+   }
+  },
+  "J-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.1",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B06",
+    "loc": "Eastern Room [Pot]"
+   }
+  },
+  "J-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.1",
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.9",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.3",
+   "search": [
+    {
+     "card": "Sand Rod",
+     "action": "Use on the sand mound"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.3",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "weapon": {
+    "name": "Hylian Sword",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "Town Entrance [Pot]"
+   }
+  },
+  "K-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.5",
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.3",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Big Poe Forces!",
+   "item_card_reward": "Boomerang",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end just northwest of the Enemy Base.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |    40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.2",
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.3",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike! Lv.3",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Shell Aura",
+    "loc": "West Keep"
+   },
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "K-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.4",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the heroes of the Wind Waker! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "weapon": {
+    "name": "Dominion Rod",
+    "lvl": 4,
+    "char": "Zelda"
+   },
+   "item_card_reward": "Power Glove",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F03",
+    "loc": "Rock Keep [Pot]"
+   }
+  },
+  "L-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use diversionary tactics to defeat the enemy! Lv.2",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Hammer",
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 4,
+    "char": "Yuga"
+   },
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "E. Mountain Keep [Pot]"
+   }
+  },
+  "L-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Stalmaster Forces!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    },
+    {
+     "card": "Fire Rod",
+     "action": "Use on the ice statue"
+    }
+   ],
+   "weapon": {
+    "name": "Book of Sorcery",
+    "lvl": 4,
+    "char": "Lana"
+   },
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "North Mine Keep [Pot]"
+   }
+  },
+  "L-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Opposing witches from opposing worlds.",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Dark Beast Top",
+    "loc": "Bridge Keep"
+   },
+   "weapon": {
+    "name": "Rapier",
+    "lvl": 4,
+    "char": "Zelda"
+   },
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "West Field Keep [Pot]"
+   }
+  },
+  "L-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.5",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "item_card_reward": "Fire Rod",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "L-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.1",
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Swamp Palace!",
+   "search": [
+    {
+     "card": "Bow",
+     "action": "Shoot the Beamos"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outift (Lorule) - Ruto"
+   ],
+   "item_card_reward": "Power Glove",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (   4+ hearts |             40%",
+    "Central Hall"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.2",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "search": [
+    {
+     "card": "Sand Rod",
+     "action": "Use on the sand mound"
+    }
+   ],
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.5",
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "M-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the Demon King in Lorule Castle!",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "M-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the chosen ones!",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Lorulean Earrings",
+    "loc": "SW Sage Keep"
+   },
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Faces Keep [Pot]"
+   }
+  },
+  "M-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike! Lv.2",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "heart_container": {
+    "from": "Ravio",
+    "stage": "Mountain Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Linkle"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Rabbit Hood",
+    "loc": "South Field Keep"
+   },
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "Mountain Keep [Pot]"
+   }
+  },
+  "M-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Icy Big Poe Forces!",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Queen's Skirt",
+    "loc": "West Ruins"
+   },
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 2,
+    "char": "Yuga"
+   },
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "M-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.1",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scout the battlefield in pursuit of victory! Lv.9",
+   "item_card_reward": "Sand Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A hyper-focused army unit advances!",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Dark Beast Skirt",
+    "loc": "Bomb Shop"
+   },
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "F03",
+    "loc": "Beast's Vault [Pot]"
+   }
+  },
+  "N-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the Copycat Soldiers! Lv.4",
+   "search": [
+    {
+     "card": "Hookshot",
+     "action": "Use on the target"
+    },
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.4",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "N-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.11",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    },
+    {
+     "card": "Ice Rod",
+     "action": "Use on the flame statue"
+    }
+   ],
+   "rewards_other": [
+    "Masked (Lorule) - Cia",
+    "Unmasked (Lorule) - Cia",
+    "Hatless (Lorule) - Cia"
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "N-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.3",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A hyper-focused army unit advances!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "weapon": {
+    "name": "Picture Frame",
+    "lvl": 4,
+    "char": "Yuga"
+   },
+   "item_card_reward": "Baby Maiamai",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A04",
+    "loc": "West Garden [Pot]"
+   }
+  },
+  "N-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.4",
+   "item_card_reward": "Wall Painting",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "O-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the enemy forces!",
+   "item_card_reward": "Boomerang",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the middle of the large open area just south of the Allied Base.",
+    "Complete the first mission and capture five or more keeps without losing (           4+ hearts |              40% health). It is"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "O-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.8",
+   "search": [
+    {
+     "card": "Sand Rod",
+     "action": "Use on the sand mound"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the army of Big Blins!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "heart_container": {
+    "from": "Toon Link",
+    "stage": "East Room"
+   },
+   "weapon": {
+    "name": "Light Sword",
+    "lvl": 4,
+    "char": "Toon Link"
+   },
+   "item_card_reward": "Fire Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "West Room [Pot]"
+   }
+  },
+  "O-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.11",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "item_card_reward": "Bow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "How sneaky! There are spies nearby!",
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "O-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Hunt down and defeat your foes! Lv.7",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    },
+    {
+     "card": "Hookshot",
+     "action": "Use on the target"
+    }
+   ],
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "O-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of Turtle Rock!",
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the switch"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Impa"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Queen's Top",
+    "loc": "Stone Square"
+   },
+   "item_card_reward": "Fire Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "Central Square [Pot]"
+   }
+  },
+  "O-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.3",
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "P-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the Ice Ruins!",
+   "search": [
+    {
+     "card": "Tornado Rod",
+     "action": "Use on the tile"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Darunia"
+   ],
+   "item_card_reward": "Ice Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "P-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.6",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "P-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use diversionary tactics to defeat the enemy! Lv.3",
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the wooden post"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Twili Midna"
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "N. Entrance Keep"
+   },
+   "item_card_reward": "Tornado Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "Temple Square [Pot]"
+   }
+  },
+  "P-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the Dark Palace!",
+   "search": [
+    {
+     "card": "Bow",
+     "action": "Shoot the Beamos"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Lorule) - Young Link"
+   ],
+   "item_card_reward": "Ice Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Northwest Keep [Pot]"
+   }
+  },
+  "P-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Fiery Aeralfos Forces! Lv.2",
+   "search": [
+    {
+     "card": "Bow",
+     "action": "Shoot the Beamos"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A04",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "P-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Use on the cracked wall"
+    }
+   ],
+   "rewards_other": [
+    "Great Fairy Lv4+ - Link"
+   ],
+   "item_card_reward": "Ice Rod",
+   "rang_a": {
+    "temps_max_min": 15
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "P-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Scour the battlefield in pursuit of victory! Lv.13",
+   "warp": [
+    "Use after clearing the stage to open fissure to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "P-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take on the warriors of Majora's Mask! Lv.2",
+   "search": [
+    {
+     "card": "Baby Maiamai",
+     "action": "Give to the Mother Maiamai"
+    }
+   ],
+   "item_card_reward": "Tornado Rod",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end just northwest of the Deku Tree.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (   4+ hearts |             40%"
+   ],
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  }
+ }
+}
