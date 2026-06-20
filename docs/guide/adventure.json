@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Adventure",
-  "version": "v2",
+  "version": "v3",
   "n_cells": 128,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS (PDF propre, re-extrait du depot) — verifie en jeu DE (Antoine)",
@@ -22,7 +22,8 @@
    "boss_key": "emplacement de la clé du boss (parse texte)"
   },
   "changelog": [
-   "v2: re-extraction depuis PDF Adventure propre (sans injection de banniere). +49 missions restituees, +92 noms de carte Search, +entrees Search A-4/G-8/H-7, retrait des Defeat Order du champ search (vivent dans KB quiz_001)."
+   "v2: re-extraction depuis PDF Adventure propre (sans injection de banniere). +49 missions restituees, +92 noms de carte Search, +entrees Search A-4/G-8/H-7, retrait des Defeat Order du champ search (vivent dans KB quiz_001).",
+   "v3: Defeat Order deplaces de search vers champ quiz_order (source GUIDE inline)."
   ]
  },
  "cells": {
@@ -147,28 +148,28 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.6",
+   "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "A-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.7",
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Goddess's Harp"
+   }
   },
   "A-8": {
    "confidence": "HIGH",
@@ -245,6 +246,12 @@
      "action": "Dig the soft dirt"
     }
    ],
+   "quiz_order": [
+    "Zant",
+    "Impa",
+    "Zelda"
+   ],
+   "item_card_reward": "Ice Arrow",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -253,7 +260,6 @@
    "rang_a_3ds": {
     "degats_max": 10000
    },
-   "item_card_reward": "Ice Arrow",
    "quiz_solution": "Zant, Impa, Zelda"
   },
   "B-3": {
@@ -286,28 +292,28 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.4",
+   "item_card_reward": "Recorder",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Recorder"
+   }
   },
   "B-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.7",
+   "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Ice Arrow"
+   }
   },
   "B-6": {
    "confidence": "HIGH",
@@ -342,14 +348,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 700 enemies in time! Lv.3",
+   "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Digging Mitts"
+   }
   },
   "B-8": {
    "confidence": "HIGH",
@@ -475,14 +481,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 600 enemies in time! Lv.1",
+   "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Digging Mitts"
+   }
   },
   "C-5": {
    "confidence": "HIGH",
@@ -499,6 +505,7 @@
      "action": "Dig the soft dirt"
     }
    ],
+   "item_card_reward": "Ladder",
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -507,7 +514,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Ladder",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies.",
@@ -520,14 +526,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.7",
+   "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Power Bracelet"
+   }
   },
   "C-7": {
    "confidence": "HIGH",
@@ -570,14 +576,14 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Ice Arrow"
+   }
   },
   "D-1": {
    "confidence": "HIGH",
@@ -646,14 +652,14 @@
      "action": "Push the western stone in the group of four"
     }
    ],
+   "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Digging Mitts"
+   }
   },
   "D-4": {
    "confidence": "HIGH",
@@ -666,14 +672,14 @@
      "action": "Bomb the wall tile on north wall directly between the eastern two columns of statues"
     }
    ],
+   "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Power Bracelet"
+   }
   },
   "D-5": {
    "confidence": "HIGH",
@@ -686,28 +692,28 @@
      "action": "Bomb the rock in the lake"
     }
    ],
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Goddess's Harp"
+   }
   },
   "D-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.8",
+   "item_card_reward": "Water Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Water Bomb"
+   }
   },
   "D-7": {
    "confidence": "HIGH",
@@ -720,20 +726,26 @@
      "action": "Burn the southeasternmost of the five trees by the west exit"
     }
    ],
+   "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "D-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the mystery mastery quiz!",
+   "quiz_order": [
+    "Aeralfos",
+    "Shield Moblin",
+    "Big Poe"
+   ],
+   "item_card_reward": "Compass",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -742,7 +754,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Compass",
    "quiz_solution": "Aeralfos, Shield Moblin, Big Poe"
   },
   "E-1": {
@@ -750,6 +761,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the Triforce quiz!",
+   "quiz_order": [
+    "Ganondorf",
+    "Zelda",
+    "Link"
+   ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -758,7 +775,6 @@
    "rang_a_3ds": {
     "degats_max": 10000
    },
-   "item_card_reward": "Bomb",
    "quiz_solution": "Ganondorf, Zelda, Link"
   },
   "E-2": {
@@ -791,6 +807,12 @@
      "action": "Push the northeasternmost statue"
     }
    ],
+   "quiz_order": [
+    "Aeralfos",
+    "Moblin",
+    "Lizalfos"
+   ],
+   "item_card_reward": "Compass",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -799,7 +821,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Compass",
    "quiz_solution": "Aeralfos, Moblin, Lizalfos"
   },
   "E-4": {
@@ -838,6 +859,7 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
@@ -845,7 +867,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Power Bracelet",
    "rewards_other": [
     "Zora Tunic - Link"
    ]
@@ -880,20 +901,21 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.9",
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Bomb"
+   }
   },
   "E-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the wasteland beast!",
+   "item_card_reward": "Raft",
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -902,7 +924,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Raft",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located to the far west from the North Oasis.",
@@ -936,6 +957,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.14",
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 199
@@ -945,8 +967,7 @@
    },
    "rewards_other": [
     "Piece of Heart - Ganondorf"
-   ],
-   "item_card_reward": "Bomb"
+   ]
   },
   "F-3": {
    "confidence": "HIGH",
@@ -985,6 +1006,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 600 enemies in time! Lv.2",
+   "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
@@ -994,14 +1016,14 @@
    },
    "rewards_other": [
     "Piece of Heart - Agitha"
-   ],
-   "item_card_reward": "Power Bracelet"
+   ]
   },
   "F-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the ocean beast!",
+   "item_card_reward": "Water Bomb",
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1010,7 +1032,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Water Bomb",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located northeast from South Field Keep.",
@@ -1029,6 +1050,12 @@
      "action": "Use on the dock"
     }
    ],
+   "quiz_order": [
+    "Agitha",
+    "Agitha",
+    "Midna"
+   ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1040,7 +1067,6 @@
    "rewards_other": [
     "Piece of Heart - Midna"
    ],
-   "item_card_reward": "Bomb",
    "quiz_solution": "Agitha, Agitha, Midna"
   },
   "F-7": {
@@ -1048,6 +1074,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.8",
+   "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
@@ -1057,8 +1084,7 @@
    },
    "rewards_other": [
     "Piece of Heart - Fi"
-   ],
-   "item_card_reward": "Candle"
+   ]
   },
   "F-8": {
    "confidence": "HIGH",
@@ -1071,6 +1097,12 @@
      "action": "Blow up the rock in the river"
     }
    ],
+   "quiz_order": [
+    "Ghirahim",
+    "Moblin",
+    "Fi"
+   ],
+   "item_card_reward": "Conpass",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1079,7 +1111,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Conpass",
    "quiz_solution": "Ghirahim, Moblin, Fi"
   },
   "G-1": {
@@ -1147,14 +1178,14 @@
      "action": "Bomb the middle of the three northwestern wall spaces"
     }
    ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Bomb"
+   }
   },
   "G-4": {
    "confidence": "HIGH",
@@ -1244,14 +1275,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Bomb"
+   }
   },
   "G-8": {
    "confidence": "HIGH",
@@ -1345,20 +1376,21 @@
      "action": "Bomb the second wall tile from the right by the east entrance"
     }
    ],
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "H-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the island beast!",
+   "item_card_reward": "Power Bracelet",
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1368,7 +1400,6 @@
     "ko": 1200,
     "degats_max": 4000
    },
-   "item_card_reward": "Power Bracelet",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located straight to the west from Crystal Cave at the cliff where you can jump down.",
@@ -1387,20 +1418,26 @@
      "action": "Burn the fifth tree from the right"
     }
    ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Bomb"
+   }
   },
   "H-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the weapon quiz!",
+   "quiz_order": [
+    "Darknut",
+    "Stalmaster",
+    "Moblin"
+   ],
+   "item_card_reward": "Compass",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1409,7 +1446,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Compass",
    "quiz_solution": "Darknut, Stalmaster, Moblin"
   },
   "H-7": {
@@ -1423,6 +1459,7 @@
      "action": "North wall directly north from left tile of southern entrance"
     }
    ],
+   "item_card_reward": "Candle",
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1435,22 +1472,21 @@
    "fairy": {
     "element": "Light",
     "loc": "South Field Keep [Pot]"
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "H-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 300 enemies in time!",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "I-1": {
    "confidence": "HIGH",
@@ -1538,14 +1574,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.1",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "I-5": {
    "confidence": "HIGH",
@@ -1578,6 +1614,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the forgetful foe quiz!",
+   "quiz_order": [
+    "Moblin",
+    "Big Poe",
+    "Shield Moblin"
+   ],
+   "item_card_reward": "Candle",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1586,7 +1628,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Candle",
    "quiz_solution": "Moblin, Big Poe, Shield Moblin"
   },
   "I-7": {
@@ -1630,6 +1671,7 @@
      "action": "Burn the southeast of the four trees by the west entrance"
     }
    ],
+   "item_card_reward": "Candle",
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1642,28 +1684,33 @@
    "fairy_food": {
     "ref_kb": "P02",
     "loc": "Southern Tree [Pot]"
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "J-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.12                                   ",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "J-2": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the women's weapons quiz!",
+   "quiz_order": [
+    "Lana",
+    "Lana",
+    "Midna"
+   ],
+   "item_card_reward": "Ice Arrow",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1672,7 +1719,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Ice Arrow",
    "quiz_solution": "Lana, Lana, Midna"
   },
   "J-3": {
@@ -1680,28 +1726,28 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.4",
+   "item_card_reward": "Water Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Water Bomb"
+   }
   },
   "J-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.2",
+   "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Power Bracelet"
+   }
   },
   "J-5": {
    "confidence": "HIGH",
@@ -1740,20 +1786,21 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.2",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "J-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 99
@@ -1763,8 +1810,7 @@
    },
    "rewards_other": [
     "Piece of Heart - Lana"
-   ],
-   "item_card_reward": "Bomb"
+   ]
   },
   "J-8": {
    "confidence": "HIGH",
@@ -1824,20 +1870,26 @@
      "action": "Use on the grapple mark to the left of the waterfall"
     }
    ],
+   "item_card_reward": "Hookshot",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Hookshot"
+   }
   },
   "K-3": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the tricky quiz!",
+   "quiz_order": [
+    "Big Poe",
+    "ReDead Knight",
+    "Sheik"
+   ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1849,7 +1901,6 @@
    "rewards_other": [
     "Piece of Heart - Ruto"
    ],
-   "item_card_reward": "Bomb",
    "quiz_solution": "Big Poe, ReDead Knight, Sheik"
   },
   "K-4": {
@@ -1857,6 +1908,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.3",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
@@ -1866,22 +1918,21 @@
    },
    "rewards_other": [
     "Piece of Heart - Ruto"
-   ],
-   "item_card_reward": "Compass"
+   ]
   },
   "K-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 500 enemies in time! Lv.3",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "K-6": {
    "confidence": "HIGH",
@@ -1942,14 +1993,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All atacks are devastating! Lv.11",
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Goddess's Harp"
+   }
   },
   "L-1": {
    "confidence": "HIGH",
@@ -1962,6 +2013,7 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "item_card_reward": "Recorder",
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1970,7 +2022,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Recorder",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located southeast from E. Boulder Keep.",
@@ -1983,42 +2034,42 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.3",
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Goddess's Harp"
+   }
   },
   "L-3": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 500 enemies in time! Lv.1",
+   "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Compass"
+   }
   },
   "L-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.3",
+   "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "L-5": {
    "confidence": "HIGH",
@@ -2086,14 +2137,14 @@
      "action": "Burn the southeast of the four trees in the center"
     }
    ],
+   "item_card_reward": "Water Bomb",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Water Bomb"
+   }
   },
   "L-8": {
    "confidence": "HIGH",
@@ -2131,14 +2182,14 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   },
-   "item_card_reward": "Goddess's Harp"
+   }
   },
   "M-2": {
    "confidence": "HIGH",
@@ -2151,6 +2202,12 @@
      "action": "Push the statue in the first row, third column"
     }
    ],
+   "quiz_order": [
+    "Darunia",
+    "Sheik",
+    "Ruto"
+   ],
+   "item_card_reward": "Compass",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -2159,7 +2216,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Compass",
    "quiz_solution": "Darunia, Sheik, Ruto"
   },
   "M-3": {
@@ -2196,6 +2252,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the cliff beast!",
+   "item_card_reward": "Raft",
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2204,7 +2261,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Raft",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located in the dead end northeast from the East Keep.",
@@ -2217,6 +2273,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the tribe quiz!",
+   "quiz_order": [
+    "Ruto",
+    "Impa",
+    "Darunia"
+   ],
+   "item_card_reward": "Compass",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -2225,7 +2287,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Compass",
    "quiz_solution": "Ruto, Impa, Darunia"
   },
   "M-6": {
@@ -2233,14 +2294,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.1",
+   "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "M-7": {
    "confidence": "HIGH",
@@ -2253,14 +2314,14 @@
      "action": "Use on the butterflies"
     }
    ],
+   "item_card_reward": "Hookshot",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Hookshot"
+   }
   },
   "M-8": {
    "confidence": "HIGH",
@@ -2273,14 +2334,14 @@
      "action": "Bomb the seventh wall tile from the left"
     }
    ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Bomb"
+   }
   },
   "N-1": {
    "confidence": "HIGH",
@@ -2372,14 +2433,14 @@
      "action": "Push the east statue"
     }
    ],
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Bomb"
+   }
   },
   "N-5": {
    "confidence": "HIGH",
@@ -2392,20 +2453,21 @@
      "action": "Burn the southern of the two trees closest to the east exit"
     }
    ],
+   "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Candle"
+   }
   },
   "N-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.5",
+   "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
@@ -2415,8 +2477,7 @@
    },
    "rewards_other": [
     "Piece of Heart - Darunia"
-   ],
-   "item_card_reward": "Bomb"
+   ]
   },
   "N-7": {
    "confidence": "HIGH",
@@ -2485,6 +2546,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the legendary warrior quiz!",
+   "quiz_order": [
+    "Ruto",
+    "Agitha",
+    "Ganondorf"
+   ],
+   "item_card_reward": "Digging Mitts",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -2493,7 +2560,6 @@
    "rang_a_3ds": {
     "degats_max": 10000
    },
-   "item_card_reward": "Digging Mitts",
    "quiz_solution": "Ruto, Agitha, Ganondorf"
   },
   "O-2": {
@@ -2541,6 +2607,7 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
@@ -2552,8 +2619,7 @@
     "name": "Baton",
     "lvl": 1,
     "char": "Zelda"
-   },
-   "item_card_reward": "Digging Mitts"
+   }
   },
   "O-4": {
    "confidence": "HIGH",
@@ -2636,6 +2702,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the travel memories quiz!",
+   "quiz_order": [
+    "Lizalfos",
+    "Wizzro",
+    "Cia"
+   ],
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -2644,7 +2716,6 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
-   "item_card_reward": "Goddess's Harp",
    "quiz_solution": "Lizalfos, Wizzro, Cia"
   },
   "O-8": {
@@ -2770,14 +2841,14 @@
      "action": "Use on the pier"
     }
    ],
+   "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "temps_max_min": 7,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Goddess's Harp"
+   }
   },
   "P-5": {
    "confidence": "HIGH",
@@ -2790,14 +2861,14 @@
      "action": "Use on the easternmost pier"
     }
    ],
+   "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Ice Arrow"
+   }
   },
   "P-6": {
    "confidence": "HIGH",
@@ -2862,14 +2933,14 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.9",
+   "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   },
-   "item_card_reward": "Ice Arrow"
+   }
   }
  }
 }
