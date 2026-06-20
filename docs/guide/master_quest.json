@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Master Quest",
-  "version": "v0",
+  "version": "v1",
   "n_cells": 128,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
@@ -18,7 +18,10 @@
    "malus_rule": "contrainte (removable=annulable via Item Card)",
    "warp": "teleport entre cases (cf MAP_PORTALS)",
    "instrument": "Instrument des Sirenes (Koholint)"
-  }
+  },
+  "changelog": [
+   "v1: Defeat Order deplaces de search vers champ quiz_order (source GUIDE inline). Cartes Master Quest remplies depuis GUIDE inline (PDF MQ sans libelle texte); 5 cases desalignees laissees en l'etat (C-8,E-1,E-2,I-6,L-3)."
+  ]
  },
  "cells": {
   "A-1": {
@@ -26,16 +29,23 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Demon King!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the fourth tile from the left on the north wall"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15
+   },
+   "rang_a_3ds": {
+    "ko": 1200
+   },
    "malus_rule": {
     "rule": "No Guarding!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Bomb the fourth tile from the left on the north wall"
-    }
-   ],
    "heart_container": {
     "from": "Link",
     "stage": "W. Rockface Keep"
@@ -45,27 +55,20 @@
     "KO 1000 enemies. Located northwest from the Allied Base.",
     "Complete the first mission and KO 1200 enemies without losing (           4+ hearts |             40% health). It is located in",
     "North Field Keep"
-   ],
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15
-   },
-   "rang_a_3ds": {
-    "ko": 1200
-   }
+   ]
   },
   "A-2": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 700 enemies in time!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "A-3": {
@@ -73,19 +76,19 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 700 enemies in time!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Power Bracelet",
      "action": "Push the tombstone in row 2, column 2"
     }
    ],
    "item_card_reward": "Recorder",
    "rang_a": {
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "A-4": {
@@ -93,20 +96,28 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the shadow beast!",
+   "search": [
+    {
+     "card": "Recorder",
+     "action": "Use on the tombstone at row 2, column 2"
+    },
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
    "malus_rule": {
     "rule": "Speed Run!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Use on the tombstone at row 2, column 2"
-    },
-    {
-     "card": null,
-     "action": "Dig the soft dirt"
-    }
-   ],
    "heart_container": {
     "from": "Ghirahim",
     "stage": "West Keep"
@@ -120,14 +131,6 @@
     "type": "Top",
     "name": "Skyloft Shirt",
     "loc": "West Ruins"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
    }
   },
   "A-5": {
@@ -135,10 +138,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.6",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 15,
@@ -146,6 +145,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "A-6": {
@@ -153,10 +156,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.5",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Recorder",
    "rang_a": {
     "temps_max_min": 15,
@@ -164,6 +163,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "A-7": {
@@ -171,19 +174,19 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.7",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Recorder",
      "action": "Use on the tile found by starting at the southwest empty tile then moving up twice and right three times"
     }
    ],
    "item_card_reward": "Candle",
    "rang_a": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "A-8": {
@@ -191,18 +194,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.12",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Ice Arrow",
      "action": "Shoot the ring of fire"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Ganondorf"
    ],
    "rang_a": {
     "ko": 1600,
@@ -211,26 +207,30 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Ganondorf"
+   ]
   },
   "B-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the royalty quiz!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Bomb",
      "action": "Bomb the northwest wall tile in the large indented area in the northeast"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Zant, Impa, Zelda"
     }
+   ],
+   "quiz_order": [
+    "Zant",
+    "Impa",
+    "Zelda"
    ],
    "item_card_reward": "Digging Mitts",
    "rang_a": {
@@ -240,6 +240,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "B-2": {
@@ -247,20 +251,29 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.8",
+   "search": [
+    {
+     "card": "Goddess's Harp",
+     "action": "Use on the butterflies"
+    },
+    {
+     "card": "Power Bracelet",
+     "action": "Push the westernmost of the six rocks"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "malus_rule": {
     "rule": "No Healing!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Use on the butterflies"
-    },
-    {
-     "card": null,
-     "action": "Push the westernmost of the six rocks"
-    }
-   ],
    "weapon": {
     "name": "Scepter",
     "lvl": 3,
@@ -269,15 +282,6 @@
    "heart_container": {
     "from": "Cia",
     "stage": "Central Chamber"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "B-3": {
@@ -285,16 +289,20 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the enemy forces! Lv.3",
+   "search": [
+    {
+     "card": "Ice Arrow",
+     "action": "Shoot the ring of fire"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15
+   },
    "malus_rule": {
     "rule": "No Guarding!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Shoot the ring of fire"
-    }
-   ],
    "weapon": {
     "name": "Light Sword",
     "lvl": 3,
@@ -303,10 +311,6 @@
    "heart_container": {
     "from": "Toon Link",
     "stage": "South Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15
    }
   },
   "B-4": {
@@ -314,15 +318,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defend the allied keeps! Lv.1",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Digging Mitts",
-   "fairy": {
-    "element": "Lightning",
-    "loc": "Clifftop Keep [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -331,9 +327,17 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
+   "fairy": {
+    "element": "Lightning",
+    "loc": "Clifftop Keep [Pot]"
+   },
    "fairy_food": {
     "ref_kb": "W01",
     "loc": "North Oasis [Pot]"
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "B-5": {
@@ -341,25 +345,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Capture the enemy keeps! Lv.1",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Power Bracelet",
      "action": "Push the northeasternmost tombstone"
     }
    ],
-   "rewards_other": [
-    "Guardian of Time - Lana"
-   ],
    "item_card_reward": "Goddess's Harp",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -367,39 +359,51 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Guardian of Time - Lana"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                40% health). It is located in"
+   ]
   },
   "B-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.6",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Candle",
      "action": "Burn the southeasternmost of the eight trees in the center"
     }
    ],
-   "weapon": {
-    "name": "Cutlass",
-    "lvl": 3,
-    "char": "Tetra"
-   },
    "item_card_reward": "Compass",
-   "heart_container": {
-    "from": "Tetra",
-    "stage": "Abandoned Fort"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Cutlass",
+    "lvl": 3,
+    "char": "Tetra"
+   },
+   "heart_container": {
+    "from": "Tetra",
+    "stage": "Abandoned Fort"
    }
   },
   "B-7": {
@@ -407,13 +411,9 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.8",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Goddess's Harp",
      "action": "Use on the butterflies"
     }
    ],
@@ -424,6 +424,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "B-8": {
@@ -431,16 +435,24 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of darkness! Lv.2",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Use on the soft dirt"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "malus_rule": {
     "rule": "Speed Run!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Use on the soft dirt"
-    }
-   ],
    "weapon": {
     "name": "Mask",
     "lvl": 3,
@@ -449,14 +461,6 @@
    "heart_container": {
     "from": "Young Link",
     "stage": "W. Boulder Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "C-1": {
@@ -464,16 +468,26 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Dash gallantly into battle!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the third full tile from the right on the north wall to the left of the indention"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "malus_rule": {
     "rule": "Speed Run!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Bomb the third full tile from the right on the north wall to the left of the indention"
-    }
-   ],
    "heart_container": {
     "from": "Darunia",
     "stage": "West Square"
@@ -483,20 +497,10 @@
     "lvl": 3,
     "char": "Darunia"
    },
-   "item_card_reward": "Bomb",
    "fairy_cosmetic": {
     "type": "Accessory",
     "name": "Demon Lord Earrings",
     "loc": "Exit Square"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "C-2": {
@@ -504,32 +508,32 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight the chosen ones!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Bomb",
      "action": "Bomb the first tile on the north wall to the right of the diagonal portion"
     }
    ],
-   "weapon": {
-    "name": "Shackle",
-    "lvl": 3,
-    "char": "Midna"
-   },
    "item_card_reward": "Compass",
-   "heart_container": {
-    "from": "Midna",
-    "stage": "South Field Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Shackle",
+    "lvl": 3,
+    "char": "Midna"
+   },
+   "heart_container": {
+    "from": "Midna",
+    "stage": "South Field Keep"
    }
   },
   "C-3": {
@@ -537,16 +541,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the enemy forces! Lv.2",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "item_card_reward": "Power Bracelet",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Shawl",
-    "loc": "West Town Keep"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -554,6 +549,15 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Shawl",
+    "loc": "West Town Keep"
    }
   },
   "C-4": {
@@ -561,10 +565,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.8",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "material_reward": "The Imprisoned's Pillar",
    "item_card_reward": "Compass",
    "rang_a": {
@@ -573,6 +573,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "C-5": {
@@ -580,21 +584,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Capture the enemy keeps! Lv.2",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Candle",
      "action": "Burn the southwesternmost of the four trees around the lake"
     }
    ],
-   "weapon": {
-    "name": "Naginata",
-    "lvl": 3,
-    "char": "Impa"
-   },
    "item_card_reward": "Recorder",
    "rang_a": {
     "ko": 1600,
@@ -608,6 +603,15 @@
    "fairy_food": {
     "ref_kb": "B03",
     "loc": "Rocky Square [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Naginata",
+    "lvl": 3,
+    "char": "Impa"
    }
   },
   "C-6": {
@@ -615,10 +619,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.9",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Ladder",
    "rang_a": {
     "temps_max_min": 15,
@@ -626,6 +626,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "C-7": {
@@ -633,25 +637,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Battle across the field!",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Ice Arrow",
      "action": "Shoot the ring of fire"
     }
-   ],
-   "rewards_other": [
-    "Masked (Master Quest) - Cia",
-    "Unmasked (Master Quest) - Cia",
-    "Hatless (Master Quest) - Cia"
-   ],
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located just south of the West Room.",
-    "Complete the first mission and KO 150 enemies with special attacks without losing (         4+ hearts |           40%"
    ],
    "rang_a": {
     "ko": 1600,
@@ -661,17 +651,27 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Masked (Master Quest) - Cia",
+    "Unmasked (Master Quest) - Cia",
+    "Hatless (Master Quest) - Cia"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located just south of the West Room.",
+    "Complete the first mission and KO 150 enemies with special attacks without losing (         4+ hearts |           40%"
+   ]
   },
   "C-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Attack the Festival of Cuccos!",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
      "card": null,
@@ -686,6 +686,20 @@
      "action": "Use on the butterflies"
     }
    ],
+   "item_card_reward": "Digging Mitts",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
    "heart_container": {
     "from": "King Daphnes",
     "stage": "East Field Keep"
@@ -695,20 +709,10 @@
     "lvl": 3,
     "char": "King Daphnes"
    },
-   "item_card_reward": "Digging Mitts",
    "fairy_cosmetic": {
     "type": "Top",
     "name": "Skyloft Shirt",
     "loc": "W. Rockface Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "D-1": {
@@ -716,21 +720,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Stop the healers from, well, healing!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Ice Arrow",
      "action": "Shoot the ring of fire"
     }
    ],
-   "weapon": {
-    "name": "Book of Sorcery",
-    "lvl": 3,
-    "char": "Lana"
-   },
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "ko": 1600,
@@ -740,6 +735,15 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Book of Sorcery",
+    "lvl": 3,
+    "char": "Lana"
    }
   },
   "D-2": {
@@ -747,21 +751,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.7",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Bomb",
      "action": "Bomb the third tile from the left on the north wall, right before the diagonal slope."
     }
    ],
-   "weapon": {
-    "name": "Great Swords",
-    "lvl": 3,
-    "char": "Ganondorf"
-   },
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 1600,
@@ -771,6 +766,15 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Great Swords",
+    "lvl": 3,
+    "char": "Ganondorf"
    }
   },
   "D-3": {
@@ -778,13 +782,9 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.6",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Power Bracelet",
      "action": "Push the westernmost rock"
     }
    ],
@@ -796,6 +796,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "D-4": {
@@ -803,13 +807,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.4",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "D-5": {
@@ -817,10 +821,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 800 enemies in time!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 15,
@@ -828,6 +828,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "D-6": {
@@ -835,19 +839,19 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.6",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Candle",
      "action": "Burn the southwesternmost of the three green trees"
     }
    ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "D-7": {
@@ -855,18 +859,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.10",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Candle",
      "action": "Burn the southeast of the five trees on the west half of the map"
     }
-   ],
-   "rewards_other": [
-    "Piece of Heart - Wizzro"
    ],
    "item_card_reward": "Digging Mitts",
    "rang_a": {
@@ -876,17 +873,20 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Piece of Heart - Wizzro"
+   ]
   },
   "D-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.8",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Ice Arrow",
    "rang_a": {
     "temps_max_min": 15,
@@ -894,6 +894,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "E-1": {
@@ -901,20 +905,19 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the legendary warrior quiz!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Ruto, Agitha, Ganondorf"
-    }
+   "quiz_order": [
+    "Ruto",
+    "Agitha",
+    "Ganondorf"
    ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "E-2": {
@@ -922,16 +925,26 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Prevent reinforcements from arriving!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": null,
      "action": "Bomb the north wall directly in the middle of the easternmost two columns of statues"
     }
    ],
+   "item_card_reward": "Ice Arrow",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
    "heart_container": {
     "from": "Linkle",
     "stage": "Town Entrance"
@@ -941,20 +954,10 @@
     "lvl": 3,
     "char": "Linkle"
    },
-   "item_card_reward": "Ice Arrow",
    "fairy_cosmetic": {
     "type": "Bottom",
     "name": "Skyloft Slacks",
     "loc": "Central Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 4000
    }
   },
   "E-3": {
@@ -962,18 +965,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Rescue the allied forces!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Power Bracelet",
      "action": "Push the statue in row 1, column 5"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Boss) - Fi"
    ],
    "rang_a": {
     "ko": 1200,
@@ -982,23 +978,38 @@
    "fairy_food": {
     "ref_kb": "P04",
     "loc": "Southwest Keep [Pot]"
-   }
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Boss) - Fi"
+   ]
   },
   "E-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the gulf beast!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Push the middle statue in the top row"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
    "malus_rule": {
     "rule": "No Healing!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Push the middle statue in the top row"
-    }
-   ],
    "heart_container": {
     "from": "Skull Kid",
     "stage": "West Temple"
@@ -1013,25 +1024,13 @@
     "KO 1000 enemies. Located in the corner north from the Eastern Room.",
     "Complete the first mission and KO 150 enemies with special attacks without losing (               4+ hearts |    40%",
     "Eastern Room."
-   ],
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   }
+   ]
   },
   "E-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.5",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "item_card_reward": "Raft",
    "rang_a": {
     "temps_max_min": 15,
@@ -1039,6 +1038,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "E-6": {
@@ -1046,28 +1049,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of darkness! Lv.1",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Water Bomb",
      "action": "Use on the rock in the pond"
     }
    ],
-   "heart_container": {
-    "from": "Cia",
-    "stage": "Lakeside Keep"
-   },
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Wizzro"
-   ],
-   "fairy_cosmetic": {
-    "type": "Bottoms",
-    "name": "Skyloft Skirt",
-    "loc": "King's Hall"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1079,6 +1066,22 @@
    "fairy_food": {
     "ref_kb": "P06",
     "loc": "Lakeside Keep [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Cia",
+    "stage": "Lakeside Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottoms",
+    "name": "Skyloft Skirt",
+    "loc": "King's Hall"
    }
   },
   "E-7": {
@@ -1086,27 +1089,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defend the allied keeps! Lv.2",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Power Bracelet",
      "action": "Push the block between the two trees"
     }
    ],
-   "weapon": {
-    "name": "Rapier",
-    "lvl": 3,
-    "char": "Zelda"
-   },
    "item_card_reward": "Power Bracelet",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Shirt",
-    "loc": "East Temple Hall"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1115,6 +1104,20 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Rapier",
+    "lvl": 3,
+    "char": "Zelda"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Shirt",
+    "loc": "East Temple Hall"
    }
   },
   "E-8": {
@@ -1122,10 +1125,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.10",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
@@ -1133,6 +1132,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "F-1": {
@@ -1140,25 +1143,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.10",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
    ],
-   "heart_container": {
-    "from": "Tingle",
-    "stage": "Southeast Square"
-   },
-   "weapon": {
-    "name": "Balloon",
-    "lvl": 3,
-    "char": "Tingle"
-   },
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "ko": 1600,
@@ -1172,6 +1162,19 @@
    "fairy_food": {
     "ref_kb": "P05",
     "loc": "North Palace [Pot]"
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Tingle",
+    "stage": "Southeast Square"
+   },
+   "weapon": {
+    "name": "Balloon",
+    "lvl": 3,
+    "char": "Tingle"
    }
   },
   "F-2": {
@@ -1179,26 +1182,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Run swiftly across the battlefield!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Bomb",
      "action": "Bomb the wall tile directly north from the east ladder"
     }
    ],
-   "weapon": {
-    "name": "Spear",
-    "lvl": 3,
-    "char": "Lana"
-   },
    "item_card_reward": "Bomb",
-   "heart_container": {
-    "from": "Lana",
-    "stage": "Town Center Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1207,6 +1197,19 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Spear",
+    "lvl": 3,
+    "char": "Lana"
+   },
+   "heart_container": {
+    "from": "Lana",
+    "stage": "Town Center Keep"
    }
   },
   "F-3": {
@@ -1214,10 +1217,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.4",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
@@ -1225,6 +1224,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "F-4": {
@@ -1232,16 +1235,24 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Destroy enemies and traitors alike! Lv.6",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Use on the soft dirt"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
    "malus_rule": {
     "rule": "No Healing!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Use on the soft dirt"
-    }
-   ],
    "heart_container": {
     "from": "Fi",
     "stage": "West Towm Keep"
@@ -1253,37 +1264,29 @@
    "skulltula_cond": [
     "KO 1000 enemies.",
     "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |               40% health). It is located in"
-   ],
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   }
+   ]
   },
   "F-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the ocean beast!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
-   "fairy": {
-    "element": "Darkness",
-    "loc": "Southeast Keep [Pot]"
-   },
    "item_card_reward": "Goddess's Harp",
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15
    },
+   "fairy": {
+    "element": "Darkness",
+    "loc": "Southeast Keep [Pot]"
+   },
    "fairy_food": {
     "ref_kb": "B02",
     "loc": "Southwest Keep [Pot]"
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "F-6": {
@@ -1291,13 +1294,9 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.3",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Raft",
      "action": "Use on the dock"
     }
    ],
@@ -1308,6 +1307,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "F-7": {
@@ -1315,20 +1318,29 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.9",
+   "search": [
+    {
+     "card": "Goddess's Harp",
+     "action": "Use on the butterflies"
+    },
+    {
+     "card": "Water Bomb",
+     "action": "Bomb the rock in the river"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
    "malus_rule": {
     "rule": "No Healing!",
     "removable": false
    },
-   "search": [
-    {
-     "card": null,
-     "action": "Use on the butterflies"
-    },
-    {
-     "card": null,
-     "action": "Bomb the rock in the river"
-    }
-   ],
    "weapon": {
     "name": "Giant Blade",
     "lvl": 3,
@@ -1338,15 +1350,6 @@
     "type": "Top",
     "name": "Skyloft Shawl",
     "loc": "Central Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 4000
    }
   },
   "F-8": {
@@ -1354,21 +1357,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.4",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
-     "card": null,
+     "card": "Water Bomb",
      "action": "Bomb the rock in the river"
     }
    ],
-   "weapon": {
-    "name": "Hylian Sword",
-    "lvl": 3,
-    "char": "Link"
-   },
    "item_card_reward": "Water Bomb",
    "rang_a": {
     "ko": 1600,
@@ -1378,6 +1372,15 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Hylian Sword",
+    "lvl": 3,
+    "char": "Link"
    }
   },
   "G-1": {
@@ -1385,10 +1388,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Prevent the sorceress's scheme!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Recorder",
@@ -1399,22 +1398,26 @@
      "action": "Push the solitary rock"
     }
    ],
-   "weapon": {
-    "name": "Harp",
-    "lvl": 3,
-    "char": "Sheik"
-   },
    "item_card_reward": "Goddess's Harp",
-   "heart_container": {
-    "from": "Sheik",
-    "stage": "Southwest Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Harp",
+    "lvl": 3,
+    "char": "Sheik"
+   },
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "Southwest Keep"
    }
   },
   "G-2": {
@@ -1422,10 +1425,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.9",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
@@ -1439,6 +1438,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "G-3": {
@@ -1446,10 +1449,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.6",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
@@ -1459,6 +1458,10 @@
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "G-4": {
@@ -1466,10 +1469,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Destroy all Giant Bosses in time! Lv.4",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
    "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 7,
@@ -1477,6 +1476,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
    }
   },
   "G-5": {
@@ -1484,28 +1487,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.2",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
      "action": "Burn the northwesternmost tree"
     }
    ],
-   "heart_container": {
-    "from": "Impa",
-    "stage": "Stock Room"
-   },
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Impa"
-   ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Shirt",
-    "loc": "Stone Square"
-   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1518,6 +1505,22 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "Stock Room [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Impa",
+    "stage": "Stock Room"
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Impa"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Shirt",
+    "loc": "Stone Square"
    }
   },
   "G-6": {
@@ -1525,10 +1528,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.2",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
@@ -1536,11 +1535,6 @@
     }
    ],
    "item_card_reward": "Recorder",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located in the dead end southeast of the East Temple.",
-    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |                 40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1549,17 +1543,22 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end southeast of the East Temple.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |                 40% health). It is located in"
+   ]
   },
   "G-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.2",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 7,
@@ -1567,6 +1566,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "G-8": {
@@ -1574,13 +1577,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of water! Lv.1",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
-   "rewards_other": [
-    "Piece of Heart - Cia"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 1000,
@@ -1590,17 +1586,20 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Piece of Heart - Cia"
+   ]
   },
   "H-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.8",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
@@ -1614,6 +1613,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "H-2": {
@@ -1621,21 +1624,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Survive the attack of these powered-up enemies!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Use on the soft dirt"
     }
    ],
-   "weapon": {
-    "name": "Magic Rod",
-    "lvl": 3,
-    "char": "Link"
-   },
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 1600,
@@ -1643,6 +1637,15 @@
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Magic Rod",
+    "lvl": 3,
+    "char": "Link"
    }
   },
   "H-3": {
@@ -1650,15 +1653,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the mystery mastery quiz!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Aeralfos, Shield Moblin, Big Poe"
-    }
+   "quiz_order": [
+    "Aeralfos",
+    "Shield Moblin",
+    "Big Poe"
    ],
    "item_card_reward": "Bomb",
    "rang_a": {
@@ -1668,6 +1666,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "H-4": {
@@ -1675,15 +1677,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the island beast!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Apron",
-    "loc": "South Square"
-   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1696,6 +1689,15 @@
    "fairy_food": {
     "ref_kb": "W01",
     "loc": "Enemy Base [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Apron",
+    "loc": "South Square"
    }
   },
   "H-5": {
@@ -1703,13 +1705,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.2",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
-   "rewards_other": [
-    "Piece of Heart - Cia"
-   ],
    "item_card_reward": "Water Bomb",
    "rang_a": {
     "temps_max_min": 15,
@@ -1717,23 +1712,30 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Piece of Heart - Cia"
+   ]
   },
   "H-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.2",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 1000
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "H-7": {
@@ -1741,16 +1743,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.1",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "item_card_reward": "Candle",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and capture five or more enemy Keeps without losing (            4+ hearts |              40%"
-   ],
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1759,17 +1752,22 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more enemy Keeps without losing (            4+ hearts |              40%"
+   ]
   },
   "H-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.1",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 1000,
@@ -1778,6 +1776,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "I-1": {
@@ -1785,10 +1787,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of water! Lv.2",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Goddess's Harp",
@@ -1799,11 +1797,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "weapon": {
-    "name": "Great Fairy",
-    "lvl": 3,
-    "char": "Link"
-   },
    "item_card_reward": "Recorder",
    "rang_a": {
     "ko": 1600,
@@ -1813,6 +1806,15 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Great Fairy",
+    "lvl": 3,
+    "char": "Link"
    }
   },
   "I-2": {
@@ -1820,19 +1822,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the Triforce quiz!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
      "action": "Bomb the fifth tile from the right on the wall above the river"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Ganondorf, Zelda, Link"
     }
+   ],
+   "quiz_order": [
+    "Ganondorf",
+    "Zelda",
+    "Link"
    ],
    "item_card_reward": "Power Bracelet",
    "rang_a": {
@@ -1842,6 +1841,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "I-3": {
@@ -1849,18 +1852,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.3",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
      "action": "Burn the southeast of the five green trees"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Sheik"
    ],
    "rang_a": {
     "ko": 1200,
@@ -1873,17 +1869,20 @@
    "fairy_food": {
     "ref_kb": "P06",
     "loc": "East Keep [Pot]"
-   }
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Sheik"
+   ]
   },
   "I-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.1",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
    "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 7,
@@ -1891,6 +1890,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
    }
   },
   "I-5": {
@@ -1898,18 +1901,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.1",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
      "action": "Burn the northernmost tree on the eastern wall of trees"
     }
-   ],
-   "rewards_other": [
-    "Piece of Heart - Wizzro"
    ],
    "item_card_reward": "Digging Mitts",
    "rang_a": {
@@ -1918,17 +1914,20 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Piece of Heart - Wizzro"
+   ]
   },
   "I-6": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.1",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Recorder",
@@ -1946,6 +1945,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "I-7": {
@@ -1953,28 +1956,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the commanders of two armies!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
      "action": "Burn the southern of the two trees by the west exit"
     }
    ],
-   "heart_container": {
-    "from": "Toon Link",
-    "stage": "Fairy Fountain"
-   },
-   "rewards_other": [
-    "Hero's Clothes (Master Quest) - Link"
-   ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Bone Hat",
-    "loc": "Eastern Tree"
-   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1987,6 +1974,22 @@
    "fairy_food": {
     "ref_kb": "P15",
     "loc": "Fairy Fountain [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Toon Link",
+    "stage": "Fairy Fountain"
+   },
+   "rewards_other": [
+    "Hero's Clothes (Master Quest) - Link"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Bone Hat",
+    "loc": "Eastern Tree"
    }
   },
   "I-8": {
@@ -1994,10 +1997,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.1",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
@@ -2011,6 +2010,10 @@
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "J-1": {
@@ -2018,21 +2021,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.8",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Power Bracelet",
      "action": "Push the westernmost rock in the arrow formation"
     }
    ],
-   "weapon": {
-    "name": "Ring",
-    "lvl": 3,
-    "char": "Wizzro"
-   },
    "rang_a": {
     "ko": 1600,
     "degats_max": 199
@@ -2040,6 +2034,15 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Ring",
+    "lvl": 3,
+    "char": "Wizzro"
    }
   },
   "J-2": {
@@ -2047,16 +2050,25 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the valley beast!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
      "action": "Bomb the fifth wall tile from the left above the river"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
    "weapon": {
     "name": "Baton",
     "lvl": 3,
@@ -2066,15 +2078,6 @@
     "type": "Top",
     "name": "Outset Shirt",
     "loc": "North Field Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "J-3": {
@@ -2082,10 +2085,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.3",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Recorder",
@@ -2095,6 +2094,10 @@
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "J-4": {
@@ -2102,10 +2105,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 600 enemies in time!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Recorder",
    "rang_a": {
     "temps_max_min": 15,
@@ -2113,6 +2112,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "J-5": {
@@ -2120,10 +2123,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.5",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Power Bracelet",
@@ -2133,6 +2132,10 @@
    "item_card_reward": "Ice Arrow",
    "rang_a": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "J-6": {
@@ -2140,10 +2143,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.5",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 7,
@@ -2151,6 +2150,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "J-7": {
@@ -2158,19 +2161,19 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of light!",
+   "item_card_reward": "Goddess's Harp",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15
+   },
    "malus_rule": {
     "rule": "No Guarding!",
     "removable": false
    },
-   "item_card_reward": "Goddess's Harp",
    "fairy_cosmetic": {
     "type": "Top",
     "name": "Skyloft Shirt",
     "loc": "North Palace"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15
    }
   },
   "J-8": {
@@ -2178,10 +2181,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of Skyloft!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Goddess's Harp",
@@ -2193,11 +2192,6 @@
     }
    ],
    "item_card_reward": "Ice Arrow",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Skyloft Slacks",
-    "loc": "Rockface Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2206,6 +2200,15 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Skyloft Slacks",
+    "loc": "Rockface Keep"
    }
   },
   "K-1": {
@@ -2213,16 +2216,20 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.7",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Water Bomb",
      "action": "Bomb the rock in the lake"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
    "weapon": {
     "name": "Gauntlets",
     "lvl": 3,
@@ -2231,10 +2238,6 @@
    "heart_container": {
     "from": "Link",
     "stage": "Mountain Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15
    }
   },
   "K-2": {
@@ -2242,10 +2245,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.6",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Hookshot",
@@ -2259,6 +2258,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "K-3": {
@@ -2266,10 +2269,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.2",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Candle",
    "rang_a": {
     "temps_max_min": 15,
@@ -2277,6 +2276,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "K-4": {
@@ -2284,29 +2287,29 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Darknut Forces!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Recorder",
      "action": "Use on the tile three north and four east from the southwesternmost desert tile"
     }
    ],
+   "material_reward": "Impa's Breastplate",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
    "heart_container": {
     "from": "Zant",
     "stage": "East Field Keep"
    },
-   "material_reward": "Impa's Breastplate",
    "fairy_cosmetic": {
     "type": "Bottom",
     "name": "Skyloft Skirt",
     "loc": "North Field Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15
    }
   },
   "K-5": {
@@ -2314,19 +2317,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the Twilight Princess Quiz!",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Goddess's Harp",
      "action": "Use on the butterflies"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Agitha, Agitha, Midna"
     }
+   ],
+   "quiz_order": [
+    "Agitha",
+    "Agitha",
+    "Midna"
    ],
    "item_card_reward": "Digging Mitts",
    "rang_a": {
@@ -2336,6 +2336,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "K-6": {
@@ -2343,33 +2347,29 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.5",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Water Bomb",
      "action": "Use on the rock in the lake"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Agitha"
-   ],
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Agitha"
+   ]
   },
   "K-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.4",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
@@ -2384,6 +2384,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "K-8": {
@@ -2391,15 +2395,7 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.5",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Power Bracelet",
-   "fairy": {
-    "element": "Water",
-    "loc": "Hilltop Keep [Pot]"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2409,9 +2405,17 @@
     "ko": 1200,
     "degats_max": 4000
    },
+   "fairy": {
+    "element": "Water",
+    "loc": "Hilltop Keep [Pot]"
+   },
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "East Field Keep [Pot]"
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "L-1": {
@@ -2419,27 +2423,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of Twilight!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Water Bomb",
      "action": "Bomb the rock in the pond"
     }
    ],
-   "weapon": {
-    "name": "Zora Scale",
-    "lvl": 3,
-    "char": "Ruto"
-   },
    "item_card_reward": "Goddess's Harp",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Apron",
-    "loc": "West Ruins"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2447,6 +2437,20 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Zora Scale",
+    "lvl": 3,
+    "char": "Ruto"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Apron",
+    "loc": "West Ruins"
    }
   },
   "L-2": {
@@ -2454,10 +2458,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the mountain beast!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Goddess's Harp",
@@ -2468,10 +2468,6 @@
      "action": "Push the easternmost of the ten rocks"
     }
    ],
-   "fairy": {
-    "element": "Light",
-    "loc": "Southeast Square [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2480,9 +2476,17 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
+   "fairy": {
+    "element": "Light",
+    "loc": "Southeast Square [Pot]"
+   },
    "fairy_food": {
     "ref_kb": "P05",
     "loc": "Southeast Square [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
    }
   },
   "L-3": {
@@ -2490,10 +2494,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.3",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Whistle",
@@ -2507,6 +2507,10 @@
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "L-4": {
@@ -2514,23 +2518,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.4",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Midna"
-   ],
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (               4+ hearts |                40% health). It is located in"
    ],
    "rang_a": {
     "ko": 1200,
@@ -2539,17 +2531,25 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Midna"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (               4+ hearts |                40% health). It is located in"
+   ]
   },
   "L-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.2",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
@@ -2563,6 +2563,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
    }
   },
   "L-6": {
@@ -2570,21 +2574,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Dinolfos Forces!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
      "action": "Burn the southernmost of the two trees by the west entrance"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Shawl",
-    "loc": "Fairy Fountain"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2592,6 +2587,15 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Shawl",
+    "loc": "Fairy Fountain"
    }
   },
   "L-7": {
@@ -2599,15 +2603,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the women's weapons quiz!",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Lana, Lana, Midna"
-    }
+   "quiz_order": [
+    "Lana",
+    "Lana",
+    "Midna"
    ],
    "item_card_reward": "Power Bracelet",
    "rang_a": {
@@ -2617,6 +2616,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "L-8": {
@@ -2624,23 +2627,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Shield Moblin Forces! Lv.2",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Water Bomb",
      "action": "Use on the rock in the lake"
     }
-   ],
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Zant"
-   ],
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |               40% health). It is located in"
    ],
    "rang_a": {
     "ko": 1600,
@@ -2650,39 +2641,47 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Zant"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |               40% health). It is located in"
+   ]
   },
   "M-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat all enemies! Lv.3",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Lana"
-   ],
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Lana"
+   ]
   },
   "M-2": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the enemy forces! Lv.1",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Power Bracelet",
@@ -2690,17 +2689,21 @@
     }
    ],
    "item_card_reward": "Hookshot",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Shirt",
-    "loc": "West Ruins"
-   },
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Shirt",
+    "loc": "West Ruins"
    }
   },
   "M-3": {
@@ -2708,10 +2711,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.1",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
@@ -2719,6 +2718,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "M-4": {
@@ -2726,10 +2729,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the cliff beast!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Recorder",
@@ -2740,11 +2739,6 @@
      "action": "Dig the soft dirt"
     }
    ],
-   "weapon": {
-    "name": "Horse",
-    "lvl": 3,
-    "char": "Link"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2756,6 +2750,15 @@
    "fairy_food": {
     "ref_kb": "P04",
     "loc": "Enemy Base [Pot]"
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Horse",
+    "lvl": 3,
+    "char": "Link"
    }
   },
   "M-5": {
@@ -2763,10 +2766,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 500 enemies in time!",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
@@ -2774,6 +2773,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "M-6": {
@@ -2781,13 +2784,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.3",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
-   "rewards_other": [
-    "Piece of Heart - Wizzro"
-   ],
    "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 15,
@@ -2795,17 +2791,20 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Piece of Heart - Wizzro"
+   ]
   },
   "M-7": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the forest dragon!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Goddess's Harp",
@@ -2816,6 +2815,17 @@
      "action": "Burn the left of the two adjacent trees on the third row down from the top"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15
+   },
+   "rang_a_3ds": {
+    "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
    "heart_container": {
     "from": "Volga",
     "stage": "N. Entrance Keep"
@@ -2829,13 +2839,6 @@
     "type": "Bottom",
     "name": "Skyloft Skirt",
     "loc": "North Square"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15
-   },
-   "rang_a_3ds": {
-    "ko": 1200
    }
   },
   "M-8": {
@@ -2843,10 +2846,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Watch out! All attacks are devastating! Lv.7",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
@@ -2860,6 +2859,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "N-1": {
@@ -2867,10 +2870,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.4",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
@@ -2884,6 +2883,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "N-2": {
@@ -2891,28 +2894,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of lightning! Lv.1",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Power Bracelet",
      "action": "Push the solitary rock on the west half of the map"
     }
    ],
-   "heart_container": {
-    "from": "Sheik",
-    "stage": "East Room"
-   },
-   "rewards_other": [
-    "Standard Outfit (Master Quest) - Darunia"
-   ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Shawl",
-    "loc": "Lakeside Keep"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -2924,6 +2911,22 @@
    "fairy_food": {
     "ref_kb": "B03",
     "loc": "East Room [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "East Room"
+   },
+   "rewards_other": [
+    "Standard Outfit (Master Quest) - Darunia"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Shawl",
+    "loc": "Lakeside Keep"
    }
   },
   "N-3": {
@@ -2931,16 +2934,24 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Big Poe Forces!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
      "action": "Bomb the eastern of the two wall tiles near the north entrance"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
    "heart_container": {
     "from": "Darunia",
     "stage": "West Temple"
@@ -2952,14 +2963,6 @@
     "type": "Bottom",
     "name": "Skyloft Slacks",
     "loc": "East Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
    }
   },
   "N-4": {
@@ -2967,24 +2970,25 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the tribe quiz!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Power Bracelet",
      "action": "Push the eastern of the two statues"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Ruto, Impa, Darunia"
     }
+   ],
+   "quiz_order": [
+    "Ruto",
+    "Impa",
+    "Darunia"
    ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "N-5": {
@@ -2992,20 +2996,12 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.3",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Candle",
      "action": "Burn the southeasternmost of the seven trees on the east of the map"
     }
    ],
-   "fairy": {
-    "element": "Fire",
-    "loc": "W. Boulder Keep [Pot]"
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 1200,
@@ -3015,9 +3011,17 @@
    "rang_a_3ds": {
     "degats_max": 4000
    },
+   "fairy": {
+    "element": "Fire",
+    "loc": "W. Boulder Keep [Pot]"
+   },
    "fairy_food": {
     "ref_kb": "P15",
     "loc": "East Keep [Pot]"
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
    }
   },
   "N-6": {
@@ -3025,15 +3029,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the action quiz!",
-   "malus_rule": {
-    "rule": "No Item Attacks!",
-    "removable": false
-   },
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Aeralfos, Moblin, Lizalfos"
-    }
+   "quiz_order": [
+    "Aeralfos",
+    "Moblin",
+    "Lizalfos"
    ],
    "item_card_reward": "Goddess's Harp",
    "rang_a": {
@@ -3043,6 +3042,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
    }
   },
   "N-7": {
@@ -3050,10 +3053,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.9",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "material_reward": "Zelda's Tiara",
    "item_card_reward": "Compass",
    "rang_a": {
@@ -3062,6 +3061,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "N-8": {
@@ -3069,39 +3072,47 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Guard the allied keeps with your life! Lv.7",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
      "action": "Bomb the seventh wall tile from the left"
     }
    ],
-   "rewards_other": [
-    "Piece of Heart - Volga"
-   ],
    "item_card_reward": "Recorder",
    "rang_a": {
     "temps_max_min": 15
-   }
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Piece of Heart - Volga"
+   ]
   },
   "O-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the Shield Moblin Forces! Lv.1",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
    "heart_container": {
     "from": "Volga",
     "stage": "North Palace"
@@ -3113,34 +3124,23 @@
    "skulltula_cond": [
     "KO 1000 enemies. Located south of the Lower Level East.",
     "Complete the first mission and capture five or more enemy Keeps without losing (              4+ hearts |                40%"
-   ],
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   }
+   ]
   },
   "O-2": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the Ocarina of Time quiz!",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Bomb",
      "action": "Bomb the fourth tile from the right from the east entrance"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Darunia, Sheik, Ruto"
     }
+   ],
+   "quiz_order": [
+    "Darunia",
+    "Sheik",
+    "Ruto"
    ],
    "item_card_reward": "Power Bracelet",
    "rang_a": {
@@ -3150,6 +3150,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "O-3": {
@@ -3157,27 +3161,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat enemies while collecting treasure! Yay!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Water Bomb",
      "action": "Bomb the rock in the water"
     }
    ],
-   "weapon": {
-    "name": "Trident",
-    "lvl": 3,
-    "char": "Ganondorf"
-   },
    "item_card_reward": "Water Bomb",
-   "fairy_cosmetic": {
-    "type": "Accessory",
-    "name": "Demon Lord Earrings",
-    "loc": "Mountain Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -3186,6 +3176,20 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Trident",
+    "lvl": 3,
+    "char": "Ganondorf"
+   },
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Demon Lord Earrings",
+    "loc": "Mountain Keep"
    }
   },
   "O-4": {
@@ -3193,26 +3197,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Capture the enemy keeps! Lv.3",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
    ],
-   "weapon": {
-    "name": "Parasol",
-    "lvl": 3,
-    "char": "Agitha"
-   },
    "item_card_reward": "Compass",
-   "heart_container": {
-    "from": "Agitha",
-    "stage": "West Town Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -3221,6 +3212,19 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Parasol",
+    "lvl": 3,
+    "char": "Agitha"
+   },
+   "heart_container": {
+    "from": "Agitha",
+    "stage": "West Town Keep"
    }
   },
   "O-5": {
@@ -3228,24 +3232,25 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the tricky quiz!",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Power Bracelet",
      "action": "Push the eastern of the two statues"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Big Poe, ReDead Knight, Sheik"
     }
+   ],
+   "quiz_order": [
+    "Big Poe",
+    "ReDead Knight",
+    "Sheik"
    ],
    "item_card_reward": "Recorder",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "O-6": {
@@ -3253,16 +3258,23 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of lightning! Lv.2",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
    ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
    "weapon": {
     "name": "Spinner",
     "lvl": 3,
@@ -3272,13 +3284,6 @@
     "type": "Bottom",
     "name": "Skyloft Slacks",
     "loc": "Hilltop Keep"
-   },
-   "rang_a": {
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
    }
   },
   "O-7": {
@@ -3286,10 +3291,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the enemy forces! Lv.4",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Recorder",
@@ -3300,21 +3301,7 @@
      "action": "Push the rock next to the rows of four trees"
     }
    ],
-   "heart_container": {
-    "from": "Fi",
-    "stage": "Central Chamber"
-   },
-   "weapon": {
-    "name": "Goddess Blade",
-    "lvl": 3,
-    "char": "Fi"
-   },
    "item_card_reward": "Candle",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Apron",
-    "loc": "East Garden"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15
@@ -3325,6 +3312,24 @@
    "fairy_food": {
     "ref_kb": "B02",
     "loc": "West Garden [Pot]"
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Fi",
+    "stage": "Central Chamber"
+   },
+   "weapon": {
+    "name": "Goddess Blade",
+    "lvl": 3,
+    "char": "Fi"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Apron",
+    "loc": "East Garden"
    }
   },
   "O-8": {
@@ -3332,18 +3337,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.7",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Ice Arrow",
      "action": "Shoot the ring of fire"
     }
-   ],
-   "rewards_other": [
-    "Guardian of Time - Cia"
    ],
    "item_card_reward": "Goddess's Harp",
    "rang_a": {
@@ -3352,23 +3350,34 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Guardian of Time - Cia"
+   ]
   },
   "P-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.5",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
    "weapon": {
     "name": "Mirror",
     "lvl": 3,
@@ -3377,10 +3386,6 @@
    "heart_container": {
     "from": "Twili Midna",
     "stage": "Lakeside Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15
    }
   },
   "P-2": {
@@ -3388,10 +3393,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of time!",
-   "malus_rule": {
-    "rule": "Don't Get Hit!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Hookshot",
@@ -3402,23 +3403,27 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "weapon": {
-    "name": "Dominion Rod",
-    "lvl": 3,
-    "char": "Zelda"
-   },
    "item_card_reward": "Water Bomb",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Skyloft Apron",
-    "loc": "W. Boulder Keep"
-   },
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 149
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Dominion Rod",
+    "lvl": 3,
+    "char": "Zelda"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skyloft Apron",
+    "loc": "W. Boulder Keep"
    }
   },
   "P-3": {
@@ -3426,18 +3431,11 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.11",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Digging Mitts",
      "action": "Dig the soft dirt"
     }
-   ],
-   "rewards_other": [
-    "Standard Robes (Master Quest) - Zelda"
    ],
    "item_card_reward": "Compass",
    "rang_a": {
@@ -3445,17 +3443,20 @@
    },
    "rang_a_3ds": {
     "ko": 1200
-   }
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "rewards_other": [
+    "Standard Robes (Master Quest) - Zelda"
+   ]
   },
   "P-4": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Take on the sword masters!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Raft",
@@ -3466,17 +3467,7 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "weapon": {
-    "name": "Summoning Gate",
-    "lvl": 3,
-    "char": "Lana"
-   },
    "item_card_reward": "Compass",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Demon Lord Shirt",
-    "loc": "N. Settlement"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -3485,6 +3476,20 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Summoning Gate",
+    "lvl": 3,
+    "char": "Lana"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Demon Lord Shirt",
+    "loc": "N. Settlement"
    }
   },
   "P-5": {
@@ -3492,10 +3497,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all enemies! Lv.7",
-   "malus_rule": {
-    "rule": "No Healing!",
-    "removable": false
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -3503,6 +3504,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
+   },
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
    }
   },
   "P-6": {
@@ -3510,10 +3515,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat all Giant Bosses in time! Lv.11",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Ladder",
@@ -3523,6 +3524,10 @@
    "item_card_reward": "Digging Mitts",
    "rang_a": {
     "temps_max_min": 7
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   },
   "P-7": {
@@ -3530,27 +3535,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Watch out for falling artillery fire!",
-   "malus_rule": {
-    "rule": "Speed Run!",
-    "removable": false
-   },
    "search": [
     {
      "card": "Ladder",
      "action": "Use on the easternmost dock"
     }
    ],
-   "weapon": {
-    "name": "Scimitars",
-    "lvl": 3,
-    "char": "Zant"
-   },
    "item_card_reward": "Compass",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Skyloft Skirt",
-    "loc": "Northeast Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -3559,6 +3550,20 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "weapon": {
+    "name": "Scimitars",
+    "lvl": 3,
+    "char": "Zant"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Skyloft Skirt",
+    "loc": "Northeast Keep"
    }
   },
   "P-8": {
@@ -3566,16 +3571,16 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Rack up your KO count! Lv.9",
-   "malus_rule": {
-    "rule": "No Guarding!",
-    "removable": false
-   },
    "item_card_reward": "Raft",
    "rang_a": {
     "ko": 1600
    },
    "rang_a_3ds": {
     "ko": 1200
+   },
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
    }
   }
  }
