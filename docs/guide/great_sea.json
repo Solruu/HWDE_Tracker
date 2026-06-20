@@ -1,16 +1,23 @@
 {
  "meta": {
   "map": "Great Sea",
-  "version": "v1",
+  "version": "v2",
   "n_cells": 98,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "great_sea_rules",
+   "removable": true,
+   "summary": "Certains niveaux imposent un malus (Great Sea Rule), annulable en utilisant la bonne Item Card pendant le niveau (souvent un boomerang sur le Big Octo). Murs de vent : barriere de la carte explorable supprimee en utilisant le bon objet puis en terminant le niveau, ce qui debloque la case adjacente.",
+   "ref_kb": "map_007"
+  },
   "schema": {
-   "rang_a": "Rang A, valeurs SWITCH — ko / temps_max_min (absent = pas de limite) / degats_max",
-   "rang_a_3ds": "valeurs 3DS si différentes (info, hors guide)",
-   "fairy_food.ref_kb": "id aliment KB nour_011 (pas de copie)",
-   "search": "carte-objet + action",
-   "great_sea_rule": "contrainte spéciale (≠ search)"
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
   }
  },
  "cells": {
@@ -27,6 +34,10 @@
     {
      "card": "Wind Waker",
      "action": "Use to clear the headwinds"
+    },
+    {
+     "card": null,
+     "action": "Bomb Shop"
     }
    ],
    "heart_container": {
@@ -43,10 +54,6 @@
     "element": "Darkness",
     "loc": "Jail Watch Keep [Pot]"
    },
-   "fairy_food": {
-    "ref_kb": "B04",
-    "loc": "Star Island Keep [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -54,6 +61,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "Star Island Keep [Pot]"
    }
   },
   "A-2": {
@@ -61,7 +72,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Lead a raid deep into enemy territory!",
-   "great_sea_rule": "Don't Get Hit!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Boomerang",
@@ -164,7 +178,8 @@
      "action": "Use to clear the headwinds"
     }
    ],
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Island Aura",
     "loc": "Hilltop Keep"
    },
@@ -174,10 +189,6 @@
     "char": "Link"
    },
    "item_card_reward": "Cannon",
-   "fairy_food": {
-    "ref_kb": "P08",
-    "loc": "South Field Keep [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -185,6 +196,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "South Field Keep [Pot]"
    }
   },
   "A-6": {
@@ -192,7 +207,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.1",
-   "great_sea_rule": "No Item Attacks!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Hero's Bow",
@@ -256,6 +274,11 @@
     "stage": "Fairy Fountain"
    },
    "item_card_reward": "Hammer",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Phantom Horns",
+    "loc": "Abandoned Fort"
+   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -270,7 +293,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Strengthen your army and defeat the enemy! Lv.2",
-   "great_sea_rule": "Double Damage!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Cannon",
@@ -320,7 +346,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight the heroes of the Wind Waker!",
-   "great_sea_rule": "No Item Attacks!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Hero's Bow",
@@ -362,10 +391,6 @@
     "element": "Lightning",
     "loc": "North Palace [Pot]"
    },
-   "fairy_food": {
-    "ref_kb": "F02",
-    "loc": "North Palace [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -373,6 +398,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "North Palace [Pot]"
    }
   },
   "B-7": {
@@ -390,6 +419,9 @@
      "action": "Tetra, King Daphnes, Cia"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Agitha"
+   ],
    "item_card_reward": "Hero's Bow",
    "rang_a": {
     "ko": 3,
@@ -405,7 +437,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Triumph over the trickster ghost gang!",
-   "great_sea_rule": "No Item Attacks!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Hero's Bow",
@@ -439,6 +474,11 @@
     "char": "Link"
    },
    "item_card_reward": "Wind Waker",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Wind Robe",
+    "loc": "W. Boulder Keep"
+   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -459,12 +499,16 @@
      "action": "Use on the windmill"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Zant"
+   ],
    "item_card_reward": "Compass",
    "rang_a": {
-    "ko": 1200,
+    "ko": 4000,
     "degats_max": 149
    },
    "rang_a_3ds": {
+    "ko": 1200,
     "degats_max": 4000
    }
   },
@@ -518,6 +562,9 @@
      "action": "Use on the ring of light"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Linkle"
+   ],
    "item_card_reward": "Deku Leaf",
    "rang_a": {
     "temps_max_min": 7,
@@ -548,9 +595,10 @@
     "char": "Zelda"
    },
    "item_card_reward": "Sea Chart",
-   "fairy_food": {
-    "ref_kb": "B04",
-    "loc": "West Field Keep [Pot]"
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Island Dress",
+    "loc": "East Field Keep"
    },
    "rang_a": {
     "ko": 1200,
@@ -559,6 +607,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "West Field Keep [Pot]"
    }
   },
   "D-1": {
@@ -625,10 +677,6 @@
     "element": "Light",
     "loc": "S. Desert Keep [Pot]"
    },
-   "fairy_food": {
-    "ref_kb": "P09",
-    "loc": "Enemy Base [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -636,6 +684,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "Enemy Base [Pot]"
    }
   },
   "D-3": {
@@ -643,7 +695,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Crush the spirits of these pesky upstarts!",
-   "great_sea_rule": "Double Damage!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Cannon",
@@ -705,12 +760,16 @@
      "action": "Use on the ring of light"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Wizzro"
+   ],
    "item_card_reward": "Cannon",
    "rang_a": {
-    "ko": 1200,
+    "ko": 4000,
     "degats_max": 149
    },
    "rang_a_3ds": {
+    "ko": 1200,
     "degats_max": 4000
    }
   },
@@ -719,7 +778,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of water!",
-   "great_sea_rule": "Don't Get Hit!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Hammer",
@@ -754,6 +816,9 @@
      "action": "Use on the giant switch"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Toon Link"
+   ],
    "item_card_reward": "Boomerang",
    "rang_a": {
     "temps_max_min": 15,
@@ -768,7 +833,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy enemies and traitors alike! Lv.2",
-   "great_sea_rule": "Double Damage!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Cannon",
@@ -826,7 +894,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Prove your worth on Tingle Island!",
-   "great_sea_rule": "Don't Get Hit!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Boomerang",
@@ -864,7 +935,8 @@
    "mission_type": "Adventure",
    "mission_en": "Be courageous and protect your keeps!",
    "item_card_reward": "Deku Leaf",
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Farore's Aura",
     "loc": "Stone Square"
    },
@@ -896,7 +968,8 @@
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the dragon of the ruins!",
    "item_card_reward": "Power Bracelet",
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Island Aura",
     "loc": "SE Sage Keep"
    },
@@ -940,6 +1013,9 @@
      "action": "Use on the seagull"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Midna"
+   ],
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
@@ -966,10 +1042,11 @@
    ],
    "item_card_reward": "Compass",
    "rang_a": {
-    "ko": 1200,
+    "ko": 4000,
     "degats_max": 149
    },
    "rang_a_3ds": {
+    "ko": 1200,
     "degats_max": 4000
    }
   },
@@ -1018,12 +1095,16 @@
      "action": "Use on the windmill"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Darunia"
+   ],
    "item_card_reward": "Salvage Arm",
    "rang_a": {
-    "ko": 1200,
+    "ko": 4000,
     "degats_max": 149
    },
    "rang_a_3ds": {
+    "ko": 1200,
     "degats_max": 4000
    }
   },
@@ -1101,7 +1182,8 @@
     "char": "Volga"
    },
    "item_card_reward": "Hookshot",
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Swirly Cheeks",
     "loc": "NE Sage Keep"
    },
@@ -1125,6 +1207,9 @@
      "action": "Use on the ring of light"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Fi"
+   ],
    "item_card_reward": "Salvage Arm",
    "rang_a": {
     "temps_max_min": 15,
@@ -1139,7 +1224,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Prove you're more than a pip-squeak!",
-   "great_sea_rule": "Don't Get Hit!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Boomerang",
@@ -1177,7 +1265,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Fight as a warrior of fire!",
-   "great_sea_rule": "Double Damage!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Cannon",
@@ -1235,6 +1326,11 @@
     "char": "Zant"
    },
    "item_card_reward": "Deku Leaf",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Wind Robe",
+    "loc": "Fairy Fountain"
+   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1255,6 +1351,11 @@
      "card": "Salvage Arm",
      "action": "Use on the ring of light"
     }
+   ],
+   "rewards_other": [
+    "Masked (Great Sea) - Cia",
+    "Unmasked (Great Sea) - Cia",
+    "Hatless (Great Sea) - Cia"
    ],
    "item_card_reward": "Hyoi Pear",
    "rang_a": {
@@ -1297,6 +1398,9 @@
      "action": "Use on the windmill"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - King Daphnes"
+   ],
    "item_card_reward": "Hookshot",
    "rang_a": {
     "temps_max_min": 15,
@@ -1323,10 +1427,6 @@
     "Complete the first mission and capture five or more enemy Keeps without losing (                  4+ hearts |             40%",
     "NW Sage Keep."
    ],
-   "heart_container": {
-    "from": "Linkle                             None                                       Piece of Heart - Toon Link",
-    "stage": "Rock Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1385,13 +1485,10 @@
     "char": "Ghirahim"
    },
    "item_card_reward": "Deku Leaf",
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Treasure Aura",
     "loc": "East Keep"
-   },
-   "fairy_food": {
-    "ref_kb": "P09",
-    "loc": "Eastern Room [Pot]"
    },
    "rang_a": {
     "ko": 1000,
@@ -1401,6 +1498,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "Eastern Room [Pot]"
    }
   },
   "H-7": {
@@ -1517,6 +1618,9 @@
      "action": "Use on the seagull"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Ganondorf"
+   ],
    "item_card_reward": "Salvage Arm",
    "rang_a": {
     "temps_max_min": 7,
@@ -1555,6 +1659,9 @@
      "action": "King Daphnes, Tetra, Toon Link"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Young Link"
+   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "ko": 3,
@@ -1575,6 +1682,9 @@
      "card": "Hyoi Pear",
      "action": "Use on the seagull"
     }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Impa"
    ],
    "item_card_reward": "Hyoi Pear",
    "rang_a": {
@@ -1614,6 +1724,9 @@
      "card": "Defeat Order",
      "action": "Moblin, Stalmaster, Big Blin"
     }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Tingle"
    ],
    "item_card_reward": "Hero's Bow",
    "rang_a": {
@@ -1707,6 +1820,9 @@
      "action": "Use on the ring of light"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Lana"
+   ],
    "item_card_reward": "Hero's Bow",
    "rang_a": {
     "temps_max_min": 15,
@@ -1778,6 +1894,9 @@
      "action": "Use on the ring of light"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Tetra"
+   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
@@ -1791,7 +1910,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the barrier specialist forces! Lv.1",
-   "great_sea_rule": "No Item Attacks!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Hero's Bow",
@@ -1819,6 +1941,9 @@
      "action": "Use on the windmill"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Ruto"
+   ],
    "item_card_reward": "Cannon",
    "rang_a": {
     "temps_max_min": 15,
@@ -1839,6 +1964,9 @@
      "action": "Use on the windmill"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Sheik"
+   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 99
@@ -1856,7 +1984,15 @@
     "from": "King Daphnes",
     "stage": "North Square"
    },
+   "rewards_other": [
+    "Piece of Heart - King Daphnes"
+   ],
    "item_card_reward": "Sea Chart",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Korok Mask",
+    "loc": "Southeast Tree"
+   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1872,7 +2008,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat your enemies...with kindness!",
-   "great_sea_rule": "No Item Attacks!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Hero's Bow",
@@ -1900,6 +2039,9 @@
      "action": "Use on the ring of light"
     }
    ],
+   "rewards_other": [
+    "Hero's Clothes (Great Sea) - Link"
+   ],
    "item_card_reward": "Hyoi Pear",
    "rang_a": {
     "temps_max_min": 15,
@@ -1919,6 +2061,9 @@
      "card": "Hyoi Pear",
      "action": "Use on the seagull"
     }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Volga"
    ],
    "item_card_reward": "Hyoi Pear",
    "rang_a": {
@@ -1949,13 +2094,13 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the travel memories quiz! Lv.1",
-   "item_card_reward": "Hyoi Pear",
    "search": [
     {
      "card": "Defeat Order",
      "action": "Volga, Ceremonial Troop (Moblin), Linkle"
     }
    ],
+   "item_card_reward": "Hyoi Pear",
    "rang_a": {
     "ko": 3,
     "temps_max_min": 15,
@@ -1974,8 +2119,12 @@
     "from": "King Daphnes",
     "stage": "South Square"
    },
+   "rewards_other": [
+    "Piece of Heart - King Daphnes"
+   ],
    "item_card_reward": "Salvage Arm",
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Wind Aura",
     "loc": "Tunnel Square"
    },
@@ -2034,6 +2183,9 @@
      "action": "Use on the seagull"
     }
    ],
+   "rewards_other": [
+    "Standard Robes (Great Sea) - Zelda"
+   ],
    "item_card_reward": "Salvage Arm",
    "rang_a": {
     "ko": 1000,
@@ -2065,6 +2217,11 @@
     "char": "Zelda"
    },
    "item_card_reward": "Wind Waker",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Rito Mask",
+    "loc": "South Square"
+   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -2105,6 +2262,9 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Defeat 400 enemies in time! Lv.1",
+   "rewards_other": [
+    "Piece of Heart - Linkle"
+   ],
    "item_card_reward": "Deku Leaf",
    "rang_a": {
     "temps_max_min": 15,
@@ -2134,7 +2294,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Destroy the army with boosted morale! Lv.2",
-   "great_sea_rule": "Double Damage!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": true
+   },
    "search": [
     {
      "card": "Cannon",
@@ -2162,6 +2325,9 @@
      "card": "Hyoi Pear",
      "action": "Use on the seagull"
     }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Skull Kid"
    ],
    "item_card_reward": "Compass",
    "rang_a": {
@@ -2215,6 +2381,9 @@
      "action": "Use on the seagull"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Ghirahim"
+   ],
    "item_card_reward": "Hyoi Pear",
    "rang_a": {
     "temps_max_min": 15,
@@ -2245,13 +2414,10 @@
     "char": "Toon Link"
    },
    "item_card_reward": "Salvage Arm",
-   "fairy_deco": {
+   "fairy_cosmetic": {
+    "type": "Decoration",
     "name": "Pirate Aura",
     "loc": "North Field Keep"
-   },
-   "fairy_food": {
-    "ref_kb": "F02",
-    "loc": "Fairy Fountain [Pot]"
    },
    "rang_a": {
     "ko": 1000,
@@ -2261,6 +2427,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "Fairy Fountain [Pot]"
    }
   },
   "N-4": {
@@ -2310,6 +2480,9 @@
      "action": "Use on the seagull"
     }
    ],
+   "rewards_other": [
+    "Standard Outfit (Great Sea) - Twili Midna"
+   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 7,
@@ -2340,10 +2513,6 @@
     "char": "Link"
    },
    "item_card_reward": "Salvage Arm",
-   "fairy_food": {
-    "ref_kb": "P08",
-    "loc": "West Temple [Pot]"
-   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -2352,6 +2521,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "West Temple [Pot]"
    }
   },
   "N-7": {
