@@ -1,0 +1,2123 @@
+{
+ "meta": {
+  "map": "Koholint",
+  "version": "v0",
+  "n_cells": 84,
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "instruments",
+   "removable": null,
+   "summary": "Objectif : reveiller le Poisson-Reve en collectant les 8 Instruments des Sirenes (obtenus comme Item Cards) et en les utilisant sur les Nightmares ; un compteur d'oeufs progresse sur la carte.",
+   "ref_kb": "map_009"
+  },
+  "schema": {
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
+  }
+ },
+ "cells": {
+  "A-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of Turtle Rock!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Young Link",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Mask",
+    "lvl": 4,
+    "char": "Young Link"
+   },
+   "item_card_reward": "Thunder Drum",
+   "instrument": "Thunder Drum",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Dreamer Top",
+    "loc": "South Square"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "Exit Square [Pot]"
+   }
+  },
+  "A-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.13",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the eastern of the two adjacent heavy rocks"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Lana"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "A-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.5",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Toon Link"
+   ],
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take on the warriors of Majora's Mask! Lv.1",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "East Goron Keep"
+   },
+   "weapon": {
+    "name": "Harp",
+    "lvl": 4,
+    "char": "Sheik"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Writer's Glasses",
+    "loc": "West Goron Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P01",
+    "loc": "East Goron Keep [Pot]"
+   }
+  },
+  "A-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of time! Lv.1",
+   "item_card_reward": "Grandpa Ulrira",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the round area east of S. Desert Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |              40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.2",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outift (Koholint) - Zant"
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the musical quiz!",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    },
+    {
+     "card": "Defeat Order",
+     "action": "Marin, Medli, Skull Kid"
+    }
+   ],
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "B-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rescue the allied forces! Lv.3",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "King Daphnes",
+    "stage": "South Mine Keep"
+   },
+   "weapon": {
+    "name": "Sail",
+    "lvl": 4,
+    "char": "King Daphnes"
+   },
+   "item_card_reward": "Power Wrist",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located along the eastern wall of the large room north of the Enemy Base.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |              40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "B-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.3",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 500 enemies in time!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "weapon": {
+    "name": "Boots",
+    "lvl": 2,
+    "char": "Linkle"
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.1",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 1,000 enemies in time!",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "C-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Cleft in twain! A detachment cuts through!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Fi",
+    "stage": "South Field Keep"
+   },
+   "weapon": {
+    "name": "Goddess Blade",
+    "lvl": 4,
+    "char": "Fi"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Dreamer Aura",
+    "loc": "Hilltop Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "East Field Keep [Pot]"
+   }
+  },
+  "C-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.2",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 500 enemies in time!",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.1",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the hill!",
+   "item_card_reward": "Full Moon Cello",
+   "instrument": "Full Moon Cello",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the cliff found west of the Fairy Fountain, accessible via Hookshot.",
+    "Complete the first mission and capture five or more enemy keeps without losing (             + hearts |                  40% health).",
+    "Dark Forest Keep."
+   ],
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "D-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.10",
+   "search": [
+    {
+     "card": "Magic Powder",
+     "action": "Use on the unlit torch"
+    }
+   ],
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Skyloft! Lv.2",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the northeast corner of the unnamed square room northwest of West Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |             40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "D-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Bottle Grotto!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Mountain Keep"
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 2,
+    "char": "Marin"
+   },
+   "item_card_reward": "Conch Horn",
+   "instrument": "Conch Horn",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Bow-Wow Headband",
+    "loc": "South Field Keep"
+   },
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P14",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "D-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the legendary warrior quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Linkle, Marin, Impa"
+    }
+   ],
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.2",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.1",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike! Lv.3",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the top of the three heavy rocks in the diagonal pattern"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Agitha"
+   ],
+   "heart_container": {
+    "from": "Agitha",
+    "stage": "Faces Keep"
+   },
+   "item_card_reward": "Magic Powder",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "E-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of time! Lv.2",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P11",
+    "loc": "S. Entrance Keep [Pot]"
+   }
+  },
+  "E-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the lakeside beast!",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Pretty Ribbon",
+    "loc": "Exit Square"
+   },
+   "item_card_reward": "Sea Lily Bell",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "E-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the commanders of two armies! Lv.1",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Tetra",
+    "stage": "Mine Keep"
+   },
+   "weapon": {
+    "name": "Cutlass",
+    "lvl": 4,
+    "char": "Tetra"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (                   4+ hearts |           40%"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Capture the enemy keeps!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Dragon Roost"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Toronbo Sun Hat",
+    "loc": "Jail Watch Keep"
+   },
+   "item_card_reward": "Full Moon Cello",
+   "instrument": "Full Moon Cello",
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "Star Island Keep [Pot]"
+   }
+  },
+  "F-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the chosen ones!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "Lower Level East"
+   },
+   "rewards_other": [
+    "Hero's Clothes (Koholint) - Link"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Egg Dress",
+    "loc": "Upper Level East"
+   },
+   "item_card_reward": "Thunder Drum",
+   "instrument": "Thunder Drum",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "F-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.13",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "F-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.7",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.1",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.3",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.6",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Cleft in twain! A detachment cuts through!",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "G-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.11",
+   "item_card_reward": "Power Wrist",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "G-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rescue the allied forces! Lv.2",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    },
+    {
+     "card": "Magic Powder",
+     "action": "Use on the unlit torch"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Young Link"
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "Fairy Fountain"
+   },
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "Central Keep [Pot]"
+   }
+  },
+  "G-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Battle the dancing dead!",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.8",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rescue the allied forces! Lv.1",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Linkle",
+    "stage": "W. Boulder Keep"
+   },
+   "weapon": {
+    "name": "Boots",
+    "lvl": 3,
+    "char": "Linkle"
+   },
+   "item_card_reward": "Conch Horn",
+   "instrument": "Conch Horn",
+   "fairy": {
+    "element": "Light",
+    "loc": "East Goron Keep [Pot]"
+   },
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "East Keep [Pot]"
+   }
+  },
+  "H-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of fire!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the northeasternmost heavy rock"
+    }
+   ],
+   "rewards_other": [
+    "Standard Robes (Koholint) - Zelda"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Lakeside Keep"
+   },
+   "item_card_reward": "Compass",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |                40% health)."
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "H-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.12",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "H-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the commanders of two armies! Lv.2",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Agitha",
+    "stage": "South Keep"
+   },
+   "weapon": {
+    "name": "Parasol",
+    "lvl": 4,
+    "char": "Agitha"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Prince's Cape",
+    "loc": "Hall of Time"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "East Cannon Keep [Pot]"
+   }
+  },
+  "H-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.4",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.5",
+   "search": [
+    {
+     "card": "Magic Powder",
+     "action": "Use on the unlit torch"
+    }
+   ],
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the commanders of two armies! Lv.3",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the easternmost heavy rock"
+    }
+   ],
+   "weapon": {
+    "name": "Boots",
+    "lvl": 4,
+    "char": "Linkle"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P14",
+    "loc": "South Garden [Pot]"
+   }
+  },
+  "I-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat enemies and traitors alike! Lv.2",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "Dragon Roost"
+   },
+   "weapon": {
+    "name": "Shackle",
+    "lvl": 4,
+    "char": "Midna"
+   },
+   "item_card_reward": "Surf Harp",
+   "instrument": "Surf Harp",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Koholint Hibiscus",
+    "loc": "Jail Watch Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Dragon Roost [Pot]"
+   }
+  },
+  "I-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.6",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use diversionary tactics to defeat the enemy!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Ghirahim"
+   ],
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "Dragon Roost"
+   },
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P15",
+    "loc": "Bomb Shop [Pot]"
+   }
+  },
+  "I-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the vehicle quiz!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    },
+    {
+     "card": "Defeat Order",
+     "action": "Zant, Agitha, Twili Midna"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of skyloft! Lv.1",
+   "item_card_reward": "Magic Powder",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located north of the Rogue Base near the owl statue.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                 40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the cavern beast!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Tetra",
+    "stage": "East Temple Hall"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Tetra"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Koholint Dress",
+    "loc": "Southwest Keep"
+   },
+   "item_card_reward": "Wind Marimba",
+   "instrument": "Wind Marimba",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "West Keep [Pot]"
+   }
+  },
+  "J-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.10",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "weapon": {
+    "name": "Bell",
+    "lvl": 4,
+    "char": "Marin"
+   },
+   "item_card_reward": "Magic Powder",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the heroes of the Wind Waker!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Darunia",
+    "stage": "Southeast Tree"
+   },
+   "weapon": {
+    "name": "Hammer",
+    "lvl": 4,
+    "char": "Darunia"
+   },
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Koholint Aura",
+    "loc": "Fairy Fountain"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P01",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "J-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Join the Rogue Forces to defeat the enemy!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Town Entrance"
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 3,
+    "char": "Marin"
+   },
+   "item_card_reward": "Power Bracelet",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Prince's Trousers",
+    "loc": "Sacred Pedestal"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "South Square [Pot]"
+   }
+  },
+  "J-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies!",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.9",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.3",
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the women's weapons quiz!",
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Zelda, Linkle, Marin"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.3",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the cliff!",
+   "item_card_reward": "Surf Harp",
+   "instrument": "Surf Harp",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more keeps without losing (               4+ hearts |               40% health). It is",
+    "Fairy Fountain"
+   ],
+   "rang_a": {
+    "ko": 1299,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 600 enemies in time!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warrriors of Twilight! Lv.1",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.8",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.7",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Twilight! Lv.2",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "King's Hall"
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 4,
+    "char": "Marin"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "Hall of Mirrors [Pot]"
+   }
+  },
+  "L-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.2",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Ruto",
+    "stage": "S. Entrance Keep"
+   },
+   "weapon": {
+    "name": "Zora Scale",
+    "lvl": 4,
+    "char": "Ruto"
+   },
+   "item_card_reward": "Magic Powder",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "N. Entrance Keep [Pot]"
+   }
+  },
+  "L-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the shadow of the grotto!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "weapon": {
+    "name": "Ocarina",
+    "lvl": 4,
+    "char": "Skull Kid"
+   },
+   "item_card_reward": "Coral Triangle",
+   "instrument": "Coral Triangle",
+   "heart_container": {
+    "from": "Skull Kid",
+    "stage": "Faces Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "L-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat enemies and traitors alike! Lv.1",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Linkle",
+    "stage": "Southeast Square"
+   },
+   "weapon": {
+    "name": "Boots",
+    "lvl": 4,
+    "char": "Linkle"
+   },
+   "item_card_reward": "Sea Lily Bell",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Artist's Beret",
+    "loc": "North Palace"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P11",
+    "loc": "North Palace [Pot]"
+   }
+  },
+  "L-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of Twilight! Lv.2",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Skull Kid"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "East Field Keep"
+   },
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "M-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the bird of the tower!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Linkle"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Central Square"
+   },
+   "item_card_reward": "Organ of Evening Calm",
+   "instrument": "Organ of Evening Calm",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "West Town Keep [Pot]"
+   }
+  },
+  "M-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.12",
+   "search": [
+    {
+     "card": "Magic Powder",
+     "action": "Use on the unlit torch"
+    }
+   ],
+   "item_card_reward": "Grandpa Ulrira",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the enemy forces!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the heavy rock"
+    }
+   ],
+   "rewards_other": [
+    "Masked (Koholint) - Cia",
+    "Unmasked (Koholint) - Cia",
+    "Hatless (Koholint) - Cia"
+   ],
+   "heart_container": {
+    "from": "Cia",
+    "stage": "West Keep"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Dreamer Bandana",
+    "loc": "West Ruins"
+   },
+   "item_card_reward": "Organ of Evening Calm",
+   "instrument": "Organ of Evening Calm",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "West Ruins [Pot]"
+   }
+  },
+  "M-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Stop the enemy merger! Lv.9",
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.3",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat the shuffling forces! Lv.11",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "The kings' armies march on!",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the northernmost heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "Abandoned Fort"
+   },
+   "weapon": {
+    "name": "Gauntlets",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Coral Triangle",
+   "instrument": "Coral Triangle",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Dreamer Skirt",
+    "loc": "North Field Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "West Field Keep [Pot]"
+   }
+  },
+  "N-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Join the Rogue Forces to defeat the enemy!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "heart_container": {
+    "from": "Lana",
+    "stage": "East Field Keep"
+   },
+   "weapon": {
+    "name": "Summoning Gate",
+    "lvl": 4,
+    "char": "Lana"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P15",
+    "loc": "West Field Keep [Pot]"
+   }
+  },
+  "N-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A ride on the wild rapids!",
+   "search": [
+    {
+     "card": "Grandpa Ulrira",
+     "action": "Use on the phone booth"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Ganondorf"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "W. Rockface Keep"
+   },
+   "item_card_reward": "Power Bracelet",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (            4+ hearts |              40%"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "N-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of water!",
+   "search": [
+    {
+     "card": "Any Instrument of the Siren",
+     "action": "Dispels the Nightmare"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Take on the warriors of Majora's Mask! Lv.2",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the southwesternmost heavy rock"
+    }
+   ],
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "Lakeside Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Sheik"
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Musical Aura",
+    "loc": "Mine Keep"
+   },
+   "item_card_reward": "Wind Marimba",
+   "instrument": "Wind Marimba",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "East Room [Pot]"
+   }
+  },
+  "N-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Get to those troops before the others do! Lv.1",
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the easternmost heavy rock"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Tingle"
+   ],
+   "heart_container": {
+    "from": "Tingle",
+    "stage": "Southwest Keep"
+   },
+   "item_card_reward": "Grandpa Ulrira",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |              40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  }
+ }
+}
