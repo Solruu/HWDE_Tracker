@@ -1,0 +1,2720 @@
+{
+ "meta": {
+  "map": "Master Wind Waker",
+  "version": "v0",
+  "n_cells": 98,
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "endless_night_rules",
+   "removable": false,
+   "summary": "Remix de Great Sea. Endless Night Rules = contraintes speciales NON annulables par Item Card.",
+   "ref_kb": "map_012"
+  },
+  "schema": {
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
+  }
+ },
+ "cells": {
+  "A-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Don't leave your troops hanging!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "rewards_other": [
+    "Masked (Wind Waker) - Cia",
+    "Unmasked (Wind Waker) - Cia",
+    "Hatless (Wind Waker) - Cia"
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "Glutton's Keep"
+   },
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P04",
+    "loc": "Beast's Refuge [Pot]"
+   }
+  },
+  "A-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight your way through fire and flames!",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "rewards_other": [
+    "Hero's Clothes (Wind Waker) - Link"
+   ],
+   "heart_container": {
+    "from": "Ganondorf",
+    "stage": "Town Center Keep"
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15
+   },
+   "rang_a_3ds": {
+    "ko": 1200
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "A-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.6",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Power Bracelet",
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "A-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.1",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    },
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat your enemies...with kindness!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hero's Bow",
+     "action": "Use on the tornado to remove Great Sea Rule"
+    }
+   ],
+   "material_reward": "King Dodongo's Crystal",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.1",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 1000,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "A-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.1",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "B-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Send the ghosts packing!",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    },
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "heart_container": {
+    "from": "Darunia",
+    "stage": "Central Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Volga"
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Twilight Aura",
+    "loc": "Arbiter's Keep"
+   },
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15
+   },
+   "rang_a_3ds": {
+    "ko": 1200
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "B-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchus! Lv.2",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hookshot",
+     "action": "Use on the marker"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Turn the tables on the assassin!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hero's Bow",
+     "action": "Use on the tornado to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Manhandla's Sapling",
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "B-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.2",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.1",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Wind Waker",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "B-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final Battle! Defeat the beast of Diamond Steppe Island!",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "item_card_reward": "Hyoi Pear",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end north of East Field Keep. Use the hookshot to reach it.",
+    "Complete the first mission and KO 150 enemies with special attacks without losing (            4+ hearts |               40%",
+    "Mountain Keep"
+   ],
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "B-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Join the Rogue Forces to defeat the enemy!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Skull Dress",
+    "loc": "Eastern Tree"
+   },
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "Western Tree [Pot]"
+   }
+  },
+  "C-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Trounce the champions of the sky!",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outift (Wind Waker) - Darunia"
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "N. Rockface Keep"
+   },
+   "item_card_reward": "Wind Waker",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P06",
+    "loc": "S. Rockface Keep [Pot]"
+   }
+  },
+  "C-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Trust in your troops' resilience!",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Sea Chart",
+     "action": "Use on the sea spray"
+    },
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Insect Aura",
+    "loc": "West Ruins"
+   },
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "West Temple [Pot]"
+   }
+  },
+  "C-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.1",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of west Greatfish Isle!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - King Daphnes"
+   ],
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "North Square"
+   },
+   "item_card_reward": "Deku Leaf",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end west of the Fairy Fountain. Use the hookshot to reach it.",
+    "Complete the first mission and capture five or more enemy Keeps without losing (               4+ hearts |                40%",
+    "Eastern Tree"
+   ],
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "C-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.1",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Hero's Bow",
+   "rang_a": {
+    "ko": 99,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "C-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Hustle in the east and bustle in the west!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Sea Chart",
+     "action": "Use on the sea spray"
+    },
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "West Square [Pot]"
+   }
+  },
+  "C-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 400 enemies before the Rogue Forces do!",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "The Cucco army rises once more!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                     40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "D-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.2",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "D-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.2",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "D-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Greatfish Isle!",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "heart_container": {
+    "from": "Medli",
+    "stage": "Fairy Fountain"
+   },
+   "weapon": {
+    "name": "Rito Harp",
+    "lvl": 2,
+    "char": "Medli"
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "D-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the forgetful foe quiz!",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "ReDead Knight, Lana, Medli"
+    }
+   ],
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Those birds are so soft! Do we really need to fight?",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hookshot",
+     "action": "Use on the marker"
+    }
+   ],
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "SE Sage Keep [Pot]"
+   }
+  },
+  "D-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Outset Island!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "heart_container": {
+    "from": "Medli",
+    "stage": "South Field Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "E-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.5",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "temps_max_min": 7
+   }
+  },
+  "E-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.2",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Hero's Bow",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "E-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Calm dissenters and crush your foe!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the stone head"
+    },
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "heart_container": {
+    "from": "Skull Kid",
+    "stage": "W. Boulder Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Tingle"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Merchant Coat",
+    "loc": "Stronghold"
+   },
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Stronghold [Pot]"
+   }
+  },
+  "E-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.1",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the warship to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Gohma's Lens",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Claim revenge against your foes!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Rancher Skirt",
+    "loc": "East Keep"
+   },
+   "item_card_reward": "Sea Chart",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F02",
+    "loc": "Eastern Room [Pot]"
+   }
+  },
+  "E-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the fortifiers and barrier specialists!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "N. Entrance Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Ruto"
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Star Aura",
+    "loc": "S. Entrance Keep"
+   },
+   "item_card_reward": "Hookshot",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "F-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Battle across the field!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    },
+    {
+     "card": "Cannon",
+     "action": "Use on the warship to remove the Great Sea Rule"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "F-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the bay!",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "item_card_reward": "Sea Chart",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the circular area just south of the Enemy Base.",
+    "Complete the first mission and KO 150 enemies with special attacks without losing (              4+ hearts |               40%",
+    "East Keep"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 700 enemies before the Rogue Forces do!",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "F-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.2",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "item_card_reward": "Hero's Bow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.2",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.3",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    }
+   ],
+   "item_card_reward": "Hero's Bow",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stamp out the enemy bosses!",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Tetra"
+   ],
+   "heart_container": {
+    "from": "Tingle",
+    "stage": "Central Chamber"
+   },
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15
+   },
+   "rang_a_3ds": {
+    "ko": 1200
+   },
+   "fairy_food": {
+    "ref_kb": "B03",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "G-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Watch out for falling artillery fire!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Toon Link"
+   ],
+   "heart_container": {
+    "from": "Ganondorf",
+    "stage": "South Garden"
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "South Garden [Pot]"
+   }
+  },
+  "G-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Help fight fire with fire!",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "item_card_reward": "Salvage Arm",
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Gerudo Jewel",
+    "loc": "SE Sage Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "Wind Plaza [Pot]"
+   }
+  },
+  "G-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.7",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "G-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Run swiftly across the battlefield!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Power Bracelet",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (           4+ hearts |               40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "G-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.5",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 199,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 10000,
+    "degats_max": 10000
+   }
+  },
+  "G-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.2",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Grow your forces and face your foes!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hero's Bow",
+     "action": "Use on the tornado to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Zant's Helmet",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the hometown quiz!",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Darunia, Medli, Toon Link"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15
+   }
+  },
+  "H-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "It's royalty's time to take the spotlight!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the Big Octo to remove the Great Sea Rule"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "H-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 1,000 enemies before the Rogue Forces do! Lv.2",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "H-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Will you fall, or will you bloom?",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    }
+   ],
+   "item_card_reward": "Deku Leaf",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Hyrule Crown",
+    "loc": "East Room"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "B03",
+    "loc": "Lakeside Keep [Pot]"
+   }
+  },
+  "H-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.3",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the Big Octo to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Helmaroc King's Mask",
+   "rang_a": {
+    "ko": 199,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 10000,
+    "degats_max": 10000
+   }
+  },
+  "H-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Yesterday's foes are today's allies!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the stone head"
+    },
+    {
+     "card": "Cannon",
+     "action": "Use on the warship to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Wizzro's Ring",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the travel memories quiz!",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Lizalfos Chieftain, Wizzro, Cia"
+    }
+   ],
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Crescent Moon Island!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the stone head"
+    }
+   ],
+   "item_card_reward": "Wind Waker",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the wall east and slightly south from the Temple Square.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |                40% health). It is located in",
+    "Sacred Pedestal."
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "I-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.4",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "I-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight the heroes of the Wind Waker!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Hookshot",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Usurper Crown",
+    "loc": "North Square"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P06",
+    "loc": "S. Entrance Keep [Pot]"
+   }
+  },
+  "I-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "It's curtain call for Medli's band!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Twili Midna"
+   ],
+   "heart_container": {
+    "from": "Cia",
+    "stage": "Southeast Keep"
+   },
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "West Cannon Keep [Pot]"
+   }
+  },
+  "I-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A leader never sleeps!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "heart_container": {
+    "from": "Linkle",
+    "stage": "W. Rockface Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Lana"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Usurper Robe",
+    "loc": "Castle Keep"
+   },
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "I-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Guard the allied keeps with your life! Lv.1",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Wind Waker",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Pierce through enemy defenses",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Deku Leaf",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located southeast from the Enemy Base.",
+    "Complete the first mission and KO 150 enemies with special attacks without losing (               4+ hearts |               40%"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all enemies! Lv.3",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "J-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "J-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.3",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "J-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Best the secretive enemies!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Sheik"
+   ],
+   "heart_container": {
+    "from": "Impa",
+    "stage": "King's Hall"
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "King's Hall [Pot]"
+   }
+  },
+  "J-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stand united! Join forces on the front line!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hero's Bow",
+     "action": "Use on the tornado to remove the Great Sea Rule"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "J-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "The hero and the sage back each other up!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the Big Octo to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Fi's Crystal",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.3",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "K-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisibe plan! Lv.5",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "K-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Wizard Forces!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the warship to remove the Great Sea Rule"
+    }
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "K-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 1,000 enemies before the Rogue Forces do! Lv.1",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Guard the allied keeps with your life! Lv.2",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Bomb Island!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hammer",
+     "action": "Use on the giant switch"
+    },
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Power Bracelet",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more enemy Keeps without losing (          4+ hearts |               40%",
+    "Town Center Keep"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "K-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Attend the Festival of Cuccos!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "heart_container": {
+    "from": "Medli",
+    "stage": "East Field Keep"
+   },
+   "weapon": {
+    "name": "Rito Harp",
+    "lvl": 3,
+    "char": "Medli"
+   },
+   "item_card_reward": "Wind Waker",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Korok Aura",
+    "loc": "W. Rockface Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P04",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "K-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.3",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "L-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A distant voice cries out for help!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "heart_container": {
+    "from": "Ganondorf",
+    "stage": "Lakeside Keep"
+   },
+   "rewards_other": [
+    "Standard Robes (Wind Waker) - Zelda"
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Usurper Pants",
+    "loc": "Temple Face Keep"
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "B04",
+    "loc": "East Room [Pot]"
+   }
+  },
+  "L-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.6",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    },
+    {
+     "card": "Hammer",
+     "action": "Use on the giant switch"
+    },
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "L-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.4",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Sea Chart",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "L-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Lurking treachery, lurking shadows!",
+   "malus_rule": {
+    "rule": "Speed Run!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Hero's Trousers",
+    "loc": "Sacred Pedestal"
+   },
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P07",
+    "loc": "South Square [Pot]"
+   }
+  },
+  "L-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Enjoy a leisurely Cucco-outing!",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Hero's Bow",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15
+   },
+   "rang_a_3ds": {
+    "ko": 1200
+   }
+  },
+  "L-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.3",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Wind Waker",
+     "action": "Use to clear the headwinds"
+    },
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu! Lv.3",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "item_card_reward": "Boomerang",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "M-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.4",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 1600,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "M-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight alongside the women of the battlefield!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "heart_container": {
+    "from": "Medli",
+    "stage": "Dragon Roost"
+   },
+   "weapon": {
+    "name": "Rito Harp",
+    "lvl": 4,
+    "char": "Medli"
+   },
+   "item_card_reward": "Salvage Arm",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Rito Dress",
+    "loc": "Jail Watch Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "Bomb Shop [Pot]"
+   }
+  },
+  "M-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Fight through the action quiz!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Defeat Order",
+     "action": "Volga, Medli, Toon Link"
+    }
+   ],
+   "item_card_reward": "Deku Leaf",
+   "rang_a": {
+    "ko": 3,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the summoners before it's too late!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Fi"
+   ],
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "West Cannon Keep"
+   },
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "Enemy Base [Pot]"
+   }
+  },
+  "M-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.3",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.4",
+   "malus_rule": {
+    "rule": "No Guarding!",
+    "removable": false
+   },
+   "item_card_reward": "Hyoi Pear",
+   "rang_a": {
+    "temps_max_min": 15
+   }
+  },
+  "M-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the Five-Star Isles!",
+   "malus_rule": {
+    "rule": "No Fairy Magic!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Sea Chart",
+     "action": "Use on the sea spray"
+    }
+   ],
+   "item_card_reward": "Sea Chart",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Rancher Poncho",
+    "loc": "West Square"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P09",
+    "loc": "North Palace [Pot]"
+   }
+  },
+  "N-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the enemy celebrities!",
+   "malus_rule": {
+    "rule": "Don't Get Hit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Boomerang",
+     "action": "Use on the Big Octo to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Darunia's Bracelet",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Confronting the opposing sorceress!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Power Bracelet",
+     "action": "Use on the stone head"
+    },
+    {
+     "card": "Deku Leaf",
+     "action": "Use on the windmill"
+    }
+   ],
+   "item_card_reward": "Sea Chart",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 1200 enemies without losing (                4+ hearts |               40% health). It is located"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of Star Belt Archipelago!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Sea Chart",
+     "action": "Use on the sea spray"
+    },
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "heart_container": {
+    "from": "Zant",
+    "stage": "South Mine Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Midna"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Fox Mask",
+    "loc": "NE Sage Keep"
+   },
+   "item_card_reward": "Hammer",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "northern empty keep [Pot]"
+   }
+  },
+  "N-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.5",
+   "malus_rule": {
+    "rule": "No Healing!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Cannon",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat those who would borrow a weapon!",
+   "malus_rule": {
+    "rule": "No Fairy Skills!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Salvage Arm",
+     "action": "Use on the ring of light"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Wind Waker) - Ghirahim"
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "Eastern Room"
+   },
+   "item_card_reward": "Wind Waker",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located north of the Eastern Room.",
+    "Complete the first mission and defeat 1200 enemies without losing (             4+ hearts |             40% health). It is located"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Win the Rupee competition! Lv.4",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Sea Chart",
+     "action": "Use on the sea spray"
+    },
+    {
+     "card": "Hyoi Pear",
+     "action": "Use on the seagull"
+    }
+   ],
+   "item_card_reward": "Salvage Arm",
+   "rang_a": {
+    "ko": 149,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 4000,
+    "degats_max": 4000
+   }
+  },
+  "N-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat your enemies...with kindness!",
+   "malus_rule": {
+    "rule": "Double Damage!",
+    "removable": false
+   },
+   "search": [
+    {
+     "card": "Cannon",
+     "action": "Use on the warship to remove the Great Sea Rule"
+    }
+   ],
+   "material_reward": "Linkle's Compass",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  }
+ }
+}
