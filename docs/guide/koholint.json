@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Koholint",
-  "version": "v0",
+  "version": "v1",
   "n_cells": 84,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
@@ -18,7 +18,10 @@
    "malus_rule": "contrainte (removable=annulable via Item Card)",
    "warp": "teleport entre cases (cf MAP_PORTALS)",
    "instrument": "Instrument des Sirenes (Koholint)"
-  }
+  },
+  "changelog": [
+   "v1: Defeat Order deplaces de search vers champ quiz_order (source GUIDE inline)."
+  ]
  },
  "cells": {
   "A-1": {
@@ -32,22 +35,7 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Young Link",
-    "stage": "Stock Room"
-   },
-   "weapon": {
-    "name": "Mask",
-    "lvl": 4,
-    "char": "Young Link"
-   },
    "item_card_reward": "Thunder Drum",
-   "instrument": "Thunder Drum",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Dreamer Top",
-    "loc": "South Square"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -60,6 +48,21 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "Exit Square [Pot]"
+   },
+   "heart_container": {
+    "from": "Young Link",
+    "stage": "Stock Room"
+   },
+   "weapon": {
+    "name": "Mask",
+    "lvl": 4,
+    "char": "Young Link"
+   },
+   "instrument": "Thunder Drum",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Dreamer Top",
+    "loc": "South Square"
    }
   },
   "A-2": {
@@ -73,16 +76,16 @@
      "action": "Use on the eastern of the two adjacent heavy rocks"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Lana"
-   ],
    "rang_a": {
     "temps_max_min": 15,
     "degats_max": 199
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Lana"
+   ]
   },
   "A-3": {
    "confidence": "HIGH",
@@ -95,9 +98,6 @@
      "action": "Use on the phone booth"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Toon Link"
-   ],
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "temps_max_min": 15,
@@ -105,7 +105,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Toon Link"
+   ]
   },
   "A-4": {
    "confidence": "HIGH",
@@ -118,6 +121,18 @@
      "action": "Use on the phone booth"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P01",
+    "loc": "East Goron Keep [Pot]"
+   },
    "heart_container": {
     "from": "Sheik",
     "stage": "East Goron Keep"
@@ -131,18 +146,6 @@
     "type": "Decoration",
     "name": "Writer's Glasses",
     "loc": "West Goron Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "P01",
-    "loc": "East Goron Keep [Pot]"
    }
   },
   "A-5": {
@@ -151,11 +154,6 @@
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of time! Lv.1",
    "item_card_reward": "Grandpa Ulrira",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located in the round area east of S. Desert Keep.",
-    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |              40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -163,7 +161,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the round area east of S. Desert Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |              40% health). It is located in"
+   ]
   },
   "A-6": {
    "confidence": "HIGH",
@@ -176,9 +179,6 @@
      "action": "Use on the phone booth"
     }
    ],
-   "rewards_other": [
-    "Standard Outift (Koholint) - Zant"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -186,7 +186,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outift (Koholint) - Zant"
+   ]
   },
   "B-1": {
    "confidence": "HIGH",
@@ -197,11 +200,12 @@
     {
      "card": "Any Instrument of the Siren",
      "action": "Dispels the Nightmare"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Marin, Medli, Skull Kid"
     }
+   ],
+   "quiz_order": [
+    "Marin",
+    "Medli",
+    "Skull Kid"
    ],
    "rang_a": {
     "ko": 3,
@@ -223,6 +227,16 @@
      "action": "Use on the phone booth"
     }
    ],
+   "item_card_reward": "Power Wrist",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "heart_container": {
     "from": "King Daphnes",
     "stage": "South Mine Keep"
@@ -232,21 +246,11 @@
     "lvl": 4,
     "char": "King Daphnes"
    },
-   "item_card_reward": "Power Wrist",
    "skulltula_count": 2,
    "skulltula_cond": [
     "KO 1000 enemies. Located along the eastern wall of the large room north of the Enemy Base.",
     "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |              40% health). It is located in"
-   ],
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
-   }
+   ]
   },
   "B-3": {
    "confidence": "HIGH",
@@ -273,11 +277,6 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "weapon": {
-    "name": "Boots",
-    "lvl": 2,
-    "char": "Linkle"
-   },
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -285,6 +284,11 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Boots",
+    "lvl": 2,
+    "char": "Linkle"
    }
   },
   "B-5": {
@@ -339,6 +343,19 @@
      "action": "Use on the heavy rock"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W01",
+    "loc": "East Field Keep [Pot]"
+   },
    "heart_container": {
     "from": "Fi",
     "stage": "South Field Keep"
@@ -352,19 +369,6 @@
     "type": "Decoration",
     "name": "Dreamer Aura",
     "loc": "Hilltop Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
-   },
-   "fairy_food": {
-    "ref_kb": "W01",
-    "loc": "East Field Keep [Pot]"
    }
   },
   "C-3": {
@@ -420,13 +424,6 @@
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the dragon of the hill!",
    "item_card_reward": "Full Moon Cello",
-   "instrument": "Full Moon Cello",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located on the cliff found west of the Fairy Fountain, accessible via Hookshot.",
-    "Complete the first mission and capture five or more enemy keeps without losing (             + hearts |                  40% health).",
-    "Dark Forest Keep."
-   ],
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -435,7 +432,14 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "instrument": "Full Moon Cello",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the cliff found west of the Fairy Fountain, accessible via Hookshot.",
+    "Complete the first mission and capture five or more enemy keeps without losing (             + hearts |                  40% health).",
+    "Dark Forest Keep."
+   ]
   },
   "D-1": {
    "confidence": "HIGH",
@@ -462,11 +466,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of Skyloft! Lv.2",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located in the northeast corner of the unnamed square room northwest of West Keep.",
-    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |             40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -475,7 +474,12 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the northeast corner of the unnamed square room northwest of West Keep.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |             40% health). It is located in"
+   ]
   },
   "D-3": {
    "confidence": "HIGH",
@@ -488,22 +492,7 @@
      "action": "Use on the phone booth"
     }
    ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "Mountain Keep"
-   },
-   "weapon": {
-    "name": "Bell",
-    "lvl": 2,
-    "char": "Marin"
-   },
    "item_card_reward": "Conch Horn",
-   "instrument": "Conch Horn",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Bow-Wow Headband",
-    "loc": "South Field Keep"
-   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -516,6 +505,21 @@
    "fairy_food": {
     "ref_kb": "P14",
     "loc": "South Field Keep [Pot]"
+   },
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Mountain Keep"
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 2,
+    "char": "Marin"
+   },
+   "instrument": "Conch Horn",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Bow-Wow Headband",
+    "loc": "South Field Keep"
    }
   },
   "D-4": {
@@ -523,11 +527,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the legendary warrior quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Linkle, Marin, Impa"
-    }
+   "quiz_order": [
+    "Linkle",
+    "Marin",
+    "Impa"
    ],
    "item_card_reward": "Grandpa Ulrira",
    "rang_a": {
@@ -583,13 +586,6 @@
      "action": "Use on the top of the three heavy rocks in the diagonal pattern"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Agitha"
-   ],
-   "heart_container": {
-    "from": "Agitha",
-    "stage": "Faces Keep"
-   },
    "item_card_reward": "Magic Powder",
    "rang_a": {
     "ko": 1600,
@@ -599,6 +595,13 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Agitha"
+   ],
+   "heart_container": {
+    "from": "Agitha",
+    "stage": "Faces Keep"
    }
   },
   "E-2": {
@@ -645,11 +648,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the lakeside beast!",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Pretty Ribbon",
-    "loc": "Exit Square"
-   },
    "item_card_reward": "Sea Lily Bell",
    "rang_a": {
     "ko": 1200,
@@ -662,6 +660,11 @@
    "fairy_food": {
     "ref_kb": "B08",
     "loc": "West Square [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Pretty Ribbon",
+    "loc": "Exit Square"
    }
   },
   "E-5": {
@@ -675,6 +678,14 @@
      "action": "Use on the heavy rock"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
    "heart_container": {
     "from": "Tetra",
     "stage": "Mine Keep"
@@ -688,15 +699,7 @@
    "skulltula_cond": [
     "KO 1000 enemies.",
     "Complete the first mission and defeat 150 enemies with Special Attacks without losing (                   4+ hearts |           40%"
-   ],
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   }
+   ]
   },
   "E-6": {
    "confidence": "HIGH",
@@ -709,20 +712,7 @@
      "action": "Use on the phone booth"
     }
    ],
-   "heart_container": {
-    "from": "Wizzro",
-    "stage": "Dragon Roost"
-   },
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Wizzro"
-   ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Toronbo Sun Hat",
-    "loc": "Jail Watch Keep"
-   },
    "item_card_reward": "Full Moon Cello",
-   "instrument": "Full Moon Cello",
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -735,7 +725,20 @@
    "fairy_food": {
     "ref_kb": "B05",
     "loc": "Star Island Keep [Pot]"
-   }
+   },
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Dragon Roost"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Toronbo Sun Hat",
+    "loc": "Jail Watch Keep"
+   },
+   "instrument": "Full Moon Cello"
   },
   "F-1": {
    "confidence": "HIGH",
@@ -748,20 +751,7 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Link",
-    "stage": "Lower Level East"
-   },
-   "rewards_other": [
-    "Hero's Clothes (Koholint) - Link"
-   ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Egg Dress",
-    "loc": "Upper Level East"
-   },
    "item_card_reward": "Thunder Drum",
-   "instrument": "Thunder Drum",
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -774,7 +764,20 @@
    "fairy_food": {
     "ref_kb": "B05",
     "loc": "Fairy Fountain [Pot]"
-   }
+   },
+   "heart_container": {
+    "from": "Link",
+    "stage": "Lower Level East"
+   },
+   "rewards_other": [
+    "Hero's Clothes (Koholint) - Link"
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Egg Dress",
+    "loc": "Upper Level East"
+   },
+   "instrument": "Thunder Drum"
   },
   "F-2": {
    "confidence": "HIGH",
@@ -906,13 +909,6 @@
      "action": "Use on the unlit torch"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Young Link"
-   ],
-   "heart_container": {
-    "from": "Volga",
-    "stage": "Fairy Fountain"
-   },
    "item_card_reward": "Grandpa Ulrira",
    "rang_a": {
     "ko": 1200,
@@ -925,6 +921,13 @@
    "fairy_food": {
     "ref_kb": "P05",
     "loc": "Central Keep [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Young Link"
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "Fairy Fountain"
    }
   },
   "G-4": {
@@ -972,6 +975,22 @@
      "action": "Use on the phone booth"
     }
    ],
+   "item_card_reward": "Conch Horn",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy": {
+    "element": "Light",
+    "loc": "East Goron Keep [Pot]"
+   },
+   "fairy_food": {
+    "ref_kb": "P05",
+    "loc": "East Keep [Pot]"
+   },
    "heart_container": {
     "from": "Linkle",
     "stage": "W. Boulder Keep"
@@ -981,23 +1000,7 @@
     "lvl": 3,
     "char": "Linkle"
    },
-   "item_card_reward": "Conch Horn",
-   "instrument": "Conch Horn",
-   "fairy": {
-    "element": "Light",
-    "loc": "East Goron Keep [Pot]"
-   },
-   "rang_a": {
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "P05",
-    "loc": "East Keep [Pot]"
-   }
+   "instrument": "Conch Horn"
   },
   "H-1": {
    "confidence": "HIGH",
@@ -1010,19 +1013,7 @@
      "action": "Use on the northeasternmost heavy rock"
     }
    ],
-   "rewards_other": [
-    "Standard Robes (Koholint) - Zelda"
-   ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "Lakeside Keep"
-   },
    "item_card_reward": "Compass",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |                40% health)."
-   ],
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1031,7 +1022,19 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Standard Robes (Koholint) - Zelda"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Lakeside Keep"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |                40% health)."
+   ]
   },
   "H-2": {
    "confidence": "HIGH",
@@ -1063,6 +1066,19 @@
      "action": "Use on the phone booth"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P08",
+    "loc": "East Cannon Keep [Pot]"
+   },
    "heart_container": {
     "from": "Agitha",
     "stage": "South Keep"
@@ -1076,19 +1092,6 @@
     "type": "Top",
     "name": "Prince's Cape",
     "loc": "Hall of Time"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "P08",
-    "loc": "East Cannon Keep [Pot]"
    }
   },
   "H-4": {
@@ -1136,11 +1139,6 @@
      "action": "Use on the easternmost heavy rock"
     }
    ],
-   "weapon": {
-    "name": "Boots",
-    "lvl": 4,
-    "char": "Linkle"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1153,6 +1151,11 @@
    "fairy_food": {
     "ref_kb": "P14",
     "loc": "South Garden [Pot]"
+   },
+   "weapon": {
+    "name": "Boots",
+    "lvl": 4,
+    "char": "Linkle"
    }
   },
   "I-1": {
@@ -1166,22 +1169,7 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Midna",
-    "stage": "Dragon Roost"
-   },
-   "weapon": {
-    "name": "Shackle",
-    "lvl": 4,
-    "char": "Midna"
-   },
    "item_card_reward": "Surf Harp",
-   "instrument": "Surf Harp",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Koholint Hibiscus",
-    "loc": "Jail Watch Keep"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1193,6 +1181,21 @@
    "fairy_food": {
     "ref_kb": "P08",
     "loc": "Dragon Roost [Pot]"
+   },
+   "heart_container": {
+    "from": "Midna",
+    "stage": "Dragon Roost"
+   },
+   "weapon": {
+    "name": "Shackle",
+    "lvl": 4,
+    "char": "Midna"
+   },
+   "instrument": "Surf Harp",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Koholint Hibiscus",
+    "loc": "Jail Watch Keep"
    }
   },
   "I-2": {
@@ -1225,13 +1228,6 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Ghirahim"
-   ],
-   "heart_container": {
-    "from": "Ghirahim",
-    "stage": "Dragon Roost"
-   },
    "item_card_reward": "Grandpa Ulrira",
    "rang_a": {
     "ko": 1600,
@@ -1245,6 +1241,13 @@
    "fairy_food": {
     "ref_kb": "P15",
     "loc": "Bomb Shop [Pot]"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Ghirahim"
+   ],
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "Dragon Roost"
    }
   },
   "I-4": {
@@ -1256,11 +1259,12 @@
     {
      "card": "Grandpa Ulrira",
      "action": "Use on the phone booth"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Zant, Agitha, Twili Midna"
     }
+   ],
+   "quiz_order": [
+    "Zant",
+    "Agitha",
+    "Twili Midna"
    ],
    "item_card_reward": "Compass",
    "rang_a": {
@@ -1278,11 +1282,6 @@
    "mission_type": "Adventure",
    "mission_en": "Defeat the warriors of skyloft! Lv.1",
    "item_card_reward": "Magic Powder",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located north of the Rogue Base near the owl statue.",
-    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                 40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1290,7 +1289,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located north of the Rogue Base near the owl statue.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                 40% health). It is located in"
+   ]
   },
   "I-6": {
    "confidence": "HIGH",
@@ -1303,6 +1307,19 @@
      "action": "Use on the phone booth"
     }
    ],
+   "item_card_reward": "Wind Marimba",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "West Keep [Pot]"
+   },
    "heart_container": {
     "from": "Tetra",
     "stage": "East Temple Hall"
@@ -1315,20 +1332,7 @@
     "name": "Koholint Dress",
     "loc": "Southwest Keep"
    },
-   "item_card_reward": "Wind Marimba",
-   "instrument": "Wind Marimba",
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "A01",
-    "loc": "West Keep [Pot]"
-   }
+   "instrument": "Wind Marimba"
   },
   "J-1": {
    "confidence": "HIGH",
@@ -1341,11 +1345,6 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "weapon": {
-    "name": "Bell",
-    "lvl": 4,
-    "char": "Marin"
-   },
    "item_card_reward": "Magic Powder",
    "rang_a": {
     "temps_max_min": 15,
@@ -1353,6 +1352,11 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 4,
+    "char": "Marin"
    }
   },
   "J-2": {
@@ -1366,6 +1370,18 @@
      "action": "Use on the phone booth"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P01",
+    "loc": "West Square [Pot]"
+   },
    "heart_container": {
     "from": "Darunia",
     "stage": "Southeast Tree"
@@ -1379,18 +1395,6 @@
     "type": "Decoration",
     "name": "Koholint Aura",
     "loc": "Fairy Fountain"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "P01",
-    "loc": "West Square [Pot]"
    }
   },
   "J-3": {
@@ -1404,21 +1408,7 @@
      "action": "Use on the phone booth"
     }
    ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "Town Entrance"
-   },
-   "weapon": {
-    "name": "Bell",
-    "lvl": 3,
-    "char": "Marin"
-   },
    "item_card_reward": "Power Bracelet",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Prince's Trousers",
-    "loc": "Sacred Pedestal"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1431,6 +1421,20 @@
    "fairy_food": {
     "ref_kb": "W01",
     "loc": "South Square [Pot]"
+   },
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Town Entrance"
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 3,
+    "char": "Marin"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Prince's Trousers",
+    "loc": "Sacred Pedestal"
    }
   },
   "J-4": {
@@ -1480,11 +1484,10 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Challenge",
    "mission_en": "Fight through the women's weapons quiz!",
-   "search": [
-    {
-     "card": "Defeat Order",
-     "action": "Zelda, Linkle, Marin"
-    }
+   "quiz_order": [
+    "Zelda",
+    "Linkle",
+    "Marin"
    ],
    "item_card_reward": "Compass",
    "rang_a": {
@@ -1521,13 +1524,6 @@
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the dragon of the cliff!",
    "item_card_reward": "Surf Harp",
-   "instrument": "Surf Harp",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and capture five or more keeps without losing (               4+ hearts |               40% health). It is",
-    "Fairy Fountain"
-   ],
    "rang_a": {
     "ko": 1299,
     "temps_max_min": 15,
@@ -1535,7 +1531,14 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "instrument": "Surf Harp",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more keeps without losing (               4+ hearts |               40% health). It is",
+    "Fairy Fountain"
+   ]
   },
   "K-4": {
    "confidence": "HIGH",
@@ -1616,15 +1619,6 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "King's Hall"
-   },
-   "weapon": {
-    "name": "Bell",
-    "lvl": 4,
-    "char": "Marin"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1637,6 +1631,15 @@
    "fairy_food": {
     "ref_kb": "B08",
     "loc": "Hall of Mirrors [Pot]"
+   },
+   "heart_container": {
+    "from": "Marin",
+    "stage": "King's Hall"
+   },
+   "weapon": {
+    "name": "Bell",
+    "lvl": 4,
+    "char": "Marin"
    }
   },
   "L-3": {
@@ -1650,15 +1653,6 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Ruto",
-    "stage": "S. Entrance Keep"
-   },
-   "weapon": {
-    "name": "Zora Scale",
-    "lvl": 4,
-    "char": "Ruto"
-   },
    "item_card_reward": "Magic Powder",
    "rang_a": {
     "ko": 1600,
@@ -1672,6 +1666,15 @@
    "fairy_food": {
     "ref_kb": "B04",
     "loc": "N. Entrance Keep [Pot]"
+   },
+   "heart_container": {
+    "from": "Ruto",
+    "stage": "S. Entrance Keep"
+   },
+   "weapon": {
+    "name": "Zora Scale",
+    "lvl": 4,
+    "char": "Ruto"
    }
   },
   "L-4": {
@@ -1685,17 +1688,7 @@
      "action": "Use on the heavy rock"
     }
    ],
-   "weapon": {
-    "name": "Ocarina",
-    "lvl": 4,
-    "char": "Skull Kid"
-   },
    "item_card_reward": "Coral Triangle",
-   "instrument": "Coral Triangle",
-   "heart_container": {
-    "from": "Skull Kid",
-    "stage": "Faces Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1704,6 +1697,16 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Ocarina",
+    "lvl": 4,
+    "char": "Skull Kid"
+   },
+   "instrument": "Coral Triangle",
+   "heart_container": {
+    "from": "Skull Kid",
+    "stage": "Faces Keep"
    }
   },
   "L-5": {
@@ -1717,21 +1720,7 @@
      "action": "Use on the phone booth"
     }
    ],
-   "heart_container": {
-    "from": "Linkle",
-    "stage": "Southeast Square"
-   },
-   "weapon": {
-    "name": "Boots",
-    "lvl": 4,
-    "char": "Linkle"
-   },
    "item_card_reward": "Sea Lily Bell",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Artist's Beret",
-    "loc": "North Palace"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1743,6 +1732,20 @@
    "fairy_food": {
     "ref_kb": "P11",
     "loc": "North Palace [Pot]"
+   },
+   "heart_container": {
+    "from": "Linkle",
+    "stage": "Southeast Square"
+   },
+   "weapon": {
+    "name": "Boots",
+    "lvl": 4,
+    "char": "Linkle"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Artist's Beret",
+    "loc": "North Palace"
    }
   },
   "L-6": {
@@ -1756,13 +1759,6 @@
      "action": "Use on the phone booth"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Skull Kid"
-   ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "East Field Keep"
-   },
    "item_card_reward": "Power Bracelet",
    "rang_a": {
     "ko": 1600,
@@ -1772,6 +1768,13 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Skull Kid"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "East Field Keep"
    }
   },
   "M-1": {
@@ -1785,15 +1788,7 @@
      "action": "Use on the phone booth"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Linkle"
-   ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "Central Square"
-   },
    "item_card_reward": "Organ of Evening Calm",
-   "instrument": "Organ of Evening Calm",
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1806,7 +1801,15 @@
    "fairy_food": {
     "ref_kb": "B04",
     "loc": "West Town Keep [Pot]"
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Linkle"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "Central Square"
+   },
+   "instrument": "Organ of Evening Calm"
   },
   "M-2": {
    "confidence": "HIGH",
@@ -1839,6 +1842,20 @@
      "action": "Use on the heavy rock"
     }
    ],
+   "item_card_reward": "Organ of Evening Calm",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "West Ruins [Pot]"
+   },
    "rewards_other": [
     "Masked (Koholint) - Cia",
     "Unmasked (Koholint) - Cia",
@@ -1853,21 +1870,7 @@
     "name": "Dreamer Bandana",
     "loc": "West Ruins"
    },
-   "item_card_reward": "Organ of Evening Calm",
-   "instrument": "Organ of Evening Calm",
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
-   },
-   "fairy_food": {
-    "ref_kb": "A01",
-    "loc": "West Ruins [Pot]"
-   }
+   "instrument": "Organ of Evening Calm"
   },
   "M-4": {
    "confidence": "HIGH",
@@ -1927,22 +1930,7 @@
      "action": "Use on the northernmost heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Link",
-    "stage": "Abandoned Fort"
-   },
-   "weapon": {
-    "name": "Gauntlets",
-    "lvl": 4,
-    "char": "Link"
-   },
    "item_card_reward": "Coral Triangle",
-   "instrument": "Coral Triangle",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Dreamer Skirt",
-    "loc": "North Field Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1955,6 +1943,21 @@
    "fairy_food": {
     "ref_kb": "P05",
     "loc": "West Field Keep [Pot]"
+   },
+   "heart_container": {
+    "from": "Link",
+    "stage": "Abandoned Fort"
+   },
+   "weapon": {
+    "name": "Gauntlets",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "instrument": "Coral Triangle",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Dreamer Skirt",
+    "loc": "North Field Keep"
    }
   },
   "N-2": {
@@ -1968,15 +1971,6 @@
      "action": "Use on the phone booth"
     }
    ],
-   "heart_container": {
-    "from": "Lana",
-    "stage": "East Field Keep"
-   },
-   "weapon": {
-    "name": "Summoning Gate",
-    "lvl": 4,
-    "char": "Lana"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1989,6 +1983,15 @@
    "fairy_food": {
     "ref_kb": "P15",
     "loc": "West Field Keep [Pot]"
+   },
+   "heart_container": {
+    "from": "Lana",
+    "stage": "East Field Keep"
+   },
+   "weapon": {
+    "name": "Summoning Gate",
+    "lvl": 4,
+    "char": "Lana"
    }
   },
   "N-3": {
@@ -2002,19 +2005,7 @@
      "action": "Use on the phone booth"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Ganondorf"
-   ],
-   "heart_container": {
-    "from": "Marin",
-    "stage": "W. Rockface Keep"
-   },
    "item_card_reward": "Power Bracelet",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (            4+ hearts |              40%"
-   ],
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2023,7 +2014,19 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Ganondorf"
+   ],
+   "heart_container": {
+    "from": "Marin",
+    "stage": "W. Rockface Keep"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (            4+ hearts |              40%"
+   ]
   },
   "N-4": {
    "confidence": "HIGH",
@@ -2057,20 +2060,7 @@
      "action": "Use on the southwesternmost heavy rock"
     }
    ],
-   "heart_container": {
-    "from": "Sheik",
-    "stage": "Lakeside Keep"
-   },
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Sheik"
-   ],
-   "fairy_cosmetic": {
-    "type": "Decoration",
-    "name": "Musical Aura",
-    "loc": "Mine Keep"
-   },
    "item_card_reward": "Wind Marimba",
-   "instrument": "Wind Marimba",
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2083,7 +2073,20 @@
    "fairy_food": {
     "ref_kb": "P07",
     "loc": "East Room [Pot]"
-   }
+   },
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "Lakeside Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Sheik"
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Musical Aura",
+    "loc": "Mine Keep"
+   },
+   "instrument": "Wind Marimba"
   },
   "N-6": {
    "confidence": "HIGH",
@@ -2096,19 +2099,7 @@
      "action": "Use on the easternmost heavy rock"
     }
    ],
-   "rewards_other": [
-    "Standard Outfit (Koholint) - Tingle"
-   ],
-   "heart_container": {
-    "from": "Tingle",
-    "stage": "Southwest Keep"
-   },
    "item_card_reward": "Grandpa Ulrira",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |              40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2117,7 +2108,19 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Standard Outfit (Koholint) - Tingle"
+   ],
+   "heart_container": {
+    "from": "Tingle",
+    "stage": "Southwest Keep"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             4+ hearts |              40% health). It is located in"
+   ]
   }
  }
 }
