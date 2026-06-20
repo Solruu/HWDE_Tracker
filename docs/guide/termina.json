@@ -1,7 +1,7 @@
 {
  "meta": {
   "map": "Termina",
-  "version": "v0",
+  "version": "v1",
   "n_cells": 85,
   "confidence": "HIGH",
   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
@@ -18,7 +18,10 @@
    "malus_rule": "contrainte (removable=annulable via Item Card)",
    "warp": "teleport entre cases (cf MAP_PORTALS)",
    "instrument": "Instrument des Sirenes (Koholint)"
-  }
+  },
+  "changelog": [
+   "v1: Defeat Order deplaces de search vers champ quiz_order (source GUIDE inline)."
+  ]
  },
  "cells": {
   "A-1": {
@@ -36,6 +39,15 @@
      "action": "Use on the torch"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "weapon": {
     "name": "Mask",
     "lvl": 4,
@@ -45,15 +57,6 @@
     "type": "Headwear",
     "name": "Trickster Mask",
     "loc": "Southwest Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "A-2": {
@@ -67,6 +70,15 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "heart_container": {
     "from": "Ganondorf",
     "stage": "South Field Keep"
@@ -80,15 +92,6 @@
     "type": "Decoration",
     "name": "Moon's Aura",
     "loc": "Hilltop Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "A-3": {
@@ -102,6 +105,15 @@
      "action": "Blow up the sole boulder"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "heart_container": {
     "from": "Sheik",
     "stage": "Fairy Fountain"
@@ -113,27 +125,13 @@
    "skulltula_cond": [
     "KO 1000 enemies. Located in the pointy dead end east of the Eastern Room.",
     "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in"
-   ],
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
-   }
+   ]
   },
   "B-1": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Defeat the barrier specialist forces!",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located on the cliff north of East Field Keep accessible via Hookshot.",
-    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -142,17 +140,18 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the cliff north of East Field Keep accessible via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in"
+   ]
   },
   "B-2": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the Demon King of the moon!",
-   "heart_container": {
-    "from": "Link",
-    "stage": "South Field Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -161,6 +160,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
+   },
+   "heart_container": {
+    "from": "Link",
+    "stage": "South Field Keep"
    }
   },
   "B-3": {
@@ -174,9 +177,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "rewards_other": [
-    "Fierce Diety Link Costume - Link"
-   ],
    "item_card_reward": "Goron Mask",
    "rang_a": {
     "ko": 199,
@@ -185,7 +185,10 @@
    "rang_a_3ds": {
     "ko": 10000,
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Fierce Diety Link Costume - Link"
+   ]
   },
   "C-1": {
    "confidence": "HIGH",
@@ -202,6 +205,15 @@
      "action": "Use on the torch"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
    "weapon": {
     "name": "Dominion Rod",
     "lvl": 4,
@@ -211,15 +223,6 @@
     "type": "Decoration",
     "name": "Fierce Diety Facepaint",
     "loc": "North Square"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 10000
    }
   },
   "C-2": {
@@ -233,9 +236,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "rewards_other": [
-    "Skull Kid's Clothes - Lana"
-   ],
    "item_card_reward": "Deku Stick",
    "rang_a": {
     "ko": 1600,
@@ -244,7 +244,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Skull Kid's Clothes - Lana"
+   ]
   },
   "C-3": {
    "confidence": "HIGH",
@@ -257,9 +260,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "rewards_other": [
-    "Odolwa's Remains Costume - Ganondorf"
-   ],
    "item_card_reward": "Deku Stick",
    "rang_a": {
     "temps_max_min": 15,
@@ -267,7 +267,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 10000
-   }
+   },
+   "rewards_other": [
+    "Odolwa's Remains Costume - Ganondorf"
+   ]
   },
   "D-7": {
    "confidence": "HIGH",
@@ -281,12 +284,6 @@
     }
    ],
    "item_card_reward": "Deku Stick",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in",
-    "Town Center Keep"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -294,7 +291,13 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                40% health). It is located in",
+    "Town Center Keep"
+   ]
   },
   "E-4": {
    "confidence": "HIGH",
@@ -307,10 +310,6 @@
      "action": "Use on the whirlpool"
     }
    ],
-   "fairy": {
-    "element": "Water",
-    "loc": "West Keep"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -318,6 +317,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy": {
+    "element": "Water",
+    "loc": "West Keep"
    },
    "fairy_food": {
     "ref_kb": "B07",
@@ -395,11 +398,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "weapon": {
-    "name": "Ocarina",
-    "lvl": 4,
-    "char": "Skull Kid"
-   },
    "item_card_reward": "Zora Mask",
    "rang_a": {
     "ko": 149,
@@ -408,6 +406,11 @@
    "rang_a_3ds": {
     "ko": 4000,
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Ocarina",
+    "lvl": 4,
+    "char": "Skull Kid"
    }
   },
   "F-3": {
@@ -421,11 +424,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "weapon": {
-    "name": "Goddess Blade",
-    "lvl": 4,
-    "char": "Fi"
-   },
    "item_card_reward": "Zora Mask",
    "rang_a": {
     "ko": 1200,
@@ -438,6 +436,11 @@
    "fairy_food": {
     "ref_kb": "P10",
     "loc": "West Keep [Pot]"
+   },
+   "weapon": {
+    "name": "Goddess Blade",
+    "lvl": 4,
+    "char": "Fi"
    }
   },
   "F-4": {
@@ -455,9 +458,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "rewards_other": [
-    "Era of the Hero of Time Armor - Ganondorf"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -465,18 +465,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Era of the Hero of Time Armor - Ganondorf"
+   ]
   },
   "F-5": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Help those in need!",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Ranch Skirt",
-    "loc": "N. Settlement"
-   },
    "item_card_reward": "Ice Arrow",
    "rang_a": {
     "ko": 1200,
@@ -489,6 +487,11 @@
    "fairy_food": {
     "ref_kb": "F04",
     "loc": "Enemy Base [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Ranch Skirt",
+    "loc": "N. Settlement"
    }
   },
   "F-6": {
@@ -502,15 +505,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "heart_container": {
-    "from": "Ghirahim",
-    "stage": "Southeast Tree"
-   },
-   "weapon": {
-    "name": "Demon Blade",
-    "lvl": 4,
-    "char": "Ghirahim"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -522,6 +516,15 @@
    "fairy_food": {
     "ref_kb": "F04",
     "loc": "Southern Tree [Pot]"
+   },
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "Southeast Tree"
+   },
+   "weapon": {
+    "name": "Demon Blade",
+    "lvl": 4,
+    "char": "Ghirahim"
    }
   },
   "F-7": {
@@ -539,9 +542,6 @@
      "action": "Use on the whirlpool"
     }
    ],
-   "rewards_other": [
-    "Kokiri Tunic Costume - Link"
-   ],
    "item_card_reward": "Zora Mask",
    "rang_a": {
     "temps_max_min": 15,
@@ -549,7 +549,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Kokiri Tunic Costume - Link"
+   ]
   },
   "G-1": {
    "confidence": "HIGH",
@@ -579,16 +582,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Postman Hat",
-    "loc": "Stone Square"
-   },
-   "weapon": {
-    "name": "Great Fairy",
-    "lvl": 4,
-    "char": "Link"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -600,6 +593,16 @@
    "fairy_food": {
     "ref_kb": "P14",
     "loc": "Stock Room [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Postman Hat",
+    "loc": "Stone Square"
+   },
+   "weapon": {
+    "name": "Great Fairy",
+    "lvl": 4,
+    "char": "Link"
    }
   },
   "G-3": {
@@ -613,6 +616,14 @@
      "action": "Blow up the sole boulder in the northeast"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
    "weapon": {
     "name": "Naginata",
     "lvl": 4,
@@ -621,14 +632,6 @@
    "heart_container": {
     "from": "Impa",
     "stage": "Academy Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
    }
   },
   "G-4": {
@@ -660,14 +663,12 @@
     {
      "card": "Ice Arrow",
      "action": "Shoot the ring of fire"
-    },
-    {
-     "card": "Defeat Order",
-     "action": "Impa, Ghirahim, Wizzro"
     }
    ],
-   "rewards_other": [
-    "Stone Mask Costume - Fi"
+   "quiz_order": [
+    "Impa",
+    "Ghirahim",
+    "Wizzro"
    ],
    "item_card_reward": "Compass",
    "rang_a": {
@@ -677,7 +678,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Stone Mask Costume - Fi"
+   ]
   },
   "G-6": {
    "confidence": "HIGH",
@@ -690,6 +694,18 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B06",
+    "loc": "Temple Entrance [Pot]"
+   },
    "heart_container": {
     "from": "Cia",
     "stage": "Southeast Keep"
@@ -703,18 +719,6 @@
     "type": "Headwear",
     "name": "Bunny Hood",
     "loc": "Southwest Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "B06",
-    "loc": "Temple Entrance [Pot]"
    }
   },
   "G-8": {
@@ -728,6 +732,18 @@
      "action": "Blow up the westernmost boulder"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B08",
+    "loc": "East Room [Pot]"
+   },
    "heart_container": {
     "from": "Darunia",
     "stage": "Temple Face Keep"
@@ -741,18 +757,6 @@
     "type": "Top",
     "name": "Deku Dress",
     "loc": "King's Hall"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "B08",
-    "loc": "East Room [Pot]"
    }
   },
   "H-1": {
@@ -779,9 +783,6 @@
      "action": "Blow up the southernmost boulder"
     }
    ],
-   "rewards_other": [
-    "Troupe Leader's Mask Costume - Zant"
-   ],
    "item_card_reward": "Deku Mask",
    "rang_a": {
     "ko": 4000,
@@ -790,7 +791,10 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Troupe Leader's Mask Costume - Zant"
+   ]
   },
   "H-3": {
    "confidence": "HIGH",
@@ -825,11 +829,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "The Cucco army rises once more!",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Ranch Top",
-    "loc": "Southwest Keep"
-   },
    "item_card_reward": "Ice Arrow",
    "rang_a": {
     "ko": 1200,
@@ -842,6 +841,11 @@
    "fairy_food": {
     "ref_kb": "P12",
     "loc": "Hall of Time [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Ranch Top",
+    "loc": "Southwest Keep"
    }
   },
   "H-6": {
@@ -859,9 +863,6 @@
      "action": "Use on the flower"
     }
    ],
-   "rewards_other": [
-    "Majora's Mask Costume - Cia"
-   ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
@@ -869,7 +870,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Majora's Mask Costume - Cia"
+   ]
   },
   "H-8": {
    "confidence": "HIGH",
@@ -886,17 +890,7 @@
      "action": "Use on the flower"
     }
    ],
-   "weapon": {
-    "name": "Horse",
-    "lvl": 4,
-    "char": "Link"
-   },
    "item_card_reward": "Deku Mask",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Deku Tiara",
-    "loc": "Fairy Fountain"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -904,6 +898,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "weapon": {
+    "name": "Horse",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Deku Tiara",
+    "loc": "Fairy Fountain"
    }
   },
   "I-1": {
@@ -917,18 +921,6 @@
      "action": "Bomb the northernmost boulder"
     }
    ],
-   "heart_container": {
-    "from": "Volga",
-    "stage": "Lower Level East"
-   },
-   "rewards_other": [
-    "Deku Mask Costume - Lana"
-   ],
-   "fairy_cosmetic": {
-    "type": "Accessory",
-    "name": "Snowhead Necklace",
-    "loc": "Upper Level East"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -940,6 +932,18 @@
    "fairy_food": {
     "ref_kb": "B08",
     "loc": "North Palace [Pot]"
+   },
+   "heart_container": {
+    "from": "Volga",
+    "stage": "Lower Level East"
+   },
+   "rewards_other": [
+    "Deku Mask Costume - Lana"
+   ],
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Snowhead Necklace",
+    "loc": "Upper Level East"
    }
   },
   "I-2": {
@@ -974,10 +978,6 @@
      "action": "Use on the switch"
     }
    ],
-   "fairy": {
-    "element": "Lightning",
-    "loc": "Central Keep [Pot]"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -985,6 +985,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy": {
+    "element": "Lightning",
+    "loc": "Central Keep [Pot]"
    },
    "fairy_food": {
     "ref_kb": "P11",
@@ -1012,11 +1016,6 @@
    "mission_type": "Adventure",
    "mission_en": "Win the keep-capturing competition! Lv.1",
    "item_card_reward": "Bomb",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Balloon Shorts",
-    "loc": "North Oasis"
-   },
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1025,6 +1024,11 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Balloon Shorts",
+    "loc": "North Oasis"
    }
   },
   "I-6": {
@@ -1067,9 +1071,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "rewards_other": [
-    "Era of the Hero of Time Outfit - Sheik"
-   ],
    "item_card_reward": "Mask of Truth",
    "rang_a": {
     "ko": 149,
@@ -1078,7 +1079,10 @@
    "rang_a_3ds": {
     "ko": 4000,
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Era of the Hero of Time Outfit - Sheik"
+   ]
   },
   "J-1": {
    "confidence": "HIGH",
@@ -1103,14 +1107,12 @@
     {
      "card": "Bomb",
      "action": "Blow up the second boulder down on the western row"
-    },
-    {
-     "card": "Defeat order",
-     "action": "Zelda, Agitha, Midna"
     }
    ],
-   "rewards_other": [
-    "Goron Mask Costume - Darunia"
+   "quiz_order": [
+    "Zelda",
+    "Agitha",
+    "Midna"
    ],
    "item_card_reward": "Compass",
    "rang_a": {
@@ -1120,7 +1122,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Goron Mask Costume - Darunia"
+   ]
   },
   "J-3": {
    "confidence": "HIGH",
@@ -1142,11 +1147,6 @@
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Get to those troops before the others do! Lv.1",
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Forest Top",
-    "loc": "East Keep"
-   },
    "item_card_reward": "Bomb",
    "rang_a": {
     "ko": 1000,
@@ -1160,6 +1160,11 @@
    "fairy_food": {
     "ref_kb": "B06",
     "loc": "West Ruins [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Forest Top",
+    "loc": "East Keep"
    }
   },
   "J-5": {
@@ -1192,9 +1197,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "rewards_other": [
-    "Era of the Hero of Time Outfit - Impa"
-   ],
    "rang_a": {
     "ko": 99,
     "degats_max": 99
@@ -1202,7 +1204,10 @@
    "rang_a_3ds": {
     "ko": 4000,
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Era of the Hero of Time Outfit - Impa"
+   ]
   },
   "J-7": {
    "confidence": "HIGH",
@@ -1215,9 +1220,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "rewards_other": [
-    "Zora Mask Costume - Ruto"
-   ],
    "item_card_reward": "Bomb",
    "rang_a": {
     "temps_max_min": 15,
@@ -1225,18 +1227,16 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Zora Mask Costume - Ruto"
+   ]
   },
   "J-8": {
    "confidence": "HIGH",
    "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
    "mission_type": "Adventure",
    "mission_en": "Use diversionary tactics to defeat the enemy! Lv.1",
-   "fairy_cosmetic": {
-    "type": "Bottom",
-    "name": "Ranch Skirt",
-    "loc": "Fairy Fountain"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1248,6 +1248,11 @@
    "fairy_food": {
     "ref_kb": "P12",
     "loc": "South Field Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Ranch Skirt",
+    "loc": "Fairy Fountain"
    }
   },
   "K-1": {
@@ -1261,9 +1266,6 @@
      "action": "Bomb the sole boulder (hiding in the wall in the northeast corner)"
     }
    ],
-   "rewards_other": [
-    "Mask of Truth Costume - Impa"
-   ],
    "item_card_reward": "Compass",
    "rang_a": {
     "temps_max_min": 15,
@@ -1271,7 +1273,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Mask of Truth Costume - Impa"
+   ]
   },
   "K-2": {
    "confidence": "HIGH",
@@ -1284,11 +1289,6 @@
      "action": "Use on the switch"
     }
    ],
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located on a cliff north of the Rogue Base accessible via Hookshot.",
-    "Complete the first mission and KO 150 enemies with Special Attacks without losing (               + hearts |          40%"
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1296,7 +1296,12 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on a cliff north of the Rogue Base accessible via Hookshot.",
+    "Complete the first mission and KO 150 enemies with Special Attacks without losing (               + hearts |          40%"
+   ]
   },
   "K-3": {
    "confidence": "HIGH",
@@ -1309,9 +1314,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "rewards_other": [
-    "Don Gero's Mask Costume - Agitha"
-   ],
    "item_card_reward": "Mask of Truth",
    "rang_a": {
     "temps_max_min": 7,
@@ -1319,7 +1321,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Don Gero's Mask Costume - Agitha"
+   ]
   },
   "K-4": {
    "confidence": "HIGH",
@@ -1342,11 +1347,6 @@
    "mission_type": "Adventure",
    "mission_en": "Search the battlefield for wandering enemies!",
    "item_card_reward": "Bomb",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                    40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1000,
     "temps_max_min": 15,
@@ -1355,7 +1355,12 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |                    40% health). It is located in"
+   ]
   },
   "K-6": {
    "confidence": "HIGH",
@@ -1388,10 +1393,6 @@
      "action": "Use on the flower"
     }
    ],
-   "fairy": {
-    "element": "Fire",
-    "loc": "East Goron Keep"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1399,6 +1400,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
+   },
+   "fairy": {
+    "element": "Fire",
+    "loc": "East Goron Keep"
    },
    "fairy_food": {
     "ref_kb": "P10",
@@ -1450,18 +1455,6 @@
      "action": "Blow up the middle of the three boulders"
     }
    ],
-   "heart_container": {
-    "from": "Wizzro",
-    "stage": "Fairy Fountain"
-   },
-   "rewards_other": [
-    "Captain's Hat Costume - Wizzro"
-   ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Happiness Tiara",
-    "loc": "East Field Keep"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1474,6 +1467,18 @@
    "fairy_food": {
     "ref_kb": "P13",
     "loc": "Central Keep [Pot]"
+   },
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Fairy Fountain"
+   },
+   "rewards_other": [
+    "Captain's Hat Costume - Wizzro"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Happiness Tiara",
+    "loc": "East Field Keep"
    }
   },
   "L-3": {
@@ -1559,12 +1564,6 @@
     }
    ],
    "item_card_reward": "Deku Mask",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and capture five or more keeps without losing (            4+ hearts |               40% health). It is",
-    "Exit Square."
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1572,7 +1571,13 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more keeps without losing (            4+ hearts |               40% health). It is",
+    "Exit Square."
+   ]
   },
   "M-1": {
    "confidence": "HIGH",
@@ -1586,12 +1591,6 @@
     }
    ],
    "item_card_reward": "Goron Mask",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (              + hearts |              40% health). It is located in",
-    "North Palace."
-   ],
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1599,7 +1598,13 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (              + hearts |              40% health). It is located in",
+    "North Palace."
+   ]
   },
   "M-2": {
    "confidence": "HIGH",
@@ -1616,9 +1621,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "rewards_other": [
-    "Ordon Shield Costume - Midna"
-   ],
    "item_card_reward": "Inverted Song of Time",
    "rang_a": {
     "temps_max_min": 15,
@@ -1626,7 +1628,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Ordon Shield Costume - Midna"
+   ]
   },
   "M-3": {
    "confidence": "HIGH",
@@ -1639,11 +1644,6 @@
      "action": "Use on the torch"
     }
    ],
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies.",
-    "Complete the first mission and KO 1200 enemies without losing (               + hearts |             40% health). It is located in"
-   ],
    "rang_a": {
     "ko": 1600,
     "degats_max": 199
@@ -1651,7 +1651,12 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (               + hearts |             40% health). It is located in"
+   ]
   },
   "M-4": {
    "confidence": "HIGH",
@@ -1685,9 +1690,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "rewards_other": [
-    "Era of the Hero of Time Robes - Zelda"
-   ],
    "item_card_reward": "Majora's Mask",
    "rang_a": {
     "ko": 199,
@@ -1696,7 +1698,10 @@
    "rang_a_3ds": {
     "ko": 4000,
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Era of the Hero of Time Robes - Zelda"
+   ]
   },
   "M-6": {
    "confidence": "HIGH",
@@ -1713,11 +1718,6 @@
      "action": "Use on the flower"
     }
    ],
-   "weapon": {
-    "name": "Baton",
-    "lvl": 4,
-    "char": "Zelda"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1729,6 +1729,11 @@
    "fairy_food": {
     "ref_kb": "B07",
     "loc": "Fairy Fountain [Pot]"
+   },
+   "weapon": {
+    "name": "Baton",
+    "lvl": 4,
+    "char": "Zelda"
    }
   },
   "M-7": {
@@ -1746,9 +1751,6 @@
      "action": "Use on the whirlpool"
     }
    ],
-   "rewards_other": [
-    "Kafei's Mask Costume - Sheik"
-   ],
    "item_card_reward": "Inverted Song of Time",
    "rang_a": {
     "temps_max_min": 15,
@@ -1756,7 +1758,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Kafei's Mask Costume - Sheik"
+   ]
   },
   "M-8": {
    "confidence": "HIGH",
@@ -1769,16 +1774,6 @@
      "action": "Blow up the sole boulder"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Postman Hat",
-    "loc": "East Keep"
-   },
-   "weapon": {
-    "name": "Harp",
-    "lvl": 4,
-    "char": "Sheik"
-   },
    "rang_a": {
     "ko": 1200,
     "temps_max_min": 15,
@@ -1790,6 +1785,16 @@
    "fairy_food": {
     "ref_kb": "P11",
     "loc": "East Keep [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Postman Hat",
+    "loc": "East Keep"
+   },
+   "weapon": {
+    "name": "Harp",
+    "lvl": 4,
+    "char": "Sheik"
    }
   },
   "N-1": {
@@ -1803,6 +1808,18 @@
      "action": "Blow up the westernmost boulder"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W06",
+    "loc": "North Oasis [Pot]"
+   },
    "heart_container": {
     "from": "Twili Midna",
     "stage": "Central Keep"
@@ -1816,18 +1833,6 @@
     "type": "Accessory",
     "name": "Snowhead Necklace",
     "loc": "N. Settlement"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "W06",
-    "loc": "North Oasis [Pot]"
    }
   },
   "N-3": {
@@ -1841,9 +1846,6 @@
      "action": "Blow up easternmost boulder on the third row up from the bottom"
     }
    ],
-   "rewards_other": [
-    "Giant's Mask Costume - Volga"
-   ],
    "item_card_reward": "Inverted Song of Time",
    "rang_a": {
     "temps_max_min": 15,
@@ -1851,7 +1853,10 @@
    },
    "rang_a_3ds": {
     "degats_max": 4000
-   }
+   },
+   "rewards_other": [
+    "Giant's Mask Costume - Volga"
+   ]
   },
   "N-4": {
    "confidence": "HIGH",
@@ -1864,6 +1869,15 @@
      "action": "Shoot the ring of fire"
     }
    ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
    "heart_container": {
     "from": "Volga",
     "stage": "East Goron Keep"
@@ -1877,15 +1891,6 @@
     "type": "Top",
     "name": "Ranch Top",
     "loc": "West Goron Keep"
-   },
-   "rang_a": {
-    "ko": 1600,
-    "temps_max_min": 15,
-    "degats_max": 199
-   },
-   "rang_a_3ds": {
-    "ko": 1200,
-    "degats_max": 4000
    }
   },
   "N-5": {
@@ -1899,19 +1904,7 @@
      "action": "Blow up the westernmost boulder"
     }
    ],
-   "rewards_other": [
-    "Kamaro's Mask Costume - Ghirahim"
-   ],
-   "heart_container": {
-    "from": "Midna",
-    "stage": "West Square"
-   },
    "item_card_reward": "Deku Stick",
-   "fairy_cosmetic": {
-    "type": "Headwear",
-    "name": "Bunny Hood",
-    "loc": "Fairy Fountain"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -1920,6 +1913,18 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
+   },
+   "rewards_other": [
+    "Kamaro's Mask Costume - Ghirahim"
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "West Square"
+   },
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Bunny Hood",
+    "loc": "Fairy Fountain"
    }
   },
   "N-6": {
@@ -1947,6 +1952,18 @@
      "action": "Blow up the northernmost boulder"
     }
    ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "P13",
+    "loc": "West Keep [Pot]"
+   },
    "heart_container": {
     "from": "Ruto",
     "stage": "E. Mountain Keep"
@@ -1960,18 +1977,6 @@
     "type": "Headwear",
     "name": "Deku Tiara",
     "loc": "West Keep"
-   },
-   "rang_a": {
-    "ko": 1200,
-    "temps_max_min": 15,
-    "degats_max": 149
-   },
-   "rang_a_3ds": {
-    "degats_max": 4000
-   },
-   "fairy_food": {
-    "ref_kb": "P13",
-    "loc": "West Keep [Pot]"
    }
   },
   "O-3": {
@@ -1985,16 +1990,6 @@
      "action": "Shoot the ring of fire"
     }
    ],
-   "fairy_cosmetic": {
-    "type": "Top",
-    "name": "Happiness Dress",
-    "loc": "South Square"
-   },
-   "weapon": {
-    "name": "Ring",
-    "lvl": 4,
-    "char": "Wizzro"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2007,6 +2002,16 @@
    "fairy_food": {
     "ref_kb": "W06",
     "loc": "Central Square [Pot]"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Happiness Dress",
+    "loc": "South Square"
+   },
+   "weapon": {
+    "name": "Ring",
+    "lvl": 4,
+    "char": "Wizzro"
    }
   },
   "O-4": {
@@ -2056,12 +2061,6 @@
    "mission_type": "Adventure",
    "mission_en": "Final battle! Defeat the beast of the canyon!",
    "item_card_reward": "Deku Stick",
-   "skulltula_count": 2,
-   "skulltula_cond": [
-    "KO 1000 enemies. Located in the dead end north of West Square.",
-    "Complete the first mission and KO 1200 enemies without losing (             + hearts |              40% health). It is located on",
-    "Fairy Fountain."
-   ],
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2070,7 +2069,13 @@
    "rang_a_3ds": {
     "ko": 1200,
     "degats_max": 4000
-   }
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end north of West Square.",
+    "Complete the first mission and KO 1200 enemies without losing (             + hearts |              40% health). It is located on",
+    "Fairy Fountain."
+   ]
   },
   "P-4": {
    "confidence": "HIGH",
@@ -2083,11 +2088,6 @@
      "action": "Blow up the right of the three grouped boulders at the top of the square"
     }
    ],
-   "weapon": {
-    "name": "Summoning Gate",
-    "lvl": 4,
-    "char": "Lana"
-   },
    "rang_a": {
     "ko": 1600,
     "temps_max_min": 15,
@@ -2100,6 +2100,11 @@
    "fairy_food": {
     "ref_kb": "P14",
     "loc": "Sacred Pedestal [Pot]"
+   },
+   "weapon": {
+    "name": "Summoning Gate",
+    "lvl": 4,
+    "char": "Lana"
    }
   }
  }
