@@ -1,0 +1,2495 @@
+{
+ "meta": {
+  "map": "Twilight",
+  "version": "v0",
+  "n_cells": 93,
+  "confidence": "HIGH",
+  "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+  "mechanics": {
+   "type": "ooccoo_warps_and_rules",
+   "removable": null,
+   "summary": "Deux mecaniques : (1) Portails Ooccoo : apres avoir termine certains niveaux, utiliser Ooccoo sur le portail teleporte vers une case distante (paires deja encodees dans MAP_PORTALS/GUIDE). (2) Twilight Rules : contraintes par niveau (No Focus Spirit!, No Item Attacks!, No Special Attacks!...) ; annulabilite a confirmer en jeu.",
+   "ref_kb": "map_014"
+  },
+  "schema": {
+   "rang_a": "valeurs SWITCH ko/temps_max_min/degats_max",
+   "rang_a_3ds": "3DS si different",
+   "fairy_food.ref_kb": "id aliment KB nour_011",
+   "malus_rule": "contrainte (removable=annulable via Item Card)",
+   "warp": "teleport entre cases (cf MAP_PORTALS)",
+   "instrument": "Instrument des Sirenes (Koholint)"
+  }
+ },
+ "cells": {
+  "A-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of light! Lv.1",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat enemy forces! Lv.8",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Wizard Forces!",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "A-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.8",
+   "search": [
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "weapon": {
+    "name": "Magic Rod",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Digging Mitts",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "A-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.5",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Watch for traps on the battlefield!",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "North Field Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Midna"
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Butterfly Headband",
+    "loc": "East Field Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A04",
+    "loc": "South Field Keep [Pot]"
+   }
+  },
+  "B-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Barrier Specialist Forces! Lv.2",
+   "search": [
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    },
+    {
+     "card": "Bomb",
+     "action": "Bomb the single boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "East Garden"
+   },
+   "weapon": {
+    "name": "Hylian Sword",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Hero's Clothes",
+    "loc": "Northeast Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A03",
+    "loc": "West Garden [Pot]"
+   }
+  },
+  "B-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.6",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the bombchu! Lv.8",
+   "search": [
+    {
+     "card": "Water Bomb",
+     "action": "Blow up the rock in the water"
+    }
+   ],
+   "warp": [
+    "Item Card"
+   ],
+   "rewards_other": [
+    "Era of Twilight Robes - Zelda"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "B-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Disorderly Forces! Lv.6",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "rewards_other": [
+    "Masked (Twilight) - Cia",
+    "Unmasked (Twilight) - Cia",
+    "Hatless (Twilight) - Cia"
+   ],
+   "heart_container": {
+    "from": "Impa",
+    "stage": "South Garden"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (               4+ hearts |               40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "B-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.9",
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "C-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use a Magic Circle to defeat the enemy forces! Lv.2",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "heart_container": {
+    "from": "Zant",
+    "stage": "West Keep"
+   },
+   "weapon": {
+    "name": "Scimitars",
+    "lvl": 4,
+    "char": "Zant"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A04",
+    "loc": "Southwest Keep [Jar]"
+   }
+  },
+  "C-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Darknut Forces!",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.6",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.6",
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "C-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A collision of cuccos! Lv.6",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "heart_container": {
+    "from": "Lana",
+    "stage": "Northwest Keep"
+   },
+   "weapon": {
+    "name": "Spear",
+    "lvl": 4,
+    "char": "Lana"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W05",
+    "loc": "Northeast Keep [Pot]"
+   }
+  },
+  "C-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Protect the bombchu! Lv.9",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "rewards_other": [
+    "Hero's Clothes (Twilight) - Link"
+   ],
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "C-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "The hunters are on the move!",
+   "search": [
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    }
+   ],
+   "fairy": {
+    "element": "Darkness",
+    "loc": "South Field Keep [Pot]"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "Rocky Square [Pot]"
+   }
+  },
+  "C-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.9",
+   "search": [
+    {
+     "card": "Clawshot",
+     "action": "Use on the target"
+    }
+   ],
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "D-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.3",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the single boulder"
+    }
+   ],
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "D-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the Disorderly Forces! Lv.5",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "heart_container": {
+    "from": "Volga",
+    "stage": "Town Center Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Volga"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W02",
+    "loc": "Northmost Keep [Pot]"
+   }
+  },
+  "D-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Protect the bombchu! Lv.6",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "D-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the commanders of two armies! Lv.2",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "heart_container": {
+    "from": "Tetra",
+    "stage": "East Field Keep"
+   },
+   "weapon": {
+    "name": "Cutlass",
+    "lvl": 4,
+    "char": "Tetra"
+   },
+   "item_card_reward": "Spinner",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Twilight Top",
+    "loc": "North Field Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "D-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Rescue the allied forces!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "heart_container": {
+    "from": "Midna",
+    "stage": "S. Entrance Keep"
+   },
+   "weapon": {
+    "name": "Shackle",
+    "lvl": 4,
+    "char": "Midna"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Butterfly Skirt",
+    "loc": "South Square"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "N. Entrance Keep [Pot]"
+   }
+  },
+  "D-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.9",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "D-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike!",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    },
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    }
+   ],
+   "heart_container": {
+    "from": "Cia",
+    "stage": "E. Mountain Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Ganondorf"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located on the path north of the E. Boulder Keep behind a wall that must be bombed.",
+    "Complete the first mission and KO 1200 enemies without losing (               4+ hearts |              40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "D-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the warriors of twilight!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the westernmost of the 6 boulders arranged into two lines (westernmost of the top row)"
+    }
+   ],
+   "heart_container": {
+    "from": "Ganondorf",
+    "stage": "King's Hall"
+   },
+   "weapon": {
+    "name": "Great Swords",
+    "lvl": 4,
+    "char": "Ganondorf"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Ganondorf"
+   ],
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Goron Facepaint",
+    "loc": "Lower Level East"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "A05",
+    "loc": "King's Hall [Pot]"
+   }
+  },
+  "E-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the beast of the ruins!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Water Bomb",
+     "action": "Blow up the rock in the water"
+    }
+   ],
+   "heart_container": {
+    "from": "Ghirahim",
+    "stage": "S. Rockface Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Ghirahim"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and capture five or more keeps without losing (          4+ hearts |                 40% health). It is",
+    "Academy Keep"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Bomb the single boulder"
+    }
+   ],
+   "item_card_reward": "Jar",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "E-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the commanders of two armies! Lv.1",
+   "item_card_reward": "Fishing Rod",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Hero's Clothes",
+    "loc": "N. Rockface Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F03",
+    "loc": "Fairy Fountain [Pot]"
+   }
+  },
+  "E-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of water or lightning!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove the Twilight Rule"
+    },
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "heart_container": {
+    "from": "Link",
+    "stage": "West Keep"
+   },
+   "weapon": {
+    "name": "Spinner",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Bomb",
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Fused Shadow Mask",
+    "loc": "West Ruins"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "E-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the Demon King of the castle!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove the Twilight Rule"
+    }
+   ],
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "Mountain Keep"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located north of East Field Keep, on the cliff reached via Hookshot.",
+    "Complete the first mission and KO 1200 enemies without losing (                  4+ hearts |              40% health). It is located in",
+    "South Field Keep."
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "E-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "A leader never sleeps!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove the Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "heart_container": {
+    "from": "King Daphnes",
+    "stage": "W. Rockface Keep"
+   },
+   "weapon": {
+    "name": "Sail",
+    "lvl": 4,
+    "char": "King Daphnes"
+   },
+   "item_card_reward": "Clawshot",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Butterfly Blouse",
+    "loc": "Castle Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "Central Keep [Pot]"
+   }
+  },
+  "E-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.7",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    },
+    {
+     "card": "Clawshot",
+     "action": "Use on the target"
+    }
+   ],
+   "weapon": {
+    "name": "Gauntlets",
+    "lvl": 4,
+    "char": "Link"
+   },
+   "item_card_reward": "Digging Mitts",
+   "fairy_cosmetic": {
+    "type": "Accessory",
+    "name": "Twilight Jewel",
+    "loc": "W. Rockface Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "E-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.3",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the summoners before it's too late!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove the Twilight Rule"
+    },
+    {
+     "card": "Clawshot",
+     "action": "Use on the target"
+    }
+   ],
+   "fairy": {
+    "element": "Light",
+    "loc": "Southwest Keep [Pot]"
+   },
+   "item_card_reward": "Water Bomb",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W03",
+    "loc": "West Cannon Keep [Pot]"
+   }
+  },
+  "F-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Use a Magic Circle to defeat the enemy forces! Lv.1",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "heart_container": {
+    "from": "Fi",
+    "stage": "N. Rockface Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Fi"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies.",
+    "Complete the first mission and KO 1200 enemies without losing (                4+ hearts |              40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.2",
+   "item_card_reward": "Clawshot",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "F-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the barrier specialist forces! Lv.3",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Bomb",
+     "action": "Blow up the solo boulder"
+    }
+   ],
+   "heart_container": {
+    "from": "Linkle",
+    "stage": "Central Keep"
+   },
+   "weapon": {
+    "name": "Crossbows",
+    "lvl": 4,
+    "char": "Linkle"
+   },
+   "item_card_reward": "Lantern",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Hero's Clothes",
+    "loc": "Fairy Fountain"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "A02",
+    "loc": "Central Keep [Pot]"
+   }
+  },
+  "F-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 1,000 enemies in time!",
+   "search": [
+    {
+     "card": "Clawshot",
+     "action": "Use on the target"
+    },
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    },
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "rewards_other": [
+    "Era of Twilight Tunic - Link"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "F-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy the army with boosted morale! Lv.2",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "heart_container": {
+    "from": "Toon Link",
+    "stage": "Abandoned Fort"
+   },
+   "weapon": {
+    "name": "Light Sword",
+    "lvl": 4,
+    "char": "Toon Link"
+   },
+   "item_card_reward": "Spinner",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Twilight Skirt",
+    "loc": "North Field Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   }
+  },
+  "F-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.8",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the lone boulder"
+    }
+   ],
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "F-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Calm dissenters and crush your foe!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "heart_container": {
+    "from": "Darunia",
+    "stage": "W. Boulder Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Ruto"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "E. Boulder Keep [Pot]"
+   }
+  },
+  "G-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the palace!",
+   "search": [
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "heart_container": {
+    "from": "Tingle",
+    "stage": "S. Entrance Keep"
+   },
+   "weapon": {
+    "name": "Balloon",
+    "lvl": 4,
+    "char": "Tingle"
+   },
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "W05",
+    "loc": "S. Entrance Keep [Pot]"
+   }
+  },
+  "G-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.5",
+   "item_card_reward": "Ooccoo",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.4",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "item_card_reward": "Ooccoo",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the lake!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Bomb",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Butterfly Blouse",
+    "loc": "Bridge Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A06",
+    "loc": "Rocky Square [Pot]"
+   }
+  },
+  "G-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.3",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu! Lv.3",
+   "search": [
+    {
+     "card": "Water Bomb",
+     "action": "Blow up the rock in the water"
+    }
+   ],
+   "rewards_other": [
+    "Postman Uniform - Link"
+   ],
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Guard the allied keeps with your life! Lv.1",
+   "search": [
+    {
+     "card": "Water Bomb",
+     "action": "Blow up the rock in the water"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "G-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the dragon of the volcano!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    }
+   ],
+   "item_card_reward": "Fishing Rod",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Goron Facepaint",
+    "loc": "Stock Room"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A06",
+    "loc": "Central Square [Pot]"
+   }
+  },
+  "H-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Strengthen your army and defeat the enemy!",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu! Lv.4",
+   "search": [
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    }
+   ],
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.4",
+   "search": [
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Zant"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the dead end south of Central Square.",
+    "Complete the first mission and KO 1200 enemies without losing (                4+ hearts |               40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the mountain beast!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Water Bomb",
+     "action": "Blow up the rock in the water"
+    },
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Headwear",
+    "name": "Butterfly Headband",
+    "loc": "SE Room"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 10000
+   },
+   "fairy_food": {
+    "ref_kb": "A03",
+    "loc": "Hall of Mirrors [Pot]"
+   }
+  },
+  "H-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.2",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Butterfly Makeup",
+    "loc": "Mountain Keep"
+   },
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A01",
+    "loc": "Castle Keep [Pot]"
+   }
+  },
+  "H-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.2",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "item_card_reward": "Jar",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "H-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Stop the fortifiers and barrier specialists!",
+   "search": [
+    {
+     "card": "Fishing Rod",
+     "action": "Catch the fish"
+    }
+   ],
+   "heart_container": {
+    "from": "Impa",
+    "stage": "North Oasis"
+   },
+   "weapon": {
+    "name": "Giant Blade",
+    "lvl": 4,
+    "char": "Impa"
+   },
+   "item_card_reward": "Water Bomb",
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A05",
+    "loc": "Central Keep [Pot]"
+   }
+  },
+  "H-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu! Lv.2",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "item_card_reward": "Lantern",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the desert dragon!",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the boulder in the northwest corner"
+    }
+   ],
+   "item_card_reward": "Lantern",
+   "weapon": {
+    "name": "Book of Sorcery",
+    "lvl": 4,
+    "char": "Lana"
+   },
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located just outside west exit of S. Desert Keep.",
+    "Complete the first mission and defeat 150 enemies with Special Attacks without losing (             4+ hearts |             40%"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.4",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "item_card_reward": "Ooccoo",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.4",
+   "item_card_reward": "Jar",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.7",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder"
+    }
+   ],
+   "rewards_other": [
+    "Era of Twilight Armor - Ganondorf"
+   ],
+   "item_card_reward": "Spinner",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 10000
+   }
+  },
+  "I-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.2",
+   "item_card_reward": "Fishing Rod",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "I-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Enjoy a leisurely Cucco-outing!",
+   "item_card_reward": "Clawshot",
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Hero's Trousers",
+    "loc": "W. Mountain Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.2",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder in the northwest of the map"
+    }
+   ],
+   "item_card_reward": "Ooccoo",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "I-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.3",
+   "search": [
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    },
+    {
+     "card": "Bomb",
+     "action": "Blow up the sole boulder in the middle of the map"
+    }
+   ],
+   "heart_container": {
+    "from": "Darunia",
+    "stage": "East Goron Keep"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Darunia"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W04",
+    "loc": "E. Boulder Keep [Pot]"
+   }
+  },
+  "J-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu! Lv.5",
+   "search": [
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Agitha"
+   ],
+   "item_card_reward": "Spinner",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.5",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    }
+   ],
+   "item_card_reward": "Digging Mitts",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Behold the power of teamwork!",
+   "malus_rule": {
+    "rule": "No Focus Spirit!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Hero's Clothes",
+    "loc": "Central Square"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "W04",
+    "loc": "Central Square [Pot]"
+   }
+  },
+  "J-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the barrier specialist forces! Lv.1",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    }
+   ],
+   "heart_container": {
+    "from": "Zelda",
+    "stage": "East Room"
+   },
+   "item_card_reward": "Water Bomb",
+   "weapon": {
+    "name": "Rapier",
+    "lvl": 4,
+    "char": "Zelda"
+   },
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Twilight Top",
+    "loc": "Lakeside Keep"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "J-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.2",
+   "item_card_reward": "Lantern",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy the army with boosted morale! Lv.1",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    },
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    }
+   ],
+   "heart_container": {
+    "from": "Wizzro",
+    "stage": "Stock Room"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Wizzro"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the path north then west from the Tunnel Square before the dropoff.",
+    "Complete the first mission and KO 1200 enemies without losing (            4+ hearts |                40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.3",
+   "item_card_reward": "Jar",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "J-8": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Watch out! All attacks are devastating! Lv.1",
+   "item_card_reward": "Tears of Light",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-1": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Look for a solution!",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    },
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "heart_container": {
+    "from": "Agitha",
+    "stage": "West Temple"
+   },
+   "weapon": {
+    "name": "Parasol",
+    "lvl": 4,
+    "char": "Agitha"
+   },
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Butterfly Skirt",
+    "loc": "East Keep"
+   },
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "B05",
+    "loc": "Eastern Room [Pot]"
+   }
+  },
+  "K-2": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.7",
+   "search": [
+    {
+     "card": "Spinner",
+     "action": "Place into the hole"
+    }
+   ],
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Impa"
+   ],
+   "item_card_reward": "Lantern",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu! Lv.7",
+   "search": [
+    {
+     "card": "Digging Mitts",
+     "action": "Dig the soft dirt"
+    },
+    {
+     "card": "Lantern",
+     "action": "Use on the torch"
+    }
+   ],
+   "warp": [
+    "Item Card"
+   ],
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Zelda"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the temple!",
+   "item_card_reward": "Digging Mitts",
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located beside the outside of the northwest wall of Temple Square.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |                    40% health). It is located in",
+    "Sacred Pedestal."
+   ],
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "K-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat 400 enemies in time!",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Defeat all Giant Bosses in time! Lv.1",
+   "search": [
+    {
+     "card": "Clawshot",
+     "action": "Use on the target"
+    }
+   ],
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 7,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "K-7": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Rack up your KO count! Lv.1",
+   "item_card_reward": "Spinner",
+   "rang_a": {
+    "ko": 4000,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "L-3": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.7",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "L-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Fight as a warrior of light! Lv.2",
+   "malus_rule": {
+    "rule": "No Item Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove the Twilight Rule"
+    }
+   ],
+   "fairy_cosmetic": {
+    "type": "Bottom",
+    "name": "Twilight Skirt",
+    "loc": "Upper Level East"
+   },
+   "rang_a": {
+    "ko": 1600,
+    "temps_max_min": 15,
+    "degats_max": 199
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "L-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Recruit more allies and overwhelm the enemy!",
+   "malus_rule": {
+    "rule": "No Special Attacks!",
+    "removable": null
+   },
+   "search": [
+    {
+     "card": "Tears of Light",
+     "action": "Use to remove Twilight Rule"
+    },
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "heart_container": {
+    "from": "Lana",
+    "stage": "East Temple"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Lana"
+   ],
+   "skulltula_count": 2,
+   "skulltula_cond": [
+    "KO 1000 enemies. Located in the pointy dead end in the northeast corner of the map.",
+    "Complete the first mission and KO 1200 enemies without losing (              4+ hearts |                  40% health). It is located in"
+   ],
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "L-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Destroy enemies and traitors alike!",
+   "search": [
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "heart_container": {
+    "from": "Sheik",
+    "stage": "Eastern Tree"
+   },
+   "rewards_other": [
+    "Standard Outfit (Twilight) - Sheik"
+   ],
+   "rang_a": {
+    "ko": 1200,
+    "temps_max_min": 15,
+    "degats_max": 149
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "F03",
+    "loc": "Eastern Tree [Pot]"
+   }
+  },
+  "M-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Put an end to the enemy's divisive plan! Lv.1",
+   "item_card_reward": "Bomb",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "M-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Final battle! Defeat the beast of the jungle!",
+   "heart_container": {
+    "from": "Fi",
+    "stage": "North Square"
+   },
+   "item_card_reward": "Tears of Light",
+   "fairy_cosmetic": {
+    "type": "Decoration",
+    "name": "Goron Facepaint",
+    "loc": "Southeast Tree"
+   },
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   },
+   "fairy_food": {
+    "ref_kb": "A02",
+    "loc": "Eastern Tree [Pot]"
+   }
+  },
+  "M-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Defeat the disorderly forces! Lv.1",
+   "warp": [
+    "After completing the stage, use on the portal to warp to"
+   ],
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "N-4": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Team up and defeat the enemy forces! Lv.1",
+   "search": [
+    {
+     "card": "Bomb",
+     "action": "Destroy the bottommost boulder along the western edge of the area"
+    }
+   ],
+   "rewards_other": [
+    "Ilia's Clothes - Zelda"
+   ],
+   "item_card_reward": "Jar",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-5": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Protect the Bombchu!",
+   "search": [
+    {
+     "card": "Jar",
+     "action": "Place on the switch"
+    }
+   ],
+   "item_card_reward": "Compass",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  },
+  "N-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Adventure",
+   "mission_en": "Show no fear to the enemies of Twilight!",
+   "fairy_cosmetic": {
+    "type": "Top",
+    "name": "Hero's Clothes",
+    "loc": "South Field Keep"
+   },
+   "rang_a": {
+    "ko": 1000,
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "ko": 1200,
+    "degats_max": 4000
+   }
+  },
+  "O-6": {
+   "confidence": "HIGH",
+   "source": "SBAllen GameFAQs 3DS — vérifié en jeu DE (Antoine)",
+   "mission_type": "Challenge",
+   "mission_en": "Learn the key to a balanced attack! Lv.1",
+   "rang_a": {
+    "temps_max_min": 15,
+    "degats_max": 99
+   },
+   "rang_a_3ds": {
+    "degats_max": 4000
+   }
+  }
+ }
+}
