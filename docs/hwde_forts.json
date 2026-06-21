@@ -1,0 +1,205 @@
+{
+  "_meta": {
+    "fichier": "hwde_forts.json",
+    "version": "v0",
+    "jeu": "Hyrule Warriors: Definitive Edition (Switch)",
+    "description": "Forts (keeps) PAR DÉFAUT des 16 champs de bataille uniques de HWDE. Source unique EN->FR des noms de forts, référençable par ID stable (fort_NNN) depuis le tracker et les map JSONs.",
+    "criteres_confiance": "HAUTE = mention explicite Definitive Edition + recoupement multi-sources concordantes ; MOYENNE = source unique ou non-DE explicite, ou cas particulier ; FR systématiquement à confirmer en jeu (DE FR).",
+    "note_modele": "Ce sont les noms PAR DÉFAUT du terrain. En scénario/case, une 'Base' peut ÉCRASER le nom affiché d'un fort, et tous les forts ne sont pas actifs partout. La géométrie et l'ensemble par défaut restent fixes par terrain — c'est l'objet documenté ici.",
+    "acces_in_game": "Lecture des noms via l'écran 'List of Keeps' / Battlefield Info : depuis l'écran de sélection de scénario, ou en pause (gauche/droite) en cours de bataille. Le terrain doit avoir été débloqué (Mode Légende en séquence ; Mode Libre uniquement si déjà battu en Légende).",
+    "sources": [
+      "Zelda Wiki — Category:Stages in Hyrule Warriors: Definitive Edition (16 terrains, mention DE explicite)",
+      "Zelda Dungeon Wiki — fiches de terrain (sections 'Keeps' = listes de forts par défaut)",
+      "GameFAQs — guides Legend Mode (Legends + DE), écran List of Keeps"
+    ],
+    "nb_terrains": 16,
+    "statut_remplissage": "v0 : structure complète des 16 terrains + terrain-test Hyrule Field peuplé (10 forts EN). 15 terrains restants à dérouler. FR à relever en jeu.",
+    "a_faire": [
+      "Dérouler les 15 terrains restants depuis les fiches Zelda Dungeon (format 'Keeps' homogène)",
+      "Relever les noms FR en jeu (écran List of Keeps, DE FR) et remplir nom_fr",
+      "Au câblage : faire de ce fichier la SEULE source des noms FR de forts (dédoublonner avec NAMES côté tracker)",
+      "Vérifier dédoublonnages de géométrie entre terrains (ex. Ganon's Tower = variante de Hyrule Field)"
+    ]
+  },
+  "terrains": {
+    "hyrule_field": {
+      "nom_en": "Hyrule Field",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE) + Zelda Dungeon (section Keeps)",
+      "note": "Ganon's Tower est une variante de ce terrain (même géométrie, en ruines) : agencement de forts partagé.",
+      "forts": [
+        {
+          "id": "fort_001",
+          "nom_en": "Castle Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE",
+          "note": "« Hyrule Castle » dans le script Nintendo of Europe"
+        },
+        {
+          "id": "fort_002",
+          "nom_en": "Abandoned Fort",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_003",
+          "nom_en": "W. Rockface Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_004",
+          "nom_en": "Central Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_005",
+          "nom_en": "West Field Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_006",
+          "nom_en": "North Field Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_007",
+          "nom_en": "East Field Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_008",
+          "nom_en": "South Field Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_009",
+          "nom_en": "Mountain Keep",
+          "nom_fr": "",
+          "confiance": "HAUTE"
+        },
+        {
+          "id": "fort_010",
+          "nom_en": "Fairy Fountain",
+          "nom_fr": "",
+          "confiance": "MOYENNE",
+          "note": "Lieu spécial (Grande Fée) faisant office de fort dans certains scénarios"
+        }
+      ]
+    },
+    "death_mountain": {
+      "nom_en": "Death Mountain",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "eldin_caves": {
+      "nom_en": "Eldin Caves",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "faron_woods": {
+      "nom_en": "Faron Woods",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "lake_hylia": {
+      "nom_en": "Lake Hylia",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "sealed_grounds": {
+      "nom_en": "Sealed Grounds",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "valley_of_seers": {
+      "nom_en": "Valley of Seers",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "gerudo_desert": {
+      "nom_en": "Gerudo Desert",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "skyloft": {
+      "nom_en": "Skyloft",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "temple_of_souls": {
+      "nom_en": "Temple of Souls",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "twilight_field": {
+      "nom_en": "Twilight Field",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "palace_of_twilight": {
+      "nom_en": "Palace of Twilight",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler"
+    },
+    "ganons_tower": {
+      "nom_en": "Ganon's Tower",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler",
+      "note": "Variante de Hyrule Field (même géométrie, en ruines) — agencement de forts partagé à recouper."
+    },
+    "forsaken_fortress": {
+      "nom_en": "Forsaken Fortress",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler",
+      "note": "Ajout Legends / DE uniquement (The Wind Waker)."
+    },
+    "wind_and_earth_temples": {
+      "nom_en": "Wind and Earth Temples",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler",
+      "note": "Ajout Legends / DE uniquement (The Wind Waker)."
+    },
+    "temple_of_the_sacred_sword": {
+      "nom_en": "Temple of the Sacred Sword",
+      "confiance_terrain": "HAUTE",
+      "source": "Zelda Wiki (catégorie Stages DE)",
+      "forts": [],
+      "statut": "à_peupler",
+      "note": "Ajout Legends / DE uniquement (The Wind Waker)."
+    }
+  }
+}
